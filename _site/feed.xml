@@ -1,0 +1,239 @@
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://0.0.0.0:4000/</id>
+  <title>m0ss1</title>
+  <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
+  <updated>2021-03-09T19:04:00+08:00</updated>
+  <author>
+    <name>m0ssy1</name>
+    <uri>http://0.0.0.0:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://0.0.0.0:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="en-US"
+    href="http://0.0.0.0:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator>
+  <rights> © 2021 m0ssy1 </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
+
+
+  
+  <entry>
+    <title>TryHackMe - Reverse Engineering</title>
+    <link href="http://0.0.0.0:4000/posts/TryHackMe-Reverse-Engineering/" rel="alternate" type="text/html" title="TryHackMe - Reverse Engineering" />
+    <published>2020-12-18T15:00:00+08:00</published>
+  
+    <updated>2020-12-18T15:00:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/TryHackMe-Reverse-Engineering/</id>
+    <content src="http://0.0.0.0:4000/posts/TryHackMe-Reverse-Engineering/" />
+    <author>
+      <name>m0ssy1</name>
+    </author>
+
+  
+    
+    <category term="TryHackMe" />
+    
+    <category term="CTF" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+Το συγκεκριμένο room για να λυθει χρειάζεται τις στοιχειώδεις γνωσεις για το πως απο ένα αρχείο execuble αρχείο το αποκωδικοποιουμε και μεσα απο αυτο βλέπουμε απο ποιες λειτουργειες αποτελείτε και επειτα τις αναλυουμε για να φτάσουμε στο σημειο να καταφέρουμε τον στόχο μας.
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Download and activate office</title>
+    <link href="http://0.0.0.0:4000/posts/Download-office2019-activate/" rel="alternate" type="text/html" title="Download and activate office" />
+    <published>2020-10-20T15:00:00+08:00</published>
+  
+    <updated>2020-10-20T15:00:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/Download-office2019-activate/</id>
+    <content src="http://0.0.0.0:4000/posts/Download-office2019-activate/" />
+    <author>
+      <name>m0ssy1</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Κατεβαζουμε τα office απο τα παρακάτω links
+
+http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/el-gr/ProPlus2019Retail.img
+
+http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/el-gr/Professional2019Retail.img
+
+http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60/media/el-gr/HomeStudent2019Retail.img
+
+http://officecdn.microsof...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Brutforce attack technics</title>
+    <link href="http://0.0.0.0:4000/posts/Brutforce-attack-technics/" rel="alternate" type="text/html" title="Brutforce attack technics" />
+    <published>2020-10-18T15:00:00+08:00</published>
+  
+    <updated>2020-10-18T15:00:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/Brutforce-attack-technics/</id>
+    <content src="http://0.0.0.0:4000/posts/Brutforce-attack-technics/" />
+    <author>
+      <name>m0ssy1</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+    <category term="Challenges" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Jerry</title>
+    <link href="http://0.0.0.0:4000/posts/Jerry/" rel="alternate" type="text/html" title="Jerry" />
+    <published>2020-10-14T15:00:00+08:00</published>
+  
+    <updated>2020-10-14T15:00:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/Jerry/</id>
+    <content src="http://0.0.0.0:4000/posts/Jerry/" />
+    <author>
+      <name>m0ssy1</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+    <category term="CTF" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+Host discovery
+Για το host descovery θα χρησιμοποιησουμε το nmap!
+
+nmap -sV -sT 10.10.10.95
+
+
+Αυτό το μηχάνημα έχει ανοιχτή την 8080 port και τρέχει ‘Apache Tomcat/Coyote JSP engine’ το οποίο είναι ένα HTTP web server environment οπου μπορείς να τρέξεις java εφαρμογές.
+
+
+
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Weak RSA</title>
+    <link href="http://0.0.0.0:4000/posts/Weak-RSA/" rel="alternate" type="text/html" title="Weak RSA" />
+    <published>2020-10-10T15:00:00+08:00</published>
+  
+    <updated>2020-10-10T15:00:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/Weak-RSA/</id>
+    <content src="http://0.0.0.0:4000/posts/Weak-RSA/" />
+    <author>
+      <name>m0ssy1</name>
+    </author>
+
+  
+    
+    <category term="HackTheBox" />
+    
+    <category term="Challenges" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+Prerequrements
+
+
+  kali linux
+  Αρχικά βλέπουμε ένα download συνδεσμο και ενα password για το zip file που θα κατεβάσουμε. Αφού τα κάνουμε όλα αυτά βλέπουμε τα παρακάτω αρχεία.
+
+
+
+
+Επεξήγηση
+
+Προφανώς έχουμε να κάνουμε με ενα public key και με ενα μηνυμα το οποιο αν αποκρυπτογραφίσουμε θα μας δώσει το flag
+
+Πώς λειτουργεί η κρυπτογράφηση RSA;
+
+Η κρυπτογράφηση RSA χρησιμοποιεί πρώτους αριθμούς...
+    </summary>
+  
+
+  </entry>
+
+</feed>
+
+
