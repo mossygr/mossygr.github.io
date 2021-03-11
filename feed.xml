@@ -4,7 +4,7 @@
   <id>http://0.0.0.0:4000/</id>
   <title>m0ss1</title>
   <subtitle>A minimal, portfolio, sidebar, bootstrap Jekyll theme with responsive web design and focuses on text presentation.</subtitle>
-  <updated>2021-03-09T19:15:46+08:00</updated>
+  <updated>2021-03-11T23:24:58+02:00</updated>
   <author>
     <name>m0ssy1</name>
     <uri>http://0.0.0.0:4000/</uri>
@@ -20,11 +20,59 @@
 
   
   <entry>
+    <title>Use BurpSuite on firefox</title>
+    <link href="http://0.0.0.0:4000/posts/Burpsuite-on-firefox/" rel="alternate" type="text/html" title="Use BurpSuite on firefox" />
+    <published>2021-03-11T09:00:00+02:00</published>
+  
+    <updated>2021-03-11T23:04:04+02:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/Burpsuite-on-firefox/</id>
+    <content src="http://0.0.0.0:4000/posts/Burpsuite-on-firefox/" />
+    <author>
+      <name>m0ssy1</name>
+    </author>
+
+  
+    
+    <category term="Burpsuite" />
+    
+    <category term="tutorials" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Αρχικά ανοίγουμε τον Firefox και έπειτα ακολουθούμε τις οδηγίες στις παρακάτω εικόνες
+
+
+
+Επιλέγουμε το  “General” tab and πηγαίνουμε στο “Network Proxy” settings. Κάνουμε click στο  “Settings”.
+
+
+
+Επιλέγουμε την “Manual proxy configuration” επιλογή.
+
+Βάζουμε την Burp Proxy listener address στο “HTTP Proxy” πεδίο ( απο προεπιλογή είναι 127.0.0.1).
+
+Έπειτα, βάλε την Burp Proxy listener port στο “...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>TryHackMe - Reverse Engineering</title>
     <link href="http://0.0.0.0:4000/posts/TryHackMe-Reverse-Engineering/" rel="alternate" type="text/html" title="TryHackMe - Reverse Engineering" />
-    <published>2020-12-18T15:00:00+08:00</published>
+    <published>2020-12-18T09:00:00+02:00</published>
   
-    <updated>2020-12-18T15:00:00+08:00</updated>
+    <updated>2021-03-11T23:04:04+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/TryHackMe-Reverse-Engineering/</id>
     <content src="http://0.0.0.0:4000/posts/TryHackMe-Reverse-Engineering/" />
@@ -61,9 +109,9 @@
   <entry>
     <title>Download and activate office</title>
     <link href="http://0.0.0.0:4000/posts/Download-office2019-activate/" rel="alternate" type="text/html" title="Download and activate office" />
-    <published>2020-10-20T15:00:00+08:00</published>
+    <published>2020-10-20T10:00:00+03:00</published>
   
-    <updated>2020-10-20T15:00:00+08:00</updated>
+    <updated>2021-03-11T23:04:04+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/Download-office2019-activate/</id>
     <content src="http://0.0.0.0:4000/posts/Download-office2019-activate/" />
@@ -101,9 +149,9 @@ http://officecdn.microsof...
   <entry>
     <title>Brutforce attack technics</title>
     <link href="http://0.0.0.0:4000/posts/Brutforce-attack-technics/" rel="alternate" type="text/html" title="Brutforce attack technics" />
-    <published>2020-10-18T15:00:00+08:00</published>
+    <published>2020-10-18T10:00:00+03:00</published>
   
-    <updated>2020-10-18T15:00:00+08:00</updated>
+    <updated>2021-03-11T23:04:04+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/Brutforce-attack-technics/</id>
     <content src="http://0.0.0.0:4000/posts/Brutforce-attack-technics/" />
@@ -138,9 +186,9 @@ http://officecdn.microsof...
   <entry>
     <title>Jerry</title>
     <link href="http://0.0.0.0:4000/posts/Jerry/" rel="alternate" type="text/html" title="Jerry" />
-    <published>2020-10-14T15:00:00+08:00</published>
+    <published>2020-10-14T10:00:00+03:00</published>
   
-    <updated>2020-10-14T15:00:00+08:00</updated>
+    <updated>2021-03-11T23:22:32+02:00</updated>
   
     <id>http://0.0.0.0:4000/posts/Jerry/</id>
     <content src="http://0.0.0.0:4000/posts/Jerry/" />
@@ -164,71 +212,25 @@ http://officecdn.microsof...
 
 
 
-      
+      Σε γενικές γραμμές.
+
+
 
 Host discovery
 Για το host descovery θα χρησιμοποιησουμε το nmap!
 
-nmap -sV -sT 10.10.10.95
+nmap -sV -sC 10.10.10.95
 
 
 Αυτό το μηχάνημα έχει ανοιχτή την 8080 port και τρέχει ‘Apache Tomcat/Coyote JSP engine’ το οποίο είναι ένα HTTP web server environment οπου μπορείς να τρέξεις java εφαρμογές.
 
 
 
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Weak RSA</title>
-    <link href="http://0.0.0.0:4000/posts/Weak-RSA/" rel="alternate" type="text/html" title="Weak RSA" />
-    <published>2020-10-10T15:00:00+08:00</published>
-  
-    <updated>2020-10-10T15:00:00+08:00</updated>
-  
-    <id>http://0.0.0.0:4000/posts/Weak-RSA/</id>
-    <content src="http://0.0.0.0:4000/posts/Weak-RSA/" />
-    <author>
-      <name>m0ssy1</name>
-    </author>
-
-  
-    
-    <category term="HackTheBox" />
-    
-    <category term="Challenges" />
-    
-  
-
-  
-    <summary>
-      
 
 
 
 
-
-      
-
-Prerequrements
-
-
-  kali linux
-  Αρχικά βλέπουμε ένα download συνδεσμο και ενα password για το zip file που θα κατεβάσουμε. Αφού τα κάνουμε όλα αυτά βλέπουμε τα παρακάτω αρχεία.
-
-
-
-
-Επεξήγηση
-
-Προφανώς έχουμε να κάνουμε με ενα public key και με ενα μηνυμα το οποιο αν αποκρυπτογραφίσουμε θα μας δώσει το flag
-
-Πώς λειτουργεί η κρυπτογράφηση RSA;
-
-Η κρυπτογράφηση RSA χρησιμοποιεί πρώτους αριθμούς...
+Μπαίνοντας στο http://http://10.10.10.95:8080/manager/ και κανουμε login με τα παραπανω default c...
     </summary>
   
 

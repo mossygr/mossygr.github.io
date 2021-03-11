@@ -1,11 +1,26 @@
 [
   
   {
+    "title": "Use BurpSuite on firefox",
+    "url": "/posts/Burpsuite-on-firefox/",
+    "categories": "Burpsuite, tutorials",
+    "tags": "burpsuite",
+    "date": "2021-03-11 09:00:00 +0200",
+    
+
+
+
+
+
+    "snippet": "Αρχικά ανοίγουμε τον Firefox και έπειτα ακολουθούμε τις οδηγίες στις παρακάτω εικόνεςΕπιλέγουμε το  “General” tab and πηγαίνουμε στο “Network Proxy” settings. Κάνουμε click στο  “Settings”.Επιλέγουμε την “Manual proxy configuration” επιλογή.Βάζουμε την Burp Proxy listener address στο “HTTP Proxy”..."
+  },
+  
+  {
     "title": "TryHackMe - Reverse Engineering",
     "url": "/posts/TryHackMe-Reverse-Engineering/",
     "categories": "TryHackMe, CTF",
     "tags": "ctf, writeup, thm",
-    "date": "2020-12-18 15:00:00 +0800",
+    "date": "2020-12-18 09:00:00 +0200",
     
 
 
@@ -20,7 +35,7 @@
     "url": "/posts/Download-office2019-activate/",
     "categories": "",
     "tags": "crack",
-    "date": "2020-10-20 15:00:00 +0800",
+    "date": "2020-10-20 10:00:00 +0300",
     
 
 
@@ -35,7 +50,7 @@
     "url": "/posts/Brutforce-attack-technics/",
     "categories": "HackTheBox, Challenges",
     "tags": "challenges, writeup",
-    "date": "2020-10-18 15:00:00 +0800",
+    "date": "2020-10-18 10:00:00 +0300",
     
 
 
@@ -50,14 +65,14 @@
     "url": "/posts/Jerry/",
     "categories": "HackTheBox, CTF",
     "tags": "htb, ctf, begginer track",
-    "date": "2020-10-14 15:00:00 +0800",
+    "date": "2020-10-14 10:00:00 +0300",
     
 
 
 
 
 
-    "snippet": "Host discoveryΓια το host descovery θα χρησιμοποιησουμε το nmap!nmap -sV -sT 10.10.10.95Αυτό το μηχάνημα έχει ανοιχτή την 8080 port και τρέχει ‘Apache Tomcat/Coyote JSP engine’ το οποίο είναι ένα HTTP web server environment οπου μπορείς να τρέξεις java εφαρμογές."
+    "snippet": "Σε γενικές γραμμές.Host discoveryΓια το host descovery θα χρησιμοποιησουμε το nmap!nmap -sV -sC 10.10.10.95Αυτό το μηχάνημα έχει ανοιχτή την 8080 port και τρέχει ‘Apache Tomcat/Coyote JSP engine’ το οποίο είναι ένα HTTP web server environment οπου μπορείς να τρέξεις java εφαρμογές.Μπαίνοντας στο ..."
   },
   
   {
@@ -65,7 +80,7 @@
     "url": "/posts/Weak-RSA/",
     "categories": "HackTheBox, Challenges",
     "tags": "htb",
-    "date": "2020-10-10 15:00:00 +0800",
+    "date": "2020-10-10 10:00:00 +0300",
     
 
 
@@ -80,7 +95,7 @@
     "url": "/posts/Jack/",
     "categories": "TryHackMe, CTF",
     "tags": "ctf, writeup, thm",
-    "date": "2020-10-10 15:00:00 +0800",
+    "date": "2020-10-10 10:00:00 +0300",
     
 
 
@@ -95,7 +110,7 @@
     "url": "/posts/Templed/",
     "categories": "HackTheBox, Challenges",
     "tags": "htb",
-    "date": "2020-10-06 15:00:00 +0800",
+    "date": "2020-10-06 10:00:00 +0300",
     
 
 
@@ -110,7 +125,7 @@
     "url": "/posts/Find-The-Easy-Pass/",
     "categories": "HackTheBox, Challenges",
     "tags": "challenges, writeup, beginner track",
-    "date": "2020-10-05 15:00:00 +0800",
+    "date": "2020-10-05 10:00:00 +0300",
     
 
 
@@ -125,7 +140,7 @@
     "url": "/posts/Lame/",
     "categories": "HackTheBox, CTF",
     "tags": "htb, ctf, begginer track",
-    "date": "2020-10-01 15:00:00 +0800",
+    "date": "2020-10-01 10:00:00 +0300",
     
 
 
@@ -140,7 +155,7 @@
     "url": "/posts/FreeLancer/",
     "categories": "HackTheBox, Challenges",
     "tags": "htb",
-    "date": "2020-09-22 15:00:00 +0800",
+    "date": "2020-09-22 10:00:00 +0300",
     
 
 
@@ -155,7 +170,7 @@
     "url": "/posts/Emdee-five-for-life/",
     "categories": "HackTheBox, Challenges",
     "tags": "challenges, writeup",
-    "date": "2020-09-22 15:00:00 +0800",
+    "date": "2020-09-22 10:00:00 +0300",
     
 
 
