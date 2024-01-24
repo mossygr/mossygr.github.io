@@ -1,0 +1,17 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '_posts/*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build and deploy Jekyll site
+      uses: helaili/jekyll-action@v2
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
