@@ -1,4 +1,8 @@
 ---
+description: "Η πρόκληση Emdee five for life του HackTheBox: μια μικρή άσκηση αυτοματισμού με HTTP requests και χρονικό περιορισμό."
+image:
+  path: /assets/img/sample/session-get.png
+  alt: "Στιγμιότυπο από το άρθρο Emdee five for life"
 title: Emdee five for life
 date: 2020-09-22 10:00:00 +0300
 categories: [HackTheBox, Challenges]

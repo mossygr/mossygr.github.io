@@ -1,4 +1,8 @@
 ---
+description: "Σημειώσεις από το δωμάτιο Reverse Engineering του TryHackMe: παρατήρηση της εκτέλεσης και αναζήτηση στοιχείων μέσα στα προγράμματα."
+image:
+  path: /assets/img/sample/thm-reverse-enginnering-intro.png
+  alt: "Στιγμιότυπο από το άρθρο TryHackMe - Reverse Engineering"
 title: TryHackMe - Reverse Engineering
 date: 2020-12-18 10:00:00 +0300
 categories: [TryHackMe, CTF]

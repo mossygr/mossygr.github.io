@@ -1,4 +1,8 @@
 ---
+description: "Αναζητώντας τον κωδικό στην πρόκληση Find The Easy Pass: παρατήρηση του προγράμματος και βήματα στο περιβάλλον αποσφαλμάτωσης."
+image:
+  path: /assets/img/sample/HTC/find_the_code_screen.png
+  alt: "Στιγμιότυπο από το άρθρο Find The Easy Pass"
 title: Find The Easy Pass
 date: 2020-10-05 10:00:00 +0300
 categories: [HackTheBox, Challenges]
