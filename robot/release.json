@@ -1,6 +1,9 @@
 {
-  "source_commit": "7bac83dee0444a5e45cfe4f02d173f6e194b8387",
-  "guide_sha256": "e2b70519f3d64ef20876a4b5a90434882c2e280b10938c321cc1be09161a8fa2",
-  "qa_snapshot_sha256": "85073bbd3163ec1b2d12a9c9ba0c12dc68c662dcefa5f112977b97ea5c51d6b3",
-  "published_at": "2026-10-21T13:28:08.474308+00:00"
+  "source_commit": "aeae52dc73df8829af2aea930ffad8b99f4fbd26",
+  "design": "m0ss1-notebook",
+  "qa_snapshot_sha256": "6ba7411cd8bacaefb5585ee22987974f97a4cdcec23a9aeb54c6c4771ce5e2e1",
+  "published_at": "2026-10-21T16:38:21.467027+00:00",
+  "home_sha256": "21196c1cf06a6a077b075a8548329f7841c66e12fb00ba078098ffd2625a01bb",
+  "guide_sha256": "d37389cdd0cbd7bec93f2d1c9feff8d3b6113f05d6a438e19444fd25a8423bb6",
+  "service_worker_sha256": "1c34de5278a720fa3eee81f1951131ff646f24f7d0ea483359d2771aab0e1a3e"
 }
