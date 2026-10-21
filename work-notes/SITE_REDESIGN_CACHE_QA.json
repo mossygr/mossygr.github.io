@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "fixture": "isolated localhost4189 legacy cache-first root worker + independent gym scope; actual built migration sw.js",
+  "title": "m0ss1 | Ένας τεχνολογικός περιπατητής σε κατάσταση απεξάρτησης..",
+  "header": true,
+  "scopes": [
+    "http://127.0.0.1:4189/gym-app/"
+  ],
+  "cacheKeys": [
+    "gym-fixture-cache"
+  ],
+  "gymCache": "keep-gym-cache",
+  "gymSentinel": "unchanged",
+  "gymController": "http://127.0.0.1:4189/gym-app/sw.js"
+}

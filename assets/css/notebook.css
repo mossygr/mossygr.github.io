@@ -12,3 +12,5 @@
 .prose .robot-guide .tools button,.prose .robot-guide .winfo .x{color:var(--fg)!important}
 
 @media(prefers-color-scheme:dark){html:not([data-mode=light]) .button-link,html:not([data-mode=light]) .prose button{color:#17291f}}
+/* Legacy article blue headings follow the readable shared light/dark accent. */
+.prose font[color="blue"]{color:var(--accent)}
