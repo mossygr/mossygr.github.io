@@ -1,0 +1,37 @@
+<section class="tab on" id="t-diag">
+<h2 id="guide-section-1">Διάγραμμα καλωδίωσης</h2>
+<div class="note-card" style="margin-top:0"><b class="t">⚠ Η ESP32-CAM σχεδιάζεται ΑΠΟ ΠΙΣΩ</b>
+Κράτα την πλακέτα έτσι ώστε να <b>βλέπεις τα γράμματα των pin</b> (όχι την κάμερα), με την κεραία προς τα πάνω. Τότε η σειρά με τα <b>5V · GND · IO12…IO4</b> είναι δεξιά, όπως στο σχέδιο.
+Το <b>5V</b> είναι το pin στην άκρη <b>μακριά από την κεραία</b>, δίπλα στο τσιπάκι AMS1117. Αν δεις την κάμερα, η σειρά αυτή είναι <b>αριστερά</b>. Ένα καλώδιο 5V στο 3V3 καταστρέφει την πλακέτα.</div>
+<div class="card"><div class="viewer" id="viewer-pict" tabindex="0" role="group" aria-label="Διαδραστικό διάγραμμα: βέλη για μετακίνηση, συν και πλην για ζουμ, Home για επαναφορά">
+<div class="tools"><button data-z="in" aria-label="Μεγέθυνση">+</button><button data-z="out" aria-label="Σμίκρυνση">−</button><button data-z="fit" aria-label="Προσαρμογή" title="Όλο το σχέδιο">⤢</button></div>
+<div class="winfo" id="info"></div>
+<div class="hint">Τσίμπημα / ροδέλα: zoom · σύρσιμο: μετακίνηση · πάτημα: φώτισε καλώδιο · πληκτρολόγιο: βέλη, + / −, Home</div>
+{% include robot/pict.svg %}
+</div>
+<div class="legend">
+<span style="color:#d7263d"><i></i>+11.1V μπαταρίας (0.5mm²)</span>
+<span style="color:#6b7280"><i style="border-top-color:#2b2b2b;outline:1px solid #888"></i>GND</span>
+<span style="color:#f28c18"><i></i>+5V</span>
+<span style="color:#8a5a2b"><i></i>μοτέρ</span>
+<span style="color:#9b45d9"><i></i>ήχος</span>
+<span style="color:#2563eb"><i style="border-top-width:3px"></i>σήματα (Dupont)</span>
+<span style="color:#b26a00"><i style="border-top-style:dashed"></i>προαιρετικό, συνιστάται</span>
+</div>
+</div>
+<div class="grid2" style="margin-top:10px">
+<div class="note-card info"><b class="t">Τα μήκη στο σχέδιο δεν είναι πραγματικά</b>
+Κόψε κάθε καλώδιο όσο πιο κοντό γίνεται. Ειδικά τα <b>#11 / #12</b> (5V/GND της ESP32-CAM): 0.5mm² με θηλυκό ακροδέκτη Dupont (crimp ή κόλληση), <b>κάτω από 15 cm</b>. Λεπτά και μακριά καλώδια εδώ = επανεκκινήσεις.</div>
+<div class="note-card info"><b class="t">Πώς διαβάζεται</b>
+Η ESP32-CAM φαίνεται <b>από πίσω</b> (εκεί είναι τυπωμένα τα ονόματα των pin)· η κάμερα κοιτάει μακριά σου.
+Ο L298N είναι στραμμένος με την ψύκτρα δεξιά. Στις βίδες OUT1–OUT4 μπαίνουν <b>δύο</b> καλώδια (δύο μοτέρ παράλληλα).</div>
+<div class="note-card"><b class="t">Πριν ανάψεις τον διακόπτη</b>
+<ol style="margin:4px 0 0;padding-left:1.2em">
+<li>Με πολύμετρο: <b>κανένα βραχυκύκλωμα</b> μεταξύ WAGO A και WAGO B.</li>
+<li>Βγάλε την ESP32-CAM από τα Dupont, άναψε: στο Dupont του καλωδίου #11 μέτρα <b>5.0–5.2V</b> ως προς το #12. Σβήσε.</li>
+<li>Βάλε την ESP32-CAM: το #11 πρέπει να είναι στο pin που γράφει <b>5V</b> και το #12 στο <b>GND ακριβώς δίπλα</b>. <b>ΠΟΤΕ στο 3V3</b> (απέναντι σειρά).</li>
+<li>Ο πυκνωτής C1 έχει τη λωρίδα (−) προς το GND.</li>
+<li>Πρώτη φορά: ρόδες στον αέρα.</li></ol></div>
+</div>
+</section>
+
