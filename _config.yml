@@ -26,7 +26,7 @@ description: >- # used by seo meta and the atom feed
   Ένας τεχνολογικός περιπατητής σε κατάσταση απεξάρτησης..
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://mossygr.github.io"
 
 github:
   username: mossygr # change to your github username
@@ -182,6 +182,15 @@ exclude:
   - "*.gem"
   - "*.gemspec"
   - tools
+  - templates
+  - AGENTS.md
+  - SITE_EDITING_GUIDE.md
+  - work-notes
+  - site-handoff
+  - .agents
+  - .codex
+  - .bundle
+  - vendor
   - README.md
   - CHANGELOG.md
   - LICENSE

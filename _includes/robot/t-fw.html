@@ -1,0 +1,57 @@
+<section class="tab" id="t-fw">
+<h2 id="guide-section-11">Firmware: ανέβασμα και πρώτη χρήση</h2>
+<div class="grid2"><div>
+<h3 id="guide-section-12">1. Arduino IDE</h3>
+<ol class="steps">
+<li>Arduino IDE 2.x → <i>File → Preferences → Additional boards manager URLs</i>:<br><code>https://espressif.github.io/arduino-esp32/package_esp32_index.json</code></li>
+<li><i>Tools → Board → Boards Manager</i> → «esp32» της Espressif, έκδοση <b>3.x</b> (δοκιμάστηκε η 3.3.6).</li>
+<li>Άνοιξε τον φάκελο <code>robot_firmware</code> (το <code>robot_firmware.ino</code> μαζί με τα <code>.h</code>).</li>
+<li>Στο <code>robot_config.h</code> άλλαξε τουλάχιστον τον κωδικό <code>AP_PASSWORD</code> (8+ χαρακτήρες) και το <code>OTA_PASSWORD</code>.</li>
+<li>Ρυθμίσεις <i>Tools</i>:
+<ul><li>Board: <b>AI Thinker ESP32-CAM</b> (το PSRAM ενεργοποιείται αυτόματα με αυτή την πλακέτα· αν διαλέξεις «ESP32 Dev Module», βάλε PSRAM: Enabled)</li>
+<li>Partition Scheme: <b>Minimal SPIFFS (1.9MB APP with OTA/128KB SPIFFS)</b>. <b>Για να δουλέψει το OTA πρέπει να το διαλέξεις ΑΠΟ ΤΟ ΠΡΩΤΟ upload</b>· η προεπιλογή «Huge APP» δεν έχει χώρο OTA (το firmware τότε γράφει προειδοποίηση στο Serial και απλώς δεν ενεργοποιεί το OTA).</li>
+<li>Upload Speed: αν το upload σταματά στη μέση, βάλε <b>115200</b>.</li>
+<li>Port: η θύρα της βάσης MB (CH340).</li></ul></li>
+</ol>
+<h3 id="guide-section-13">2. Ανέβασμα με τη βάση ESP32-CAM-MB</h3>
+<ol class="steps">
+<li><b>Σβήσε το ρομπότ.</b> Βγάλε την ESP32-CAM από τα Dupont του ρομπότ και κούμπωσέ τη στη MB με την κάμερα προς τα πάνω, <b>ταιριάζοντας τα γράμματα</b>: το <b>5V/GND</b> της ESP32-CAM πάνω στο <b>5V/GND</b> της MB (στις περισσότερες MB, η άκρη με το microSD/5V είναι προς το USB). Οι δύο σειρές έχουν από 8 pin, άρα μπαίνει και ανάποδα: έλεγξε δύο φορές.</li>
+<li>Σύνδεσε USB στον υπολογιστή. Αν δεν εμφανίζεται θύρα, εγκατάστησε τον οδηγό CH340.</li>
+<li>Πάτα <b>Upload</b>. Αν κολλήσει στο «Connecting…», κράτα πατημένο το <b>IO0</b> της MB, πάτα <b>RST</b> στην ESP32-CAM, άφησε το IO0.</li>
+<li>Άνοιξε τον Serial Monitor στα <b>115200</b> και πάτα RST (αν δεν δείχνει τίποτα, ξαναπάτα RST στην ESP32-CAM): θα δεις «Access Point "Robot-4WD"» και τη διεύθυνση <code>http://192.168.4.1</code>.</li>
+<li>Βγάλε το USB, βγάλε την ESP32-CAM από τη MB και ξαναβάλ' τη στα καλώδια του ρομπότ (5V/GND/IO στις σωστές θέσεις, δες τον πίνακα).</li>
+</ol>
+<div class="note-card"><b class="t">Ποτέ USB και μπαταρία μαζί</b> Η MB δίνει 5V κατευθείαν στην πλακέτα. Αν το ρομπότ είναι αναμμένο, τα δύο τροφοδοτικά συγκρούονται.</div>
+<h3 id="guide-section-14">3. Επόμενες αναβαθμίσεις χωρίς MB (OTA)</h3>
+<p>Με το κινητό ή το laptop συνδεδεμένο στο Wi-Fi «Robot-4WD», στο Arduino IDE εμφανίζεται θύρα δικτύου <b>robot4wd</b>. Διάλεξέ τη και πάτα Upload (ζητά τον <code>OTA_PASSWORD</code>). Τα μοτέρ σταματούν αυτόματα κατά την αναβάθμιση.</p>
+</div><div>
+<h3 id="guide-section-15">4. Πρώτη εκκίνηση και σύνδεση κινητού</h3>
+<ol class="steps">
+<li>Σήκωσε το ρομπότ ώστε οι ρόδες να μην ακουμπούν. Άναψε τον διακόπτη.</li>
+<li>Στο κινητό: Ρυθμίσεις → Wi-Fi → <b>Robot-4WD</b>, κωδικός από το <code>AP_PASSWORD</code>. Αν το κινητό πει «χωρίς Internet», επίλεξε «παραμονή συνδεδεμένο».</li>
+<li>Άνοιξε τον browser στο <code>http://192.168.4.1</code>. Πάνω βλέπεις την κάμερα, από κάτω joystick, φως και ήχο. Η τελεία δίπλα στον τίτλο γίνεται πράσινη όταν υπάρχει σύνδεση.</li>
+<li>Σπρώξε λίγο το joystick μπροστά: πρέπει να γυρίσουν και οι 4 ρόδες προς τα εμπρός. Αν μια πλευρά γυρίζει ανάποδα, άλλαξε <code>INVERT_LEFT</code>/<code>INVERT_RIGHT</code>. Αν το δεξί/αριστερό είναι μπερδεμένα, αντάλλαξε τα ζεύγη OUT1/2 ↔ OUT3/4.</li>
+<li>Αν χαθεί η σύνδεση για μισό δευτερόλεπτο, τα μοτέρ σταματούν μόνα τους.</li>
+</ol>
+<p>Προαιρετικά, για σύνδεση στο Wi-Fi του σπιτιού, συμπλήρωσε <code>STA_SSID</code>/<code>STA_PASSWORD</code>: η IP φαίνεται στον Serial Monitor. Αν αποτύχει μέσα σε 10 s, γυρίζει σε Access Point.</p>
+<h3 id="guide-section-16">5. Τραγούδια στο DFPlayer Pro</h3>
+<ol class="steps">
+<li>Σύνδεσε το DFPlayer Pro με καλώδιο <b>USB-C</b> στον υπολογιστή (μπορεί να μείνει στη θέση του· καλό είναι το ρομπότ να είναι σβηστό). Εμφανίζεται σαν <b>δίσκος USB</b> 128MB.</li>
+<li>Αντέγραψε τα αρχεία στη ρίζα του δίσκου με ονόματα <code>01.mp3</code>, <code>02.mp3</code>, … (με αυτή τη σειρά, ένα-ένα). Κατά προτίμηση mono, 128 kbps.</li>
+<li>Το κουμπί «♪ 1» παίζει το 1ο αρχείο κ.ο.κ. Με <code>TRACK_BY_FILENAME 0</code> (προεπιλογή) η αρίθμηση ακολουθεί τη <b>σειρά αντιγραφής</b>. Αν θες να παίζει ακριβώς με βάση το όνομα, βάλε <code>TRACK_BY_FILENAME 1</code>. Το <code>TRACK_COUNT</code> ορίζει πόσα κουμπιά εμφανίζονται.</li>
+<li>«Αφαίρεση με ασφάλεια» πριν βγάλεις το USB-C.</li>
+</ol>
+<div class="note-card info"><b class="t">Αν παίζει μόνο του κάθε φορά που ανάβει (προαιρετικό)</b>
+Κάποια DFPlayer ξεκινούν να παίζουν στο άναμμα. Τότε: (1) φτιάξε ένα αρχείο ~1 s σιωπής με όνομα <code>silence.mp3</code>· (2) αντέγραψέ το στη ρίζα του δίσκου <b>ΤΕΛΕΥΤΑΙΟ</b>, μετά από όλα τα τραγούδια (αλλιώς μετακινούνται τα νούμερα των κουμπιών)· (3) στο <code>robot_config.h</code> βάλε <code>DFP_STOP_ON_BOOT 1</code> και ξανανέβασε. Το ρομπότ παίζει τη σιωπή στην εκκίνηση και η μονάδα σταματά.</div>
+<div class="note-card info"><b class="t">Ένταση</b> Το DFPlayer δεν απαντά πίσω (το TX του δεν είναι συνδεδεμένο), οπότε η ένταση που βλέπεις είναι αυτή που έστειλε τελευταία το ρομπότ. Ξεκινά στο <code>DFP_DEFAULT_VOLUME</code> (20). Σε κάθε άναμμα το ρομπότ ξαναστέλνει τις ρυθμίσεις (χωρίς φωνητικό μήνυμα εκκίνησης, ένα κομμάτι τη φορά).</div>
+<h3 id="guide-section-17">Τι κάνει το firmware</h3>
+<ul>
+<li>Κάμερα MJPEG στη θύρα 81 (<code>/stream</code>), σελίδα ελέγχου στη θύρα 80, έλεγχος μέσω WebSocket <code>/ws</code> (~20 μηνύματα/δευτ.) με εφεδρικό HTTP <code>/control</code>.</li>
+<li>PWM 1 kHz, 8-bit στα IN1–IN4 (κανάλια LEDC 2–5), όριο 65%, ελάχιστο 30%, ομαλή επιτάχυνση, failsafe 500 ms.</li>
+<li>Φλας στο GPIO4 (κανάλι LEDC 6) με ρύθμιση φωτεινότητας.</li>
+<li>DFPlayer Pro μέσω εντολών AT στο GPIO2, 115200 baud.</li>
+</ul>
+</div></div>
+</section>
+
+<div class="source-note"><p>Το διάγραμμα, το harness και ο πίνακας παράγονται από το ίδιο μοντέλο δεδομένων (tools/model.py) και ελέγχονται αυτόματα από το tools/check.py.</p><p>Η παραπάνω δήλωση προέρχεται από την αρχική πηγή. Τα tools/model.py και tools/check.py δεν παραδόθηκαν και ο έλεγχός τους δεν έχει εκτελεστεί.</p></div>

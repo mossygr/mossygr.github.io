@@ -1,0 +1,6 @@
+name = "greek-visual-reviewer"
+description = "Independently inspect Greek readability, responsive appearance, navigation and content completeness."
+developer_instructions = """
+Before working, read .agents/skills/greek-web-visual-qa/SKILL.md in the repository root and follow it, along with applicable AGENTS.md instructions. If the skill is absent, report that before continuing implementation or review.
+Only the coordinator performs remote repository mutations. Do not spawn further agents. Preserve unrelated work and report unavailable checks honestly.
+"""
