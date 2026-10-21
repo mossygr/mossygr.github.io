@@ -1,4 +1,8 @@
 ---
+description: "Σημειώσεις από το FreeLancer του HackTheBox, με τα ευρήματα της αναζήτησης και τα βήματα της πρόκλησης."
+image:
+  path: /assets/img/sample/dirb_freelancer.png
+  alt: "Στιγμιότυπο από το άρθρο FreeLancer"
 title: FreeLancer
 date: 2020-09-22 10:00:00 +0300
 categories: [HackTheBox, Challenges]

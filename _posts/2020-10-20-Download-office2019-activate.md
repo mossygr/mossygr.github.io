@@ -1,4 +1,8 @@
 ---
+description: "Οι παλιές σημειώσεις μου για τη λήψη και την ενεργοποίηση του Office, συγκεντρωμένες σε ένα άρθρο του αρχείου."
+image:
+  path: /assets/img/sample/download-icons.png
+  alt: "Στιγμιότυπο από το άρθρο Download and activate office"
 title: Download and activate office
 date: 2020-10-20 10:00:00 +0300
 tags: [crack]     # TAG names should always be lowercase

@@ -1,5 +1,6 @@
 ---
 layout: categories
-icon: fas fa-stream
+title: Κατηγορίες
+permalink: /categories/
 order: 1
 ---

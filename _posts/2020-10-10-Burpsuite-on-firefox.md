@@ -1,4 +1,8 @@
 ---
+description: "Ρυθμίζουμε τον Firefox για χρήση με το Burp Suite, από τον proxy έως το πιστοποιητικό που χρειάζεται για την επιθεώρηση της κίνησης."
+image:
+  path: /assets/img/sample/tutorials/burpsuite-settings.png
+  alt: "Στιγμιότυπο από το άρθρο Use BurpSuite on firefox"
 title: Use BurpSuite on firefox
 date: 2021-03-11 10:00:00 +0300
 categories: [Burpsuite, tutorials]

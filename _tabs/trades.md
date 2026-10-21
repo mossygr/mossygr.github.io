@@ -44,7 +44,8 @@ trades:
       <td>{{ trade.profit_loss }}$</td>
       <td>{{ trade.fees }}$</td> <!-- Add this line to display fees -->
       <td>
-        <a href="{{ trade.screenshot_url }}" target="_blank">{{ trade.date }} Screenshot</a>
+        {% assign trade_image = site.static_files | where: 'path', trade.screenshot_url | first %}
+        {% if trade_image %}<a href="{{ trade.screenshot_url | relative_url }}" target="_blank" rel="noopener">{{ trade.date }} Screenshot</a>{% else %}<span>Δεν έχει προστεθεί εικόνα</span>{% endif %}
       </td>
     </tr>
     {% endfor %}
