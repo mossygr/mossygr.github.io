@@ -1,6 +1,6 @@
 # Ανεξάρτητος πραγματικός οπτικός έλεγχος οδηγού 4WD
 
-Ημερομηνία 2026-10-21. Reviewer: greek-visual-reviewer, με το εγκατεστημένο `.agents/skills/greek-web-visual-qa/SKILL.md`. **Τοπικό QA: PASS**. Η δημόσια επαλήθευση θα καταγραφεί χωριστά μετά το deployment.
+Ημερομηνία 2026-10-21. Reviewer: greek-visual-reviewer, με το εγκατεστημένο `.agents/skills/greek-web-visual-qa/SKILL.md`. **Τοπικό QA: PASS**. **Δημόσιο QA: PASS**, όπως καταγράφεται στο παράρτημα στο τέλος.
 
 ## Σταθερή έκδοση και εργαλεία
 
@@ -65,4 +65,17 @@
 
 ## Όρια
 
-Δεν έγινε hardware/electrical πιστοποίηση, compilation του Arduino firmware, δοκιμή πραγματικού ρομπότ, φυσική κινητή συσκευή, screen reader ή ανεξάρτητο Safari/Firefox. Η οπτική έγκριση αφορά την παρατηρημένη απόδοση Chromium και την ενσωμάτωση των παραδομένων πηγών. Η δημόσια επαλήθευση αναμένει πραγματικό deployment. Ο reviewer δεν έκανε remote mutations ούτε αλλαγές στον κώδικα του site, στο `/gym-app` ή στο Supabase.
+Δεν έγινε hardware/electrical πιστοποίηση, compilation του Arduino firmware, δοκιμή πραγματικού ρομπότ, φυσική κινητή συσκευή, screen reader ή ανεξάρτητο Safari/Firefox. Η οπτική έγκριση αφορά την παρατηρημένη απόδοση Chromium και την ενσωμάτωση των παραδομένων πηγών. Η δημόσια έκδοση επαληθεύτηκε μετά το deployment όπως καταγράφεται παρακάτω. Ο reviewer δεν έκανε remote mutations ούτε αλλαγές στον κώδικα του site, στο `/gym-app` ή στο Supabase.
+
+## Παράρτημα — δημόσια επαλήθευση μετά το deployment
+
+**PASS**, 2026-10-21. Ανοίχτηκε πραγματικά το [https://mossygr.github.io/robot/](https://mossygr.github.io/robot/) σε νέο Chromium context, χωρίς local preview evidence ως υποκατάστατο δημόσιου ελέγχου. Η δημόσια σελίδα επέστρεψε HTTP200, 287657 bytes, SHA-256 `e2b70519f3d64ef20876a4b5a90434882c2e280b10938c321cc1be09161a8fa2`, ακριβώς ο αναμενόμενος οδηγός.
+
+Το πραγματικό `/robot/release.json` επέστρεψε source commit `7bac83dee0444a5e45cfe4f02d173f6e194b8387` και το εγκεκριμένο QA snapshot `85073bbd3163ec1b2d12a9c9ba0c12dc68c662dcefa5f112977b97ea5c51d6b3`. Deployment commit που ανέφερε ο coordinator: `ec2a44b51c4ae6a879cc787d734a9cc36eef73d8` στο gh-pages. [Merged PR #1](https://github.com/mossygr/mossygr.github.io/pull/1).
+
+Επαναλήφθηκαν browser captures 360×800, 390×844, 768×1024 και 1440×900 επάνω στο δημόσιο HTTPS site. Επιθεωρήθηκαν ξανά οι δημόσιες mobile/desktop εισαγωγές, mobile dark πίνακας, desktop επιλογή σύνδεσης #11, διορθωμένη μετάβαση firmware/λήψεων και δημόσιες εικόνες αναφοράς. Δεν εμφανίστηκε νέο σφάλμα, page JavaScript error ή αποτυχημένο HTTP asset. Τα πραγματικά δημόσια ZIP, δύο PNG και CSS/JS επέστρεψαν HTTP200· το ZIP και οι PNG έχουν ακριβώς τα bytes/hashes του πίνακα παραπάνω. Και οι δύο lazy εικόνες φορτώθηκαν μετά την κύλιση.
+
+- [Δημόσιο screenshot κινητού — επιθεωρήθηκε](screenshots/robot-public-mobile.png)
+- [Δημόσιο screenshot υπολογιστή — επιθεωρήθηκε](screenshots/robot-public-desktop.png)
+
+Αναλυτικά προσωρινά artifacts: `/tmp/robot-qa/public-final/results.json`, `http-check.json` και screenshots της συνεδρίας. Η μόνη μεταβολή reviewer μετά τη δημοσίευση είναι το παρόν excluded audit report και τα δύο screenshots· δεν απαιτείται αλλαγή περιεχομένου του δημόσιου οδηγού.
