@@ -77,17 +77,17 @@ html[data-bs-theme="dark"] .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1
 .robot-guide #harness .wire text{fill:inherit}
 .robot-guide .hwrap{overflow:auto;border-radius:12px;background:var(--canvas);padding:6px;-webkit-overflow-scrolling:touch}
 .robot-guide .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-.robot-guide table{width:100%;border-collapse:collapse;font-size:.92rem;min-width:680px}
-.robot-guide th,.robot-guide td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
-.robot-guide th{color:var(--mut);font-weight:600;position:sticky;top:0;background:var(--card)}
-.robot-guide tbody tr{cursor:pointer}
-.robot-guide tbody tr:hover{background:color-mix(in srgb,var(--acc) 7%,transparent)}
-.robot-guide tbody tr.sel{background:color-mix(in srgb,#ffd400 28%,transparent)}
+.robot-guide table#conn{width:100%;border-collapse:collapse;font-size:.92rem;min-width:680px}
+.robot-guide #conn th,.robot-guide #conn td{border-bottom:1px solid var(--line);padding:7px 8px;text-align:left;vertical-align:top}
+.robot-guide #conn th{color:var(--mut);font-weight:600;position:sticky;top:0;background:var(--card)}
+.robot-guide #conn tbody tr{cursor:pointer}
+.robot-guide #conn tbody tr:hover{background:color-mix(in srgb,var(--acc) 7%,transparent)}
+.robot-guide #conn tbody tr.sel{background:color-mix(in srgb,#ffd400 28%,transparent)}
 .robot-guide .nb{display:inline-block;min-width:28px;text-align:center;border-radius:9px;background:var(--c);color:#fff;font-weight:700;padding:1px 6px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.25)}
-.robot-guide tr[data-w="20"] .nb,.robot-guide tr[data-w="19"] .nb,.robot-guide tr[data-w="18"] .nb{color:#111}
+.robot-guide #conn tr[data-w="20"] .nb,.robot-guide #conn tr[data-w="19"] .nb,.robot-guide #conn tr[data-w="18"] .nb{color:#111}
 .robot-guide .sw{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:6px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.3)}
-.robot-guide td.note{color:var(--mut);font-size:.88rem}
-.robot-guide td.note.crit{color:var(--warn);font-weight:600}
+.robot-guide #conn td.note{color:var(--mut);font-size:.88rem}
+.robot-guide #conn td.note.crit{color:var(--warn);font-weight:600}
 .robot-guide .opt{display:inline-block;font-size:.75rem;color:#b26a00;border:1px dashed #b26a00;border-radius:6px;padding:0 5px;margin-left:4px}
 .robot-guide .note-card{border-left:4px solid var(--warn);background:var(--warnbg);padding:9px 12px;border-radius:9px;margin:8px 0}
 .robot-guide .note-card.info{border-left-color:var(--info);background:var(--infobg)}
@@ -96,8 +96,6 @@ html[data-bs-theme="dark"] .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1
 .robot-guide .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:10px}
 .robot-guide ol.steps{padding-left:1.3em}
 .robot-guide ol.steps li{margin:6px 0}
-.robot-guide code,.robot-guide kbd{font:13px ui-monospace,Menlo,monospace;background:color-mix(in srgb,var(--fg) 8%,transparent);padding:1px 5px;border-radius:5px}
-.robot-guide pre{font:13px/1.45 ui-monospace,Menlo,monospace;background:color-mix(in srgb,var(--fg) 7%,transparent);padding:10px;border-radius:9px;overflow-x:auto}
 .robot-guide .legend{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:.85rem;color:var(--mut);margin:8px 2px 0}
 .robot-guide .legend span{display:inline-flex;align-items:center;gap:6px}
 .robot-guide .legend i{display:inline-block;width:26px;height:0;border-top:5px solid currentColor;border-radius:3px}
@@ -124,7 +122,7 @@ html[data-bs-theme="dark"] .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1
 .robot-guide nav.tabs{position:static;display:flex;flex-wrap:wrap;gap:.5rem}
 .robot-guide nav.tabs a{display:block;padding:.4rem .75rem;border:1px solid var(--line);border-radius:2rem;color:var(--fg);background:var(--card)}
 .robot-guide .grid2{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
-.robot-guide code{overflow-wrap:anywhere;white-space:normal}
+.robot-guide :not(pre)>code{overflow-wrap:anywhere;white-space:normal}
 .robot-guide .hint{display:block;position:static;max-width:100%;margin:.5rem 0}
 .robot-guide .viewer .hint{position:absolute;bottom:.4rem;left:.4rem;margin:0;max-width:calc(100% - 70px);font-size:.7rem;pointer-events:none}
 .robot-guide .viewer{outline-offset:3px}
@@ -147,3 +145,11 @@ html[data-bs-theme="dark"] .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1
 
 /* Article prose inherits the official theme typography and page surface. */
 .robot-guide{--bg:var(--main-bg);--fg:var(--text-color);--mut:var(--text-muted-color);background:transparent;padding:0;max-width:none}
+
+/* Continuous prose uses native typography; technical viewers keep their own layout. */
+.robot-guide .grid2{display:block}
+.robot-guide .robot-materials dt,.robot-guide .firmware-files dt{font-weight:600;margin-top:1rem}
+.robot-guide .robot-materials dd,.robot-guide .firmware-files dd{margin:.25rem 0 1rem}
+.robot-guide .highlight code{white-space:pre;overflow-wrap:normal}
+
+.robot-guide #t-notes>p>strong:first-child{display:block;margin-bottom:.25rem}

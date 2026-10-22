@@ -1,0 +1,50 @@
+[
+  {
+    "file": "robot_firmware.ino",
+    "start_line": 136,
+    "code": "void loop() {\n  motors::update();   // ράμπα + failsafe 500 ms\n  light::update();\n  audio::update();    // στέλνει τις εντολές AT από την ουρά\n#if ENABLE_OTA\n  if (s_otaReady) ArduinoOTA.handle();\n#endif\n  delay(2);\n}",
+    "sha256": "4ef0a99cc8f840128fecc7326830b197d930cbf05a8fd4320dd0e289624e065f"
+  },
+  {
+    "file": "robot_web.h",
+    "start_line": 59,
+    "code": "    case 'J':\n      if (readInt(p, -1000, 1000, &a) && *p++ == ',' && readInt(p, -1000, 1000, &b)) {\n        motors::setJoystick(a, b);\n        return true;\n      }\n      break;",
+    "sha256": "ff42a385a8650268915639cbdf9a5007d881a21eded4e9af540e0d4547247d79"
+  },
+  {
+    "file": "robot_motors.h",
+    "start_line": 63,
+    "code": "  int l = y + x;\n  int r = y - x;\n  // κανονικοποίηση ώστε |l|,|r| ≤ 100 χωρίς να χαλάει η αναλογία\n  int m = max(abs(l), abs(r));\n  if (m > 100) {\n    l = l * 100 / m;\n    r = r * 100 / m;\n  }",
+    "sha256": "c699cd77c32588bfaa9b5d5664f2a7f38a5897a77d48eff259005101b49a2ff0"
+  },
+  {
+    "file": "robot_config.h",
+    "start_line": 57,
+    "code": "#define MAX_DUTY       166         // ≈ 65 %\n#define MIN_DUTY       77          // ≈ 30 %, κάτω από αυτό δεν ξεκινούν\n#define JOY_DEADZONE   8           // % – νεκρή ζώνη joystick\n#define RAMP_UP_STEP   6           // μέγιστη αύξηση duty ανά βήμα (επιτάχυνση)\n#define RAMP_DOWN_STEP 20          // μέγιστη μείωση duty ανά βήμα (φρενάρισμα)\n#define RAMP_PERIOD_MS 10          // βήμα ράμπας\n#define FAILSAFE_MS    500         // σταματά αν δεν έρθει εντολή τόσο χρόνο",
+    "sha256": "5cf8d486bb37fabc4d6ec0b1ae6ef3caccb667c70afb59486230411c770ff6e8"
+  },
+  {
+    "file": "robot_motors.h",
+    "start_line": 139,
+    "code": "  if ((int32_t)(millis() - s_lastCmdMs) > (int32_t)FAILSAFE_MS) {\n    s_targetL = 0;\n    s_targetR = 0;\n  }",
+    "sha256": "ca0063497280984c2bf6af3dad95000af333170c62e6e70f031bfa491b925209"
+  },
+  {
+    "file": "robot_camera.h",
+    "start_line": 50,
+    "code": "  if (psramFound()) {\n    c.frame_size   = CAM_FRAME_SIZE;\n    c.jpeg_quality = CAM_JPEG_QUALITY;\n    c.fb_count     = 2;\n    c.fb_location  = CAMERA_FB_IN_PSRAM;\n  } else {\n    Serial.println(\"[ΚΑΜΕΡΑ] Δεν βρέθηκε PSRAM – έλεγξε ότι η πλακέτα είναι \\\"AI Thinker ESP32-CAM\\\"\");\n    c.frame_size   = FRAMESIZE_QVGA;\n    c.jpeg_quality = 15;\n    c.fb_count     = 1;\n    c.fb_location  = CAMERA_FB_IN_DRAM;\n    c.grab_mode    = CAMERA_GRAB_WHEN_EMPTY;\n  }",
+    "sha256": "f4a1262445291f6492efe71504f26e2c841765c888c627309365815297ac29a6"
+  },
+  {
+    "file": "robot_audio.h",
+    "start_line": 87,
+    "code": "inline void playTrack(int n) {\n  if (n < 1) return;\n  s_lastTrack = n;\n#if TRACK_BY_FILENAME\n  enqueue(\"AT+PLAYFILE=/%02d.mp3\", n);\n#else\n  enqueue(\"AT+PLAYNUM=%d\", n);\n#endif\n}",
+    "sha256": "d2e220e7c2403972aca9f14e547aaf3805f28b8329caeb768d22dae61a9e74ab"
+  },
+  {
+    "file": "robot_firmware.ino",
+    "start_line": 116,
+    "code": "      motors::lockOut();       // μοτέρ στο 0 και αγνόηση εντολών joystick\n      light::set(false);\n      light::update();\n      web::stopStream();       // ελευθερώνει Wi-Fi/CPU από τη ροή κάμερας",
+    "sha256": "b5299799082dcd5fd721ee7025732fbc9f48257ba032d90e8c8132987febed0b"
+  }
+]
