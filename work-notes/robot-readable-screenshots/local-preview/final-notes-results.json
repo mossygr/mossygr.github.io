@@ -1,0 +1,22 @@
+{
+  "snapshot": "f22d9bf7658f079e62886da73f9ea5d1d4eceac3ddc262373fa43d34392b282c",
+  "records": [
+    {
+      "w": 360,
+      "overflow": false,
+      "labels": 22,
+      "display": "block",
+      "copyExact": true,
+      "popupOpen": false,
+      "tocTop": 80.421875
+    },
+    {
+      "w": 1440,
+      "overflow": false,
+      "labels": 22,
+      "display": "block",
+      "copyExact": true,
+      "tocTop": 80.046875
+    }
+  ]
+}
