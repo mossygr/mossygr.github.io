@@ -10,8 +10,8 @@ toc: true
 comments: false
 categories: [Arduino, Ρομποτική]
 tags: [ESP32-CAM, 4WD, firmware]
-description: "Ο πλήρης οδηγός κατασκευής με ESP32-CAM. Διαδραστικά διαγράμματα, 36 συνδέσεις, firmware και όλα όσα χρειάζεσαι για την πρώτη εκκίνηση."
-excerpt: "Κατασκευάζουμε ένα ρομπότ 4WD με κάμερα και έλεγχο από το κινητό. Οδηγός καλωδίωσης, πίνακας συνδέσεων και firmware με πραγματικά αρχεία λήψης."
+description: "Στήνουμε την καλωδίωση, κάνουμε την πρώτη δοκιμή και καταλαβαίνουμε πώς ο κώδικας συνδέει το joystick με τα μοτέρ, την κάμερα και τον ήχο."
+excerpt: "Φτιάχνουμε ένα ρομπότ 4WD με κάμερα και χειρισμό από το κινητό: από τα υλικά και την πρώτη εκκίνηση μέχρι την εξήγηση του πραγματικού firmware."
 image:
   path: /assets/robot/desktop_diagram.png
   alt: "Το πλήρες διάγραμμα καλωδίωσης του ρομπότ 4WD με ESP32-CAM"
@@ -19,20 +19,26 @@ image:
 
 <div class="robot-guide" lang="el">
 {% include robot/introduction.html %}
+{% include robot/build-path.html %}
 {% include robot/t-diag.html %}
 {% include robot/t-harness.html %}
-{% include robot/t-table.html %}
-{% include robot/t-notes.html %}
 {% include robot/t-fw.html %}
+{% include robot/code-walkthrough.html %}
+{% include robot/troubleshooting.html %}
+{% include robot/t-notes.html %}
+{% include robot/t-table.html %}
 <section id="downloads">
 <h2 id="guide-downloads">Λήψεις και εικόνες αναφοράς</h2>
 <p><a href="{{ '/assets/robot/robot_firmware.zip' | relative_url }}" download>Λήψη του παρεχόμενου firmware (.zip)</a> — περιλαμβάνει το robot_firmware.ino και τα 6 αρχεία .h. Άλλαξε τα AP_PASSWORD και OTA_PASSWORD πριν από τη χρήση, όπως περιγράφεται στον οδηγό.</p>
 <p>Τα MP3 που περιγράφονται στον οδηγό δημιουργούνται ή αντιγράφονται από εσένα και δεν περιλαμβάνονται στις λήψεις.</p>
 <details><summary>Διαφορές ανάμεσα στον οδηγό και στο παρεχόμενο firmware</summary>
 <p>Ο οδηγός και τα δύο διαγράμματα περιγράφουν εξωτερικό ενισχυτή DFR0119. Στο ZIP, τα σχόλια του robot_config.h και η εντολή AT+AMP=ON του robot_audio.h αναφέρονται στον ενσωματωμένο ενισχυτή του DFPlayer Pro και σε ηχείο απευθείας στα L+/L− του. Οι δύο πηγές διατηρούνται όπως παραδόθηκαν· επιβεβαίωσε με τον συντάκτη ποια διάταξη χρησιμοποιείς.</p>
-<p>Ο οδηγός αναφέρει επιστροφή σε Access Point σε 10 s, ενώ το παρεχόμενο robot_config.h ορίζει STA_TIMEOUT_MS 20000 (20 s). Η ένδειξη καλωδίων 0.5mm² (22AWG) διατηρείται αυτούσια και χρειάζεται επιβεβαίωση από τον συντάκτη.</p>
+<p>Η αρχική έκδοση του οδηγού ανέφερε επιστροφή σε Access Point σε 10 s, ενώ το παρεχόμενο robot_config.h ορίζει STA_TIMEOUT_MS 20000 (20 s). Η ένδειξη καλωδίων 0.5mm² (22AWG) διατηρείται αυτούσια και χρειάζεται επιβεβαίωση από τον συντάκτη.</p>
 </details>
 <figure><a href="{{ '/assets/robot/desktop_diagram.png' | relative_url }}"><img src="{{ '/assets/robot/desktop_diagram.png' | relative_url }}" alt="Παρεχόμενη εικόνα αναφοράς του διαγράμματος καλωδίωσης σε υπολογιστή" width="1400" height="1000" loading="lazy"></a><figcaption>Εικόνα αναφοράς που παραδόθηκε μαζί με τον οδηγό. Πάτησε για πλήρες μέγεθος.</figcaption></figure>
 <figure class="phone-image"><a href="{{ '/assets/robot/firmware_ui_phone.png' | relative_url }}"><img src="{{ '/assets/robot/firmware_ui_phone.png' | relative_url }}" alt="Παρεχόμενη εικόνα της οθόνης ελέγχου firmware σε κινητό, με κάμερα και χειριστήρια" width="780" height="2074" loading="lazy"></a><figcaption>Οθόνη ελέγχου του firmware σε κινητό.</figcaption></figure>
 </section>
+
+<div class="source-note"><p>Το διάγραμμα, το harness και ο πίνακας παράγονται από το ίδιο μοντέλο δεδομένων (tools/model.py) και ελέγχονται αυτόματα από το tools/check.py.</p><p>Η παραπάνω δήλωση προέρχεται από την αρχική πηγή. Τα tools/model.py και tools/check.py δεν παραδόθηκαν και ο έλεγχός τους δεν έχει εκτελεστεί.</p></div>
+
 </div>
