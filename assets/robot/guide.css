@@ -114,7 +114,7 @@ html[data-mode="dark"] .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1;--m
 .robot-guide .card{padding:6px}
 .robot-guide table#conn{min-width:0}
 .robot-guide #conn thead{display:none}
-.robot-guide #conn tr{display:grid;grid-template-columns:44px 1fr;gap:0 8px;padding:8px 2px;border-bottom:1px solid var(--line)}
+.robot-guide #conn tr{display:grid;grid-template-columns:44px minmax(0,1fr);gap:0 8px;padding:8px 2px;border-bottom:1px solid var(--line)}
 .robot-guide #conn td{border:0;padding:1px 0}
 .robot-guide #conn td.num{grid-row:span 5}
 .robot-guide #conn td:nth-child(3)::before{content:"Από: ";color:var(--mut)}
@@ -142,3 +142,8 @@ html[data-mode="dark"] .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1;--m
 .robot-guide #conn{color:var(--fg);--bs-table-color:var(--fg)}
 .robot-guide #conn td:not(.note){color:var(--fg)}
 .robot-guide #conn tbody tr.sel{background:color-mix(in srgb,#ffd400 20%,var(--card))}
+
+/* Preserve full technical notes within native Chirpy tables. */
+.robot-guide #conn th,.robot-guide #conn td{white-space:normal;overflow-wrap:anywhere;min-width:0}
+
+.robot-guide #conn .nb{white-space:nowrap;overflow-wrap:normal;word-break:normal}

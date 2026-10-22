@@ -1,4 +1,0 @@
----
-layout: page
----
-{% assign grouped = site.posts | group_by_exp: 'post', "post.date | date: '%Y'" %}{% for year in grouped %}<section class="archive-year"><h2>{{ year.name }}</h2><div>{% for post in year.items %}<article class="archive-row"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%d.%m' }}</time><a href="{{ post.url | relative_url }}">{{ post.title }}</a><span>{{ post.categories | first }}</span></article>{% endfor %}</div></section>{% endfor %}

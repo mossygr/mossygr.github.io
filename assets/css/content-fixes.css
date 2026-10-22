@@ -1,0 +1,6 @@
+/* Legacy inline heading contrast, native theme color. */
+.content font[color="blue"]{color:var(--link-color)}
+
+/* Legacy Markdown images follow prose in the same paragraph. */
+.content p > a.popup.img-link{display:block;max-width:100%}
+.content p > a.popup.img-link img{max-width:100%;height:auto}
