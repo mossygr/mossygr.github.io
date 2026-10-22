@@ -1,4 +1,0 @@
----
-layout: page
----
-<div class="topic-list">{% assign categories = site.categories | sort %}{% for category in categories %}<a href="{{ category[0] | slugify | prepend: '/categories/' | append: '/' | relative_url }}">{{ category[0] }}<span>{{ category[1].size }} άρθρα ↗</span></a>{% endfor %}</div>
