@@ -1,9 +1,9 @@
 {
-  "source_commit": "aeae52dc73df8829af2aea930ffad8b99f4fbd26",
-  "design": "m0ss1-notebook",
-  "qa_snapshot_sha256": "6ba7411cd8bacaefb5585ee22987974f97a4cdcec23a9aeb54c6c4771ce5e2e1",
-  "published_at": "2026-10-21T16:38:21.467027+00:00",
-  "home_sha256": "21196c1cf06a6a077b075a8548329f7841c66e12fb00ba078098ffd2625a01bb",
-  "guide_sha256": "d37389cdd0cbd7bec93f2d1c9feff8d3b6113f05d6a438e19444fd25a8423bb6",
+  "source_commit": "71f60aca04f13d84d2494b76d121132cee5bfa10",
+  "design": "native-chirpy-restored",
+  "qa_snapshot_sha256": "da4516a87c5ef5240a248d985865136852d948a54e6bd937e4a3bb936c1a9bc9",
+  "published_at": "2026-10-22T01:15:25.145628+00:00",
+  "home_sha256": "7db5fb37c1ac3c4e6b7655b91f7d07ad947c0e23f7b20a0c5e3e37854a463c4c",
+  "guide_sha256": "dee2b08480d7ddb3c7200da8e13ec4bd274e946daf604d4cd3210af4331d646b",
   "service_worker_sha256": "1c34de5278a720fa3eee81f1951131ff646f24f7d0ea483359d2771aab0e1a3e"
 }
