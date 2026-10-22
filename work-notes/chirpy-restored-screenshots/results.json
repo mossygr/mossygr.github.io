@@ -1,0 +1,96 @@
+{
+  "records": [
+    {
+      "n": "home",
+      "w": 360,
+      "status": 200,
+      "overflow": false,
+      "first": "/robot/"
+    },
+    {
+      "n": "robot",
+      "w": 360,
+      "status": 200,
+      "overflow": false,
+      "rows": 36,
+      "labels": 359,
+      "images": [
+        {
+          "src": "https://mossygr.github.io/assets/robot/desktop_diagram.png",
+          "ok": true
+        },
+        {
+          "src": "https://mossygr.github.io/assets/robot/firmware_ui_phone.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "n": "category",
+      "w": 360,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "n": "oldpost",
+      "w": 360,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "n": "home",
+      "w": 1440,
+      "status": 200,
+      "overflow": false,
+      "first": "/robot/"
+    },
+    {
+      "n": "robot",
+      "w": 1440,
+      "status": 200,
+      "overflow": false,
+      "rows": 36,
+      "labels": 359,
+      "images": [
+        {
+          "src": "https://mossygr.github.io/assets/robot/desktop_diagram.png",
+          "ok": true
+        },
+        {
+          "src": "https://mossygr.github.io/assets/robot/firmware_ui_phone.png",
+          "ok": true
+        }
+      ],
+      "tocTop": -194.359375
+    },
+    {
+      "n": "category",
+      "w": 1440,
+      "status": 200,
+      "overflow": false
+    },
+    {
+      "n": "oldpost",
+      "w": 1440,
+      "status": 200,
+      "overflow": false
+    }
+  ],
+  "downloads": [
+    {
+      "route": "/assets/robot/robot_firmware.zip",
+      "status": 200,
+      "bytes": 22671
+    },
+    {
+      "route": "/assets/robot/desktop_diagram.png",
+      "status": 200,
+      "bytes": 268844
+    },
+    {
+      "route": "/assets/robot/firmware_ui_phone.png",
+      "status": 200,
+      "bytes": 189888
+    }
+  ]
+}
