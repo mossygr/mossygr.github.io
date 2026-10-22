@@ -1,0 +1,40 @@
+{
+  "glightbox": true,
+  "dark": "dark",
+  "light": "light",
+  "system": "light",
+  "copyLink": "https://mossygr.github.io/robot/",
+  "codeCopied": 141,
+  "http": [
+    {
+      "route": "/archives/",
+      "status": 200,
+      "bytes": 16519
+    },
+    {
+      "route": "/categories/",
+      "status": 200,
+      "bytes": 16901
+    },
+    {
+      "route": "/tags/",
+      "status": 200,
+      "bytes": 13629
+    },
+    {
+      "route": "/assets/robot/robot_firmware.zip",
+      "status": 200,
+      "bytes": 22671
+    },
+    {
+      "route": "/assets/robot/desktop_diagram.png",
+      "status": 200,
+      "bytes": 268844
+    },
+    {
+      "route": "/assets/robot/firmware_ui_phone.png",
+      "status": 200,
+      "bytes": 189888
+    }
+  ]
+}

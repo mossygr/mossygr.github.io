@@ -1,0 +1,765 @@
+{
+  "snapshot": "fe5158ef0f2f5900f4eb249d248f8a6061bd286a968b2accdcfb7a2d7ffb0b45",
+  "base": "https://mossygr.github.io",
+  "browser": "140.0.7339.186",
+  "records": [
+    {
+      "name": "home",
+      "w": 360,
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "title": "m0ss1",
+      "overflow": false,
+      "sidebarLinks": [
+        {
+          "text": "ΑΡΧΙΚΉ",
+          "url": "/"
+        },
+        {
+          "text": "ΚΑΤΗΓΟΡΊΕΣ",
+          "url": "/categories/"
+        },
+        {
+          "text": "ΑΡΧΕΊΑ",
+          "url": "/archives/"
+        },
+        {
+          "text": "ΕΤΙΚΈΤΕΣ",
+          "url": "/tags/"
+        },
+        {
+          "text": "ΥΠΟΛΟΓΙΣΜΌΣ ΘΈΣΗΣ",
+          "url": "/position_size/"
+        },
+        {
+          "text": "ΟΙ ΣΥΝΑΛΛΑΓΈΣ ΜΟΥ",
+          "url": "/trades/"
+        },
+        {
+          "text": "ΑΝΑΖΉΤΗΣΗ",
+          "url": "/search/"
+        }
+      ],
+      "footer": "© 2026 m0ss1. Ορισμένα δικαιώματα διατηρούνται.",
+      "fonts": [
+        {
+          "selector": "main h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "20px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ]
+        },
+        {
+          "selector": ".post-preview h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "20px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ]
+        },
+        {
+          "selector": ".post-preview .card-text p",
+          "family": "\"Source Sans Pro\", \"Microsoft Yahei\", sans-serif",
+          "size": "17.28px",
+          "lineHeight": "25.92px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Source Sans Pro (Fontations)",
+              "postScriptName": "SourceSansPro-Regular",
+              "isCustomFont": true,
+              "glyphCount": 134
+            }
+          ]
+        }
+      ],
+      "first": "/robot/",
+      "search": [
+        "/robot/"
+      ],
+      "dark": "dark"
+    },
+    {
+      "name": "robot",
+      "w": 360,
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "title": "Ρομπότ 4WD: από την καλωδίωση στην πρώτη διαδρομή | m0ss1",
+      "overflow": false,
+      "sidebarLinks": [
+        {
+          "text": "ΑΡΧΙΚΉ",
+          "url": "/"
+        },
+        {
+          "text": "ΚΑΤΗΓΟΡΊΕΣ",
+          "url": "/categories/"
+        },
+        {
+          "text": "ΑΡΧΕΊΑ",
+          "url": "/archives/"
+        },
+        {
+          "text": "ΕΤΙΚΈΤΕΣ",
+          "url": "/tags/"
+        },
+        {
+          "text": "ΥΠΟΛΟΓΙΣΜΌΣ ΘΈΣΗΣ",
+          "url": "/position_size/"
+        },
+        {
+          "text": "ΟΙ ΣΥΝΑΛΛΑΓΈΣ ΜΟΥ",
+          "url": "/trades/"
+        },
+        {
+          "text": "ΑΝΑΖΉΤΗΣΗ",
+          "url": "/search/"
+        }
+      ],
+      "footer": "© 2026 m0ss1. Ορισμένα δικαιώματα διατηρούνται.",
+      "fonts": [
+        {
+          "selector": "main h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "32px",
+          "lineHeight": "38.4px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 47
+            }
+          ]
+        },
+        {
+          "selector": ".robot-guide p",
+          "family": "\"Source Sans Pro\", \"Microsoft Yahei\", sans-serif",
+          "size": "17.28px",
+          "lineHeight": "30.24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Source Sans Pro (Fontations)",
+              "postScriptName": "SourceSansPro-Bold",
+              "isCustomFont": true,
+              "glyphCount": 27
+            }
+          ]
+        },
+        {
+          "selector": "#t-harness > p",
+          "family": "\"Source Sans Pro\", \"Microsoft Yahei\", sans-serif",
+          "size": "17.28px",
+          "lineHeight": "30.24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Source Sans Pro (Fontations)",
+              "postScriptName": "SourceSansPro-Regular",
+              "isCustomFont": true,
+              "glyphCount": 164
+            }
+          ]
+        },
+        {
+          "selector": ".robot-guide h2",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "24.64px",
+          "lineHeight": "29.568px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 20
+            }
+          ]
+        }
+      ],
+      "rows": 36,
+      "labels": 359,
+      "mobileToc": {
+        "open": false,
+        "top": 80.25
+      },
+      "images": [
+        {
+          "src": "https://mossygr.github.io/assets/robot/desktop_diagram.png",
+          "ok": true
+        },
+        {
+          "src": "https://mossygr.github.io/assets/robot/firmware_ui_phone.png",
+          "ok": true
+        }
+      ],
+      "transform": "transform: translate(-98.404px, 3.62742px) scale(0.287205);",
+      "wire": "hl",
+      "dark": "dark",
+      "tableClipped": []
+    },
+    {
+      "name": "home",
+      "w": 390,
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "title": "m0ss1",
+      "overflow": false,
+      "sidebarLinks": [
+        {
+          "text": "ΑΡΧΙΚΉ",
+          "url": "/"
+        },
+        {
+          "text": "ΚΑΤΗΓΟΡΊΕΣ",
+          "url": "/categories/"
+        },
+        {
+          "text": "ΑΡΧΕΊΑ",
+          "url": "/archives/"
+        },
+        {
+          "text": "ΕΤΙΚΈΤΕΣ",
+          "url": "/tags/"
+        },
+        {
+          "text": "ΥΠΟΛΟΓΙΣΜΌΣ ΘΈΣΗΣ",
+          "url": "/position_size/"
+        },
+        {
+          "text": "ΟΙ ΣΥΝΑΛΛΑΓΈΣ ΜΟΥ",
+          "url": "/trades/"
+        },
+        {
+          "text": "ΑΝΑΖΉΤΗΣΗ",
+          "url": "/search/"
+        }
+      ],
+      "footer": "© 2026 m0ss1. Ορισμένα δικαιώματα διατηρούνται.",
+      "fonts": [
+        {
+          "selector": "main h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "20px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ]
+        },
+        {
+          "selector": ".post-preview h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "20px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ]
+        },
+        {
+          "selector": ".post-preview .card-text p",
+          "family": "\"Source Sans Pro\", \"Microsoft Yahei\", sans-serif",
+          "size": "17.28px",
+          "lineHeight": "25.92px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Source Sans Pro (Fontations)",
+              "postScriptName": "SourceSansPro-Regular",
+              "isCustomFont": true,
+              "glyphCount": 133
+            }
+          ]
+        }
+      ],
+      "first": "/robot/",
+      "search": [
+        "/robot/"
+      ],
+      "dark": "dark"
+    },
+    {
+      "name": "home",
+      "w": 768,
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "title": "m0ss1",
+      "overflow": false,
+      "sidebarLinks": [
+        {
+          "text": "ΑΡΧΙΚΉ",
+          "url": "/"
+        },
+        {
+          "text": "ΚΑΤΗΓΟΡΊΕΣ",
+          "url": "/categories/"
+        },
+        {
+          "text": "ΑΡΧΕΊΑ",
+          "url": "/archives/"
+        },
+        {
+          "text": "ΕΤΙΚΈΤΕΣ",
+          "url": "/tags/"
+        },
+        {
+          "text": "ΥΠΟΛΟΓΙΣΜΌΣ ΘΈΣΗΣ",
+          "url": "/position_size/"
+        },
+        {
+          "text": "ΟΙ ΣΥΝΑΛΛΑΓΈΣ ΜΟΥ",
+          "url": "/trades/"
+        },
+        {
+          "text": "ΑΝΑΖΉΤΗΣΗ",
+          "url": "/search/"
+        }
+      ],
+      "footer": "© 2026 m0ss1. Ορισμένα δικαιώματα διατηρούνται.",
+      "fonts": [
+        {
+          "selector": "main h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "20px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ]
+        },
+        {
+          "selector": ".post-preview h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "20px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ]
+        },
+        {
+          "selector": ".post-preview .card-text p",
+          "family": "\"Source Sans Pro\", \"Microsoft Yahei\", sans-serif",
+          "size": "17.28px",
+          "lineHeight": "25.92px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Source Sans Pro (Fontations)",
+              "postScriptName": "SourceSansPro-Regular",
+              "isCustomFont": true,
+              "glyphCount": 133
+            }
+          ]
+        }
+      ],
+      "first": "/robot/",
+      "search": [
+        "/robot/"
+      ],
+      "dark": "dark"
+    },
+    {
+      "name": "robot",
+      "w": 768,
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "title": "Ρομπότ 4WD: από την καλωδίωση στην πρώτη διαδρομή | m0ss1",
+      "overflow": false,
+      "sidebarLinks": [
+        {
+          "text": "ΑΡΧΙΚΉ",
+          "url": "/"
+        },
+        {
+          "text": "ΚΑΤΗΓΟΡΊΕΣ",
+          "url": "/categories/"
+        },
+        {
+          "text": "ΑΡΧΕΊΑ",
+          "url": "/archives/"
+        },
+        {
+          "text": "ΕΤΙΚΈΤΕΣ",
+          "url": "/tags/"
+        },
+        {
+          "text": "ΥΠΟΛΟΓΙΣΜΌΣ ΘΈΣΗΣ",
+          "url": "/position_size/"
+        },
+        {
+          "text": "ΟΙ ΣΥΝΑΛΛΑΓΈΣ ΜΟΥ",
+          "url": "/trades/"
+        },
+        {
+          "text": "ΑΝΑΖΉΤΗΣΗ",
+          "url": "/search/"
+        }
+      ],
+      "footer": "© 2026 m0ss1. Ορισμένα δικαιώματα διατηρούνται.",
+      "fonts": [
+        {
+          "selector": "main h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "32px",
+          "lineHeight": "38.4px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ]
+        },
+        {
+          "selector": ".robot-guide p",
+          "family": "\"Source Sans Pro\", \"Microsoft Yahei\", sans-serif",
+          "size": "17.28px",
+          "lineHeight": "30.24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Source Sans Pro (Fontations)",
+              "postScriptName": "SourceSansPro-Bold",
+              "isCustomFont": true,
+              "glyphCount": 27
+            }
+          ]
+        },
+        {
+          "selector": "#t-harness > p",
+          "family": "\"Source Sans Pro\", \"Microsoft Yahei\", sans-serif",
+          "size": "17.28px",
+          "lineHeight": "30.24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Source Sans Pro (Fontations)",
+              "postScriptName": "SourceSansPro-Regular",
+              "isCustomFont": true,
+              "glyphCount": 166
+            }
+          ]
+        },
+        {
+          "selector": ".robot-guide h2",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "24.64px",
+          "lineHeight": "29.568px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 20
+            }
+          ]
+        }
+      ],
+      "rows": 36,
+      "labels": 359,
+      "mobileToc": {
+        "open": false,
+        "top": 79.984375
+      },
+      "images": [
+        {
+          "src": "https://mossygr.github.io/assets/robot/desktop_diagram.png",
+          "ok": true
+        },
+        {
+          "src": "https://mossygr.github.io/assets/robot/firmware_ui_phone.png",
+          "ok": true
+        }
+      ],
+      "transform": "transform: translate(-168.34px, 42.7766px) scale(0.63112);",
+      "wire": "hl",
+      "dark": "dark",
+      "tableClipped": []
+    },
+    {
+      "name": "home",
+      "w": 1440,
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "title": "m0ss1",
+      "overflow": false,
+      "sidebarLinks": [
+        {
+          "text": "ΑΡΧΙΚΉ",
+          "url": "/"
+        },
+        {
+          "text": "ΚΑΤΗΓΟΡΊΕΣ",
+          "url": "/categories/"
+        },
+        {
+          "text": "ΑΡΧΕΊΑ",
+          "url": "/archives/"
+        },
+        {
+          "text": "ΕΤΙΚΈΤΕΣ",
+          "url": "/tags/"
+        },
+        {
+          "text": "ΥΠΟΛΟΓΙΣΜΌΣ ΘΈΣΗΣ",
+          "url": "/position_size/"
+        },
+        {
+          "text": "ΟΙ ΣΥΝΑΛΛΑΓΈΣ ΜΟΥ",
+          "url": "/trades/"
+        },
+        {
+          "text": "ΑΝΑΖΉΤΗΣΗ",
+          "url": "/search/"
+        }
+      ],
+      "footer": "© 2026 m0ss1. Ορισμένα δικαιώματα διατηρούνται.",
+      "fonts": [
+        {
+          "selector": "main h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "20px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ]
+        },
+        {
+          "selector": ".post-preview h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "20px",
+          "lineHeight": "24px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ]
+        },
+        {
+          "selector": ".post-preview .card-text p",
+          "family": "\"Source Sans Pro\", \"Microsoft Yahei\", sans-serif",
+          "size": "16.48px",
+          "lineHeight": "24.72px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Source Sans Pro (Fontations)",
+              "postScriptName": "SourceSansPro-Regular",
+              "isCustomFont": true,
+              "glyphCount": 134
+            }
+          ]
+        }
+      ],
+      "first": "/robot/",
+      "search": [
+        "/robot/"
+      ],
+      "dark": "dark"
+    },
+    {
+      "name": "robot",
+      "w": 1440,
+      "status": 200,
+      "errors": [],
+      "failed": [],
+      "title": "Ρομπότ 4WD: από την καλωδίωση στην πρώτη διαδρομή | m0ss1",
+      "overflow": false,
+      "sidebarLinks": [
+        {
+          "text": "ΑΡΧΙΚΉ",
+          "url": "/"
+        },
+        {
+          "text": "ΚΑΤΗΓΟΡΊΕΣ",
+          "url": "/categories/"
+        },
+        {
+          "text": "ΑΡΧΕΊΑ",
+          "url": "/archives/"
+        },
+        {
+          "text": "ΕΤΙΚΈΤΕΣ",
+          "url": "/tags/"
+        },
+        {
+          "text": "ΥΠΟΛΟΓΙΣΜΌΣ ΘΈΣΗΣ",
+          "url": "/position_size/"
+        },
+        {
+          "text": "ΟΙ ΣΥΝΑΛΛΑΓΈΣ ΜΟΥ",
+          "url": "/trades/"
+        },
+        {
+          "text": "ΑΝΑΖΉΤΗΣΗ",
+          "url": "/search/"
+        }
+      ],
+      "footer": "© 2026 m0ss1. Ορισμένα δικαιώματα διατηρούνται.",
+      "fonts": [
+        {
+          "selector": "main h1",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "32px",
+          "lineHeight": "38.4px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ]
+        },
+        {
+          "selector": ".robot-guide p",
+          "family": "\"Source Sans Pro\", \"Microsoft Yahei\", sans-serif",
+          "size": "16.48px",
+          "lineHeight": "28.84px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Source Sans Pro (Fontations)",
+              "postScriptName": "SourceSansPro-Bold",
+              "isCustomFont": true,
+              "glyphCount": 27
+            }
+          ]
+        },
+        {
+          "selector": "#t-harness > p",
+          "family": "\"Source Sans Pro\", \"Microsoft Yahei\", sans-serif",
+          "size": "16.48px",
+          "lineHeight": "28.84px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Source Sans Pro (Fontations)",
+              "postScriptName": "SourceSansPro-Regular",
+              "isCustomFont": true,
+              "glyphCount": 166
+            }
+          ]
+        },
+        {
+          "selector": ".robot-guide h2",
+          "family": "Lato, \"Microsoft Yahei\", sans-serif",
+          "size": "24.64px",
+          "lineHeight": "29.568px",
+          "weight": "400",
+          "fonts": [
+            {
+              "familyName": "Lato (Fontations)",
+              "postScriptName": "Lato-Regular",
+              "isCustomFont": true,
+              "glyphCount": 20
+            }
+          ]
+        }
+      ],
+      "rows": 36,
+      "labels": 359,
+      "images": [
+        {
+          "src": "https://mossygr.github.io/assets/robot/desktop_diagram.png",
+          "ok": true
+        },
+        {
+          "src": "https://mossygr.github.io/assets/robot/firmware_ui_phone.png",
+          "ok": true
+        }
+      ],
+      "transform": "transform: translate(-176.71px, -28.8382px) scale(0.67228);",
+      "wire": "hl",
+      "dark": "dark",
+      "tableClipped": []
+    }
+  ],
+  "findings": [],
+  "tocClicks": [
+    {
+      "id": "guide-section-1",
+      "top": 79.921875
+    },
+    {
+      "id": "guide-section-2",
+      "top": 80.296875
+    },
+    {
+      "id": "guide-section-3",
+      "top": 80.390625
+    },
+    {
+      "id": "guide-section-4",
+      "top": 80.421875
+    },
+    {
+      "id": "guide-section-11",
+      "top": 80.125
+    },
+    {
+      "id": "guide-downloads",
+      "top": 80.375
+    }
+  ],
+  "reflow": "200% equivalent CSS viewport720 with DPR2"
+}
