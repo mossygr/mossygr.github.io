@@ -2,24 +2,21 @@
  --grid:#e7eae3;--halo:rgba(0,0,0,.38);--warn:#c62828;--warnbg:#fff4f2;--info:#1f5fbf;--infobg:#f1f6ff;
  --okbg:#f1faf2;--ok:#1b7f3a;--lbl:#1b222c;--lbls:#5d6878;--canvas:#fbfbf8;
  --h-box:#ffffff;--h-head:#eef0f3;--h-wago:#fde9d4;--h-unused:#f5f5f5;--h-border:#7c8593}
-@media (prefers-color-scheme:dark){html:not([data-mode="light"]) .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1;--mut:#97a3b4;
+@media (prefers-color-scheme:dark){html:not([data-bs-theme="light"]) .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1;--mut:#97a3b4;
  --line:#2a323d;--grid:#1c232c;--halo:rgba(170,182,198,.42);--warnbg:#2a1716;--warn:#ff8a80;--infobg:#132033;--info:#8ab4ff;
  --okbg:#13251a;--ok:#7bd88f;--lbl:#e6ebf1;--lbls:#97a3b4;--canvas:#141920;
  --h-box:#1b2129;--h-head:#252d38;--h-wago:#3a2a1a;--h-unused:#161b21;--h-border:#5b6676}
 }
-html[data-mode="dark"] .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1;--mut:#97a3b4;
+html[data-bs-theme="dark"] .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1;--mut:#97a3b4;
  --line:#2a323d;--grid:#1c232c;--halo:rgba(170,182,198,.42);--warnbg:#2a1716;--warn:#ff8a80;--infobg:#132033;--info:#8ab4ff;
  --okbg:#13251a;--ok:#7bd88f;--lbl:#e6ebf1;--lbls:#97a3b4;--canvas:#141920;
  --h-box:#1b2129;--h-head:#252d38;--h-wago:#3a2a1a;--h-unused:#161b21;--h-border:#5b6676}
 .robot-guide *{box-sizing:border-box}
 .robot-guide{-webkit-text-size-adjust:100%}
-.robot-guide{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.robot-guide{margin:0;background:var(--bg);color:var(--fg);font:inherit}
 .robot-guide{max-width:1280px;margin:0 auto;padding:16px}
 .robot-guide header.top{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}
-.robot-guide h1{font-size:1.45rem;margin:.1em 0 .1em;letter-spacing:-.01em}
 .robot-guide .sub{color:var(--mut);margin:0 0 10px;max-width:70ch}
-.robot-guide h2{font-size:1.12rem;margin:22px 0 8px}
-.robot-guide h3{font-size:1rem;margin:16px 0 6px}
 .robot-guide nav.tabs{position:sticky;top:0;z-index:20;display:flex;gap:4px;overflow-x:auto;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--line);margin-bottom:12px;scrollbar-width:none}
 .robot-guide nav.tabs::-webkit-scrollbar{display:none}
 .robot-guide nav.tabs button{flex:0 0 auto;font:inherit;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--fg);padding:8px 14px;border-radius:999px;cursor:pointer;min-height:40px}
@@ -147,3 +144,6 @@ html[data-mode="dark"] .robot-guide{--bg:#0f1318;--card:#171c23;--fg:#e6ebf1;--m
 .robot-guide #conn th,.robot-guide #conn td{white-space:normal;overflow-wrap:anywhere;min-width:0}
 
 .robot-guide #conn .nb{white-space:nowrap;overflow-wrap:normal;word-break:normal}
+
+/* Article prose inherits the official theme typography and page surface. */
+.robot-guide{--bg:var(--main-bg);--fg:var(--text-color);--mut:var(--text-muted-color);background:transparent;padding:0;max-width:none}
