@@ -1,0 +1,349 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GPi Case 2W and Pi Zero W: setting up Recalbox 9.2 · m0ss1</title><meta name="description" content="How I fixed incorrect case detection, restored the display, and configured the controls on a GPi Case 2W with a Raspberry Pi Zero W."><meta name="color-scheme" content="light dark"><link rel="canonical" href="https://mossygr.github.io/en/posts/gpi-case-2w-pi-zero-w-recalbox/"><link rel="alternate" hreflang="el" href="https://mossygr.github.io/posts/gpi-case-2w-pi-zero-w-recalbox/"><link rel="alternate" hreflang="en" href="https://mossygr.github.io/en/posts/gpi-case-2w-pi-zero-w-recalbox/"><link rel="alternate" hreflang="x-default" href="https://mossygr.github.io/posts/gpi-case-2w-pi-zero-w-recalbox/"><meta property="og:type" content="article"><meta property="og:title" content="GPi Case 2W and Pi Zero W: setting up Recalbox 9.2"><meta property="og:description" content="How I fixed incorrect case detection, restored the display, and configured the controls on a GPi Case 2W with a Raspberry Pi Zero W."><meta property="og:url" content="https://mossygr.github.io/en/posts/gpi-case-2w-pi-zero-w-recalbox/"><meta property="og:site_name" content="m0ss1"><meta property="og:locale" content="en_GB"><meta property="og:image" content="https://mossygr.github.io/assets/gpicase2w/cover-1200.webp"><link rel="icon" href="/assets/img/favicons/m0ss1.svg" type="image/svg+xml"><script>try{const t=localStorage.getItem('m0ss1-theme');document.documentElement.dataset.theme=t==='light'||t==='dark'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}catch{}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"GPi Case 2W and Pi Zero W: setting up Recalbox 9.2","description":"How I fixed incorrect case detection, restored the display, and configured the controls on a GPi Case 2W with a Raspberry Pi Zero W.","inLanguage":"en","url":"https://mossygr.github.io/en/posts/gpi-case-2w-pi-zero-w-recalbox/","datePublished":"2026-10-22T20:30:00.000Z","author":{"@type":"Person","name":"m0ss1"},"image":"https://mossygr.github.io/assets/gpicase2w/cover-1200.webp"}</script><link rel="stylesheet" href="/_astro/Portal.sCDZGxT1.css"></head><body data-lang="en"><a class="skip-link" href="#main">Skip to content</a><header class="topbar"><a class="brand" href="/en/" aria-label="m0ss1"><span class="brand-symbol">m<span>₀</span></span><strong>m0ss1<span class="brand-divider">/</span><span class="brand-docs">docs</span></strong></a><div class="topbar-actions"><button class="search-trigger" data-open="search-dialog" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.4-4.4M19 11a8 8 0 1 1-16 0 8 8 0 0 1 16 0"></path></svg><span>Search</span><kbd>⌘ K</kbd></button><a class="language-switch" href="/posts/gpi-case-2w-pi-zero-w-recalbox/" lang="el" hreflang="el" aria-label="Διάβασε αυτή τη σελίδα στα Ελληνικά"><span>EL</span><span class="language-divider">/</span><span class="selected">EN</span></a><button class="icon-button" id="theme-toggle" aria-label="Toggle appearance" title="Toggle appearance"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0"></path></svg></button><button class="icon-button mobile-menu" data-open="navigation-dialog" aria-label="Navigation"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></header><div class="portal-grid"><aside class="sidebar"><nav aria-label="Navigation"><div class="nav-group"><p class="nav-label">START HERE</p><a class="nav-link" href="/en/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 10 5-10 5L2 8l10-5M2 12l10 5 10-5M2 16l10 5 10-5"></path></svg>Overview</a><a class="nav-link" href="/en/guides/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4m8 2v15"></path></svg>Technical guides</a><a class="nav-link" href="/en/projects/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"></path></svg>Projects</a><a class="nav-link" href="/en/archives/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4m8 2v15"></path></svg>All articles</a></div><div class="nav-group"><a class="nav-label nav-label-link" href="/en/categories/">Categories</a><details><summary>HackTheBox<span>9</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/hackthebox/">Category overview →</a><a class="nav-doc" href="/en/posts/brutforce-attack-technics/">Brute-force attack techniques</a><a class="nav-doc" href="/en/posts/jerry/">Jerry</a><a class="nav-doc" href="/en/posts/weak-rsa/">Weak RSA</a><a class="nav-doc" href="/en/posts/templed/">Templed</a><a class="nav-doc" href="/en/posts/find-the-easy-pass/">Find The Easy Pass</a><a class="nav-doc" href="/en/posts/lame/">Lame</a><a class="nav-doc" href="/en/posts/test/">Lame</a><a class="nav-doc" href="/en/posts/emdee-five-for-life/">Emdee five for life</a><a class="nav-doc" href="/en/posts/freelancer/">FreeLancer</a></div></details><details><summary>Challenges<span>6</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/challenges/">Category overview →</a><a class="nav-doc" href="/en/posts/brutforce-attack-technics/">Brute-force attack techniques</a><a class="nav-doc" href="/en/posts/weak-rsa/">Weak RSA</a><a class="nav-doc" href="/en/posts/templed/">Templed</a><a class="nav-doc" href="/en/posts/find-the-easy-pass/">Find The Easy Pass</a><a class="nav-doc" href="/en/posts/emdee-five-for-life/">Emdee five for life</a><a class="nav-doc" href="/en/posts/freelancer/">FreeLancer</a></div></details><details><summary>CTF<span>5</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/ctf/">Category overview →</a><a class="nav-doc" href="/en/posts/tryhackme-reverse-engineering/">TryHackMe — Reverse Engineering</a><a class="nav-doc" href="/en/posts/jerry/">Jerry</a><a class="nav-doc" href="/en/posts/jack/">Jack — TryHackMe</a><a class="nav-doc" href="/en/posts/lame/">Lame</a><a class="nav-doc" href="/en/posts/test/">Lame</a></div></details><details><summary>Burpsuite<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/burpsuite/">Category overview →</a><a class="nav-doc" href="/en/posts/burpsuite-on-firefox/">Using Burp Suite with Firefox</a></div></details><details><summary>Tutorials<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/tutorials/">Category overview →</a><a class="nav-doc" href="/en/posts/burpsuite-on-firefox/">Using Burp Suite with Firefox</a></div></details><details><summary>TryHackMe<span>2</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/tryhackme/">Category overview →</a><a class="nav-doc" href="/en/posts/tryhackme-reverse-engineering/">TryHackMe — Reverse Engineering</a><a class="nav-doc" href="/en/posts/jack/">Jack — TryHackMe</a></div></details><details><summary>Technical Analysis<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/technical-analysis/">Category overview →</a><a class="nav-doc" href="/en/posts/doji-candlestick/">Doji candlesticks: watching for a change in direction</a></div></details><details><summary>Candlesticks<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/candlesticks/">Category overview →</a><a class="nav-doc" href="/en/posts/doji-candlestick/">Doji candlesticks: watching for a change in direction</a></div></details><details><summary>Arduino<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/arduino/">Category overview →</a><a class="nav-doc" href="/en/robot/">4WD robot: from wiring to the first drive</a></div></details><details><summary>Robotics<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/robotics/">Category overview →</a><a class="nav-doc" href="/en/robot/">4WD robot: from wiring to the first drive</a></div></details><details open><summary>Raspberry Pi<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/raspberry-pi/">Category overview →</a><a class="nav-doc active" href="/en/posts/gpi-case-2w-pi-zero-w-recalbox/" aria-current="page">GPi Case 2W and Pi Zero W: setting up Recalbox 9.2</a></div></details><details open><summary>Retro Gaming<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/retro-gaming/">Category overview →</a><a class="nav-doc active" href="/en/posts/gpi-case-2w-pi-zero-w-recalbox/" aria-current="page">GPi Case 2W and Pi Zero W: setting up Recalbox 9.2</a></div></details></div><div class="nav-bottom"><span class="status-dot"></span>Notes from building things</div></nav></aside><main id="main" tabindex="-1" class="main-content reading"><nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/en/">Overview</a><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg><a href="/en/categories/raspberry-pi/">Raspberry Pi</a><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg><span>Projects</span></nav><article data-pagefind-body><header class="article-header"><p class="eyebrow">Raspberry Pi / Retro Gaming</p><h1 data-pagefind-meta="title">GPi Case 2W and Pi Zero W: setting up Recalbox 9.2</h1><p class="article-deck">How I fixed incorrect case detection, restored the display, and configured the controls on a GPi Case 2W with a Raspberry Pi Zero W.</p><div class="article-meta"><span class="author-avatar">m₀</span><strong>m0ss1</strong><span>·</span><time datetime="2026-10-22T20:30:00.000Z">22 October 2026</time></div></header><figure class="article-cover"><img src="/assets/gpicase2w/cover-1200.webp" alt="The Retroflag GPi Case 2W packaging and its compatible Raspberry Pi Zero models" width="1200" height="900" fetchpriority="high"></figure><div class="prose"><p>The <strong>Retroflag GPi Case 2W</strong> is a Game Boy-shaped case with a 3-inch 640×480 screen, a built-in battery, and controls. A Raspberry Pi Zero fits inside its removable “cartridge”. The box lists compatibility with the Pi Zero, Zero W, and Zero 2W.</p>
+<p>I had an original <strong>Pi Zero W</strong>, rather than a Zero 2W, and wanted to run <strong>Recalbox</strong>. In practice, this combination did not work out of the box. After several attempts, I realised that incorrect case detection explained the broken picture and the settings reverting to their old values. This guide explains what I found and how I eventually got it working. These settings apply to this particular installation; they are not a general recipe for every Recalbox image or version.</p>
+<blockquote>
+<p><strong>Applies to:</strong> GPi Case 2W + Raspberry Pi Zero or Zero W + Recalbox 9.2. The support added in Recalbox 9.x applies to the <strong>Pi Zero 2W</strong>. This guide documents my installation on the older Zero W; it does not assume that every Zero 2W image behaves identically.</p>
+</blockquote>
+<h2 id="the-problem-recalbox-mistakes-it-for-the-old-case">The problem: Recalbox mistakes it for the old case</h2>
+<p>On the first boot, Recalbox detects the case and automatically configures the display, audio, and controls. However, GPi Case 2W support was <a href="https://github.com/live-clones/recalbox/blob/master/RELEASE-NOTES.md">added for the Raspberry Pi Zero 2</a>. The Pi Zero / Pi 1 image needed by the Zero W only knows about the <strong>original GPi Case</strong>.</p>
+<p>Both cases connect to the Pi in the same way: the screen uses the GPIO <strong>DPI</strong> interface, while the buttons appear as a controller. Detection therefore fails to distinguish between them and selects the case it knows. The boot log in <code>SHARE/system/logs</code> shows this too:</p>
+<pre class="astro-code astro-code-themes github-light github-dark-high-contrast" style="background-color:#fff;--shiki-dark-bg:#0a0c10;color:#24292e;--shiki-dark:#f0f3f6; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>doing startup for board GPiV1</span></span></code></pre>
+<p>But the original GPi is a different device: it has a rotated <strong>320×240</strong> screen and no Home button. Recalbox applies those settings to a case with a 640×480 screen.</p>
+<h3 id="the-symptoms">The symptoms</h3>
+<p>The following symptoms appeared on my installation. Incorrect case detection explains the picture and settings being restored. A game that will not launch needs further checks: the same error can refer to ROM or BIOS files, not just display configuration.</p>
+<ol>
+<li><strong>A broken picture.</strong> A small piece of the logo appeared at the top left, with vertical coloured lines across the rest of the screen. The display was receiving timings for 320×240.</li>
+<li><strong>Fixes disappeared.</strong> Even after correcting the settings, the “Installing GPi Case… Finalizing” message appeared, and Recalbox wrote the old GPi settings back again.</li>
+<li><strong>Games would not start.</strong> They either dropped back to the list or displayed “Looks like your game didn’t start at all!”, even with the games bundled with Recalbox.</li>
+<li><strong>Hotkey combinations did nothing</strong> when I used Home.</li>
+</ol>
+<img src="/assets/gpicase2w/broken-screen-1200.webp" alt="Incorrect picture and vertical lines on the GPi Case 2W" width="1200" height="1600" srcset="/assets/gpicase2w/broken-screen-480.webp 480w, /assets/gpicase2w/broken-screen-800.webp 800w, /assets/gpicase2w/broken-screen-1200.webp 1200w" sizes="(max-width: 768px) 92vw, 720px" loading="lazy">
+_The first boot using settings for the original GPi._
+<img src="/assets/gpicase2w/installing-gpi-case-1200.webp" alt="The Installing GPi Case and Finalizing message on the screen" width="1200" height="1600" srcset="/assets/gpicase2w/installing-gpi-case-480.webp 480w, /assets/gpicase2w/installing-gpi-case-800.webp 800w, /assets/gpicase2w/installing-gpi-case-1200.webp 1200w" sizes="(max-width: 768px) 92vw, 720px" loading="lazy">
+_Recalbox installs settings for the case it detected._
+<h3 id="why-the-retroflag-patch-is-not-enough">Why the Retroflag patch is not enough</h3>
+<p>Retroflag provides separate configuration files for the Zero and Zero 2W in its <a href="https://github.com/RetroFlag/GPICASE2W-display-patch">GPICASE2W-display-patch</a> repository. With a Zero W and Recalbox 9.2, however:</p>
+<ul>
+<li>The Zero file loads the <code>dpi-pizero-gpicase</code> overlay, which <strong>does not exist</strong> in Recalbox 9.2. The patch was written for 8.1.1.</li>
+<li>In <a href="https://github.com/RetroFlag/GPICASE2W-display-patch/issues/2">issue #2</a>, users report that <strong>the Zero 1 file does not work</strong>, while <strong>the Zero 2W file also works on a Zero 1</strong>. An important difference is the slower screen pixel clock: <strong>19.2 MHz</strong> rather than 32 MHz, with lower settings than the other patch. In my test, the faster screen and more aggressive settings allowed the menu to appear, but games crashed.</li>
+<li>The unmodified Zero 2W file still left my system stuck at the loading screen, matching another report in the same issue. I needed a combination of the two configurations.</li>
+</ul>
+<img src="/assets/gpicase2w/game-error-1200.webp" alt="The Looks like your game did not start at all message in Recalbox" width="1200" height="1600" srcset="/assets/gpicase2w/game-error-480.webp 480w, /assets/gpicase2w/game-error-800.webp 800w, /assets/gpicase2w/game-error-1200.webp 1200w" sizes="(max-width: 768px) 92vw, 720px" loading="lazy">
+_The failure message also lists possible ROM or BIOS causes. It cannot diagnose the problem on its own._
+<h2 id="the-fix-step-by-step">The fix, step by step</h2>
+<h3 id="what-i-need">What I need</h3>
+<ul>
+<li>A Retroflag GPi Case 2W.</li>
+<li>A Raspberry Pi Zero or Zero W <strong>without soldered header pins</strong>.</li>
+<li>A microSD card.</li>
+<li>A computer with <strong>Raspberry Pi Imager</strong>.</li>
+</ul>
+<h3 id="1-write-the-correct-image">1. Write the correct image</h3>
+<p>In Raspberry Pi Imager, choose <strong>Choose OS → Emulation and game OS → Recalbox → “Recalbox - Raspberry Pi Zero / 1 / GPiCase1”</strong>.</p>
+<p>Although the name sounds wrong, this is the correct image for the Zero W. Another user with the same combination <a href="https://github.com/mirkochip/recalbox-rpi_zero_v1.3-gpi_case_2w">notes</a> that the “GPiCase 2W + Raspberry Pi Zero” image on the Recalbox website is misleading for this setup and results in a black screen.</p>
+<blockquote>
+<p><strong>“GPi Case 2”</strong> is a different case for the Compute Module 4. It is not the 2W.</p>
+</blockquote>
+<h3 id="2-let-the-first-boot-finish-without-touching-anything">2. Let the first boot finish without touching anything</h3>
+<p>Insert the card into the cartridge and turn the power on. A broken picture is expected at this point. Leave it for <strong>10 minutes without pressing anything</strong>, allowing case installation to finish, and then switch it off.</p>
+<blockquote>
+<p>Switching off partway through installation can leave it incomplete. It may then run on every boot and repeatedly restore the old GPi settings. This happened to me; writing the card again was the cleanest way to recover.</p>
+</blockquote>
+<h3 id="step-partition">3. Find the RECALBOX partition in Windows</h3>
+<p>These are the two partitions relevant to this guide when working in Windows. Depending on the image, other partitions may also exist; we do not need to modify them:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Partition</th><th>Contents</th></tr></thead><tbody><tr><td><strong>RECALBOX</strong> (small, FAT32)</td><td><code>config.txt</code>, <code>recalbox-user-config.txt</code>, <code>recalbox-boot.conf</code>, overlays</td></tr><tr><td><strong>SHARE</strong> (exFAT)</td><td>Games, BIOS files, saves, <code>system/recalbox.conf</code></td></tr></tbody></table>
+<p>Windows often shows only SHARE. To make RECALBOX visible, right-click Start → <strong>Disk Management</strong> → right-click the card’s small FAT32 partition → <strong>Change Drive Letter and Paths</strong> → Add.</p>
+<blockquote>
+<p>If Windows offers to format the drive, click <strong>Cancel</strong>.</p>
+</blockquote>
+<h3 id="final-config">4. Replace the display configuration</h3>
+<p>On RECALBOX, first back up <code>recalbox-user-config.txt</code>. Then open it—Windows may hide the <code>.txt</code> extension—and replace <strong>all</strong> of its contents with this:</p>
+<pre class="astro-code astro-code-themes github-light github-dark-high-contrast" style="background-color:#fff;--shiki-dark-bg:#0a0c10;color:#24292e;--shiki-dark:#f0f3f6; overflow-x: auto;" tabindex="0" data-language="ini"><code><span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">boot_delay</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=5</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dtparam</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=</span><span style="color:#D73A49;--shiki-dark:#FF9492">audio</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=on</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dtoverlay</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=pwm-audio-pizero-gpicase</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">display_rotate</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dtoverlay</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=recalbox-gpicase1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">overscan_left</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">overscan_right</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">overscan_top</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">overscan_bottom</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">framebuffer_width</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=640</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">framebuffer_height</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=480</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">enable_dpi_lcd</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">display_default_lcd</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dpi_group</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=2</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dpi_mode</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=87</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dpi_output_format</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0x00016</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">hdmi_timings</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=640 0 1 1 20 480 0 1 1 2 0 0 0 60 0 19200000 1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">avoid_safe_mode</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">disable_pvt</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">disable_audio_dither</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">audio_pwm_mode</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=2</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dtparam</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=</span><span style="color:#D73A49;--shiki-dark:#FF9492">act_led_trigger</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=default-on</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">arm_freq</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1000</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">over_voltage</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">core_freq</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=450</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">sdram_freq</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=450</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">over_voltage_sdram</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dtparam</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=</span><span style="color:#D73A49;--shiki-dark:#FF9492">sd_overclock</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=50</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">extra_transpose_buffer</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=2</span></span></code></pre>
+<p>This starts with Retroflag’s Zero 2W configuration, with two overlay changes that allowed it to boot on the Zero W:</p>
+<p>An important clarification: the Pi Zero W CPU runs at 1000 MHz by default, so <code>arm_freq=1000</code> does not raise its CPU frequency. However, <code>core_freq=450</code> is above the official 400 MHz default; calling the entire configuration “no overclock” would be incorrect. I preserve the values used on my installation without presenting them as universally safe for every board. <a href="https://www.raspberrypi.com/documentation/computers/legacy_config_txt.html">Official clock documentation</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Setting</th><th>Zero 2W (Retroflag)</th><th>Used here</th><th>Reason</th></tr></thead><tbody><tr><td>Display overlay</td><td><code>dpi24</code></td><td><code>recalbox-gpicase1</code></td><td><code>dpi24</code> left it stuck at the loading screen</td></tr><tr><td>Audio overlay</td><td><code>audremap,pins_18_19,swap_lr</code></td><td><code>pwm-audio-pizero-gpicase</code></td><td>GPi audio on the Zero</td></tr><tr><td>Pixel clock</td><td>19.2 MHz</td><td>19.2 MHz</td><td>The same slower display timing for stability</td></tr><tr><td>Clock settings</td><td>Values supplied in the patch</td><td>CPU 1000 / core 450 / SDRAM 450 MHz</td><td>Preserves the values from this particular installation</td></tr></tbody></table>
+<blockquote>
+<p>The configuration block is provided without comments for easy copying. <code>config.txt</code> <strong>does support lines starting with <code>#</code></strong>, as described in the <a href="https://www.raspberrypi.com/documentation/computers/config_txt.html">Raspberry Pi documentation</a>. The <a href="https://forum.recalbox.com/topic/34650/recalbox-gpi-case-2w-pi-zero-w">Recalbox forum report</a>, where removing comments helped one installation, is an individual experience rather than a general rule for every black screen.</p>
+</blockquote>
+<h3 id="5-correct-the-emulators-video-mode">5. Correct the emulators’ video mode</h3>
+<p>In <strong>SHARE → system → <code>recalbox.conf</code></strong>, find <code>global.videomode</code> and set it to:</p>
+<pre class="astro-code astro-code-themes github-light github-dark-high-contrast" style="background-color:#fff;--shiki-dark-bg:#0a0c10;color:#24292e;--shiki-dark:#f0f3f6; overflow-x: auto;" tabindex="0" data-language="ini"><code><span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">global.videomode</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=default</span></span></code></pre>
+<p>Mine was set to <code>1280x720</code>: each emulator was trying to use a resolution that the GPIO-connected 640×480 display could not show.</p>
+<h3 id="6-boot">6. Boot</h3>
+<p><strong>Eject</strong> the card, put it back in the GPi, and switch it on. The first startup after the change can take a little longer. Wait for the menu to appear, then try a Game Boy game.</p>
+<img src="/assets/gpicase2w/working-screen-1200.webp" alt="The Recalbox logo and ghosts on a correctly oriented screen" width="1200" height="1600" srcset="/assets/gpicase2w/working-screen-480.webp 480w, /assets/gpicase2w/working-screen-800.webp 800w, /assets/gpicase2w/working-screen-1200.webp 1200w" sizes="(max-width: 768px) 92vw, 720px" loading="lazy">
+_The loading screen now fills the display correctly. This photograph shows loading, not a game running._
+<h2 id="after-installation-using-the-case-as-an-old-gpi">After installation: using the case as an “old GPi”</h2>
+<p>Even with a working screen, Recalbox still believes it is running on the original GPi. There are a few consequences to keep in mind.</p>
+<h3 id="select-is-the-hotkey-not-home">SELECT is the hotkey, not Home</h3>
+<p>According to the <a href="https://wiki-next.recalbox.com/en/basic-usage/getting-started/special-commands">Recalbox wiki</a>, the hotkey is Home/Guide when the controller has that button; otherwise it is usually <strong>SELECT</strong>. The original GPi has no Home button, so <strong>Hotkey = SELECT</strong>, and the 2W’s house-shaped button does nothing in this setup.</p>
+<p>Recalbox also names buttons by their <strong>positions</strong> on a Super Nintendo controller, rather than the letters printed on the case: <strong>A = right, B = bottom, X = top, Y = left</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Combination (hold SELECT)</th><th>Action</th></tr></thead><tbody><tr><td>Select + Start</td><td>Exit the game</td></tr><tr><td>Select + bottom button (B)</td><td>Open the RetroArch menu</td></tr><tr><td>Select + right button (A)</td><td>Reset the game</td></tr><tr><td>Select + left button (Y)</td><td>Save state</td></tr><tr><td>Select + top button (X)</td><td>Load state</td></tr><tr><td>Select + ↑ / ↓</td><td>Change the save slot (0–9)</td></tr><tr><td>Select + ← / →</td><td>Rewind / fast-forward</td></tr></tbody></table>
+<p>If a shortcut is not where I expect it, the same actions are available through the <strong>RetroArch menu</strong>: Quick Menu → <strong>Save State</strong> / <strong>Load State</strong>, Quick Menu → <strong>Options</strong> for emulator settings, and <strong>Resume</strong> to return to the game.</p>
+<h3 id="saving-progress">Saving progress</h3>
+<ul>
+<li><strong>The game’s own save function</strong>, through its menu. Saves are written to <code>SHARE/saves</code>, provided I exit with <strong>Select + Start</strong> rather than turning off the power switch.</li>
+<li><strong>Save states</strong>, which preserve the exact moment in a game, including games without their own save system.</li>
+<li>To resume automatically from where I stopped, I set <code>global.autosave=1</code> in <code>recalbox.conf</code>.</li>
+</ul>
+<blockquote>
+<p>For <strong>SNES</strong>, Recalbox on the Pi Zero uses <strong>PiSNES</strong>, a separate emulator rather than a RetroArch core. Save-state shortcuts and the RetroArch menu may therefore not work there. The game’s own save function is the dependable option.</p>
+</blockquote>
+<h3 id="settings-may-be-overwritten">Settings may be overwritten</h3>
+<p>If case installation runs again after an interruption or a Recalbox update, it writes the old GPi settings back into <code>recalbox-user-config.txt</code>. For that reason:</p>
+<ul>
+<li>Keep a <strong>backup</strong> of the file on the computer.</li>
+<li><strong>Do not update</strong> through the menu, or set <code>updates.enabled=0</code> in <code>recalbox.conf</code>.</li>
+<li>Shut down through <strong>Start → Quit → Shutdown</strong>, then turn off the power switch.</li>
+</ul>
+<p>If the settings keep being overwritten, there is a workaround: add the essential display values at the <strong>end</strong> of <code>config.txt</code>, after <code>include recalbox-user-config.txt</code>. The last settings take precedence:</p>
+<pre class="astro-code astro-code-themes github-light github-dark-high-contrast" style="background-color:#fff;--shiki-dark-bg:#0a0c10;color:#24292e;--shiki-dark:#f0f3f6; overflow-x: auto;" tabindex="0" data-language="ini"><code><span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">display_rotate</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">framebuffer_width</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=640</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">framebuffer_height</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=480</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dpi_output_format</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0x00016</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">hdmi_timings</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=640 0 1 1 20 480 0 1 1 2 0 0 0 60 0 19200000 1</span></span></code></pre>
+<blockquote>
+<p>Recalbox replaces <code>config.txt</code> during an upgrade, so this workaround will also be lost if I update.</p>
+</blockquote>
+<h2 id="games">Games</h2>
+<p>Put games in <strong>SHARE → roms → the console’s directory</strong>, directly inside that directory rather than in a subdirectory:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Console</th><th>Directory</th><th>Extensions</th></tr></thead><tbody><tr><td>Game Boy</td><td><code>gb</code></td><td><code>.gb</code>, <code>.zip</code></td></tr><tr><td>Game Boy Color</td><td><code>gbc</code></td><td><code>.gbc</code>, <code>.zip</code></td></tr><tr><td>NES</td><td><code>nes</code></td><td><code>.nes</code>, <code>.zip</code></td></tr><tr><td>Super Nintendo</td><td><code>snes</code></td><td><code>.sfc</code>, <code>.smc</code>, <code>.zip</code></td></tr><tr><td>Game Boy Advance</td><td><code>gba</code></td><td><code>.gba</code>, <code>.zip</code></td></tr></tbody></table>
+<p>If a game does not appear, choose <strong>START → UI Settings → Update game lists</strong>. If it is still missing, make sure <strong>DO NOT SCAN NEW GAMES</strong> is not enabled under Advanced Settings → Boot Settings. The <a href="https://wiki-next.recalbox.com/en/basic-usage/first-use-and-configuration/add-games">Recalbox wiki</a> identifies this as the most common cause.</p>
+<blockquote>
+<p>Use game files you have the right to use. Tools such as the GB Operator can read personal cartridges, and free Game Boy homebrew games are also available on itch.io.</p>
+</blockquote>
+<h3 id="what-the-zero-w-can-handle">What the Zero W can handle</h3>
+<ul>
+<li><strong>Game Boy, Game Boy Color, NES, Master System, Game Gear:</strong> comfortably.</li>
+<li><strong>SNES:</strong> runs with PiSNES, which is designed for older Pi hardware. Some demanding games stutter a little.</li>
+<li><strong>Game Boy Advance:</strong> many games run, while some struggle. <strong>gpsp</strong> is the lighter emulator.</li>
+<li><strong>PSP:</strong> no. Recalbox on the Pi Zero <a href="https://forum.recalbox.com/topic/32845/does-not-show-psp-games-on-raspberry-pi-zero-w">does not even list PSP games</a>.</li>
+</ul>
+<p>If <strong>Game Boy Color</strong> games have slow movement and audio—SNES ran more smoothly on my setup—I choose the lighter <strong>gambatte</strong> emulator in the system settings and set <code>global.smooth=0</code> in <code>recalbox.conf</code>.</p>
+<p>Original Game Boy games are monochrome. In RetroArch’s Quick Menu → Options, <strong>GB Colorization</strong> applies a Game Boy Color-style palette.</p>
+<h2 id="troubleshooting">Troubleshooting</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Symptom</th><th>What to do</th></tr></thead><tbody><tr><td>The picture breaks again after a while</td><td>The settings have been overwritten. Restore <code>recalbox-user-config.txt</code> from the backup.</td></tr><tr><td>Only the SHARE drive is visible</td><td>Assign RECALBOX a drive letter in Disk Management (<a href="#step-partition">step 3</a>).</td></tr><tr><td>Stuck at the loading screen</td><td>Wait 5 minutes. If it is still stuck, check for the <code>recalbox-gpicase1</code> and <code>pwm-audio-pizero-gpicase</code> overlays.</td></tr><tr><td>Black screen</td><td>Check the image, version, overlay names, and whether the file was copied correctly. The presence of comments does not establish the cause.</td></tr><tr><td>“Game didn’t start at all”</td><td>Check <code>global.videomode=default</code>, ROM/BIOS files, and clock settings. The message alone does not identify the cause.</td></tr><tr><td>“Installing GPi Case” appears on every boot</td><td>Installation may be incomplete. The cleanest approach is to rewrite the card and let the first boot finish.</td></tr><tr><td>Home does nothing</td><td>Expected in this setup: Select is the hotkey.</td></tr></tbody></table>
+<h2 id="conclusion">Conclusion</h2>
+<p>The GPi Case 2W works with the Pi Zero W, but it is not ready to go out of the box with this Recalbox setup. Recalbox mistakes it for the older GPi, so the display needs manual configuration, Select becomes the hotkey, and updates require care. Once configured, it makes a very enjoyable handheld for Game Boy, GBC, NES, and most SNES games.</p>
+<p>For a new installation, I would consider a <strong>Pi Zero 2W</strong>, for which official case support was added in Recalbox 9.x. This guide remains a record of my Zero W setup and does not replace the instructions for a particular image. Start with <a href="https://github.com/RetroFlag/GPICASE2W-display-patch">Retroflag’s instructions</a> and the release notes relevant to your installation.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li>
+<p><a href="https://github.com/RetroFlag/GPICASE2W-display-patch">RetroFlag — GPICASE2W display patch</a></p>
+</li>
+<li>
+<p><a href="https://github.com/RetroFlag/GPICASE2W-display-patch/issues/2">RetroFlag — Issue #2: GPICase-Zero2W new case - display issues</a></p>
+</li>
+<li>
+<p><a href="https://github.com/mirkochip/recalbox-rpi_zero_v1.3-gpi_case_2w">mirkochip — Recalbox 9.2.3 on a Pi Zero with GPi Case 2W</a></p>
+</li>
+<li>
+<p><a href="https://github.com/live-clones/recalbox/blob/master/RELEASE-NOTES.md">Recalbox — Release notes</a></p>
+</li>
+<li>
+<p><a href="https://forum.recalbox.com/topic/34650/recalbox-gpi-case-2w-pi-zero-w">Recalbox Forum — GPi Case 2W + Pi Zero W</a></p>
+</li>
+<li>
+<p><a href="https://wiki-next.recalbox.com/en/basic-usage/getting-started/special-commands">Recalbox Wiki — Special commands</a></p>
+</li>
+<li>
+<p><a href="https://wiki-next.recalbox.com/en/basic-usage/first-use-and-configuration/add-games">Recalbox Wiki — Add games</a></p>
+</li>
+<li>
+<p><a href="https://raspberrytips.com/gpi-case-2w-review/">RaspberryTips — GPi Case 2W Review</a></p>
+</li>
+<li>
+<p><a href="https://www.raspberrypi.com/documentation/computers/config_txt.html">Raspberry Pi — config.txt file format</a></p>
+</li>
+<li>
+<p><a href="https://www.raspberrypi.com/documentation/computers/legacy_config_txt.html">Raspberry Pi — clock frequencies and legacy settings</a></p>
+</li>
+</ul></div><footer class="article-tags"><a href="/en/tags/gpi-case-2w/"># gpi case 2w</a><a href="/en/tags/retroflag/"># retroflag</a><a href="/en/tags/recalbox/"># recalbox</a><a href="/en/tags/raspberry-pi-zero-w/"># raspberry pi zero w</a><a href="/en/tags/troubleshooting/"># troubleshooting</a></footer></article><div class="reading-end"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4m8 2v15"></path></svg><span>Keep exploring</span><a href="/en/archives/">All articles →</a></div><footer class="site-footer"><span>© 2026 m0ss1</span><a href="https://github.com/mossygr/mossygr.github.io">GitHub <span aria-hidden="true">↗</span></a></footer></main><aside class="right-rail" aria-label="On this page"><nav class="toc"><p>On this page</p><ol><li><a href="#the-problem-recalbox-mistakes-it-for-the-old-case">The problem: Recalbox mistakes it for the old case</a></li><li class="nested"><a href="#the-symptoms">The symptoms</a></li><li class="nested"><a href="#why-the-retroflag-patch-is-not-enough">Why the Retroflag patch is not enough</a></li><li><a href="#the-fix-step-by-step">The fix, step by step</a></li><li class="nested"><a href="#what-i-need">What I need</a></li><li class="nested"><a href="#1-write-the-correct-image">1. Write the correct image</a></li><li class="nested"><a href="#2-let-the-first-boot-finish-without-touching-anything">2. Let the first boot finish without touching anything</a></li><li class="nested"><a href="#step-partition">3. Find the RECALBOX partition in Windows</a></li><li class="nested"><a href="#final-config">4. Replace the display configuration</a></li><li class="nested"><a href="#5-correct-the-emulators-video-mode">5. Correct the emulators’ video mode</a></li><li class="nested"><a href="#6-boot">6. Boot</a></li><li><a href="#after-installation-using-the-case-as-an-old-gpi">After installation: using the case as an “old GPi”</a></li><li class="nested"><a href="#select-is-the-hotkey-not-home">SELECT is the hotkey, not Home</a></li><li class="nested"><a href="#saving-progress">Saving progress</a></li><li class="nested"><a href="#settings-may-be-overwritten">Settings may be overwritten</a></li><li><a href="#games">Games</a></li><li class="nested"><a href="#what-the-zero-w-can-handle">What the Zero W can handle</a></li><li><a href="#troubleshooting">Troubleshooting</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#sources">Sources</a></li></ol></nav><div class="rail-note"><span class="status-dot"></span>Build. Document. Share.</div></aside></div><details class="mobile-toc"><summary>On this page</summary><nav><ol><li><a href="#the-problem-recalbox-mistakes-it-for-the-old-case">The problem: Recalbox mistakes it for the old case</a></li><li><a href="#the-symptoms">The symptoms</a></li><li><a href="#why-the-retroflag-patch-is-not-enough">Why the Retroflag patch is not enough</a></li><li><a href="#the-fix-step-by-step">The fix, step by step</a></li><li><a href="#what-i-need">What I need</a></li><li><a href="#1-write-the-correct-image">1. Write the correct image</a></li><li><a href="#2-let-the-first-boot-finish-without-touching-anything">2. Let the first boot finish without touching anything</a></li><li><a href="#step-partition">3. Find the RECALBOX partition in Windows</a></li><li><a href="#final-config">4. Replace the display configuration</a></li><li><a href="#5-correct-the-emulators-video-mode">5. Correct the emulators’ video mode</a></li><li><a href="#6-boot">6. Boot</a></li><li><a href="#after-installation-using-the-case-as-an-old-gpi">After installation: using the case as an “old GPi”</a></li><li><a href="#select-is-the-hotkey-not-home">SELECT is the hotkey, not Home</a></li><li><a href="#saving-progress">Saving progress</a></li><li><a href="#settings-may-be-overwritten">Settings may be overwritten</a></li><li><a href="#games">Games</a></li><li><a href="#what-the-zero-w-can-handle">What the Zero W can handle</a></li><li><a href="#troubleshooting">Troubleshooting</a></li><li><a href="#conclusion">Conclusion</a></li><li><a href="#sources">Sources</a></li></ol></nav></details><dialog id="navigation-dialog" class="navigation-dialog" aria-label="Navigation"><div class="dialog-bar"><span>Navigation</span><button class="icon-button" data-close aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><nav aria-label="Navigation"><div class="nav-group"><p class="nav-label">START HERE</p><a class="nav-link" href="/en/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 10 5-10 5L2 8l10-5M2 12l10 5 10-5M2 16l10 5 10-5"></path></svg>Overview</a><a class="nav-link" href="/en/guides/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4m8 2v15"></path></svg>Technical guides</a><a class="nav-link" href="/en/projects/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"></path></svg>Projects</a><a class="nav-link" href="/en/archives/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4m8 2v15"></path></svg>All articles</a></div><div class="nav-group"><a class="nav-label nav-label-link" href="/en/categories/">Categories</a><details><summary>HackTheBox<span>9</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/hackthebox/">Category overview →</a><a class="nav-doc" href="/en/posts/brutforce-attack-technics/">Brute-force attack techniques</a><a class="nav-doc" href="/en/posts/jerry/">Jerry</a><a class="nav-doc" href="/en/posts/weak-rsa/">Weak RSA</a><a class="nav-doc" href="/en/posts/templed/">Templed</a><a class="nav-doc" href="/en/posts/find-the-easy-pass/">Find The Easy Pass</a><a class="nav-doc" href="/en/posts/lame/">Lame</a><a class="nav-doc" href="/en/posts/test/">Lame</a><a class="nav-doc" href="/en/posts/emdee-five-for-life/">Emdee five for life</a><a class="nav-doc" href="/en/posts/freelancer/">FreeLancer</a></div></details><details><summary>Challenges<span>6</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/challenges/">Category overview →</a><a class="nav-doc" href="/en/posts/brutforce-attack-technics/">Brute-force attack techniques</a><a class="nav-doc" href="/en/posts/weak-rsa/">Weak RSA</a><a class="nav-doc" href="/en/posts/templed/">Templed</a><a class="nav-doc" href="/en/posts/find-the-easy-pass/">Find The Easy Pass</a><a class="nav-doc" href="/en/posts/emdee-five-for-life/">Emdee five for life</a><a class="nav-doc" href="/en/posts/freelancer/">FreeLancer</a></div></details><details><summary>CTF<span>5</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/ctf/">Category overview →</a><a class="nav-doc" href="/en/posts/tryhackme-reverse-engineering/">TryHackMe — Reverse Engineering</a><a class="nav-doc" href="/en/posts/jerry/">Jerry</a><a class="nav-doc" href="/en/posts/jack/">Jack — TryHackMe</a><a class="nav-doc" href="/en/posts/lame/">Lame</a><a class="nav-doc" href="/en/posts/test/">Lame</a></div></details><details><summary>Burpsuite<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/burpsuite/">Category overview →</a><a class="nav-doc" href="/en/posts/burpsuite-on-firefox/">Using Burp Suite with Firefox</a></div></details><details><summary>Tutorials<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/tutorials/">Category overview →</a><a class="nav-doc" href="/en/posts/burpsuite-on-firefox/">Using Burp Suite with Firefox</a></div></details><details><summary>TryHackMe<span>2</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/tryhackme/">Category overview →</a><a class="nav-doc" href="/en/posts/tryhackme-reverse-engineering/">TryHackMe — Reverse Engineering</a><a class="nav-doc" href="/en/posts/jack/">Jack — TryHackMe</a></div></details><details><summary>Technical Analysis<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/technical-analysis/">Category overview →</a><a class="nav-doc" href="/en/posts/doji-candlestick/">Doji candlesticks: watching for a change in direction</a></div></details><details><summary>Candlesticks<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/candlesticks/">Category overview →</a><a class="nav-doc" href="/en/posts/doji-candlestick/">Doji candlesticks: watching for a change in direction</a></div></details><details><summary>Arduino<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/arduino/">Category overview →</a><a class="nav-doc" href="/en/robot/">4WD robot: from wiring to the first drive</a></div></details><details><summary>Robotics<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/robotics/">Category overview →</a><a class="nav-doc" href="/en/robot/">4WD robot: from wiring to the first drive</a></div></details><details open><summary>Raspberry Pi<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/raspberry-pi/">Category overview →</a><a class="nav-doc active" href="/en/posts/gpi-case-2w-pi-zero-w-recalbox/" aria-current="page">GPi Case 2W and Pi Zero W: setting up Recalbox 9.2</a></div></details><details open><summary>Retro Gaming<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/en/categories/retro-gaming/">Category overview →</a><a class="nav-doc active" href="/en/posts/gpi-case-2w-pi-zero-w-recalbox/" aria-current="page">GPi Case 2W and Pi Zero W: setting up Recalbox 9.2</a></div></details></div><div class="nav-bottom"><span class="status-dot"></span>Notes from building things</div></nav></dialog><dialog id="search-dialog" class="search-dialog" aria-label="Search"><div class="search-input-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.4-4.4M19 11a8 8 0 1 1-16 0 8 8 0 0 1 16 0"></path></svg><label class="sr-only" for="search-input">Search</label><input id="search-input" type="search" placeholder="Search guides, code, projects…" autocomplete="off"><button class="icon-button" data-close aria-label="Close"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><div class="search-status" role="status" aria-live="polite"></div><ol id="search-results"></ol><div class="search-footer"><span>Search the full documentation</span><kbd>esc</kbd></div></dialog><script type="module" src="/_astro/Portal.astro_astro_type_script_index_0_lang.DD-MvU_3.js"></script><script src="/unregister.js" defer></script></body></html>

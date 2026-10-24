@@ -1,0 +1,11 @@
+/* The native Chirpy top bar, with a compact server-rendered language selector. */
+.language-switcher{display:flex;flex:0 0 auto;align-items:center;gap:2px;margin-inline:.75rem;padding:3px;border:1px solid var(--btn-border-color);border-radius:999px;background:var(--main-bg);font-size:.8rem;line-height:1}
+.language-switcher a{display:flex;align-items:center;justify-content:center;min-width:36px;min-height:32px;padding:0 7px;border-radius:999px;color:var(--text-muted-color);font-weight:600;text-decoration:none}
+.language-switcher a[aria-current="page"]{background:var(--link-color);color:var(--main-bg)}
+.language-switcher a:hover{color:var(--link-color);background:var(--btn-border-color)}
+.language-switcher a[aria-current="page"]:hover{background:var(--link-color);color:var(--main-bg)}
+.language-switcher a:focus-visible{outline:2px solid var(--link-color);outline-offset:3px}
+#topbar #breadcrumb{flex:1;min-width:0;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#topbar-title{flex:1;min-width:0;width:auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#topbar-title.d-none + .language-switcher{display:none}
+@media(max-width:991.98px){.language-switcher{margin-inline:.25rem}.language-switcher a{min-width:32px;padding-inline:5px}#topbar-title{font-size:1rem}}

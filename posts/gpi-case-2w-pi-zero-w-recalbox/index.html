@@ -1,0 +1,349 @@
+<!DOCTYPE html><html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2 · m0ss1</title><meta name="description" content="Πώς έλυσα τη λανθασμένη αναγνώριση της θήκης, διόρθωσα την εικόνα και έστησα τα χειριστήρια στο GPi Case 2W με Raspberry Pi Zero W."><meta name="color-scheme" content="light dark"><link rel="canonical" href="https://mossygr.github.io/posts/gpi-case-2w-pi-zero-w-recalbox/"><link rel="alternate" hreflang="el" href="https://mossygr.github.io/posts/gpi-case-2w-pi-zero-w-recalbox/"><link rel="alternate" hreflang="en" href="https://mossygr.github.io/en/posts/gpi-case-2w-pi-zero-w-recalbox/"><link rel="alternate" hreflang="x-default" href="https://mossygr.github.io/posts/gpi-case-2w-pi-zero-w-recalbox/"><meta property="og:type" content="article"><meta property="og:title" content="GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2"><meta property="og:description" content="Πώς έλυσα τη λανθασμένη αναγνώριση της θήκης, διόρθωσα την εικόνα και έστησα τα χειριστήρια στο GPi Case 2W με Raspberry Pi Zero W."><meta property="og:url" content="https://mossygr.github.io/posts/gpi-case-2w-pi-zero-w-recalbox/"><meta property="og:site_name" content="m0ss1"><meta property="og:locale" content="el_GR"><meta property="og:image" content="https://mossygr.github.io/assets/gpicase2w/cover-1200.webp"><link rel="icon" href="/assets/img/favicons/m0ss1.svg" type="image/svg+xml"><script>try{const t=localStorage.getItem('m0ss1-theme');document.documentElement.dataset.theme=t==='light'||t==='dark'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}catch{}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2","description":"Πώς έλυσα τη λανθασμένη αναγνώριση της θήκης, διόρθωσα την εικόνα και έστησα τα χειριστήρια στο GPi Case 2W με Raspberry Pi Zero W.","inLanguage":"el","url":"https://mossygr.github.io/posts/gpi-case-2w-pi-zero-w-recalbox/","datePublished":"2026-10-22T20:30:00.000Z","author":{"@type":"Person","name":"m0ss1"},"image":"https://mossygr.github.io/assets/gpicase2w/cover-1200.webp"}</script><link rel="stylesheet" href="/_astro/Portal.sCDZGxT1.css"></head><body data-lang="el"><a class="skip-link" href="#main">Μετάβαση στο περιεχόμενο</a><header class="topbar"><a class="brand" href="/" aria-label="m0ss1"><span class="brand-symbol">m<span>₀</span></span><strong>m0ss1<span class="brand-divider">/</span><span class="brand-docs">docs</span></strong></a><div class="topbar-actions"><button class="search-trigger" data-open="search-dialog" aria-label="Αναζήτηση"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.4-4.4M19 11a8 8 0 1 1-16 0 8 8 0 0 1 16 0"></path></svg><span>Αναζήτηση</span><kbd>⌘ K</kbd></button><a class="language-switch" href="/en/posts/gpi-case-2w-pi-zero-w-recalbox/" lang="en" hreflang="en" aria-label="Read this page in English"><span class="selected">EL</span><span class="language-divider">/</span><span>EN</span></a><button class="icon-button" id="theme-toggle" aria-label="Αλλαγή εμφάνισης" title="Αλλαγή εμφάνισης"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.6 5.6 7 7m10 10 1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0"></path></svg></button><button class="icon-button mobile-menu" data-open="navigation-dialog" aria-label="Πλοήγηση"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button></div></header><div class="portal-grid"><aside class="sidebar"><nav aria-label="Πλοήγηση"><div class="nav-group"><p class="nav-label">ΞΕΚΙΝΗΣΕ ΕΔΩ</p><a class="nav-link" href="/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 10 5-10 5L2 8l10-5M2 12l10 5 10-5M2 16l10 5 10-5"></path></svg>Επισκόπηση</a><a class="nav-link" href="/guides/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4m8 2v15"></path></svg>Τεχνικοί οδηγοί</a><a class="nav-link" href="/projects/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"></path></svg>Projects</a><a class="nav-link" href="/archives/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4m8 2v15"></path></svg>Όλα τα άρθρα</a></div><div class="nav-group"><a class="nav-label nav-label-link" href="/categories/">Κατηγορίες</a><details><summary>HackTheBox<span>9</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/hackthebox/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Brutforce-attack-technics/">Brutforce attack technics</a><a class="nav-doc" href="/posts/Jerry/">Jerry</a><a class="nav-doc" href="/posts/Weak-RSA/">Weak RSA</a><a class="nav-doc" href="/posts/Templed/">Templed</a><a class="nav-doc" href="/posts/Find-The-Easy-Pass/">Find The Easy Pass</a><a class="nav-doc" href="/posts/Lame/">Lame</a><a class="nav-doc" href="/posts/test/">Lame</a><a class="nav-doc" href="/posts/Emdee-five-for-life/">Emdee five for life</a><a class="nav-doc" href="/posts/FreeLancer/">FreeLancer</a></div></details><details><summary>Challenges<span>6</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/challenges/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Brutforce-attack-technics/">Brutforce attack technics</a><a class="nav-doc" href="/posts/Weak-RSA/">Weak RSA</a><a class="nav-doc" href="/posts/Templed/">Templed</a><a class="nav-doc" href="/posts/Find-The-Easy-Pass/">Find The Easy Pass</a><a class="nav-doc" href="/posts/Emdee-five-for-life/">Emdee five for life</a><a class="nav-doc" href="/posts/FreeLancer/">FreeLancer</a></div></details><details><summary>CTF<span>5</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/ctf/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/TryHackMe-Reverse-Engineering/">TryHackMe - Reverse Engineering</a><a class="nav-doc" href="/posts/Jerry/">Jerry</a><a class="nav-doc" href="/posts/Jack/">Jack - TryHackMe</a><a class="nav-doc" href="/posts/Lame/">Lame</a><a class="nav-doc" href="/posts/test/">Lame</a></div></details><details><summary>Burpsuite<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/burpsuite/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Burpsuite-on-firefox/">Use BurpSuite on firefox</a></div></details><details><summary>tutorials<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/tutorials/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Burpsuite-on-firefox/">Use BurpSuite on firefox</a></div></details><details><summary>TryHackMe<span>2</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/tryhackme/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/TryHackMe-Reverse-Engineering/">TryHackMe - Reverse Engineering</a><a class="nav-doc" href="/posts/Jack/">Jack - TryHackMe</a></div></details><details><summary>Τεχνική ανάλυση<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/τεχνική-ανάλυση/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Doji-%CE%BA%CE%B5%CF%81%CE%AF.-%CE%A4%CE%BF-%CE%BA%CE%B5%CF%81%CE%AF-%CF%84%CE%B7%CF%82-%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CE%AE%CF%82-%CF%84%CE%AC%CF%83%CE%B7%CF%82.(REVERSAL)/">Doji κερί. Το κερί της αλλαγής τάσης.(REVERSAL).</a></div></details><details><summary>Κεριά<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/κεριά/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Doji-%CE%BA%CE%B5%CF%81%CE%AF.-%CE%A4%CE%BF-%CE%BA%CE%B5%CF%81%CE%AF-%CF%84%CE%B7%CF%82-%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CE%AE%CF%82-%CF%84%CE%AC%CF%83%CE%B7%CF%82.(REVERSAL)/">Doji κερί. Το κερί της αλλαγής τάσης.(REVERSAL).</a></div></details><details><summary>Arduino<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/arduino/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/robot/">Ρομπότ 4WD: από την καλωδίωση στην πρώτη διαδρομή</a></div></details><details><summary>Ρομποτική<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/ρομποτική/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/robot/">Ρομπότ 4WD: από την καλωδίωση στην πρώτη διαδρομή</a></div></details><details open><summary>Raspberry Pi<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/raspberry-pi/">Επισκόπηση κατηγορίας →</a><a class="nav-doc active" href="/posts/gpi-case-2w-pi-zero-w-recalbox/" aria-current="page">GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2</a></div></details><details open><summary>Retro gaming<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/retro-gaming/">Επισκόπηση κατηγορίας →</a><a class="nav-doc active" href="/posts/gpi-case-2w-pi-zero-w-recalbox/" aria-current="page">GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2</a></div></details></div><div class="nav-bottom"><span class="status-dot"></span>Σημειώσεις από την πράξη</div></nav></aside><main id="main" tabindex="-1" class="main-content reading"><nav class="breadcrumbs" aria-label="Διαδρομή"><a href="/">Επισκόπηση</a><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg><a href="/categories/raspberry-pi/">Raspberry Pi</a><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg><span>Projects</span></nav><article data-pagefind-body><header class="article-header"><p class="eyebrow">Raspberry Pi / Retro gaming</p><h1 data-pagefind-meta="title">GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2</h1><p class="article-deck">Πώς έλυσα τη λανθασμένη αναγνώριση της θήκης, διόρθωσα την εικόνα και έστησα τα χειριστήρια στο GPi Case 2W με Raspberry Pi Zero W.</p><div class="article-meta"><span class="author-avatar">m₀</span><strong>m0ss1</strong><span>·</span><time datetime="2026-10-22T20:30:00.000Z">22 Οκτωβρίου 2026</time></div></header><figure class="article-cover"><img src="/assets/gpicase2w/cover-1200.webp" alt="Η συσκευασία του Retroflag GPi Case 2W και τα συμβατά μοντέλα Raspberry Pi Zero" width="1200" height="900" fetchpriority="high"></figure><div class="prose"><p>Το <strong>Retroflag GPi Case 2W</strong> είναι μια θήκη σε σχήμα Game Boy, με οθόνη 3” 640×480, ενσωματωμένη μπαταρία και κουμπιά, που δέχεται μέσα σε ένα «cartridge» ένα Raspberry Pi Zero. Στο κουτί γράφει ότι είναι συμβατή με Pi Zero, Zero W και Zero 2W.</p>
+<p>Εγώ είχα ένα <strong>Pi Zero W</strong> (το πρώτο, όχι το Zero 2W) και ήθελα να τρέξω <strong>Recalbox</strong>. Στην πράξη, αυτός ο συνδυασμός δεν δουλεύει έτοιμος. Μου πήρε αρκετές δοκιμές να καταλάβω ότι η λανθασμένη αναγνώριση της θήκης εξηγούσε την εικόνα και τις ρυθμίσεις που επέστρεφαν στις παλιές τιμές. Σε αυτό τον οδηγό εξηγώ τι βρήκα και πώς το έστησα τελικά να δουλεύει. Οι ρυθμίσεις αφορούν τη συγκεκριμένη εγκατάσταση· δεν είναι γενική συνταγή για κάθε image ή έκδοση του Recalbox.</p>
+<blockquote>
+<p><strong>Αφορά:</strong> GPi Case 2W + Raspberry Pi Zero ή Zero W + Recalbox 9.2. Η υποστήριξη που προστέθηκε στο Recalbox 9.x αφορά το <strong>Pi Zero 2W</strong>. Αυτός ο οδηγός καταγράφει τη δική μου εγκατάσταση με το παλιότερο Zero W· δεν προϋποθέτει ότι κάθε image για το Zero 2W συμπεριφέρεται με τον ίδιο τρόπο.</p>
+</blockquote>
+<h2 id="το-πρόβλημα-το-recalbox-βλέπει-τη-θήκη-ως-την-παλιά">Το πρόβλημα: το Recalbox βλέπει τη θήκη ως την παλιά</h2>
+<p>Το Recalbox αναγνωρίζει αυτόματα τη θήκη στην πρώτη εκκίνηση και ρυθμίζει μόνο του οθόνη, ήχο και κουμπιά. Η υποστήριξη για το GPi Case 2W όμως <a href="https://github.com/live-clones/recalbox/blob/master/RELEASE-NOTES.md">προστέθηκε μόνο για το Raspberry Pi Zero 2</a>. Το image για Pi Zero / Pi 1, που χρειάζεται το Zero W, ξέρει μόνο τον <strong>πρώτο GPi Case</strong>.</p>
+<p>Οι δύο θήκες συνδέονται με το Pi με τον ίδιο τρόπο: η οθόνη μέσω της διεπαφής <strong>DPI</strong> στα GPIO και τα κουμπιά ως χειριστήριο. Η ανίχνευση λοιπόν δεν μπορεί να τις ξεχωρίσει και διαλέγει αυτή που ξέρει. Φαίνεται και στο log εκκίνησης (<code>SHARE/system/logs</code>):</p>
+<pre class="astro-code astro-code-themes github-light github-dark-high-contrast" style="background-color:#fff;--shiki-dark-bg:#0a0c10;color:#24292e;--shiki-dark:#f0f3f6; overflow-x: auto;" tabindex="0" data-language="text"><code><span class="line"><span>doing startup for board GPiV1</span></span></code></pre>
+<p>Ο παλιός GPi όμως είναι διαφορετική συσκευή: έχει οθόνη <strong>320×240</strong>, περιστραμμένη, και δεν έχει κουμπί Home. Το Recalbox εφαρμόζει τις δικές του ρυθμίσεις σε μια θήκη με οθόνη 640×480.</p>
+<h3 id="τα-συμπτώματα">Τα συμπτώματα</h3>
+<p>Τα παρακάτω εμφανίστηκαν στη δική μου εγκατάσταση. Η λανθασμένη αναγνώριση εξηγεί την εικόνα και την επαναφορά των ρυθμίσεων. Ένα παιχνίδι που δεν ξεκινά χρειάζεται επιπλέον έλεγχο: το ίδιο μήνυμα μπορεί να αφορά ROM ή BIOS, όχι μόνο τη ρύθμιση της οθόνης.</p>
+<ol>
+<li><strong>Σπασμένη εικόνα.</strong> Μικρό κομμάτι του logo πάνω αριστερά και κάθετες χρωματιστές γραμμές στο υπόλοιπο, επειδή η οθόνη παίρνει χρονισμό για 320×240.</li>
+<li><strong>Οι διορθώσεις χάνονται.</strong> Ακόμα κι όταν διόρθωνα τις ρυθμίσεις, εμφανιζόταν το μήνυμα «Installing GPi Case… Finalizing» και το Recalbox ξανάγραφε τις ρυθμίσεις του παλιού GPi.</li>
+<li><strong>Τα παιχνίδια δεν ξεκινούν.</strong> Είτε με πετούσε πίσω στη λίστα είτε έβγαζε «Looks like your game didn’t start at all!», ακόμα και με τα παιχνίδια που έρχονται με το Recalbox.</li>
+<li><strong>Τα κουμπιά Hotkey δεν κάνουν τίποτα</strong> στο Home.</li>
+</ol>
+<img src="/assets/gpicase2w/broken-screen-1200.webp" alt="Λανθασμένη εικόνα και κάθετες γραμμές στο GPi Case 2W" width="1200" height="1600" srcset="/assets/gpicase2w/broken-screen-480.webp 480w, /assets/gpicase2w/broken-screen-800.webp 800w, /assets/gpicase2w/broken-screen-1200.webp 1200w" sizes="(max-width: 768px) 92vw, 720px" loading="lazy">
+_Η πρώτη εκκίνηση με τις ρυθμίσεις του παλιού GPi._
+<img src="/assets/gpicase2w/installing-gpi-case-1200.webp" alt="Το μήνυμα Installing GPi Case και Finalizing στην οθόνη" width="1200" height="1600" srcset="/assets/gpicase2w/installing-gpi-case-480.webp 480w, /assets/gpicase2w/installing-gpi-case-800.webp 800w, /assets/gpicase2w/installing-gpi-case-1200.webp 1200w" sizes="(max-width: 768px) 92vw, 720px" loading="lazy">
+_Το Recalbox εγκαθιστά τις ρυθμίσεις της θήκης που αναγνώρισε._
+<h3 id="γιατί-δεν-αρκεί-το-patch-της-retroflag">Γιατί δεν αρκεί το patch της Retroflag</h3>
+<p>Η Retroflag έχει στο GitHub (<a href="https://github.com/RetroFlag/GPICASE2W-display-patch">GPICASE2W-display-patch</a>) ξεχωριστό αρχείο ρυθμίσεων για Zero και για Zero 2W. Με το Zero W και το Recalbox 9.2 όμως:</p>
+<ul>
+<li>Το αρχείο για Zero φορτώνει το overlay <code>dpi-pizero-gpicase</code>, που <strong>δεν υπάρχει</strong> στο Recalbox 9.2, γιατί το patch γράφτηκε για το 8.1.1.</li>
+<li>Στο <a href="https://github.com/RetroFlag/GPICASE2W-display-patch/issues/2">issue #2</a> του repo, χρήστες αναφέρουν ότι <strong>το αρχείο για Zero 1 είναι χαλασμένο</strong>, ενώ <strong>το αρχείο για Zero 2W δουλεύει και στο Zero 1</strong>. Η βασική διαφορά: το δεύτερο τρέχει την οθόνη πιο αργά (pixel clock <strong>19,2 MHz</strong> αντί για 32 MHz) και με χαμηλότερες ρυθμίσεις από το άλλο patch. Στη δική μου δοκιμή, με τη γρήγορη οθόνη και τις πιο επιθετικές ρυθμίσεις το μενού έβγαινε αλλά τα παιχνίδια κρασάριζαν.</li>
+<li>Ακόμα και το αρχείο για Zero 2W, αυτούσιο, κόλλησε σε μένα στην οθόνη φόρτωσης, το ίδιο που αναφέρει κι άλλος χρήστης στο ίδιο issue. Χρειάστηκε συνδυασμός των δύο.</li>
+</ul>
+<img src="/assets/gpicase2w/game-error-1200.webp" alt="Το μήνυμα Looks like your game did not start at all στο Recalbox" width="1200" height="1600" srcset="/assets/gpicase2w/game-error-480.webp 480w, /assets/gpicase2w/game-error-800.webp 800w, /assets/gpicase2w/game-error-1200.webp 1200w" sizes="(max-width: 768px) 92vw, 720px" loading="lazy">
+_Το μήνυμα αποτυχίας αναφέρει και πιθανές αιτίες ROM ή BIOS. Δεν αρκεί μόνο του για διάγνωση._
+<h2 id="η-λύση-βήμα-βήμα">Η λύση βήμα βήμα</h2>
+<h3 id="τι-χρειάζομαι">Τι χρειάζομαι</h3>
+<ul>
+<li>Retroflag GPi Case 2W</li>
+<li>Raspberry Pi Zero ή Zero W, <strong>χωρίς</strong> κολλημένα pins</li>
+<li>Κάρτα microSD</li>
+<li>Υπολογιστή με το <strong>Raspberry Pi Imager</strong></li>
+</ul>
+<h3 id="1-γράφω-το-σωστό-image">1. Γράφω το σωστό image</h3>
+<p>Στο Raspberry Pi Imager: <strong>Choose OS → Emulation and game OS → Recalbox → «Recalbox - Raspberry Pi Zero / 1 / GPiCase1»</strong>.</p>
+<p>Όσο κι αν ακούγεται λάθος, αυτό είναι το σωστό image για Zero W. Ένας χρήστης με την ίδια σύνθεση <a href="https://github.com/mirkochip/recalbox-rpi_zero_v1.3-gpi_case_2w">σημειώνει</a> ότι το image «GPiCase 2W + Raspberry Pi Zero» από το site του Recalbox είναι παραπλανητικό για αυτό τον συνδυασμό και καταλήγει σε μαύρη οθόνη.</p>
+<blockquote>
+<p>Το <strong>«GPi Case 2»</strong> είναι άλλη θήκη, για Compute Module 4. Δεν έχει σχέση με το 2W.</p>
+</blockquote>
+<h3 id="2-πρώτη-εκκίνηση-χωρίς-να-αγγίξω-τίποτα">2. Πρώτη εκκίνηση χωρίς να αγγίξω τίποτα</h3>
+<p>Βάζω την κάρτα στο cartridge και ανοίγω τον διακόπτη. Η εικόνα θα βγει σπασμένη, και αυτό είναι αναμενόμενο. Το αφήνω <strong>10 λεπτά χωρίς να πατήσω τίποτα</strong>, για να ολοκληρωθεί η εγκατάσταση της θήκης, και μετά κλείνω.</p>
+<blockquote>
+<p>Αν κλείσω τον διακόπτη στη μέση της εγκατάστασης, μπορεί να μείνει μισοτελειωμένη και να ξανατρέχει σε κάθε εκκίνηση, επαναφέροντας κάθε φορά τις ρυθμίσεις του παλιού GPi. Σε μένα συνέβη, και η μόνη καθαρή λύση ήταν να ξαναγράψω την κάρτα.</p>
+</blockquote>
+<h3 id="step-partition">3. Βρίσκω το διαμέρισμα RECALBOX στα Windows</h3>
+<p>Τα δύο διαμερίσματα που μας ενδιαφέρουν εδώ, από τα Windows, είναι τα παρακάτω. Ανάλογα με το image μπορεί να υπάρχουν και άλλα διαμερίσματα που δεν χρειάζεται να πειράξουμε:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Διαμέρισμα</th><th>Τι έχει</th></tr></thead><tbody><tr><td><strong>RECALBOX</strong> (FAT32, μικρό)</td><td><code>config.txt</code>, <code>recalbox-user-config.txt</code>, <code>recalbox-boot.conf</code>, overlays</td></tr><tr><td><strong>SHARE</strong> (exFAT)</td><td>παιχνίδια, BIOS, saves, <code>system/recalbox.conf</code></td></tr></tbody></table>
+<p>Τα Windows συχνά δείχνουν μόνο το SHARE. Για να εμφανιστεί και το RECALBOX: δεξί κλικ στο Έναρξη → <strong>Διαχείριση δίσκων</strong> → δεξί κλικ στο μικρό διαμέρισμα FAT32 της κάρτας → <strong>Αλλαγή γράμματος μονάδας δίσκου</strong> → Προσθήκη.</p>
+<blockquote>
+<p>Αν τα Windows προτείνουν μορφοποίηση του δίσκου, πατάω <strong>Άκυρο</strong>.</p>
+</blockquote>
+<h3 id="final-config">4. Αντικαθιστώ τις ρυθμίσεις της οθόνης</h3>
+<p>Στο RECALBOX κρατάω πρώτα ένα αντίγραφο του <code>recalbox-user-config.txt</code>. Έπειτα το ανοίγω —τα Windows μπορεί να κρύβουν το <code>.txt</code>—, αντικαθιστώ <strong>όλο</strong> το περιεχόμενο και βάζω αυτό:</p>
+<pre class="astro-code astro-code-themes github-light github-dark-high-contrast" style="background-color:#fff;--shiki-dark-bg:#0a0c10;color:#24292e;--shiki-dark:#f0f3f6; overflow-x: auto;" tabindex="0" data-language="ini"><code><span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">boot_delay</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=5</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dtparam</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=</span><span style="color:#D73A49;--shiki-dark:#FF9492">audio</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=on</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dtoverlay</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=pwm-audio-pizero-gpicase</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">display_rotate</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dtoverlay</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=recalbox-gpicase1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">overscan_left</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">overscan_right</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">overscan_top</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">overscan_bottom</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">framebuffer_width</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=640</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">framebuffer_height</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=480</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">enable_dpi_lcd</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">display_default_lcd</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dpi_group</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=2</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dpi_mode</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=87</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dpi_output_format</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0x00016</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">hdmi_timings</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=640 0 1 1 20 480 0 1 1 2 0 0 0 60 0 19200000 1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">avoid_safe_mode</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">disable_pvt</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">disable_audio_dither</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">audio_pwm_mode</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=2</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dtparam</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=</span><span style="color:#D73A49;--shiki-dark:#FF9492">act_led_trigger</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=default-on</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">arm_freq</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=1000</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">over_voltage</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">core_freq</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=450</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">sdram_freq</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=450</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">over_voltage_sdram</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dtparam</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=</span><span style="color:#D73A49;--shiki-dark:#FF9492">sd_overclock</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=50</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">extra_transpose_buffer</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=2</span></span></code></pre>
+<p>Είναι η ρύθμιση της Retroflag για Zero 2W, με δύο αλλαγές για να ανοίγει στο Zero W:</p>
+<p>Μια σημαντική διευκρίνιση: το Pi Zero W έχει CPU 1000 MHz εργοστασιακά, οπότε το <code>arm_freq=1000</code> δεν αυξάνει τη συχνότητα του επεξεργαστή. Το <code>core_freq=450</code>, όμως, είναι πάνω από την επίσημη προεπιλογή των 400 MHz· δεν είναι σωστό να χαρακτηρίσουμε όλο το παραπάνω αρχείο «χωρίς overclock». Κρατάω αυτούσιες τις τιμές της εγκατάστασής μου, χωρίς να τις παρουσιάζω ως καθολικά ασφαλείς για κάθε πλακέτα. <a href="https://www.raspberrypi.com/documentation/computers/legacy_config_txt.html">Επίσημη τεκμηρίωση συχνοτήτων</a>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Ρύθμιση</th><th>Zero 2W (Retroflag)</th><th>Εδώ</th><th>Γιατί</th></tr></thead><tbody><tr><td>Overlay οθόνης</td><td><code>dpi24</code></td><td><code>recalbox-gpicase1</code></td><td>με το <code>dpi24</code> κολλούσε στην οθόνη φόρτωσης</td></tr><tr><td>Overlay ήχου</td><td><code>audremap,pins_18_19,swap_lr</code></td><td><code>pwm-audio-pizero-gpicase</code></td><td>ο ήχος του GPi στο Zero</td></tr><tr><td>Pixel clock</td><td>19,2 MHz</td><td>19,2 MHz</td><td>σταθερότητα, ίδιο</td></tr><tr><td>Συχνότητες</td><td>Οι τιμές του patch</td><td>CPU 1000 / core 450 / SDRAM 450 MHz</td><td>διατηρούνται οι τιμές της συγκεκριμένης εγκατάστασης</td></tr></tbody></table>
+<blockquote>
+<p>Το παραπάνω μπλοκ δίνεται χωρίς σχόλια για εύκολη αντιγραφή. Το <code>config.txt</code> <strong>υποστηρίζει κανονικά γραμμές με <code>#</code></strong>, σύμφωνα με την <a href="https://www.raspberrypi.com/documentation/computers/config_txt.html">τεκμηρίωση του Raspberry Pi</a>. Η <a href="https://forum.recalbox.com/topic/34650/recalbox-gpi-case-2w-pi-zero-w">αναφορά στο forum του Recalbox</a>, όπου η αφαίρεση σχολίων βοήθησε σε μια εγκατάσταση, είναι μεμονωμένη εμπειρία και όχι γενικός κανόνας για κάθε μαύρη οθόνη.</p>
+</blockquote>
+<h3 id="5-διορθώνω-την-ανάλυση-των-emulators">5. Διορθώνω την ανάλυση των emulators</h3>
+<p>Στο <strong>SHARE → system → <code>recalbox.conf</code></strong> βρίσκω τη γραμμή <code>global.videomode</code> και την κάνω:</p>
+<pre class="astro-code astro-code-themes github-light github-dark-high-contrast" style="background-color:#fff;--shiki-dark-bg:#0a0c10;color:#24292e;--shiki-dark:#f0f3f6; overflow-x: auto;" tabindex="0" data-language="ini"><code><span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">global.videomode</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=default</span></span></code></pre>
+<p>Σε μένα ήταν <code>1280x720</code>, δηλαδή κάθε emulator προσπαθούσε να ανοίξει σε ανάλυση που μια οθόνη 640×480 στα GPIO δεν μπορεί να δείξει.</p>
+<h3 id="6-εκκίνηση">6. Εκκίνηση</h3>
+<p>Κάνω <strong>Eject</strong> την κάρτα, τη βάζω στο GPi και ανοίγω. Η πρώτη φόρτωση μετά την αλλαγή αργεί λίγο. Περιμένω μέχρι να εμφανιστεί το μενού και δοκιμάζω ένα παιχνίδι Game Boy.</p>
+<img src="/assets/gpicase2w/working-screen-1200.webp" alt="Το λογότυπο Recalbox και τα φαντασματάκια σε σωστά προσανατολισμένη οθόνη" width="1200" height="1600" srcset="/assets/gpicase2w/working-screen-480.webp 480w, /assets/gpicase2w/working-screen-800.webp 800w, /assets/gpicase2w/working-screen-1200.webp 1200w" sizes="(max-width: 768px) 92vw, 720px" loading="lazy">
+_Η οθόνη φόρτωσης γεμίζει πλέον σωστά την επιφάνεια της οθόνης· η φωτογραφία δείχνει φόρτωση, όχι εκτέλεση παιχνιδιού._
+<h2 id="μετά-την-εγκατάσταση-η-θήκη-σαν-παλιός-gpi">Μετά την εγκατάσταση: η θήκη σαν «παλιός GPi»</h2>
+<p>Ακόμα και με σωστή οθόνη, το Recalbox συνεχίζει να θεωρεί ότι έχω τον παλιό GPi. Αυτό έχει κάποιες συνέπειες που πρέπει να ξέρω.</p>
+<h3 id="το-hotkey-είναι-το-select-όχι-το-home">Το Hotkey είναι το SELECT, όχι το Home</h3>
+<p>Σύμφωνα με το <a href="https://wiki-next.recalbox.com/en/basic-usage/getting-started/special-commands">wiki του Recalbox</a>, Hotkey είναι το κουμπί Home/Guide όταν το χειριστήριο έχει τέτοιο, αλλιώς συνήθως το <strong>SELECT</strong>. Ο παλιός GPi δεν έχει Home, οπότε <strong>Hotkey = SELECT</strong>, και το κουμπί με το σπιτάκι του 2W δεν κάνει τίποτα.</p>
+<p>Ακόμα: το Recalbox ονομάζει τα κουμπιά με βάση τη <strong>θέση</strong> τους στο χειριστήριο του Super Nintendo, όχι με τα γράμματα που είναι τυπωμένα στη θήκη: <strong>A = δεξί, B = κάτω, X = πάνω, Y = αριστερό</strong>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Συνδυασμός (κρατάω SELECT)</th><th>Τι κάνει</th></tr></thead><tbody><tr><td>Select + Start</td><td>Έξοδος από το παιχνίδι</td></tr><tr><td>Select + κάτω κουμπί (B)</td><td>Μενού RetroArch</td></tr><tr><td>Select + δεξί κουμπί (A)</td><td>Reset του παιχνιδιού</td></tr><tr><td>Select + αριστερό κουμπί (Y)</td><td>Save state</td></tr><tr><td>Select + πάνω κουμπί (X)</td><td>Load state</td></tr><tr><td>Select + ↑ / ↓</td><td>Αλλαγή θέσης save (0–9)</td></tr><tr><td>Select + ← / →</td><td>Rewind / γρήγορη κίνηση</td></tr></tbody></table>
+<p>Αν κάποιος συνδυασμός δεν πέφτει εκεί που περιμένω, όλα γίνονται και από το <strong>μενού του RetroArch</strong>: Quick Menu → <strong>Save State</strong> / <strong>Load State</strong>, Quick Menu → <strong>Options</strong> για τις ρυθμίσεις του emulator, και <strong>Resume</strong> για επιστροφή στο παιχνίδι.</p>
+<h3 id="πώς-σώζω">Πώς σώζω</h3>
+<ul>
+<li><strong>Το save του ίδιου του παιχνιδιού</strong>, από το μενού του. Γράφεται στο <code>SHARE/saves</code>, αρκεί να βγαίνω από το παιχνίδι με <strong>Select + Start</strong> και όχι κλείνοντας τον διακόπτη.</li>
+<li><strong>Save state</strong>, που σώζει ακριβώς τη στιγμή που βρίσκομαι, ακόμα και σε παιχνίδια χωρίς save.</li>
+<li>Για να συνεχίζει μόνο του από εκεί που σταμάτησα, βάζω <code>global.autosave=1</code> στο <code>recalbox.conf</code>.</li>
+</ul>
+<blockquote>
+<p>Στο <strong>SNES</strong> το Recalbox στο Pi Zero χρησιμοποιεί τον <strong>PiSNES</strong>, που είναι ξεχωριστός emulator και όχι μέρος του RetroArch. Εκεί οι συνδυασμοί save state και το μενού του RetroArch μπορεί να μη δουλεύουν. Το σίγουρο είναι το save μέσα από το παιχνίδι.</p>
+</blockquote>
+<h3 id="οι-ρυθμίσεις-μπορεί-να-ξαναγραφτούν">Οι ρυθμίσεις μπορεί να ξαναγραφτούν</h3>
+<p>Αν η εγκατάσταση της θήκης ξανατρέξει (μετά από διακοπή ή αναβάθμιση του Recalbox), θα γράψει πάλι τις ρυθμίσεις του παλιού GPi στο <code>recalbox-user-config.txt</code>. Γι’ αυτό:</p>
+<ul>
+<li>Κρατάω <strong>αντίγραφο</strong> του αρχείου στον υπολογιστή.</li>
+<li><strong>Δεν κάνω update</strong> από το μενού, ή βάζω <code>updates.enabled=0</code> στο <code>recalbox.conf</code>.</li>
+<li>Κλείνω πάντα από το μενού: <strong>Start → Quit → Shutdown</strong>, και μετά τον διακόπτη.</li>
+</ul>
+<p>Αν παρόλα αυτά οι ρυθμίσεις ξαναγράφονται συνέχεια, υπάρχει παράκαμψη: προσθέτω στο <strong>τέλος</strong> του <code>config.txt</code>, μετά τη γραμμή <code>include recalbox-user-config.txt</code>, τις βασικές τιμές της οθόνης. Ό,τι γράφεται τελευταίο υπερισχύει:</p>
+<pre class="astro-code astro-code-themes github-light github-dark-high-contrast" style="background-color:#fff;--shiki-dark-bg:#0a0c10;color:#24292e;--shiki-dark:#f0f3f6; overflow-x: auto;" tabindex="0" data-language="ini"><code><span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">display_rotate</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">framebuffer_width</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=640</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">framebuffer_height</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=480</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">dpi_output_format</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=0x00016</span></span>
+<span class="line"><span style="color:#D73A49;--shiki-dark:#FF9492">hdmi_timings</span><span style="color:#24292E;--shiki-dark:#F0F3F6">=640 0 1 1 20 480 0 1 1 2 0 0 0 60 0 19200000 1</span></span></code></pre>
+<blockquote>
+<p>Το <code>config.txt</code> αντικαθίσταται σε κάθε αναβάθμιση του Recalbox, οπότε η παράκαμψη χάνεται κι αυτή αν κάνω update.</p>
+</blockquote>
+<h2 id="παιχνίδια">Παιχνίδια</h2>
+<p>Τα παιχνίδια μπαίνουν στο <strong>SHARE → roms → φάκελος της κονσόλας</strong>, απευθείας μέσα στον φάκελο και όχι σε υποφάκελο:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Κονσόλα</th><th>Φάκελος</th><th>Καταλήξεις</th></tr></thead><tbody><tr><td>Game Boy</td><td><code>gb</code></td><td><code>.gb</code>, <code>.zip</code></td></tr><tr><td>Game Boy Color</td><td><code>gbc</code></td><td><code>.gbc</code>, <code>.zip</code></td></tr><tr><td>NES</td><td><code>nes</code></td><td><code>.nes</code>, <code>.zip</code></td></tr><tr><td>Super Nintendo</td><td><code>snes</code></td><td><code>.sfc</code>, <code>.smc</code>, <code>.zip</code></td></tr><tr><td>Game Boy Advance</td><td><code>gba</code></td><td><code>.gba</code>, <code>.zip</code></td></tr></tbody></table>
+<p>Αν ένα παιχνίδι δεν εμφανίζεται: <strong>START → UI Settings → Update game lists</strong>. Αν πάλι δεν εμφανίζεται, ελέγχω ότι δεν είναι ενεργό το <strong>DO NOT SCAN NEW GAMES</strong> (Advanced Settings → Boot Settings), που κατά το <a href="https://wiki-next.recalbox.com/en/basic-usage/first-use-and-configuration/add-games">wiki του Recalbox</a> είναι η πιο συχνή αιτία.</p>
+<blockquote>
+<p>Χρησιμοποίησε αρχεία παιχνιδιών που έχεις δικαίωμα να χρησιμοποιείς. Για προσωπικά cartridges υπάρχουν εργαλεία ανάγνωσης όπως το GB Operator, ενώ υπάρχουν και δωρεάν homebrew παιχνίδια για Game Boy στο itch.io.</p>
+</blockquote>
+<h3 id="τι-αντέχει-το-zero-w">Τι αντέχει το Zero W</h3>
+<ul>
+<li><strong>Game Boy, Game Boy Color, NES, Master System, Game Gear:</strong> άνετα.</li>
+<li><strong>SNES:</strong> τρέχει, με τον PiSNES που είναι φτιαγμένος για τα παλιά Pi. Κάποια βαριά παιχνίδια κολλάνε λίγο.</li>
+<li><strong>Game Boy Advance:</strong> πολλά παίζουν, κάποια κόβουν. Ο ελαφρύτερος emulator είναι ο <strong>gpsp</strong>.</li>
+<li><strong>PSP:</strong> όχι. Σε Pi Zero το Recalbox <a href="https://forum.recalbox.com/topic/32845/does-not-show-psp-games-on-raspberry-pi-zero-w">δεν εμφανίζει καν τα παιχνίδια PSP</a>.</li>
+</ul>
+<p>Αν τα παιχνίδια <strong>Game Boy Color</strong> αργούν σε κίνηση και ήχο (σε μένα έτρεχε πιο ομαλά το SNES), διαλέγω τον ελαφρύτερο emulator <strong>gambatte</strong> από τις ρυθμίσεις του συστήματος και βάζω <code>global.smooth=0</code> στο <code>recalbox.conf</code>.</p>
+<p>Τα παιχνίδια του αρχικού Game Boy είναι μονόχρωμα. Από το μενού του RetroArch (Quick Menu → Options) η επιλογή <strong>GB Colorization</strong> τους δίνει παλέτα σαν του Game Boy Color.</p>
+<h2 id="αν-κάτι-δεν-πάει-καλά">Αν κάτι δεν πάει καλά</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Τι βλέπω</th><th>Τι κάνω</th></tr></thead><tbody><tr><td>Σπασμένη εικόνα μετά από καιρό</td><td>Οι ρυθμίσεις ξαναγράφτηκαν. Ξαναβάζω το <code>recalbox-user-config.txt</code> από το αντίγραφο.</td></tr><tr><td>Βλέπω μόνο τον δίσκο SHARE</td><td>Δίνω γράμμα στο RECALBOX από τη Διαχείριση δίσκων (<a href="#step-partition">βήμα 3</a>).</td></tr><tr><td>Κολλάει στην οθόνη φόρτωσης</td><td>Περιμένω 5 λεπτά. Αν συνεχίζει, ελέγχω ότι τα overlays είναι <code>recalbox-gpicase1</code> και <code>pwm-audio-pizero-gpicase</code>.</td></tr><tr><td>Μαύρη οθόνη</td><td>Ελέγχω image, έκδοση, ονόματα overlays και ότι το αρχείο αντιγράφηκε σωστά. Η παρουσία σχολίων δεν αποδεικνύει την αιτία.</td></tr><tr><td>«Game didn’t start at all»</td><td>Ελέγχω <code>global.videomode=default</code>, ROM/BIOS και τις ρυθμίσεις συχνοτήτων. Το μήνυμα μόνο του δεν ξεχωρίζει την αιτία.</td></tr><tr><td>Κάθε εκκίνηση γράφει «Installing GPi Case»</td><td>Η εγκατάσταση έχει μείνει μισή. Το πιο καθαρό είναι να ξαναγράψω την κάρτα και να αφήσω την πρώτη εκκίνηση να τελειώσει.</td></tr><tr><td>Το Home δεν κάνει τίποτα</td><td>Φυσιολογικό: το Hotkey είναι το Select.</td></tr></tbody></table>
+<h2 id="συμπέρασμα">Συμπέρασμα</h2>
+<p>Το GPi Case 2W δουλεύει με Pi Zero W, αλλά όχι έτοιμο. Το Recalbox το βλέπει ως τον παλιό GPi, οπότε η οθόνη ρυθμίζεται με το χέρι, το Hotkey είναι το Select, και θέλει προσοχή στις αναβαθμίσεις. Όταν στηθεί σωστά, για Game Boy, GBC, NES και τα περισσότερα SNES είναι ένα πολύ ωραίο φορητό.</p>
+<p>Για νέα εγκατάσταση θα εξέταζα το <strong>Pi Zero 2W</strong>, για το οποίο προστέθηκε επίσημη υποστήριξη της θήκης στο Recalbox 9.x. Ο παρών οδηγός παραμένει η καταγραφή του δικού μου Zero W και δεν υποκαθιστά τις οδηγίες του εκάστοτε image. Δες πρώτα τις <a href="https://github.com/RetroFlag/GPICASE2W-display-patch">οδηγίες της Retroflag</a> και τις σημειώσεις έκδοσης που αντιστοιχούν στην εγκατάστασή σου.</p>
+<h2 id="πηγές">Πηγές</h2>
+<ul>
+<li>
+<p><a href="https://github.com/RetroFlag/GPICASE2W-display-patch">RetroFlag – GPICASE2W display patch</a></p>
+</li>
+<li>
+<p><a href="https://github.com/RetroFlag/GPICASE2W-display-patch/issues/2">RetroFlag – Issue #2: GPICase-Zero2W new case - display issues</a></p>
+</li>
+<li>
+<p><a href="https://github.com/mirkochip/recalbox-rpi_zero_v1.3-gpi_case_2w">mirkochip – Recalbox 9.2.3 σε Pi Zero με GPi Case 2W</a></p>
+</li>
+<li>
+<p><a href="https://github.com/live-clones/recalbox/blob/master/RELEASE-NOTES.md">Recalbox – Release notes</a></p>
+</li>
+<li>
+<p><a href="https://forum.recalbox.com/topic/34650/recalbox-gpi-case-2w-pi-zero-w">Recalbox Forum – GPi Case 2W + Pi Zero W</a></p>
+</li>
+<li>
+<p><a href="https://wiki-next.recalbox.com/en/basic-usage/getting-started/special-commands">Recalbox Wiki – Special commands</a></p>
+</li>
+<li>
+<p><a href="https://wiki-next.recalbox.com/en/basic-usage/first-use-and-configuration/add-games">Recalbox Wiki – Add games</a></p>
+</li>
+<li>
+<p><a href="https://raspberrytips.com/gpi-case-2w-review/">RaspberryTips – GPi Case 2W Review</a></p>
+</li>
+<li>
+<p><a href="https://www.raspberrypi.com/documentation/computers/config_txt.html">Raspberry Pi — μορφή αρχείου config.txt</a></p>
+</li>
+<li>
+<p><a href="https://www.raspberrypi.com/documentation/computers/legacy_config_txt.html">Raspberry Pi — συχνότητες και παλιότερες ρυθμίσεις</a></p>
+</li>
+</ul></div><footer class="article-tags"><a href="/tags/gpi-case-2w/"># gpi case 2w</a><a href="/tags/retroflag/"># retroflag</a><a href="/tags/recalbox/"># recalbox</a><a href="/tags/raspberry-pi-zero-w/"># raspberry pi zero w</a><a href="/tags/troubleshooting/"># troubleshooting</a></footer></article><div class="reading-end"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4m8 2v15"></path></svg><span>Συνέχισε την εξερεύνηση</span><a href="/archives/">Όλα τα άρθρα →</a></div><footer class="site-footer"><span>© 2026 m0ss1</span><a href="https://github.com/mossygr/mossygr.github.io">GitHub <span aria-hidden="true">↗</span></a></footer></main><aside class="right-rail" aria-label="Σε αυτή τη σελίδα"><nav class="toc"><p>Σε αυτή τη σελίδα</p><ol><li><a href="#το-πρόβλημα-το-recalbox-βλέπει-τη-θήκη-ως-την-παλιά">Το πρόβλημα: το Recalbox βλέπει τη θήκη ως την παλιά</a></li><li class="nested"><a href="#τα-συμπτώματα">Τα συμπτώματα</a></li><li class="nested"><a href="#γιατί-δεν-αρκεί-το-patch-της-retroflag">Γιατί δεν αρκεί το patch της Retroflag</a></li><li><a href="#η-λύση-βήμα-βήμα">Η λύση βήμα βήμα</a></li><li class="nested"><a href="#τι-χρειάζομαι">Τι χρειάζομαι</a></li><li class="nested"><a href="#1-γράφω-το-σωστό-image">1. Γράφω το σωστό image</a></li><li class="nested"><a href="#2-πρώτη-εκκίνηση-χωρίς-να-αγγίξω-τίποτα">2. Πρώτη εκκίνηση χωρίς να αγγίξω τίποτα</a></li><li class="nested"><a href="#step-partition">3. Βρίσκω το διαμέρισμα RECALBOX στα Windows</a></li><li class="nested"><a href="#final-config">4. Αντικαθιστώ τις ρυθμίσεις της οθόνης</a></li><li class="nested"><a href="#5-διορθώνω-την-ανάλυση-των-emulators">5. Διορθώνω την ανάλυση των emulators</a></li><li class="nested"><a href="#6-εκκίνηση">6. Εκκίνηση</a></li><li><a href="#μετά-την-εγκατάσταση-η-θήκη-σαν-παλιός-gpi">Μετά την εγκατάσταση: η θήκη σαν «παλιός GPi»</a></li><li class="nested"><a href="#το-hotkey-είναι-το-select-όχι-το-home">Το Hotkey είναι το SELECT, όχι το Home</a></li><li class="nested"><a href="#πώς-σώζω">Πώς σώζω</a></li><li class="nested"><a href="#οι-ρυθμίσεις-μπορεί-να-ξαναγραφτούν">Οι ρυθμίσεις μπορεί να ξαναγραφτούν</a></li><li><a href="#παιχνίδια">Παιχνίδια</a></li><li class="nested"><a href="#τι-αντέχει-το-zero-w">Τι αντέχει το Zero W</a></li><li><a href="#αν-κάτι-δεν-πάει-καλά">Αν κάτι δεν πάει καλά</a></li><li><a href="#συμπέρασμα">Συμπέρασμα</a></li><li><a href="#πηγές">Πηγές</a></li></ol></nav><div class="rail-note"><span class="status-dot"></span>Κατασκευάζουμε. Καταγράφουμε. Μοιραζόμαστε.</div></aside></div><details class="mobile-toc"><summary>Σε αυτή τη σελίδα</summary><nav><ol><li><a href="#το-πρόβλημα-το-recalbox-βλέπει-τη-θήκη-ως-την-παλιά">Το πρόβλημα: το Recalbox βλέπει τη θήκη ως την παλιά</a></li><li><a href="#τα-συμπτώματα">Τα συμπτώματα</a></li><li><a href="#γιατί-δεν-αρκεί-το-patch-της-retroflag">Γιατί δεν αρκεί το patch της Retroflag</a></li><li><a href="#η-λύση-βήμα-βήμα">Η λύση βήμα βήμα</a></li><li><a href="#τι-χρειάζομαι">Τι χρειάζομαι</a></li><li><a href="#1-γράφω-το-σωστό-image">1. Γράφω το σωστό image</a></li><li><a href="#2-πρώτη-εκκίνηση-χωρίς-να-αγγίξω-τίποτα">2. Πρώτη εκκίνηση χωρίς να αγγίξω τίποτα</a></li><li><a href="#step-partition">3. Βρίσκω το διαμέρισμα RECALBOX στα Windows</a></li><li><a href="#final-config">4. Αντικαθιστώ τις ρυθμίσεις της οθόνης</a></li><li><a href="#5-διορθώνω-την-ανάλυση-των-emulators">5. Διορθώνω την ανάλυση των emulators</a></li><li><a href="#6-εκκίνηση">6. Εκκίνηση</a></li><li><a href="#μετά-την-εγκατάσταση-η-θήκη-σαν-παλιός-gpi">Μετά την εγκατάσταση: η θήκη σαν «παλιός GPi»</a></li><li><a href="#το-hotkey-είναι-το-select-όχι-το-home">Το Hotkey είναι το SELECT, όχι το Home</a></li><li><a href="#πώς-σώζω">Πώς σώζω</a></li><li><a href="#οι-ρυθμίσεις-μπορεί-να-ξαναγραφτούν">Οι ρυθμίσεις μπορεί να ξαναγραφτούν</a></li><li><a href="#παιχνίδια">Παιχνίδια</a></li><li><a href="#τι-αντέχει-το-zero-w">Τι αντέχει το Zero W</a></li><li><a href="#αν-κάτι-δεν-πάει-καλά">Αν κάτι δεν πάει καλά</a></li><li><a href="#συμπέρασμα">Συμπέρασμα</a></li><li><a href="#πηγές">Πηγές</a></li></ol></nav></details><dialog id="navigation-dialog" class="navigation-dialog" aria-label="Πλοήγηση"><div class="dialog-bar"><span>Πλοήγηση</span><button class="icon-button" data-close aria-label="Κλείσιμο"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><nav aria-label="Πλοήγηση"><div class="nav-group"><p class="nav-label">ΞΕΚΙΝΗΣΕ ΕΔΩ</p><a class="nav-link" href="/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 10 5-10 5L2 8l10-5M2 12l10 5 10-5M2 16l10 5 10-5"></path></svg>Επισκόπηση</a><a class="nav-link" href="/guides/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4m8 2v15"></path></svg>Τεχνικοί οδηγοί</a><a class="nav-link" href="/projects/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"></path></svg>Projects</a><a class="nav-link" href="/archives/"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7l1 2 1-2h7v15h-7l-1 2-1-2H4V4m8 2v15"></path></svg>Όλα τα άρθρα</a></div><div class="nav-group"><a class="nav-label nav-label-link" href="/categories/">Κατηγορίες</a><details><summary>HackTheBox<span>9</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/hackthebox/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Brutforce-attack-technics/">Brutforce attack technics</a><a class="nav-doc" href="/posts/Jerry/">Jerry</a><a class="nav-doc" href="/posts/Weak-RSA/">Weak RSA</a><a class="nav-doc" href="/posts/Templed/">Templed</a><a class="nav-doc" href="/posts/Find-The-Easy-Pass/">Find The Easy Pass</a><a class="nav-doc" href="/posts/Lame/">Lame</a><a class="nav-doc" href="/posts/test/">Lame</a><a class="nav-doc" href="/posts/Emdee-five-for-life/">Emdee five for life</a><a class="nav-doc" href="/posts/FreeLancer/">FreeLancer</a></div></details><details><summary>Challenges<span>6</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/challenges/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Brutforce-attack-technics/">Brutforce attack technics</a><a class="nav-doc" href="/posts/Weak-RSA/">Weak RSA</a><a class="nav-doc" href="/posts/Templed/">Templed</a><a class="nav-doc" href="/posts/Find-The-Easy-Pass/">Find The Easy Pass</a><a class="nav-doc" href="/posts/Emdee-five-for-life/">Emdee five for life</a><a class="nav-doc" href="/posts/FreeLancer/">FreeLancer</a></div></details><details><summary>CTF<span>5</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/ctf/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/TryHackMe-Reverse-Engineering/">TryHackMe - Reverse Engineering</a><a class="nav-doc" href="/posts/Jerry/">Jerry</a><a class="nav-doc" href="/posts/Jack/">Jack - TryHackMe</a><a class="nav-doc" href="/posts/Lame/">Lame</a><a class="nav-doc" href="/posts/test/">Lame</a></div></details><details><summary>Burpsuite<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/burpsuite/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Burpsuite-on-firefox/">Use BurpSuite on firefox</a></div></details><details><summary>tutorials<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/tutorials/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Burpsuite-on-firefox/">Use BurpSuite on firefox</a></div></details><details><summary>TryHackMe<span>2</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/tryhackme/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/TryHackMe-Reverse-Engineering/">TryHackMe - Reverse Engineering</a><a class="nav-doc" href="/posts/Jack/">Jack - TryHackMe</a></div></details><details><summary>Τεχνική ανάλυση<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/τεχνική-ανάλυση/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Doji-%CE%BA%CE%B5%CF%81%CE%AF.-%CE%A4%CE%BF-%CE%BA%CE%B5%CF%81%CE%AF-%CF%84%CE%B7%CF%82-%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CE%AE%CF%82-%CF%84%CE%AC%CF%83%CE%B7%CF%82.(REVERSAL)/">Doji κερί. Το κερί της αλλαγής τάσης.(REVERSAL).</a></div></details><details><summary>Κεριά<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/κεριά/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/posts/Doji-%CE%BA%CE%B5%CF%81%CE%AF.-%CE%A4%CE%BF-%CE%BA%CE%B5%CF%81%CE%AF-%CF%84%CE%B7%CF%82-%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CE%AE%CF%82-%CF%84%CE%AC%CF%83%CE%B7%CF%82.(REVERSAL)/">Doji κερί. Το κερί της αλλαγής τάσης.(REVERSAL).</a></div></details><details><summary>Arduino<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/arduino/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/robot/">Ρομπότ 4WD: από την καλωδίωση στην πρώτη διαδρομή</a></div></details><details><summary>Ρομποτική<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/ρομποτική/">Επισκόπηση κατηγορίας →</a><a class="nav-doc" href="/robot/">Ρομπότ 4WD: από την καλωδίωση στην πρώτη διαδρομή</a></div></details><details open><summary>Raspberry Pi<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/raspberry-pi/">Επισκόπηση κατηγορίας →</a><a class="nav-doc active" href="/posts/gpi-case-2w-pi-zero-w-recalbox/" aria-current="page">GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2</a></div></details><details open><summary>Retro gaming<span>1</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href="/categories/retro-gaming/">Επισκόπηση κατηγορίας →</a><a class="nav-doc active" href="/posts/gpi-case-2w-pi-zero-w-recalbox/" aria-current="page">GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2</a></div></details></div><div class="nav-bottom"><span class="status-dot"></span>Σημειώσεις από την πράξη</div></nav></dialog><dialog id="search-dialog" class="search-dialog" aria-label="Αναζήτηση"><div class="search-input-row"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21 21-4.4-4.4M19 11a8 8 0 1 1-16 0 8 8 0 0 1 16 0"></path></svg><label class="sr-only" for="search-input">Αναζήτηση</label><input id="search-input" type="search" placeholder="Αναζήτησε οδηγούς, κώδικα, projects…" autocomplete="off"><button class="icon-button" data-close aria-label="Κλείσιμο"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"></path></svg></button></div><div class="search-status" role="status" aria-live="polite"></div><ol id="search-results"></ol><div class="search-footer"><span>Αναζήτηση στο πλήρες περιεχόμενο</span><kbd>esc</kbd></div></dialog><script type="module" src="/_astro/Portal.astro_astro_type_script_index_0_lang.DD-MvU_3.js"></script><script src="/unregister.js" defer></script></body></html>

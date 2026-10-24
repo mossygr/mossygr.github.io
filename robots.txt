@@ -1,5 +1,4 @@
 User-agent: *
-
+Allow: /
 Disallow: /norobots/
-
 Sitemap: https://mossygr.github.io/sitemap.xml
