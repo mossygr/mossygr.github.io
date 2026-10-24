@@ -4,3 +4,10 @@
 {% if page.robot %}<link rel="stylesheet" href="{{ '/assets/robot/guide.css' | relative_url }}"><script src="{{ '/assets/robot/guide.js' | relative_url }}" defer></script>{% endif %}
 
 <script src="{{ '/unregister.js' | relative_url }}" defer></script>
+
+<link rel="stylesheet" href="{{ '/assets/css/languages.css' | relative_url }}">
+{% if page.alternate_urls %}
+<link rel="alternate" hreflang="el" href="{{ page.alternate_urls.el }}">
+<link rel="alternate" hreflang="en" href="{{ page.alternate_urls.en }}">
+<link rel="alternate" hreflang="x-default" href="{{ page.alternate_urls.x_default }}">
+{% endif %}

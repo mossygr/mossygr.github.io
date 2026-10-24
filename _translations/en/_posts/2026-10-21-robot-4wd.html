@@ -1,0 +1,50 @@
+---
+layout: post
+title: '4WD robot: from wiring to the first drive'
+date: 2026-10-21 13:28:31 +0000
+permalink: /robot/
+lang: en
+robot: true
+pin: true
+toc: true
+comments: false
+categories:
+- Arduino
+- Robotics
+tags:
+- ESP32-CAM
+- 4WD
+- firmware
+description: Build the wiring, make the first test, and understand how the actual code connects the joystick to
+  the motors, camera, and sound.
+excerpt: 'Build a camera-equipped 4WD robot controlled from a phone: from parts and first startup to a walkthrough
+  of the real firmware.'
+image:
+  path: /assets/robot/desktop_diagram.png
+  alt: The complete wiring diagram for the ESP32-CAM 4WD robot
+translation_key: 2026-10-21-robot-4wd
+---
+
+<div class="robot-guide" lang="en">
+{% include robot/introduction.html %}
+{% include robot/build-path.html %}
+{% include robot/t-diag.html %}
+{% include robot/t-harness.html %}
+{% include robot/t-fw.html %}
+{% include robot/code-walkthrough.html %}
+{% include robot/troubleshooting.html %}
+{% include robot/t-notes.html %}
+{% include robot/t-table.html %}
+<section id="downloads">
+<h2 id="guide-downloads">Downloads and reference images</h2>
+<p><a href="{{ '/assets/robot/robot_firmware.zip' | relative_url }}" download>Download the supplied firmware (.zip)</a> — includes robot_firmware.ino and its six .h files. Change AP_PASSWORD and OTA_PASSWORD before use, as described in the guide.</p>
+<p>The MP3 files mentioned in the guide are created or copied by you and are not included in the downloads.</p>
+<details><summary>Differences between the guide and the supplied firmware</summary>
+<p>The guide and both diagrams describe an external DFR0119 amplifier. In the ZIP, comments in robot_config.h and the AT+AMP=ON command in robot_audio.h refer to the DFPlayer Pro's internal amplifier and a speaker directly on its L+/L− outputs. Both sources are preserved as supplied; confirm with the author which arrangement applies to your build.</p>
+<p>The original guide mentioned returning to Access Point mode after 10 s, while the supplied robot_config.h defines STA_TIMEOUT_MS 20000, or 20 s. The wire specification 0.5mm² (22AWG) is preserved as supplied and requires technical confirmation from the author.</p>
+</details>
+<figure><a href="{{ '/assets/robot/desktop_diagram.png' | relative_url }}"><img src="{{ '/assets/robot/desktop_diagram.png' | relative_url }}" alt="Supplied desktop reference image of the robot wiring diagram" width="1400" height="1000" loading="lazy"></a><figcaption>Reference image supplied with the guide. Open it at full size.</figcaption></figure>
+<figure class="phone-image"><a href="{{ '/assets/robot/firmware_ui_phone.png' | relative_url }}"><img src="{{ '/assets/robot/firmware_ui_phone.png' | relative_url }}" alt="The supplied phone screenshot of the firmware interface, with camera and controls" width="780" height="2074" loading="lazy"></a><figcaption>The firmware control screen on a phone.</figcaption></figure>
+</section>
+<div class="source-note"><p>The diagram, harness, and table are generated from the same data model (tools/model.py) and automatically checked by tools/check.py.</p><p>That statement comes from the original source. tools/model.py and tools/check.py were not supplied, and their check has not been run.</p></div>
+</div>

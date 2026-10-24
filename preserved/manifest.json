@@ -1,0 +1,1313 @@
+{
+  "version": 1,
+  "captured_at": "2026-10-23T18:38:16.175789+00:00",
+  "source": {
+    "repository": "mossygr/mossygr.github.io",
+    "branch": "gh-pages",
+    "commit": "9cbb233d3e68aa716c2bd1af9827bdb89665ff6c"
+  },
+  "snapshot_files": [
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "app.js",
+      "sha256": "05093fc29b69f47176cef4de948ca4f1c22d7703b8ce2e20c2725cc2be62080d",
+      "bytes": 943
+    },
+    {
+      "path": "app.min.js",
+      "sha256": "768cf65c2d24369bf7d7423678f07d45be97bf76635ae2198051bd11dde20d92",
+      "bytes": 15335
+    },
+    {
+      "path": "assets/css/content-fixes.css",
+      "sha256": "55940449fa083a99af58f3eac511a90b4a5925cbed2e71cbaef2fe3e903276fc",
+      "bytes": 299
+    },
+    {
+      "path": "assets/css/greek-fonts.css",
+      "sha256": "10f55cb2a80db626f1a773a3c88711f4e17c4ab6d796c6caa78bd0f91af44365",
+      "bytes": 442
+    },
+    {
+      "path": "assets/css/jekyll-theme-chirpy.css",
+      "sha256": "4bc56832cc2a71481a79736b8f8a24f2b5257d207b98c4e09b50e2c838c8fbe6",
+      "bytes": 108871
+    },
+    {
+      "path": "assets/css/jekyll-theme-chirpy.css.map",
+      "sha256": "cde19fc0eb3e73cbeba64cb78c93fd9bcb5c8fb736c42388bf6e972e622d5781",
+      "bytes": 130630
+    },
+    {
+      "path": "assets/css/notebook.css",
+      "sha256": "2957ab615ad9fc84a52fbcca62a95ecca079a3ecb7f44c04b57f957292462145",
+      "bytes": 14970
+    },
+    {
+      "path": "assets/img/favicons/android-chrome-192x192.png",
+      "sha256": "b2f8c156029fb57adbe541eb8b6d6f8dc6ad542949e382de61e449ec1800f023",
+      "bytes": 19952
+    },
+    {
+      "path": "assets/img/favicons/android-chrome-512x512.png",
+      "sha256": "831d2a0605acb3c5db790413ea984d2ed6e3241cfe10ce5c33b7a5815ec61aae",
+      "bytes": 62557
+    },
+    {
+      "path": "assets/img/favicons/mstile-150x150.png",
+      "sha256": "4457887ca5b0f44b7f1ce6c296ef96dde60c6f917d53852d144e234a3e12060b",
+      "bytes": 12172
+    },
+    {
+      "path": "assets/img/favicons/site.webmanifest",
+      "sha256": "fa3d02ff783f596c645df60f4d09f39f0fc2b5137830c9aed2f246aee6ea8e5e",
+      "bytes": 523
+    },
+    {
+      "path": "assets/img/favicons/web-app-manifest-192x192.png",
+      "sha256": "f6a5b94e40b29ba88fe04028cca004acebb7e12763dac0456e4c6985bb7f8f8a",
+      "bytes": 20536
+    },
+    {
+      "path": "assets/img/favicons/web-app-manifest-512x512.png",
+      "sha256": "14c90748504397c3ca44f0cabc0f32e94588fad3ccb6789355350f28568e6a85",
+      "bytes": 69328
+    },
+    {
+      "path": "assets/index.html",
+      "sha256": "af3398c815d23182f046f6990f3cf4a54ec5077dd0762a84ec95bc922561c587",
+      "bytes": 481
+    },
+    {
+      "path": "assets/js/data/mathjax.js",
+      "sha256": "1557f4f0b3e6859b5377a0c652c0b5440073cddc834a64646e1b359d1dea2e62",
+      "bytes": 124
+    },
+    {
+      "path": "assets/js/data/search.json",
+      "sha256": "e936575e87bc1986bffec24b2d6ad520388ac1b8a85f26bdae6e92f3e5656a96",
+      "bytes": 92436
+    },
+    {
+      "path": "assets/js/data/swcache.js",
+      "sha256": "f3919bf353753849fcb756d5e78ede5719925d77f633d661cd5f818da3e60e02",
+      "bytes": 2064
+    },
+    {
+      "path": "assets/js/data/swconf.js",
+      "sha256": "f1b2a5fd330f99c68bac504732484099eaa05739390dd8aaf1c4221771d47f1b",
+      "bytes": 32
+    },
+    {
+      "path": "assets/js/dist/categories.min.js",
+      "sha256": "34ca5d5ecdef6a2297423b3925874cb5362b4f0fd450d87a531211131797abc1",
+      "bytes": 58983
+    },
+    {
+      "path": "assets/js/dist/commons.min.js",
+      "sha256": "e5c4168443bcbff2ea7795f583023e1376e1fdc740549b4a5b12ab8926987166",
+      "bytes": 58444
+    },
+    {
+      "path": "assets/js/dist/home.min.js",
+      "sha256": "441edceb67681ea8bd83b4273519e160bad4c94a07bc9d97e83bfa55928d4cbf",
+      "bytes": 59864
+    },
+    {
+      "path": "assets/js/dist/misc.min.js",
+      "sha256": "4e8963e2f3236cedae2c068b28bc398e446a4c98f8c886c86b3e8bb40eda3540",
+      "bytes": 59220
+    },
+    {
+      "path": "assets/js/dist/page.min.js",
+      "sha256": "4ac754f8fd5d371e940ca5c00fa7213173cdfe525dc5194344989d1515bc5436",
+      "bytes": 61790
+    },
+    {
+      "path": "assets/js/dist/post.min.js",
+      "sha256": "7c311b3321a7183da365f774cf24195894e11fa18c586373bcc6e045123ea70c",
+      "bytes": 62866
+    },
+    {
+      "path": "assets/js/dist/theme.min.js",
+      "sha256": "7b56a772573d9cc85a995201e9b7e468805ce7f0ef0997e56e90de098e16bf2c",
+      "bytes": 2456
+    },
+    {
+      "path": "assets/js/notebook.js",
+      "sha256": "53bc3e86f11096ed3e77e64b68a3c852576daebd5fa140ac7066a044590f9d40",
+      "bytes": 3234
+    },
+    {
+      "path": "norobots/index.html",
+      "sha256": "af3398c815d23182f046f6990f3cf4a54ec5077dd0762a84ec95bc922561c587",
+      "bytes": 481
+    },
+    {
+      "path": "position_size/index.html",
+      "sha256": "11c4eacae954e94a05bf340ec766f679d427fcfc2e930274c6e33eb46c49058b",
+      "bytes": 14725
+    },
+    {
+      "path": "posts/index.html",
+      "sha256": "af3398c815d23182f046f6990f3cf4a54ec5077dd0762a84ec95bc922561c587",
+      "bytes": 481
+    },
+    {
+      "path": "redirects.json",
+      "sha256": "6214bbbe89bff54e6d497918031d6be7f1520a5e784a5594280c05fcfe60be24",
+      "bytes": 146
+    },
+    {
+      "path": "robot/release.json",
+      "sha256": "156707a7fe05814927b5c9b818e99e33648c1905299a37cfb5e9149a11a22d0b",
+      "bytes": 882
+    },
+    {
+      "path": "sw.js",
+      "sha256": "1c34de5278a720fa3eee81f1951131ff646f24f7d0ea483359d2771aab0e1a3e",
+      "bytes": 823
+    },
+    {
+      "path": "sw.min.js",
+      "sha256": "de529ea12d18bd79d89bc6c1c4a7cd87935b458986ed156be325c1b9f6e97413",
+      "bytes": 1099
+    },
+    {
+      "path": "trades/index.html",
+      "sha256": "660e28b8e2fe96a9a240168a527d21f53f071878e9c5bf0fcfb651d0c81a4355",
+      "bytes": 13681
+    },
+    {
+      "path": "unregister.js",
+      "sha256": "84ddb96eeb79885c0d03bc42b75c5d625d584d5cab5b6648f568cfcb91ab9c72",
+      "bytes": 336
+    }
+  ],
+  "original_assets_provenance": [
+    {
+      "path": "assets/css/content-fixes.css",
+      "sha256": "55940449fa083a99af58f3eac511a90b4a5925cbed2e71cbaef2fe3e903276fc",
+      "bytes": 299
+    },
+    {
+      "path": "assets/css/greek-fonts.css",
+      "sha256": "10f55cb2a80db626f1a773a3c88711f4e17c4ab6d796c6caa78bd0f91af44365",
+      "bytes": 442
+    },
+    {
+      "path": "assets/css/languages.css",
+      "sha256": "a3f41d162643c82f360b51d22ff4f59283bd92970c58713b05c3eb3cfa4996b3",
+      "bytes": 1307
+    },
+    {
+      "path": "assets/fonts/lato/Lato-Light.ttf",
+      "sha256": "cf2a774503baf418d584f49967bd160e1e03f087c13b25602f28024ec7788f08",
+      "bytes": 643884
+    },
+    {
+      "path": "assets/fonts/lato/Lato-Regular.ttf",
+      "sha256": "d636e4683231f931eda222d588e944d082bfd3bdba02f928bee461c0f185b251",
+      "bytes": 656568
+    },
+    {
+      "path": "assets/fonts/lato/OFL.txt",
+      "sha256": "74ba064d03f1f1c4a952da936c3eb71866c34404916734de3cae73b34357e59e",
+      "bytes": 4407
+    },
+    {
+      "path": "assets/fonts/lato/sources.json",
+      "sha256": "b655deeb60de78706a07f7a0f10a8bdd0b1926fabe62e6bbe552b44fccf21276",
+      "bytes": 683
+    },
+    {
+      "path": "assets/gpicase2w/broken-screen-1200.webp",
+      "sha256": "06e6743db33b166cb21cc55c288ca73fe6ad83312df2f2441f2d4e6244185639",
+      "bytes": 110204
+    },
+    {
+      "path": "assets/gpicase2w/broken-screen-480.webp",
+      "sha256": "8d940beaa2b22d5adb7ceccf1cbc0843fe4ade757b85084bd213ff630e22dcb2",
+      "bytes": 19946
+    },
+    {
+      "path": "assets/gpicase2w/broken-screen-800.webp",
+      "sha256": "c133b9550ac878bdfa10eca8f1637838b0b4f42145637dd65f4e7108f17fb18f",
+      "bytes": 43174
+    },
+    {
+      "path": "assets/gpicase2w/cover-1200.webp",
+      "sha256": "d70948ddd690278be5728b842896d4ad2df576181c3c0bc3b93584a70dde617b",
+      "bytes": 55944
+    },
+    {
+      "path": "assets/gpicase2w/cover-480.webp",
+      "sha256": "d9e52e4d230ec356ffba05c1df4297730a4d91adaabc38a350c9dbbf7abbbe22",
+      "bytes": 18390
+    },
+    {
+      "path": "assets/gpicase2w/cover-800.webp",
+      "sha256": "6ca71b342520749ba3071fa2fb8754def063ed93feab7f6aa3dfa39d983bcf2c",
+      "bytes": 34834
+    },
+    {
+      "path": "assets/gpicase2w/game-error-1200.webp",
+      "sha256": "2185c4ce8b4877f2cb35201ffbfb4d44f3f8ae0073a7596b31c2edcf71a24078",
+      "bytes": 109964
+    },
+    {
+      "path": "assets/gpicase2w/game-error-480.webp",
+      "sha256": "72209b56b5988a35ccd69c11622122d0bd1f9dd60c7c265a2efcfacd7790a89f",
+      "bytes": 19626
+    },
+    {
+      "path": "assets/gpicase2w/game-error-800.webp",
+      "sha256": "7724f1b1a6c04c6315c60f564f114dfd491b85335b00b994660fc6d1b025e67f",
+      "bytes": 44256
+    },
+    {
+      "path": "assets/gpicase2w/installing-gpi-case-1200.webp",
+      "sha256": "ff79e6e99d1acc38d26af0762afcf3870d332775de6be61984b992218ab40565",
+      "bytes": 148538
+    },
+    {
+      "path": "assets/gpicase2w/installing-gpi-case-480.webp",
+      "sha256": "c2c2bc93282f8c21843dc3f1a9d0392fea927b7c5e95cc0fec5bf686084a798d",
+      "bytes": 22356
+    },
+    {
+      "path": "assets/gpicase2w/installing-gpi-case-800.webp",
+      "sha256": "f79b52855a07c5ccb6ddc9da64becb0bedd5f45a553237769bc74c93bdeb41ee",
+      "bytes": 55996
+    },
+    {
+      "path": "assets/gpicase2w/working-screen-1200.webp",
+      "sha256": "18cf0c3bbd4962f92c4ace258f13d781e06cc85fa95ef964603f52c3d39ef26a",
+      "bytes": 89982
+    },
+    {
+      "path": "assets/gpicase2w/working-screen-480.webp",
+      "sha256": "4cd2834284aa7c0bccf2ea0a9fc3dcaae780ed63d261782132f3b1afc0e03158",
+      "bytes": 28022
+    },
+    {
+      "path": "assets/gpicase2w/working-screen-800.webp",
+      "sha256": "bf1d80901259d6aa502b37e5f0a81e44d9a97a4a3bcc4156e27e4851bbda63b1",
+      "bytes": 52212
+    },
+    {
+      "path": "assets/img/favicons/android-icon-144x144.png",
+      "sha256": "d982ad8197f09f4cd51c51494db74f2b531b9bbbfc226eee4ff8af3b2e843acd",
+      "bytes": 20524
+    },
+    {
+      "path": "assets/img/favicons/android-icon-192x192.png",
+      "sha256": "e8ffcda3c53063350b38a333d5cc0cb781c9ec0a6a8ca60bd57286a1cbe78d75",
+      "bytes": 31741
+    },
+    {
+      "path": "assets/img/favicons/android-icon-36x36.png",
+      "sha256": "dcd05798d00c12c39865a5fc3ab00742be80aa1cfb082e5a7b4f672c791d3a82",
+      "bytes": 2966
+    },
+    {
+      "path": "assets/img/favicons/android-icon-48x48.png",
+      "sha256": "d724d2abd63105ec15c60c37d433bb0136bc8d48572c98815eb395b66be676ca",
+      "bytes": 4319
+    },
+    {
+      "path": "assets/img/favicons/android-icon-72x72.png",
+      "sha256": "83d983b79ce4b040b7dc7585c05c8da3a1ab8dd90a8647f53f7b6a93408adbb3",
+      "bytes": 7480
+    },
+    {
+      "path": "assets/img/favicons/android-icon-96x96.png",
+      "sha256": "820ed55bf3335fe049c036072ee96c6a40879c4386c10000bc504f43d93a2074",
+      "bytes": 11201
+    },
+    {
+      "path": "assets/img/favicons/apple-icon-114x114.png",
+      "sha256": "5ebc804de82f16b8b417103f4b863df9e7b90d553bccedf7094942546c8e9c73",
+      "bytes": 14421
+    },
+    {
+      "path": "assets/img/favicons/apple-icon-120x120.png",
+      "sha256": "71bd7cf4a19d8457aef58dfc6cf7a51252a1b4550922657ddb4f6f1cdd14f8dc",
+      "bytes": 15530
+    },
+    {
+      "path": "assets/img/favicons/apple-icon-144x144.png",
+      "sha256": "d982ad8197f09f4cd51c51494db74f2b531b9bbbfc226eee4ff8af3b2e843acd",
+      "bytes": 20524
+    },
+    {
+      "path": "assets/img/favicons/apple-icon-152x152.png",
+      "sha256": "df845bc6937cd926ad212a9bf86a282a4cc661e1dbddbb8101cbcca84849c278",
+      "bytes": 22309
+    },
+    {
+      "path": "assets/img/favicons/apple-icon-180x180.png",
+      "sha256": "67ddd0f785c0a1c1fed6953fdca5e9ba75866993dc9509933dc18d7a68538a3e",
+      "bytes": 29068
+    },
+    {
+      "path": "assets/img/favicons/apple-icon-57x57.png",
+      "sha256": "1c92515ca70ddc8e4fc14c50d4b1c6cfc5a3315a57489f68f2238ccdded3751e",
+      "bytes": 5438
+    },
+    {
+      "path": "assets/img/favicons/apple-icon-60x60.png",
+      "sha256": "aac1c9f02e6ca5e6085d5d9e72c57f95cc4f526dd8072d37e063771e1ffe9262",
+      "bytes": 5788
+    },
+    {
+      "path": "assets/img/favicons/apple-icon-72x72.png",
+      "sha256": "83d983b79ce4b040b7dc7585c05c8da3a1ab8dd90a8647f53f7b6a93408adbb3",
+      "bytes": 7480
+    },
+    {
+      "path": "assets/img/favicons/apple-icon-76x76.png",
+      "sha256": "dadb767447a794c762793cb3fe7bffb54ab98be136759450b42bb9cd7b0a18b8",
+      "bytes": 8063
+    },
+    {
+      "path": "assets/img/favicons/apple-icon-precomposed.png",
+      "sha256": "887236204df1936009281f544f294c9392583d5c8f44a819123676233e1ccf37",
+      "bytes": 32230
+    },
+    {
+      "path": "assets/img/favicons/apple-icon.png",
+      "sha256": "887236204df1936009281f544f294c9392583d5c8f44a819123676233e1ccf37",
+      "bytes": 32230
+    },
+    {
+      "path": "assets/img/favicons/apple-touch-icon.png",
+      "sha256": "67ddd0f785c0a1c1fed6953fdca5e9ba75866993dc9509933dc18d7a68538a3e",
+      "bytes": 29068
+    },
+    {
+      "path": "assets/img/favicons/browserconfig.xml",
+      "sha256": "fbf8ad5e76b709c02c4b6bff6d105df6b735c284888094b20fe259bd514b2bf8",
+      "bytes": 495
+    },
+    {
+      "path": "assets/img/favicons/favicon-16x16.png",
+      "sha256": "833e2abe584a69bc17742582517ed8092d2783eedcd317c623e83119cd6df578",
+      "bytes": 1290
+    },
+    {
+      "path": "assets/img/favicons/favicon-32x32.png",
+      "sha256": "96a0820dc6c4d570b6344245f81296cf3a06ea8296f13ac5d40b427a70b013ff",
+      "bytes": 2618
+    },
+    {
+      "path": "assets/img/favicons/favicon-96x96.png",
+      "sha256": "820ed55bf3335fe049c036072ee96c6a40879c4386c10000bc504f43d93a2074",
+      "bytes": 11201
+    },
+    {
+      "path": "assets/img/favicons/favicon.ico",
+      "sha256": "694d534f6ffd22fc7d8b179a9f6ade0092c53549dc1cb5d3652d7e83c1b534e4",
+      "bytes": 1150
+    },
+    {
+      "path": "assets/img/favicons/favicon.svg",
+      "sha256": "b6af4988725eb5c7ac52ccb4665c9501f83cd1afc8fb62c3427efafb3525ad9b",
+      "bytes": 238
+    },
+    {
+      "path": "assets/img/favicons/manifest.json",
+      "sha256": "9b9d9ca4914de35ab6a1a39a13f9e19dc6c7a1035ed819ff278f1fd3e5be9f28",
+      "bytes": 1244
+    },
+    {
+      "path": "assets/img/favicons/ms-icon-144x144.png",
+      "sha256": "d982ad8197f09f4cd51c51494db74f2b531b9bbbfc226eee4ff8af3b2e843acd",
+      "bytes": 20524
+    },
+    {
+      "path": "assets/img/favicons/ms-icon-150x150.png",
+      "sha256": "aa9fa3014841ec8fcb0964043a49639ecb6e7cba7a666e355dd29b2d6ecee74b",
+      "bytes": 21840
+    },
+    {
+      "path": "assets/img/favicons/ms-icon-310x310.png",
+      "sha256": "8f1da12df7848b761a951a877c8c6963e7c843f639a1c86baf5c3ec91e57ce80",
+      "bytes": 65009
+    },
+    {
+      "path": "assets/img/favicons/ms-icon-70x70.png",
+      "sha256": "eb2012b6f75b351f0738e9f722308570634238da8a60c91a4bbdf080f3032301",
+      "bytes": 7168
+    },
+    {
+      "path": "assets/img/sample/HTC/Weak-rsa_rsatool.png",
+      "sha256": "6c303cc36debd7ca6470cad7e852cd1405e55983ed77d2952d0458765f0befe2",
+      "bytes": 106567
+    },
+    {
+      "path": "assets/img/sample/HTC/dirb_freelancer.png",
+      "sha256": "8297eb5f52f75960a455a577232a0f57820a3321c7b452c6912c26da11d393a2",
+      "bytes": 97110
+    },
+    {
+      "path": "assets/img/sample/HTC/find_password_find_the_easy_password.png",
+      "sha256": "8d0b3bb0cf44ddd1f64afebd1a50a8e8b00a02d6bcacb379d9b6e5879431a7b7",
+      "bytes": 94179
+    },
+    {
+      "path": "assets/img/sample/HTC/find_the_code_screen.png",
+      "sha256": "e6451ecc085892a6e04c34afcb41c93b96b53e8a8de10b65bf41ebe03f6b767c",
+      "bytes": 306692
+    },
+    {
+      "path": "assets/img/sample/HTC/find_the_easy_password_assemply.png",
+      "sha256": "16356cb709c3de552e1bc3f181f067dca538e098b450f611d5548b8180c9b5f6",
+      "bytes": 98739
+    },
+    {
+      "path": "assets/img/sample/HTC/find_the_easy_password_breakpoint.png",
+      "sha256": "b2280a45e56754f1ed32d9cd59b1e5b1c348da9ffc190c4dfbdb6ace4edb9b33",
+      "bytes": 133997
+    },
+    {
+      "path": "assets/img/sample/HTC/find_the_easy_password_flag.png",
+      "sha256": "c84bafd4675bd28c02f5306b9dda2381946a590ef52d056f30ea78ba76a75bf9",
+      "bytes": 200874
+    },
+    {
+      "path": "assets/img/sample/HTC/flag_templed.png",
+      "sha256": "8dc3a482b99b9428f538d99bf3ccf217e17de0afddc4d7d9aba10f0af8328f7f",
+      "bytes": 48603
+    },
+    {
+      "path": "assets/img/sample/HTC/flags_lame.png",
+      "sha256": "bcb9d5282101cf8067b80782aa79fa9cd4fab6e544059d604546400b8af0cbc0",
+      "bytes": 12541
+    },
+    {
+      "path": "assets/img/sample/HTC/hydra-bruteforce.png",
+      "sha256": "28ac06e8533ed94d22aa3c55a7db774cedc3e2fc1c9f6a1924312ba10408a6e1",
+      "bytes": 114389
+    },
+    {
+      "path": "assets/img/sample/HTC/jerry_default_password.png",
+      "sha256": "f0d6bb3213d88ecd44c5e1cf7e89c9fb6f04678d418030903839be303a5042cc",
+      "bytes": 66953
+    },
+    {
+      "path": "assets/img/sample/HTC/jerry_flags.png",
+      "sha256": "3aa6678f2ef1fae11f725e7067c77329b559c7b927ad0f076e5d69a8d3e30ab2",
+      "bytes": 138696
+    },
+    {
+      "path": "assets/img/sample/HTC/jerry_htb_screen.png",
+      "sha256": "f36351130761cf22bbcb57cda6c6ed9eaa7b1883a8bde8d49f8954153defbff4",
+      "bytes": 161750
+    },
+    {
+      "path": "assets/img/sample/HTC/jerry_jsp.png",
+      "sha256": "6048f42ea9a7720767a412fb1447004dfa8dd7ad737ab46ea05d45677921ce39",
+      "bytes": 27922
+    },
+    {
+      "path": "assets/img/sample/HTC/jerry_login.png",
+      "sha256": "33b029f63d67cf853189c7b236f4cbd8ce998951c9ad9b73d0455734af6c077c",
+      "bytes": 71441
+    },
+    {
+      "path": "assets/img/sample/HTC/jerry_nmap.png",
+      "sha256": "92d2a133a961c6b784d8683a6756179fbb0e637c1a49c0248dac8e8a73b5b055",
+      "bytes": 83216
+    },
+    {
+      "path": "assets/img/sample/HTC/jerry_server_status.png",
+      "sha256": "543c39be1774ee463c7091b4c35621952b66a28006dbfab5aa5f84184b4cc695",
+      "bytes": 74690
+    },
+    {
+      "path": "assets/img/sample/HTC/jerry_upload_war.png",
+      "sha256": "f06b27767e7efd05cf589f0e30b67db7150f581e9e49761baf8aaa62027b1ca0",
+      "bytes": 22940
+    },
+    {
+      "path": "assets/img/sample/HTC/lame.png",
+      "sha256": "c88772155e09d485ff0b06fef9fc2db9506b2f05891953cf74561d417c5a1de9",
+      "bytes": 104558
+    },
+    {
+      "path": "assets/img/sample/HTC/monk_symbols.png",
+      "sha256": "5b57772073375e6a722d8ba46f49434d695ce5f222b1a8dd6c19f690ece2bbde",
+      "bytes": 108540
+    },
+    {
+      "path": "assets/img/sample/HTC/nmap_lame.png",
+      "sha256": "d0c738e2b8c443316ba64df8b1752e7fd65db53c5299772894bfaaa19bf7d75b",
+      "bytes": 178088
+    },
+    {
+      "path": "assets/img/sample/HTC/root_login_lame.png",
+      "sha256": "41d5bb4a309d2e29cf6c8fa4c2b1662c6bff304e0d331eb0f3e7bc2858a407dc",
+      "bytes": 23781
+    },
+    {
+      "path": "assets/img/sample/HTC/rsa_public_key_weak.png",
+      "sha256": "8c2b7e78deba910bc43771acbae2029c021cd7799c34b30a2db1686c142f26c8",
+      "bytes": 151705
+    },
+    {
+      "path": "assets/img/sample/HTC/searchsploit_lame_samba.png",
+      "sha256": "6e2d389cdc55abe4a834bf839f5727033977bd7547a19438987a1f823a1c51a1",
+      "bytes": 49222
+    },
+    {
+      "path": "assets/img/sample/HTC/smb_client_lame.png",
+      "sha256": "98a4c8789da603e6dd5b6fbad23415554a1f3d9e9a3d8021c590ac83333630e9",
+      "bytes": 29740
+    },
+    {
+      "path": "assets/img/sample/HTC/sql_map_db_tables.png",
+      "sha256": "6428ab00322604dda31fc4f26d720483e7ac1976a17d94390e41740783a0acda",
+      "bytes": 27899
+    },
+    {
+      "path": "assets/img/sample/HTC/sqlmap_crawl.png",
+      "sha256": "872c3cd1f09688191315ac1e057e0c2c702de458834462ab73db79aab1a05ec8",
+      "bytes": 67463
+    },
+    {
+      "path": "assets/img/sample/HTC/templed_decryption.png",
+      "sha256": "ec77efbbf20de10232d17664e2283f86c6bb811d650fae398f0308a94a637ebb",
+      "bytes": 29809
+    },
+    {
+      "path": "assets/img/sample/HTC/templed_image.png",
+      "sha256": "4137336b7d6b15abed40c0567b3cfc2f57579c0c651327adf738a8b0c5c288d1",
+      "bytes": 3335
+    },
+    {
+      "path": "assets/img/sample/HTC/templed_screen.png",
+      "sha256": "cdc0090a87834e46741152589907654f9bd3832e2f19f0aa223b46017b08b182",
+      "bytes": 27262
+    },
+    {
+      "path": "assets/img/sample/HTC/weak-rsa-files.png",
+      "sha256": "db6869917cc1134524a44417960e32baaba0223e56596580782dbb773b6b8c69",
+      "bytes": 90126
+    },
+    {
+      "path": "assets/img/sample/HTC/weak-rsa-flag.png",
+      "sha256": "6ce86c789b0dafa26cc5f9b16d5f760b536cb67c36782ff1a9c4ac04db91efb7",
+      "bytes": 237786
+    },
+    {
+      "path": "assets/img/sample/HTC/weak-rsa_screen.png",
+      "sha256": "83b9514290332b1baae625f09a7b9af3f887c1ae4762dd4d8a9821c83838db0f",
+      "bytes": 57680
+    },
+    {
+      "path": "assets/img/sample/avatar.jpg",
+      "sha256": "8f1da12df7848b761a951a877c8c6963e7c843f639a1c86baf5c3ec91e57ce80",
+      "bytes": 65009
+    },
+    {
+      "path": "assets/img/sample/burp-suite.png",
+      "sha256": "4d75db251ad6b7fd91d9ce0c6de0be0da55f522d27d885e2fc35cced41f02f63",
+      "bytes": 44863
+    },
+    {
+      "path": "assets/img/sample/cat_freelancer_flag.png",
+      "sha256": "b9d964b60d9954601cfcac58016378878b474a27e2eb062fed0095a76ca503a3",
+      "bytes": 139135
+    },
+    {
+      "path": "assets/img/sample/devices-mockup.png",
+      "sha256": "6ac365ca9906755a72ef4b1f9d17408a8397181c44f6f6f9ac00e6ba22f0b67d",
+      "bytes": 235113
+    },
+    {
+      "path": "assets/img/sample/dirb_directory_freelancer.png",
+      "sha256": "e10e35ceb567a2613f1f6bc3d879e495f42536bff7eaf634303b958daac0df58",
+      "bytes": 107008
+    },
+    {
+      "path": "assets/img/sample/dirb_freelancer.png",
+      "sha256": "8297eb5f52f75960a455a577232a0f57820a3321c7b452c6912c26da11d393a2",
+      "bytes": 97110
+    },
+    {
+      "path": "assets/img/sample/download-icons.png",
+      "sha256": "a48d086f8b22fda121f508e7a9b04779a7280378784d03c85784e28365f5fd33",
+      "bytes": 9832
+    },
+    {
+      "path": "assets/img/sample/download_freelancer_php.png",
+      "sha256": "3519de51b02674989f3ae09482d0d2829a36714408c2e2df4f818a1c59f55561",
+      "bytes": 247769
+    },
+    {
+      "path": "assets/img/sample/end_of_challengeEmdee.png",
+      "sha256": "536e855a21e6f8c155869e3e6afe0c9ab84403938b6544e4e11c278994d44baa",
+      "bytes": 69218
+    },
+    {
+      "path": "assets/img/sample/mockup.png",
+      "sha256": "29d1315a78355da062a1988ac5dc118dac09e3d331210743301ee0c28dd664b3",
+      "bytes": 32004
+    },
+    {
+      "path": "assets/img/sample/saved_php_file.png",
+      "sha256": "1f94b06be753295fd2fdd3613a080727f587e36fbb83fa9c3fd1c1d82b95d722",
+      "bytes": 171096
+    },
+    {
+      "path": "assets/img/sample/session-get.png",
+      "sha256": "bbd17f1d5e992d9a94a03101229d2e2808cc3c1c4d272662ed2650aa34e986c3",
+      "bytes": 54139
+    },
+    {
+      "path": "assets/img/sample/sql_map_db_tables.png",
+      "sha256": "6428ab00322604dda31fc4f26d720483e7ac1976a17d94390e41740783a0acda",
+      "bytes": 27899
+    },
+    {
+      "path": "assets/img/sample/sqlmap_crawl.png",
+      "sha256": "872c3cd1f09688191315ac1e057e0c2c702de458834462ab73db79aab1a05ec8",
+      "bytes": 67463
+    },
+    {
+      "path": "assets/img/sample/table_enumarate.png",
+      "sha256": "2d534b64dd07c498962d10d0cd1c62908deaee5996e048c33da0087988904d14",
+      "bytes": 30667
+    },
+    {
+      "path": "assets/img/sample/thm/jack_cms_enumaration.png",
+      "sha256": "a7b34590aeda5a36de2d3e9dceb67785d24e36dbf82f1f50e7bbf9e4aaa2b75c",
+      "bytes": 49022
+    },
+    {
+      "path": "assets/img/sample/thm/jack_home_screen.thm.png",
+      "sha256": "2d5106e7cd5cbc420cae4443e7e8b8c7f22c844b125a084baf1d3fdf8ff1944b",
+      "bytes": 146807
+    },
+    {
+      "path": "assets/img/sample/thm/user_enumaration_jack.png",
+      "sha256": "7361ae2cf20485db8d224aed248514482b0964193a3c543a574a0c48192434f8",
+      "bytes": 71928
+    },
+    {
+      "path": "assets/img/sample/thm/xmkrpcphp_jacl.png",
+      "sha256": "7f87c7763679eef031d2b5d731c779714ca09349042832ece0db9a03ab5289a8",
+      "bytes": 63271
+    },
+    {
+      "path": "assets/img/sample/thm-reverse-enginnering-intro.png",
+      "sha256": "bc02b0073db90102f24be55316383b053ea75943cbd384811d7ba9ea865156d2",
+      "bytes": 34097
+    },
+    {
+      "path": "assets/img/sample/tutorials/burpsuite-network-settings.png",
+      "sha256": "422fcc377f3b2246f979de92fbba3ffc66e4f20a13594377095668bdca359310",
+      "bytes": 9696
+    },
+    {
+      "path": "assets/img/sample/tutorials/burpsuite-proxy-settings.png",
+      "sha256": "eb5d96a0329e5c68735a4fd167066498ce462421003fc5e1c6f95d4fc1c16ac8",
+      "bytes": 66363
+    },
+    {
+      "path": "assets/img/sample/tutorials/burpsuite-settings.png",
+      "sha256": "809fa882117799b4f9b604575527b20f215ece10116f8247b2ecb7425d15cd66",
+      "bytes": 41314
+    },
+    {
+      "path": "assets/img/sample/upload-image.png",
+      "sha256": "341529b75e2903f438b34010be15916c5b55113856d42333de51f0c4c5c49063",
+      "bytes": 35990
+    },
+    {
+      "path": "assets/img/trades/trade3.png",
+      "sha256": "d7a59ed4c2711cdcf3a357e4d99c78b1e10d32b4d7784f36c5031c663efce3c0",
+      "bytes": 170832
+    },
+    {
+      "path": "assets/img/trading/Doji_on_resistance.png",
+      "sha256": "2825d82ba5b6dac2fee4a078494752d6f867a31814f53b78f1e182793d56b4f2",
+      "bytes": 12081
+    },
+    {
+      "path": "assets/img/trading/dogi_keri.png",
+      "sha256": "10295dd2806f6578b3eb78c7197e8393803607a3c604720016aca26246607bb5",
+      "bytes": 11861
+    },
+    {
+      "path": "assets/img/trading/dragonfly_doji.png",
+      "sha256": "181e755904239c5ba471f64cbde21e853e24aa621e64734490dfab0ed8afaed3",
+      "bytes": 2666
+    },
+    {
+      "path": "assets/img/trading/gravestone_doji.png",
+      "sha256": "d41d64060eaa464753809beba12ec708bac70bd615ca94d662c20c2b561339c0",
+      "bytes": 3865
+    },
+    {
+      "path": "assets/img/trading/long_leg_doji.png",
+      "sha256": "83d627384d028d5f302986c8f4f55d61069d95e6637af78a09b3f127d616cfa6",
+      "bytes": 7120
+    },
+    {
+      "path": "assets/img/trading/standard_doji.png",
+      "sha256": "e07df2d5623416e3f465e6c6a403e71fb4f84b2d6c80add5f97ef9a35c18734f",
+      "bytes": 5408
+    },
+    {
+      "path": "assets/js/pwa/sw.js",
+      "sha256": "e2f6a3b82890eca289f14e15a05d6d66b8de0170d0e1f0d2e28fac8749f1aa21",
+      "bytes": 862
+    },
+    {
+      "path": "assets/js/pwa/unregister.js",
+      "sha256": "c07f5d58b08d395f77f4216f7e960ee99da3796679557ddeb9bbc9636f6edc62",
+      "bytes": 383
+    },
+    {
+      "path": "assets/robot/desktop_diagram.png",
+      "sha256": "e5d78f30d23a9920689ed11cb5eb8e3751a9d6a710a416be3fc414fd0abb7844",
+      "bytes": 268844
+    },
+    {
+      "path": "assets/robot/firmware_ui_phone.png",
+      "sha256": "13162d4a19b80be4ccb9666dfe7a8d61a6c03ab297ad55410852dccb8e5be351",
+      "bytes": 189888
+    },
+    {
+      "path": "assets/robot/guide.css",
+      "sha256": "2b772e74ebed68497ccf9a676857994e32bece82657af344a9e1daadf72b18a4",
+      "bytes": 12612
+    },
+    {
+      "path": "assets/robot/guide.js",
+      "sha256": "4153851f897fe2bd9aedeeafdf7f1552f1bbfe8543871bcd3ea7ee15715c618d",
+      "bytes": 11960
+    },
+    {
+      "path": "assets/robot/robot_firmware.zip",
+      "sha256": "b7bccb14294d3619376ee4825dbc9c87bd5a7d33623e49e639f6a2197f718913",
+      "bytes": 22671
+    }
+  ],
+  "protected_sources": [
+    {
+      "path": "assets/robot/robot_firmware.zip",
+      "sha256": "b7bccb14294d3619376ee4825dbc9c87bd5a7d33623e49e639f6a2197f718913",
+      "bytes": 22671
+    },
+    {
+      "path": "_includes/robot/pict.svg",
+      "sha256": "9248bcddde4190bc2551346d7194493b5f7b7bf4ec237ae8db287dcbe3e323da",
+      "bytes": 65793
+    },
+    {
+      "path": "_includes/robot/harness.svg",
+      "sha256": "ab21f8c6f7202c0647fcd85b44964f469ab46d49ec5287f07fa1676665f22318",
+      "bytes": 78997
+    },
+    {
+      "path": "src/data/robot/pict.svg",
+      "sha256": "9248bcddde4190bc2551346d7194493b5f7b7bf4ec237ae8db287dcbe3e323da",
+      "bytes": 65793
+    },
+    {
+      "path": "src/data/robot/harness.svg",
+      "sha256": "ab21f8c6f7202c0647fcd85b44964f469ab46d49ec5287f07fa1676665f22318",
+      "bytes": 78997
+    }
+  ],
+  "hidden_paths": [
+    "/position_size/",
+    "/trades/",
+    "/norobots/",
+    "/gym-app/"
+  ],
+  "technical_payload": {
+    "connection_cells": [
+      "1",
+      "κόκκινο",
+      "Θήκη 3×18650 +",
+      "Ασφάλεια 5A (προς μπαταρία)",
+      "0.5mm² (22AWG)",
+      "χωρίς ασφάλεια: κατευθείαν στο IN του διακόπτη",
+      "2",
+      "κόκκινο",
+      "Ασφάλεια 5A (προς διακόπτη)",
+      "Διακόπτης ON/OFF IN",
+      "0.5mm² (22AWG)",
+      "",
+      "3",
+      "κόκκινο",
+      "Διακόπτης ON/OFF OUT",
+      "WAGO A · θέση 1",
+      "0.5mm² (22AWG)",
+      "",
+      "4",
+      "κόκκινο",
+      "WAGO A · θέση 2",
+      "L298N 12V",
+      "0.5mm² (22AWG)",
+      "",
+      "5",
+      "κόκκινο",
+      "WAGO A · θέση 3",
+      "HW-468 IN+",
+      "0.5mm² (22AWG)",
+      "",
+      "6",
+      "μαύρο",
+      "Θήκη 3×18650 −",
+      "WAGO B · θέση 1",
+      "0.5mm² (22AWG)",
+      "",
+      "7",
+      "μαύρο",
+      "WAGO B · θέση 3",
+      "L298N GND",
+      "0.5mm² (22AWG)",
+      "",
+      "8",
+      "μαύρο",
+      "WAGO B · θέση 2",
+      "WAGO GND · θέση 4",
+      "0.5mm² (22AWG)",
+      "γέφυρα GND μπαταρίας → GND λογικής",
+      "9",
+      "μαύρο",
+      "HW-468 GND",
+      "WAGO GND · θέση 1",
+      "0.5mm² (22AWG)",
+      "",
+      "10",
+      "πορτοκαλί",
+      "HW-468 OUT+",
+      "WAGO 5V · θέση 1",
+      "0.5mm² (22AWG)",
+      "",
+      "11",
+      "πορτοκαλί",
+      "WAGO 5V · θέση 5",
+      "ESP32-CAM 5V",
+      "0.5mm² με θηλυκό Dupont (crimp), όσο πιο κοντό",
+      "⚠ 5V = το ΤΕΛΕΥΤΑΙΟ pin της σειράς με τα IO, στην άκρη ΜΑΚΡΙΑ από την κεραία (δίπλα στο AMS1117). ΠΟΤΕ στο 3V3 της απέναντι σειράς. Ο C1 κολλάει εδώ.",
+      "12",
+      "μαύρο",
+      "WAGO GND · θέση 5",
+      "ESP32-CAM GND",
+      "0.5mm² με θηλυκό Dupont (crimp), όσο πιο κοντό",
+      "⚠ GND = το pin ΑΚΡΙΒΩΣ δίπλα στο 5V (2ο από την άκρη, ίδια σειρά). Ο C1 (και η R1) κολλάνε εδώ.",
+      "13",
+      "πορτοκαλί",
+      "WAGO 5V · θέση 4",
+      "DFPlayer Pro VIN",
+      "Dupont",
+      "",
+      "14",
+      "μαύρο",
+      "WAGO GND · θέση 3",
+      "DFPlayer Pro GND",
+      "Dupont",
+      "",
+      "15",
+      "πορτοκαλί",
+      "WAGO 5V · θέση 2",
+      "Ενισχυτής VCC",
+      "Dupont",
+      "",
+      "16",
+      "μαύρο",
+      "WAGO GND · θέση 2",
+      "Ενισχυτής GND",
+      "Dupont",
+      "",
+      "17",
+      "μπλε",
+      "ESP32-CAM IO14",
+      "L298N IN1",
+      "Dupont",
+      "",
+      "18",
+      "γαλάζιο",
+      "ESP32-CAM IO15",
+      "L298N IN2",
+      "Dupont",
+      "",
+      "19",
+      "κίτρινο",
+      "ESP32-CAM IO13",
+      "L298N IN3",
+      "Dupont",
+      "",
+      "20",
+      "λευκό",
+      "ESP32-CAM IO12",
+      "L298N IN4",
+      "Dupont",
+      "",
+      "21",
+      "πράσινο",
+      "ESP32-CAM IO2",
+      "DFPlayer Pro RX",
+      "Dupont",
+      "αν αποτυγχάνει το upload, βγάλ' το προσωρινά",
+      "22",
+      "μωβ",
+      "DFPlayer Pro DACL",
+      "Ενισχυτής LIN",
+      "Dupont",
+      "μόνο αριστερό κανάλι",
+      "23",
+      "μωβ",
+      "Ενισχυτής L+",
+      "Ηχείο +",
+      "Dupont",
+      "",
+      "24",
+      "μωβ",
+      "Ενισχυτής L−",
+      "Ηχείο −",
+      "Dupont",
+      "ποτέ στο GND",
+      "25",
+      "καφέ",
+      "L298N OUT1",
+      "Μοτέρ αριστερό μπροστά +",
+      "0.5mm² / καλώδιο μοτέρ",
+      "",
+      "26",
+      "καφέ",
+      "L298N OUT2",
+      "Μοτέρ αριστερό μπροστά −",
+      "0.5mm² / καλώδιο μοτέρ",
+      "",
+      "27",
+      "καφέ",
+      "L298N OUT1",
+      "Μοτέρ αριστερό πίσω +",
+      "0.5mm² / καλώδιο μοτέρ",
+      "ίδια βίδα με το #25 (παράλληλα)",
+      "28",
+      "καφέ",
+      "L298N OUT2",
+      "Μοτέρ αριστερό πίσω −",
+      "0.5mm² / καλώδιο μοτέρ",
+      "ίδια βίδα με το #26 (παράλληλα)",
+      "29",
+      "καφέ",
+      "L298N OUT3",
+      "Μοτέρ δεξί μπροστά +",
+      "0.5mm² / καλώδιο μοτέρ",
+      "",
+      "30",
+      "καφέ",
+      "L298N OUT4",
+      "Μοτέρ δεξί μπροστά −",
+      "0.5mm² / καλώδιο μοτέρ",
+      "",
+      "31",
+      "καφέ",
+      "L298N OUT3",
+      "Μοτέρ δεξί πίσω +",
+      "0.5mm² / καλώδιο μοτέρ",
+      "ίδια βίδα με το #29 (παράλληλα)",
+      "32",
+      "καφέ",
+      "L298N OUT4",
+      "Μοτέρ δεξί πίσω −",
+      "0.5mm² / καλώδιο μοτέρ",
+      "ίδια βίδα με το #30 (παράλληλα)",
+      "33",
+      "πόδι",
+      "Πυκνωτής C1 470–1000µF/16V · πόδι + (μακρύ)",
+      "ESP32-CAM 5V (κόλληση στο καλώδιο #11)",
+      "κόλληση",
+      "μακρύ πόδι (+) στο 5V",
+      "34",
+      "πόδι",
+      "Πυκνωτής C1 470–1000µF/16V · πόδι − (λωρίδα)",
+      "ESP32-CAM GND (κόλληση στο καλώδιο #12)",
+      "κόλληση",
+      "πλευρά με τη λωρίδα (−) στο GND",
+      "35",
+      "πόδι",
+      "Αντίσταση R1 10kΩ · πόδι 1",
+      "ESP32-CAM IO12 (κόλληση στο καλώδιο #20)",
+      "κόλληση",
+      "προαιρετικό, συνιστάται προαιρετικό, συνιστάται",
+      "36",
+      "πόδι",
+      "Αντίσταση R1 10kΩ · πόδι 2",
+      "ESP32-CAM GND (κόλληση στο καλώδιο #12)",
+      "κόλληση",
+      "προαιρετικό, συνιστάται προαιρετικό, συνιστάται"
+    ],
+    "wires": {
+      "1": {
+        "c": "κόκκινο",
+        "a": "Θήκη 3×18650 +",
+        "b": "Ασφάλεια 5A (προς μπαταρία)",
+        "t": "0.5mm² (22AWG)",
+        "hex": "#d7263d"
+      },
+      "2": {
+        "c": "κόκκινο",
+        "a": "Ασφάλεια 5A (προς διακόπτη)",
+        "b": "Διακόπτης ON/OFF IN",
+        "t": "0.5mm² (22AWG)",
+        "hex": "#d7263d"
+      },
+      "3": {
+        "c": "κόκκινο",
+        "a": "Διακόπτης ON/OFF OUT",
+        "b": "WAGO A · θέση 1",
+        "t": "0.5mm² (22AWG)",
+        "hex": "#d7263d"
+      },
+      "4": {
+        "c": "κόκκινο",
+        "a": "WAGO A · θέση 2",
+        "b": "L298N 12V",
+        "t": "0.5mm² (22AWG)",
+        "hex": "#d7263d"
+      },
+      "5": {
+        "c": "κόκκινο",
+        "a": "WAGO A · θέση 3",
+        "b": "HW-468 IN+",
+        "t": "0.5mm² (22AWG)",
+        "hex": "#d7263d"
+      },
+      "6": {
+        "c": "μαύρο",
+        "a": "Θήκη 3×18650 −",
+        "b": "WAGO B · θέση 1",
+        "t": "0.5mm² (22AWG)",
+        "hex": "#2b2b2b"
+      },
+      "7": {
+        "c": "μαύρο",
+        "a": "WAGO B · θέση 3",
+        "b": "L298N GND",
+        "t": "0.5mm² (22AWG)",
+        "hex": "#2b2b2b"
+      },
+      "8": {
+        "c": "μαύρο",
+        "a": "WAGO B · θέση 2",
+        "b": "WAGO GND · θέση 4",
+        "t": "0.5mm² (22AWG)",
+        "hex": "#2b2b2b"
+      },
+      "9": {
+        "c": "μαύρο",
+        "a": "HW-468 GND",
+        "b": "WAGO GND · θέση 1",
+        "t": "0.5mm² (22AWG)",
+        "hex": "#2b2b2b"
+      },
+      "10": {
+        "c": "πορτοκαλί",
+        "a": "HW-468 OUT+",
+        "b": "WAGO 5V · θέση 1",
+        "t": "0.5mm² (22AWG)",
+        "hex": "#f28c18"
+      },
+      "11": {
+        "c": "πορτοκαλί",
+        "a": "WAGO 5V · θέση 5",
+        "b": "ESP32-CAM 5V",
+        "t": "0.5mm² με θηλυκό Dupont (crimp), όσο πιο κοντό",
+        "hex": "#f28c18"
+      },
+      "12": {
+        "c": "μαύρο",
+        "a": "WAGO GND · θέση 5",
+        "b": "ESP32-CAM GND",
+        "t": "0.5mm² με θηλυκό Dupont (crimp), όσο πιο κοντό",
+        "hex": "#2b2b2b"
+      },
+      "13": {
+        "c": "πορτοκαλί",
+        "a": "WAGO 5V · θέση 4",
+        "b": "DFPlayer Pro VIN",
+        "t": "Dupont",
+        "hex": "#f28c18"
+      },
+      "14": {
+        "c": "μαύρο",
+        "a": "WAGO GND · θέση 3",
+        "b": "DFPlayer Pro GND",
+        "t": "Dupont",
+        "hex": "#2b2b2b"
+      },
+      "15": {
+        "c": "πορτοκαλί",
+        "a": "WAGO 5V · θέση 2",
+        "b": "Ενισχυτής VCC",
+        "t": "Dupont",
+        "hex": "#f28c18"
+      },
+      "16": {
+        "c": "μαύρο",
+        "a": "WAGO GND · θέση 2",
+        "b": "Ενισχυτής GND",
+        "t": "Dupont",
+        "hex": "#2b2b2b"
+      },
+      "17": {
+        "c": "μπλε",
+        "a": "ESP32-CAM IO14",
+        "b": "L298N IN1",
+        "t": "Dupont",
+        "hex": "#2563eb"
+      },
+      "18": {
+        "c": "γαλάζιο",
+        "a": "ESP32-CAM IO15",
+        "b": "L298N IN2",
+        "t": "Dupont",
+        "hex": "#14b8c4"
+      },
+      "19": {
+        "c": "κίτρινο",
+        "a": "ESP32-CAM IO13",
+        "b": "L298N IN3",
+        "t": "Dupont",
+        "hex": "#e8c400"
+      },
+      "20": {
+        "c": "λευκό",
+        "a": "ESP32-CAM IO12",
+        "b": "L298N IN4",
+        "t": "Dupont",
+        "hex": "#f2f2f2"
+      },
+      "21": {
+        "c": "πράσινο",
+        "a": "ESP32-CAM IO2",
+        "b": "DFPlayer Pro RX",
+        "t": "Dupont",
+        "hex": "#16a34a"
+      },
+      "22": {
+        "c": "μωβ",
+        "a": "DFPlayer Pro DACL",
+        "b": "Ενισχυτής LIN",
+        "t": "Dupont",
+        "hex": "#9b45d9"
+      },
+      "23": {
+        "c": "μωβ",
+        "a": "Ενισχυτής L+",
+        "b": "Ηχείο +",
+        "t": "Dupont",
+        "hex": "#9b45d9"
+      },
+      "24": {
+        "c": "μωβ",
+        "a": "Ενισχυτής L−",
+        "b": "Ηχείο −",
+        "t": "Dupont",
+        "hex": "#9b45d9"
+      },
+      "25": {
+        "c": "καφέ",
+        "a": "L298N OUT1",
+        "b": "Μοτέρ αριστερό μπροστά +",
+        "t": "0.5mm² / καλώδιο μοτέρ",
+        "hex": "#8a5a2b"
+      },
+      "26": {
+        "c": "καφέ",
+        "a": "L298N OUT2",
+        "b": "Μοτέρ αριστερό μπροστά −",
+        "t": "0.5mm² / καλώδιο μοτέρ",
+        "hex": "#8a5a2b"
+      },
+      "27": {
+        "c": "καφέ",
+        "a": "L298N OUT1",
+        "b": "Μοτέρ αριστερό πίσω +",
+        "t": "0.5mm² / καλώδιο μοτέρ",
+        "hex": "#8a5a2b"
+      },
+      "28": {
+        "c": "καφέ",
+        "a": "L298N OUT2",
+        "b": "Μοτέρ αριστερό πίσω −",
+        "t": "0.5mm² / καλώδιο μοτέρ",
+        "hex": "#8a5a2b"
+      },
+      "29": {
+        "c": "καφέ",
+        "a": "L298N OUT3",
+        "b": "Μοτέρ δεξί μπροστά +",
+        "t": "0.5mm² / καλώδιο μοτέρ",
+        "hex": "#8a5a2b"
+      },
+      "30": {
+        "c": "καφέ",
+        "a": "L298N OUT4",
+        "b": "Μοτέρ δεξί μπροστά −",
+        "t": "0.5mm² / καλώδιο μοτέρ",
+        "hex": "#8a5a2b"
+      },
+      "31": {
+        "c": "καφέ",
+        "a": "L298N OUT3",
+        "b": "Μοτέρ δεξί πίσω +",
+        "t": "0.5mm² / καλώδιο μοτέρ",
+        "hex": "#8a5a2b"
+      },
+      "32": {
+        "c": "καφέ",
+        "a": "L298N OUT4",
+        "b": "Μοτέρ δεξί πίσω −",
+        "t": "0.5mm² / καλώδιο μοτέρ",
+        "hex": "#8a5a2b"
+      },
+      "33": {
+        "c": "πόδι",
+        "a": "Πυκνωτής C1 470–1000µF/16V",
+        "b": "ESP32-CAM 5V",
+        "t": "κόλληση",
+        "hex": "#9aa3ad"
+      },
+      "34": {
+        "c": "πόδι",
+        "a": "Πυκνωτής C1 470–1000µF/16V",
+        "b": "ESP32-CAM GND",
+        "t": "κόλληση",
+        "hex": "#9aa3ad"
+      },
+      "35": {
+        "c": "πόδι",
+        "a": "Αντίσταση R1 10kΩ",
+        "b": "ESP32-CAM IO12",
+        "t": "κόλληση",
+        "hex": "#9aa3ad"
+      },
+      "36": {
+        "c": "πόδι",
+        "a": "Αντίσταση R1 10kΩ",
+        "b": "ESP32-CAM GND",
+        "t": "κόλληση",
+        "hex": "#9aa3ad"
+      }
+    }
+  },
+  "extended_snapshots_at": "2026-10-24T04:54:23.249040+00:00",
+  "extension_reason": "Preserve all remaining deployed asset/root-file URLs as inactive compatibility files; never load the legacy PWA entrypoints in the new portal.",
+  "historical_release_note": "robot/release.json is the unchanged receipt for the 2026-10-22 production release, not evidence or metadata for this Astro build."
+}

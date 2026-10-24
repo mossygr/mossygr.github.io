@@ -7,6 +7,7 @@ title: Use BurpSuite on firefox
 date: 2021-03-11 10:00:00 +0300
 categories: [Burpsuite, tutorials]
 tags: [burpsuite]     # TAG names should always be lowercase
+translation_key: 2020-10-10-Burpsuite-on-firefox
 ---
 
 Αρχικά ανοίγουμε τον Firefox και έπειτα ακολουθούμε τις οδηγίες στις παρακάτω εικόνες

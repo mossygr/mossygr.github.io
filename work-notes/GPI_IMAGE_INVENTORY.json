@@ -1,0 +1,152 @@
+[
+  {
+    "source": "20261021_214455.jpg",
+    "source_bytes": 2882632,
+    "source_sha256": "7a828f6b392dfee74a8cd65fa0c8918a1b5b137537b2cc59b20f33ec56438146",
+    "oriented_size": [
+      4000,
+      3000
+    ],
+    "extra_clockwise_rotation": true,
+    "outputs": [
+      {
+        "file": "cover-480.webp",
+        "width": 480,
+        "height": 360,
+        "bytes": 18390
+      },
+      {
+        "file": "cover-800.webp",
+        "width": 800,
+        "height": 600,
+        "bytes": 34834
+      },
+      {
+        "file": "cover-1200.webp",
+        "width": 1200,
+        "height": 900,
+        "bytes": 55944
+      }
+    ]
+  },
+  {
+    "source": "20261021_214448.jpg",
+    "source_bytes": 3291390,
+    "source_sha256": "8f07a72a73c7decfd6905f3a1c8322e9bb07714b801f2345d1150d5aeda0bd94",
+    "oriented_size": [
+      3000,
+      4000
+    ],
+    "extra_clockwise_rotation": false,
+    "outputs": [
+      {
+        "file": "broken-screen-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 19946
+      },
+      {
+        "file": "broken-screen-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 43174
+      },
+      {
+        "file": "broken-screen-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 110204
+      }
+    ]
+  },
+  {
+    "source": "20261022_180818.jpg",
+    "source_bytes": 3420830,
+    "source_sha256": "411b5d11af0b167616ef7d3228eb8754356c0a7d5eae1c51528abf2fb2e77cf9",
+    "oriented_size": [
+      3000,
+      4000
+    ],
+    "extra_clockwise_rotation": false,
+    "outputs": [
+      {
+        "file": "game-error-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 19626
+      },
+      {
+        "file": "game-error-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 44256
+      },
+      {
+        "file": "game-error-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 109964
+      }
+    ]
+  },
+  {
+    "source": "20261022_180936.jpg",
+    "source_bytes": 3975284,
+    "source_sha256": "547768aec9dd9cacc07a820da4edc367f755c62d01ab85bb812df293dbce5b1f",
+    "oriented_size": [
+      3000,
+      4000
+    ],
+    "extra_clockwise_rotation": false,
+    "outputs": [
+      {
+        "file": "installing-gpi-case-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 22356
+      },
+      {
+        "file": "installing-gpi-case-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 55996
+      },
+      {
+        "file": "installing-gpi-case-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 148538
+      }
+    ]
+  },
+  {
+    "source": "20261022_203314.jpg",
+    "source_bytes": 3375795,
+    "source_sha256": "95999a9c2aba3dc7d6781fd1ae5d10f864653b8606496abe9354ad0169d11572",
+    "oriented_size": [
+      3000,
+      4000
+    ],
+    "extra_clockwise_rotation": true,
+    "outputs": [
+      {
+        "file": "working-screen-480.webp",
+        "width": 480,
+        "height": 640,
+        "bytes": 28022
+      },
+      {
+        "file": "working-screen-800.webp",
+        "width": 800,
+        "height": 1067,
+        "bytes": 52212
+      },
+      {
+        "file": "working-screen-1200.webp",
+        "width": 1200,
+        "height": 1600,
+        "bytes": 89982
+      }
+    ]
+  }
+]

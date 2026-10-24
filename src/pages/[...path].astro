@@ -1,0 +1,53 @@
+---
+import {render} from 'astro:content';
+import Portal from '../layouts/Portal.astro';
+import DocList from '../components/DocList.astro';
+import Icon from '../components/Icon.astro';
+import ProjectData from '../components/ProjectData.astro';
+import {allDocs,sorted,counterpart,formatDate,categoryHref,categoryGroups,tagHref,articleCount,type Doc} from '../lib/content';
+import {listings,type ListingRoute} from '../lib/routes';
+import {text,prefix} from '../config/site';
+export async function getStaticPaths() {
+ const docs=await allDocs();
+ return [
+  ...docs.map(doc=>({params:{path:decodeURI(doc.data.permalink).replace(/^\/|\/$/g,'')||undefined},props:{doc,route:undefined}})),
+  ...listings(docs).map(route=>({params:{path:decodeURI(route.path).replace(/^\/|\/$/g,'')||undefined},props:{doc:undefined,route}})),
+ ];
+}
+interface Props {doc?:Doc;route?:ListingRoute}
+const {doc,route}=Astro.props;
+const all=await allDocs(),lang=doc?.data.lang||route!.lang,t=text[lang],base=prefix(lang);
+const rendered=doc?await render(doc):undefined;
+const Content=rendered?.Content;
+const alternate=doc?counterpart(doc,all)!:route!.alternate;
+const title=doc?.data.title||route!.title,description=doc?.data.description||route!.description;
+const local=sorted(all.filter(d=>d.data.lang===lang));
+const projects=local.filter(d=>d.data.type==='project'||d.data.key.includes('robot-4wd')).sort((a,b)=>Number(b.data.pin)-Number(a.data.pin)||b.data.date.getTime()-a.data.date.getTime());
+const robot=local.find(d=>d.data.key.includes('robot-4wd'))!;
+const groups=categoryGroups(all,lang);
+const projectHeadings=doc?(['materials','wiring','steps','downloads','troubleshooting'] as const).filter(key=>doc.data[key]?.length).map(key=>({depth:2,slug:'project-'+key,text:t[key]})):[];
+const headings=[...(rendered?.headings||[]),...projectHeadings];
+---
+<Portal title={title} description={description} lang={lang} alternate={alternate} headings={headings} article={!!doc} image={doc?.data.image?.path} published={doc?.data.date}>
+{doc?<>
+ <nav class="breadcrumbs" aria-label={lang==='el'?'Διαδρομή':'Breadcrumb'}><a href={base}>{t.home}</a><Icon name="chevron" size={14}/>{doc.data.categories[0]&&<><a href={categoryHref(doc.data.categories[0],lang)}>{doc.data.categories[0]}</a><Icon name="chevron" size={14}/></>}<span>{doc.data.type==='guide'?t.guides:doc.data.type==='project'?t.projects:lang==='el'?'Άρθρο':'Article'}</span></nav>
+ <article data-pagefind-body>
+ <header class="article-header"><p class="eyebrow">{doc.data.categories.join(' / ')}</p><h1 data-pagefind-meta="title">{title}</h1>{description&&<p class="article-deck">{description}</p>}<div class="article-meta"><span class="author-avatar">m₀</span><strong>m0ss1</strong><span>·</span><time datetime={doc.data.date.toISOString()}>{formatDate(doc.data.date,lang)}</time></div></header>
+ {doc.data.image&&!doc.data.key.includes('robot-4wd')&&<figure class="article-cover"><img src={doc.data.image.path} alt={doc.data.image.alt} width="1200" height="900" fetchpriority="high"/></figure>}
+ <div class="prose">{Content&&<Content/>}<ProjectData doc={doc}/></div>
+ {doc.data.tags.length>0&&<footer class="article-tags">{doc.data.tags.map(tag=><a href={tagHref(tag,lang)}># {tag}</a>)}</footer>}
+ </article>
+ <div class="reading-end"><Icon name="book"/><span>{lang==='el'?'Συνέχισε την εξερεύνηση':'Keep exploring'}</span><a href={base+'archives/'}>{t.archives} →</a></div>
+ </>:route!.kind==='home'?<>
+ <div class="breadcrumbs"><span>m0ss1 / {lang==='el'?'Βιβλιοθήκη γνώσης':'Knowledge base'}</span></div>
+ <section class="home-intro"><p class="eyebrow"><span class="status-dot"></span> BUILD · LEARN · DOCUMENT</p><h1>{lang==='el'?<>Η γνώση αποκτά αξία<br/>όταν τη μοιράζεσαι<span>.</span></>:<>Good things happen<br/>when we share what we learn<span>.</span></>}</h1><p>{lang==='el'?'Οδηγοί που ξεκινούν από το «γιατί» και φτάνουν μέχρι τον κώδικα. Ρομποτική, Raspberry Pi και ασφάλεια συστημάτων — με τις λεπτομέρειες που χρειάζεσαι για να προχωρήσεις.':'Guides that start with the why and take you through the code. Robotics, Raspberry Pi, and system security — with the details you need to keep building.'}</p><a class="button-primary" href={robot.data.permalink}>{lang==='el'?'Ξεκίνα με το 4WD Robot':'Start with the 4WD Robot'}<Icon name="arrow" size={17}/></a></section>
+ <section class="home-section" aria-labelledby="projects-title"><div class="section-title"><div><p class="eyebrow">{lang==='el'?'ΑΠΟ ΤΗ ΘΕΩΡΙΑ ΣΤΗΝ ΠΡΑΞΗ':'FROM THEORY TO PRACTICE'}</p><h2 id="projects-title">{lang==='el'?'Κατασκευές & οδηγοί':'Projects & guides'}</h2></div><a href={base+'projects/'}>{t.all} →</a></div><DocList docs={projects} lang={lang}/></section>
+ <section class="home-section" aria-labelledby="categories-title"><div class="section-title"><div><p class="eyebrow">{lang==='el'?'ΒΡΕΣ ΤΟ ΑΝΤΙΚΕΙΜΕΝΟ ΣΟΥ':'FIND YOUR NEXT TOPIC'}</p><h2 id="categories-title">{t.categories}</h2></div></div><div class="category-grid">{groups.map(group=><a class="category-tile" href={group.href}><Icon name="layers" size={19}/><strong>{group.name}</strong><span>{articleCount(group.docs.length,lang)} <span aria-hidden="true">↗</span></span></a>)}</div></section>
+ <section class="home-section" aria-labelledby="recent-title"><div class="section-title"><h2 id="recent-title">{t.recent}</h2><a href={base+'archives/'}>{t.archives} →</a></div><DocList docs={local.slice(0,5)} lang={lang}/></section>
+ </>:<>
+ <nav class="breadcrumbs"><a href={base}>{t.home}</a><Icon name="chevron" size={14}/><span>{title}</span></nav>
+ <header class="listing-header"><p class="eyebrow">m0ss1 / {lang==='el'?'Βιβλιοθήκη':'Library'}</p><h1>{title}</h1><p>{description}</p></header>
+ {route!.kind==='categories'?<div class="category-grid">{groups.map(group=><a class="category-tile" href={group.href}><Icon name="layers"/><strong>{group.name}</strong><span>{articleCount(group.docs.length,lang)} ↗</span></a>)}</div>:route!.kind==='tags'?<div class="tag-cloud">{[...new Set(local.flatMap(d=>d.data.tags))].map(tag=><a href={tagHref(tag,lang)}># {tag}</a>)}</div>:route!.kind==='search'?<><button class="search-page-button" data-open="search-dialog"><Icon name="search"/>{t.searchHint}</button><DocList docs={local} lang={lang}/></>:<DocList docs={sorted(route!.docs)} lang={lang}/>}
+ </>}
+</Portal>
+{doc?.data.key.includes('robot-4wd')&&<script>import '../scripts/robot';</script>}

@@ -1,0 +1,8 @@
+---
+import raw from '../../data/robot/connections.html?raw';
+import {translateRobot} from '../../lib/robot';
+interface Props {lang:'el'|'en'}
+const {lang}=Astro.props;
+---
+<p class="table-hint">{lang==='en'?'Scroll horizontally to see all six columns. Select a row to highlight its wire in the diagram.':'Σύρε οριζόντια για να δεις και τις έξι στήλες. Πάτησε μια γραμμή για να φωτίσεις το καλώδιο στο διάγραμμα.'}</p>
+<div class="robot-guide table-scroll" tabindex="0" role="region" aria-label={lang==='en'?'36 wiring connections, scroll horizontally':'36 συνδέσεις, οριζόντια κύλιση'}><Fragment set:html={translateRobot(raw,lang)}/></div>

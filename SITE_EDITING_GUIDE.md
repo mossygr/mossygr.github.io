@@ -1,84 +1,72 @@
-# Συντήρηση m0ss1
+# Συντήρηση m0ss1 Documentation Portal
 
-Το site χρησιμοποιεί Jekyll 4.4.1 και ολόκληρο το επίσημο Chirpy 7.6.0 με native αριστερό μενού, κάρτες, breadcrumbs, δεξιά περιεχόμενα, σχετικά άρθρα και light/dark. Source: master. Δημοσίευση compiled output: gh-pages με .nojekyll. Τα παλιά URLs διατηρούνται.
+Η νέα υλοποίηση βρίσκεται στον κλάδο `feat/astro-docs-portal`: Astro + TypeScript + Markdown/MDX, στατικό output `dist/`. Η παλιά δημόσια έκδοση παραμένει ενεργή μέχρι τελική έγκριση. Δες την πραγματική κατάσταση δοκιμών στο `work-notes/ASTRO_PORTAL_STATUS.md` πριν θεωρήσεις τη μετάβαση έτοιμη.
 
-## Προσθήκη άρθρου
+## Το επόμενο άρθρο
 
-Αντέγραψε το `templates/new-post.md.example` στο `_posts/2026-10-22-esp32-sensor.md`. Συμπλήρωσε πραγματική ημερομηνία και ώρα, τίτλο, description, categories και tags. Για παράδειγμα:
-
-```yaml
-layout: post
-title: Αισθητήρας θερμοκρασίας με ESP32
-date: 2026-10-22 18:00:00 +0200
-description: Σύνδεση και ανάγνωση αισθητήρα με ESP32.
-categories: [Arduino]
-tags: [esp32, αισθητήρες]
-toc: true
-pin: false
-```
-
-Χρησιμοποίησε πραγματική εικόνα στο image.path/alt ή αφαίρεσε το image block. Γράψε σύντομη εισαγωγή και ενότητες `##` / `###`: δημιουργούν αυτόματα anchors και δεξιό πίνακα περιεχομένων. Μελλοντικές ημερομηνίες δεν δημοσιεύονται πριν από την ώρα τους. Το pin:true εμφανίζει το άρθρο πρώτο. Αρχική, κατηγορίες, tags, αρχείο και αναζήτηση διαβάζουν τα `_posts`· μην βάζεις άρθρα στα `_tabs`.
-
-## Οδηγός ρομπότ
-
-Μοναδική πηγή: `_posts/2026-10-21-robot-4wd.html`, permalink `/robot/`, πραγματική πρώτη δημοσίευση 2026-10-21T13:28:31Z. Διατήρησε `layout: post`, `robot: true`, `toc: true`, `pin: true`: ο native script selector απαιτεί post layout. Το κείμενο και τα διαγράμματα βρίσκονται στο `_includes/robot/`, τα πραγματικά ZIP/PNG/CSS/JS στο `assets/robot/`. Δεν υπάρχουν λήψεις model.py/check.py/MP3· μην επινοήσεις αρχεία.
-
-Διατήρησε τα 17 guide-section heading IDs και guide-downloads. Τα HTML h2/h3 απαιτούν μοναδικό id. Έλεγξε πραγματικό κλικ στα δεξιά περιεχόμενα για διάγραμμα, harness, πίνακα, σημειώσεις, firmware και λήψεις. Διατήρησε pins, πολικότητα, 36 συνδέσεις, SVG/data-w και JavaScript WD/PARTS_OF σε συμφωνία. Το robot έλειπε από την αρχική λόγω διαφορετικού collection, όχι λόγω draft ή ημερομηνίας.
-
-## Εμφάνιση και πλοήγηση
-
-Κεντρικές ρυθμίσεις `_config.yml`: title, tagline, avatar, theme_mode και lang: el-GR για το πραγματικό ελληνικό locale. Στατικές σελίδες `_tabs/` με layout:page/title/icon/order/permalink. Το sidebar προέρχεται αυτούσιο από το επίσημο gem. Το robot δεν εμφανίζεται ως ξεχωριστή καταχώριση εκεί: είναι κανονικό pinned άρθρο. Τα υπόλοιπα layouts, styles και scripts προέρχονται από το κλειδωμένο theme gem. Μην επαναφέρεις custom editorial shell.
-
-Δεν υπάρχει τοπικό override του default layout ή του sidebar· χρησιμοποιούνται τα πραγματικά 7.6 layouts. Το metadata-hook φορτώνει scoped guide assets μόνο στο robot. Το content-fixes.css διορθώνει την αντίθεση παλιών inline μπλε τίτλων. Μην προσθέτεις SCSS override χωρίς συγκεκριμένη ανάγκη. Η 7.6 χρησιμοποιεί πλέον Sass @use, όχι το παλιό @import. Το /search/ χρησιμοποιεί το native πεδίο αναζήτησης χωρίς διπλά input IDs.
-
-## Build και δημοσίευση
+1. Αντέγραψε το `templates/new-post.md.example` στο `src/content/docs/el/2026-10-24-esp32-temperature.md`.
+2. Συμπλήρωσε πραγματικό τίτλο, περιγραφή, ημερομηνία ISO με ζώνη ώρας, `key`, `type`, `permalink`, categories και tags. Το permalink είναι υποχρεωτικό και δεν αλλάζει μετά τη δημοσίευση.
+3. Φτιάξε την πλήρη μετάφραση στο `src/content/docs/en/2026-10-24-esp32-temperature.md`, με το ίδιο `key`, `lang: en`, αγγλικό κείμενο/metadata και `/en/posts/esp32-temperature/`. Μην μεταφράζεις executable εντολές, pins ή string literals firmware αυθαίρετα.
+4. Βάλε τις πραγματικές εικόνες στο `assets/img/esp32-temperature/`. Δήλωσε `image` μόνο αν το αρχείο υπάρχει. Για φωτογραφίες χρησιμοποίησε σωστό EXIF orientation, WebP, responsive παραλλαγές και περιγραφικό alt. Το script `tools/optimize-gpi-images.py` είναι συγκεκριμένο για τις πέντε φωτογραφίες GPi· μην το τρέξεις σε άλλη συλλογή χωρίς προσαρμογή.
+5. Τρέξε τις παρακάτω εντολές και εξέτασε screenshots πριν ανοίξεις PR.
 
 ```sh
-JEKYLL_ENV=production GEM_HOME=/home/Codex-Robot/.local/robot-gems GEM_PATH=/home/Codex-Robot/.local/robot-gems BUNDLE_PATH=/home/Codex-Robot/.local/robot-bundle /home/Codex-Robot/.local/robot-gems/bin/bundle exec jekyll build
+npm ci
+npm test
+npm run build
+npm run preview -- --port 4321
+npm run test:browser
 ```
 
-Πριν από PR/merge/deployment: επιτυχές build και ανεξάρτητος πραγματικός οπτικός έλεγχος αρχικής, robot, κατηγορίας και παλιού άρθρου σε κινητό/tablet/desktop. Άνοιξε screenshots, έλεγξε ελληνικά, sidebar, δεξί TOC με κλικ, light/dark, εικόνες, διαγράμματα, πίνακες, downloads, αναζήτηση και οριζόντια υπερχείλιση. Δημοσίευσε το ελεγμένο `_site` στο gh-pages, διατηρώντας άσχετα paths και τις προστασίες repository· επαλήθευσε το δημόσιο site μετά το deployment.
+Το `package-lock.json` είναι πλέον διαθέσιμο. Το CI και οι εγκαταστάσεις χρησιμοποιούν `npm ci`. Σε περιορισμένο περιβάλλον χωρίς writable home χρησιμοποίησε `ASTRO_TELEMETRY_DISABLED=1` πριν από τις εντολές Astro. Για preview μέσα στο Codex: `ASTRO_TELEMETRY_DISABLED=1 npm run preview -- --port 4321 --ignore-lock`.
 
-Το παλιό workflow αφορά main/posts, ενώ το source είναι master. Το root sw.js αποσύρει μόνο chirpy- caches και root registration· το unregister override περιορίζεται στο root scope. Άλλα scopes/cache namespaces, `/gym-app` και Supabase δεν αγγίζονται. PWA:false αποφεύγει stale HTML. Templates, work-notes και οδηγίες εξαιρούνται από το generated site.
+Η αρχική, οι κατηγορίες, οι ετικέτες, το αρχείο και η αναζήτηση δημιουργούνται από το collection `docs`. Οι οδηγοί και τα projects εμφανίζονται στα αντίστοιχα ευρετήρια. Δεν προσθέτουμε χειροκίνητες διπλές κάρτες. Η αρχική προβάλλει ειδικά το πραγματικό 4WD Robot και τις υπάρχουσες κατασκευές. Το `pin` διατηρήθηκε ως metadata· η προβολή του Robot στην επισκόπηση είναι ρητή.
 
-## Πλήρης επίσημη βάση 7.6.0
+Δεν υπάρχει φίλτρο drafts ή ημερομηνιών: κάθε έγκυρο αρχείο του collection δημοσιεύεται στο build. Κράτα μη έτοιμα άρθρα εκτός `src/content/docs`. Οι πραγματικές παλιές ημερομηνίες παραμένουν. Η αρχική απουσία του Robot είχε αιτία τη χωριστή συλλογή/σελίδα στην παλιότερη υλοποίηση, όχι την cache ή κάποιο draft.
 
-Πηγή: https://github.com/cotes2020/jekyll-theme-chirpy/tree/v7.6.0, tag commit 152093879e6319dac342454d8df75a3c3572315f. Οπτική αναφορά: https://chirpy.cotes.page/. Το Gemfile κλειδώνει ακριβώς 7.6.0 και το Gemfile.lock διατηρεί τις πραγματικές εξαρτήσεις. Τα layouts, Bootstrap styles και τα επτά native JS bundles προέρχονται από το gem, όχι από τοπική ανακατασκευή. Δεν εισάγουμε demo άρθρα στο πραγματικό site.
+## Δομή και εμφάνιση
 
-Το body χρησιμοποιεί Source Sans Pro και οι τίτλοι Lato. Το guide κείμενο και τα headings κληρονομούν την ίδια native τυπογραφία, ενώ τα SVG labels μένουν αμετάβλητα. Η Google CSS δεν παρέχει Greek Lato subset· το assets/css/greek-fonts.css προσθέτει μόνο τους ελληνικούς χαρακτήρες από τα αυθεντικά Lato-Regular/Light.ttf. Πηγές, SHA256 και άδεια OFL: assets/fonts/lato/. Δεν αλλάζουμε τα font outlines.
+- `src/config/site.ts`: ταυτότητα, κοινά ελληνικά/αγγλικά UI κείμενα.
+- `src/styles/portal.css`: χρώματα light/dark, αυτοφιλοξενούμενη Inter Variable με ελληνικά/λατινικά, αποστάσεις, breakpoints. Τα tokens είναι συγκεντρωμένα στο `:root`.
+- `src/layouts/Portal.astro`: κοινός σκελετός, SEO, sidebar, dialogs, TOC.
+- `src/components`: επαναχρησιμοποιήσιμα navigation, λίστες άρθρων, τεχνικά δεδομένα, Robot widgets.
+- `src/content.config.ts`: typed schema και προαιρετικά materials/cost/wiring/steps/downloads/troubleshooting. Το σώμα Markdown/MDX φιλοξενεί κώδικα και εξηγήσεις.
+- `src/lib/routes.ts`: ευρετήρια και αντιστοίχιση γλωσσών. `src/config/legacy-taxonomies.json` διατηρεί τα ιστορικά taxonomy URLs.
+- `src/scripts/portal.ts`: keyboard search, native dialogs, theme, copy, ενεργή ενότητα.
 
-Το επίσημο sidebar έχει Light/Dark/System dropdown και data-bs-theme. Τα άρθρα έχουν desktop sticky TOC και native mobile Contents popup, περιγραφή, author/read time, related posts, κατηγορίες/tags, share/copy-link και προηγούμενο/επόμενο. Η αναζήτηση, pagination, αρχείο, image GLightbox, native lazy loading, code highlighting/copy buttons, prompts και footnotes υποστηρίζονται από το theme. Κανένα πρόσθετο clone αυτών των συστημάτων δεν απαιτείται.
+Τα `##` και `###` δημιουργούν TOC. Για διατήρηση παλιού anchor γράψε `## Η ενότητα {#stable-id}`. Σε αρχεία `.mdx` γράψε `## Η ενότητα \{#stable-id\}` με escaped άγκιστρα, ώστε να μην αναλυθούν ως JavaScript expression. Χρησιμοποίησε fenced blocks με πραγματική γλώσσα, π.χ. `cpp`, `bash`, `ini`. Η αντιγραφή κρατά το ακριβές κείμενο. Markdown tables γίνονται οριζόντια κυλιόμενοι πίνακες μέσα στην περιοχή ανάγνωσης. SVG εικόνες μπορούν να συνδεθούν με Markdown· διαδραστικά στοιχεία μπαίνουν σε `.mdx` με Astro component.
 
-Το footer.html κρατά το επίσημο markup/spacing και εμφανίζει μόνο το m0ss1 copyright/δικαιώματα. Το ορατό attribution αφαιρέθηκε από το template, όχι με CSS hiding. Οι άδειες διατηρούνται σε LICENSE και LICENSE.chirpy-7.6. Η ελληνική μετάφραση και τα aliases τίτλων των υπαρχόντων tabs βρίσκονται στο _data/locales/el-GR.yml.
+## Ελληνικά και αγγλικά / SEO
 
-Νέα πεδία config: cdn (κενό για δικά μας assets), comments.provider και analytics. Οι integrations υποστηρίζονται αλλά χρειάζονται πραγματικά δικά σου account IDs· μην αντιγράφεις IDs από το demo. Τα PWA/cache παραμένουν σκόπιμα ανενεργά για απομόνωση του /gym-app, καθώς ο stock worker καθαρίζει και άλλα cache namespaces. Μελλοντική ενεργοποίηση απαιτεί namespaced worker και πραγματικό preservation test. Supabase εκτός εργασίας.
+Το ελληνικό περιεχόμενο κρατά τα υπάρχοντα URLs. Τα αγγλικά βρίσκονται στο `/en/`. Κάθε άρθρο έχει self canonical, αμφίδρομα `hreflang` και `x-default` προς τα ελληνικά. Η εναλλαγή EL/EN οδηγεί στο ίδιο άρθρο, όχι γενικά στην αρχική. Δεν υπάρχουν αυτόματες ανακατευθύνσεις βάσει browser ούτε widget μετάφρασης.
 
-### Mermaid, μαθηματικά και κώδικας
+Αν μία νέα κατηγορία ή ετικέτα μεταφράζεται με διαφορετικό slug, πρόσθεσε την αντιστοίχιση στο κεντρικό `src/config/legacy-taxonomies.json` μαζί με τα δύο πραγματικά άρθρα. Για παράδειγμα, για `tags: [ESP32, αισθητήρες]` στα ελληνικά και `tags: [ESP32, sensors]` στα αγγλικά:
 
-Για διάγραμμα βάλε mermaid: true στο frontmatter και:
-
-```mermaid
-graph LR
-  Αισθητήρας --> ESP32
-  ESP32 --> Ένδειξη
+```json
+"/tags/αισθητήρες/": {
+  "el": "/tags/αισθητήρες/",
+  "en": "/en/tags/sensors/"
+}
 ```
 
-Για μαθηματικά βάλε math: true και γράψε `$$ E = mc^2 $$`. Οι βιβλιοθήκες φορτώνονται μόνο στις αντίστοιχες σελίδες. Έλεγξε την απόδοση στον browser πριν δημοσίευση.
+Το αρχείο κρατά τόσο τις ιστορικές όσο και τις νέες ρητές αντιστοιχίσεις. Χρησιμοποίησε `/categories/…/` αντί `/tags/…/` για κατηγορίες. Μην προσθέτεις αντιστοιχίσεις για ανύπαρκτο περιεχόμενο. Ο έλεγχος διαδρομών εντοπίζει στόχους εναλλαγής γλώσσας που λείπουν.
 
-Για code highlighting/copy button:
+Η Pagefind χτίζεται μετά το Astro από ρητή allowlist του collection· δεν διαβάζει αυθαίρετα το output. Χωρίζει αυτόματα τις γλώσσες μέσω `html.lang`. Στο `astro dev` η αναζήτηση δεν διαθέτει νέο index: ο πλήρης έλεγχος γίνεται σε `npm run build` και `npm run preview`.
 
-```cpp
-const int ledPin = 4;
-```
+## Robot και αρχική προέλευση
 
-Τα ## και ### δημιουργούν αυτόματα περιεχόμενα. Για dark-mode εικόνες, responsive εικόνες, prompts, footnotes και video χρησιμοποίησε την επίσημη τεκμηρίωση Writing a New Post / Text and Typography, διατηρώντας πραγματικά αρχεία. Δεν χρειάζεται demo περιεχόμενο στην αρχική.
+Ενεργά σώματα: `src/content/docs/el/2026-10-21-robot-4wd.mdx` και αντίστοιχο `en`. Κοινά διαγράμματα/πίνακας/δεδομένα στο `src/data/robot`, αγγλικά labels στο `en-labels.json`. Δεν αλλάζουμε γεωμετρία, 216 κελιά, 36 συνδέσεις, τιμές ή polarity για αισθητικούς λόγους. Οι οκτώ κώδικες στο άρθρο κρατούν τα παρεχόμενα excerpts. Οι γνωστές διαφορές παραλλαγής ήχου είναι ρητά καταγεγραμμένες, όχι σιωπηλά διορθωμένες.
 
-Ο οπτικός έλεγχος συγκρίνει με το επίσημο demo και ελέγχει τις πραγματικές platform fonts, όχι μόνο το CSS font-family. Native mobile Contents και desktop TOC απαιτούν πραγματικά clicks και screenshots μετά την ολοκλήρωση της ομαλής κύλισης. Το παλιό CI παραμένει αμετάβλητο σε αυτόν τον γύρο· η εγκεκριμένη δημοσίευση γίνεται από το ελεγμένο compiled output στο gh-pages.
+Τα `_posts`, `_translations`, `_includes` και τα παλιά εργαλεία Jekyll μένουν ως προέλευση της μετάβασης, όχι ως δεύτερη ενεργή πηγή. Το `tools/migrate-content.py` είναι εφάπαξ migration και μπορεί να αντικαταστήσει νέα edits· μην το χρησιμοποιείς για κανονικό build.
 
-## Επεξεργασία του αναλυτικού οδηγού 4WD
+## Ασφαλές build και μελλοντική δημοσίευση
 
-Η αφήγηση οργανώνεται στα `_includes/robot/introduction.html`, `build-path.html`, `t-fw.html`, `code-walkthrough.html` και `troubleshooting.html`. Τα διαγράμματα παραμένουν στα παλιά includes. Οι αναλυτικές σημειώσεις και ο πλήρης πίνακας βρίσκονται μετά την εξήγηση του κώδικα, ως αναφορά. Το post ορίζει μόνο τη σειρά και τα metadata· υπάρχει μία πηγή στο /robot/.
+Το `tools/prepare-public.mjs` αντιγράφει τα editable `assets` και επαληθευμένα compatibility snapshots στο αγνοούμενο `public`. Το build παράγει μόνο `dist`. Τα `preserved/manifest.json` και snapshots είναι εσωτερικά, δεν δημοσιεύονται ως φάκελος ούτε γίνονται άρθρα. Δεν αλλάζουμε τις προστατευμένες διαδρομές και δεν τις προσθέτουμε στα δημόσια ευρετήρια. Η διατήρηση ακριβούς HTML δεν αποτελεί υπόσχεση αφαίρεσης παλιών URLs από εξωτερικές μηχανές αναζήτησης.
 
-Τα 8 αποσπάσματα C++ του code-walkthrough είναι ακριβείς πλήρεις γραμμές από το πραγματικό ZIP. Το `work-notes/ROBOT_CODE_EXCERPTS.json` καταγράφει αρχείο, πρώτη γραμμή και περιεχόμενο. Αν αλλάξει το firmware, αντιπαράβαλε ξανά τα αποσπάσματα και τις εξηγήσεις. Δεν αρκεί να ταιριάζει ένα substring: έλεγξε ολόκληρες γραμμές. Τα snippets αποδίδονται με native Markdown/Rouge και filename/copy button, όχι χειροποίητο highlighter. Οι ειδικοί κανόνες table περιορίζονται στο #conn ώστε να μη μεταβάλλουν τους πίνακες αρίθμησης γραμμών του Rouge.
+Το νέο CI χτίζει και κρατά preview artifact· δεν δημοσιεύει. Production merge/deployment απαιτούν την τελική έγκριση του ιδιοκτήτη, πραγματικό build, route/asset/SEO audit και ανεξάρτητο browser QA σε αρχική, Robot, GPi, κατηγορία και παλιό άρθρο, στις 390/768/1440 διαστάσεις και light/dark. Άνοιξε τα screenshots. Έλεγξε keyboard, search, mobile menu, TOC clicks, copy, diagrams, tables, downloads, γλώσσες και overflow.
 
-Διατήρησε όλα τα παλιά IDs και δώσε σταθερά IDs στα νέα κεφάλαια. Έλεγξε το νέο code TOC και την αντιγραφή κώδικα σε κινητό και υπολογιστή, μαζί με τις 36 συνδέσεις και τα δύο SVG. Οι διαφορετικές περιγραφές ήχου, το ιστορικό 10s/πραγματικό 20s timeout και η αρχική ένδειξη διατομής παραμένουν ρητά τεκμηριωμένα. Δεν αλλάζουμε το ZIP με αφορμή μια γλωσσική επεξεργασία.
+Μετά την έγκριση: τήρησε branch protections, κάνε PR και δημοσίευσε το ελεγμένο artifact με overlay πάνω σε φρέσκο checkout του gh-pages. Διατήρησε άγνωστα/ανεξάρτητα paths και namespaces· ποτέ ολική διαγραφή output branch. Μην ενεργοποιείς Chirpy PWA. Επαλήθευσε τη δημόσια αρχική και όλα τα κρίσιμα URLs μετά τη δημοσίευση.
+
+## Production: Astro / GitHub Pages
+
+Το ενεργό build είναι `ASTRO_TELEMETRY_DISABLED=1 npm run build`, όχι Jekyll. Το Pages εξυπηρετεί το `gh-pages` από τη ρίζα με `.nojekyll`. Μετά από ελέγχους και έγκριση, αντιγράφουμε μόνο το `dist/` πάνω στο καθαρό checkout του τρέχοντος `gh-pages`, χωρίς διαγραφές ή force push, ελέγχοντας ότι ανεξάρτητες διαδρομές παραμένουν byte-identical. Δεν αντιγράφουμε source, work-notes, QA ή secrets. Το παλιό workflow παραμένει αμετάβλητο λόγω περιορισμού workflow scope του token και ενεργοποιείται μόνο στο `main`· δεν αποτελεί Astro CI. Το προτεινόμενο Astro CI βρίσκεται ανενεργό στο `tools/ci-reference/astro-checks.yml.example` για μελλοντική εγκατάσταση με κατάλληλη άδεια.

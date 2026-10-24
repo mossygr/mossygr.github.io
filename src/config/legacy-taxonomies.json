@@ -1,0 +1,130 @@
+{
+  "/tags/challenges/": {
+    "el": "/tags/challenges/",
+    "en": "/en/tags/challenges/"
+  },
+  "/tags/writeup/": {
+    "el": "/tags/writeup/",
+    "en": "/en/tags/writeup/"
+  },
+  "/tags/htb/": {
+    "el": "/tags/htb/",
+    "en": "/en/tags/htb/"
+  },
+  "/tags/ctf/": {
+    "el": "/tags/ctf/",
+    "en": "/en/tags/ctf/"
+  },
+  "/tags/begginer-track/": {
+    "el": "/tags/begginer-track/",
+    "en": "/en/tags/begginer-track/"
+  },
+  "/tags/beginner-track/": {
+    "el": "/tags/beginner-track/",
+    "en": "/en/tags/beginner-track/"
+  },
+  "/tags/thm/": {
+    "el": "/tags/thm/",
+    "en": "/en/tags/thm/"
+  },
+  "/tags/crack/": {
+    "el": "/tags/crack/",
+    "en": "/en/tags/crack/"
+  },
+  "/tags/burpsuite/": {
+    "el": "/tags/burpsuite/",
+    "en": "/en/tags/burpsuite/"
+  },
+  "/tags/%CE%BA%CE%B5%CF%81%CE%B9%CE%AC/": {
+    "el": "/tags/%CE%BA%CE%B5%CF%81%CE%B9%CE%AC/",
+    "en": "/en/tags/candlesticks/"
+  },
+  "/tags/esp32-cam/": {
+    "el": "/tags/esp32-cam/",
+    "en": "/en/tags/esp32-cam/"
+  },
+  "/tags/4wd/": {
+    "el": "/tags/4wd/",
+    "en": "/en/tags/4wd/"
+  },
+  "/tags/firmware/": {
+    "el": "/tags/firmware/",
+    "en": "/en/tags/firmware/"
+  },
+  "/tags/gpi-case-2w/": {
+    "el": "/tags/gpi-case-2w/",
+    "en": "/en/tags/gpi-case-2w/"
+  },
+  "/tags/retroflag/": {
+    "el": "/tags/retroflag/",
+    "en": "/en/tags/retroflag/"
+  },
+  "/tags/recalbox/": {
+    "el": "/tags/recalbox/",
+    "en": "/en/tags/recalbox/"
+  },
+  "/tags/raspberry-pi-zero-w/": {
+    "el": "/tags/raspberry-pi-zero-w/",
+    "en": "/en/tags/raspberry-pi-zero-w/"
+  },
+  "/tags/troubleshooting/": {
+    "el": "/tags/troubleshooting/",
+    "en": "/en/tags/troubleshooting/"
+  },
+  "/categories/hackthebox/": {
+    "el": "/categories/hackthebox/",
+    "en": "/en/categories/hackthebox/"
+  },
+  "/categories/challenges/": {
+    "el": "/categories/challenges/",
+    "en": "/en/categories/challenges/"
+  },
+  "/categories/ctf/": {
+    "el": "/categories/ctf/",
+    "en": "/en/categories/ctf/"
+  },
+  "/categories/tryhackme/": {
+    "el": "/categories/tryhackme/",
+    "en": "/en/categories/tryhackme/"
+  },
+  "/categories/burpsuite/": {
+    "el": "/categories/burpsuite/",
+    "en": "/en/categories/burpsuite/"
+  },
+  "/categories/tutorials/": {
+    "el": "/categories/tutorials/",
+    "en": "/en/categories/tutorials/"
+  },
+  "/categories/%CF%84%CE%B5%CF%87%CE%BD%CE%B9%CE%BA%CE%AE-%CE%B1%CE%BD%CE%AC%CE%BB%CF%85%CF%83%CE%B7/": {
+    "el": "/categories/%CF%84%CE%B5%CF%87%CE%BD%CE%B9%CE%BA%CE%AE-%CE%B1%CE%BD%CE%AC%CE%BB%CF%85%CF%83%CE%B7/",
+    "en": "/en/categories/technical-analysis/"
+  },
+  "/categories/%CE%BA%CE%B5%CF%81%CE%B9%CE%AC/": {
+    "el": "/categories/%CE%BA%CE%B5%CF%81%CE%B9%CE%AC/",
+    "en": "/en/categories/candlesticks/"
+  },
+  "/categories/arduino/": {
+    "el": "/categories/arduino/",
+    "en": "/en/categories/arduino/"
+  },
+  "/categories/%CF%81%CE%BF%CE%BC%CF%80%CE%BF%CF%84%CE%B9%CE%BA%CE%AE/": {
+    "el": "/categories/%CF%81%CE%BF%CE%BC%CF%80%CE%BF%CF%84%CE%B9%CE%BA%CE%AE/",
+    "en": "/en/categories/robotics/"
+  },
+  "/categories/raspberry-pi/": {
+    "el": "/categories/raspberry-pi/",
+    "en": "/en/categories/raspberry-pi/"
+  },
+  "/categories/retro-gaming/": {
+    "el": "/categories/retro-gaming/",
+    "en": "/en/categories/retro-gaming/"
+  },
+  "/categories/": {
+    "el": "/categories/",
+    "en": "/en/categories/"
+  },
+  "/tags/": {
+    "el": "/tags/",
+    "en": "/en/tags/"
+  }
+}

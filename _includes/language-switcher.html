@@ -1,0 +1,6 @@
+{% if page.alternate_urls %}
+<nav class="language-switcher" aria-label="{% if site.content_language == 'en' %}Language{% else %}Γλώσσα{% endif %}">
+  <a href="{{ page.alternate_urls.el }}" lang="el" hreflang="el" title="Ελληνικά"{% unless site.content_language == 'en' %} aria-current="page"{% endunless %}>ΕΛ<span class="visually-hidden"> — Ελληνικά</span></a>
+  <a href="{{ page.alternate_urls.en }}" lang="en" hreflang="en" title="English"{% if site.content_language == 'en' %} aria-current="page"{% endif %}>EN<span class="visually-hidden"> — English</span></a>
+</nav>
+{% endif %}

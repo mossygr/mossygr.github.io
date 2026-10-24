@@ -1,0 +1,11 @@
+<section id="troubleshooting">
+<h2 id="guide-troubleshooting">If the first test does not go as expected</h2>
+<p>Before changing settings or moving several wires at once, identify where the problem appears. Start with what you can observe and make one change at a time, with the power off whenever you touch the connections.</p>
+<dl>
+<dt>The board resets as soon as the motors move or the light comes on.</dt><dd>Check power first: battery charge, C1 polarity, and the length and thickness of #11/#12. The detailed sequence is in <a href="#guide-section-8">symptoms</a>. Do not start by trying to hide a voltage drop through speed changes in the code.</dd>
+<dt>The upload remains at “Connecting…”.</dt><dd>Return to the <a href="#guide-section-13">MB base upload step</a> and check the port, orientation, and IO0/RST procedure. The specific IO2 case is covered in the <a href="#guide-section-7">ESP32-CAM notes</a>; it is not a reason to disconnect random wires.</dd>
+<dt>One wheel turns backwards, or a whole side runs in reverse.</dt><dd>These are two different cases. For one motor, check that motor's polarity. For a whole side, use <code>INVERT_LEFT</code>/<code>INVERT_RIGHT</code>. See the <a href="#guide-section-9">L298N and motor section</a> for details. Test with the wheels off the ground.</dd>
+<dt>The camera freezes, although the page has loaded.</dt><dd>Close other devices or tabs using the stream. The guide supports one device at a time. The code explanation shows how the interface monitors the stream and tries to restore it.</dd>
+<dt>There is no sound, or a button plays the wrong file.</dt><dd>Start with the <a href="#guide-source-differences">selected audio arrangement</a>, the common ground, and the MP3 copying order. The DFPlayer's TX does not report status back to the ESP32-CAM, so the volume display shows the last value sent, not a confirmed measurement from the module.</dd>
+</dl>
+</section>

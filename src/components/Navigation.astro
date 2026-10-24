@@ -1,0 +1,15 @@
+---
+import { categoryGroups, type Doc } from '../lib/content';
+import { text, prefix, type Language } from '../config/site';
+import Icon from './Icon.astro';
+interface Props { lang: Language; docs: Doc[]; path: string }
+const {lang,docs,path}=Astro.props; const t=text[lang], base=prefix(lang);
+const groups=categoryGroups(docs,lang);
+const sections=[{label:lang==='el'?'ΞΕΚΙΝΗΣΕ ΕΔΩ':'START HERE',links:[{name:t.home,href:base,icon:'layers'},{name:t.guides,href:base+'guides/',icon:'book'},{name:t.projects,href:base+'projects/',icon:'code'},{name:t.archives,href:base+'archives/',icon:'book'}]}];
+const active=(href:string)=>decodeURI(path)===decodeURI(href);
+---
+<nav aria-label={t.menu}>
+ {sections.map(section=><div class="nav-group"><p class="nav-label">{section.label}</p>{section.links.map(link=><a class:list={['nav-link',{active:active(link.href)}]} href={link.href} aria-current={active(link.href)?'page':undefined}><Icon name={link.icon as 'book'}/>{link.name}</a>)}</div>)}
+ <div class="nav-group"><a class="nav-label nav-label-link" href={base+'categories/'}>{t.categories}</a>{groups.map(group=><details open={group.docs.some(d=>active(d.data.permalink))||active(group.href)}><summary>{group.name}<span>{group.docs.length}</span></summary><div class="nav-children"><a class="nav-doc nav-category-overview" href={group.href} aria-current={active(group.href)?'page':undefined}>{lang==='el'?'Επισκόπηση κατηγορίας':'Category overview'} →</a>{group.docs.map(doc=><a class:list={['nav-doc',{active:active(doc.data.permalink)}]} href={doc.data.permalink} aria-current={active(doc.data.permalink)?'page':undefined}>{doc.data.title}</a>)}</div></details>)}</div>
+ <div class="nav-bottom"><span class="status-dot"></span>{lang==='el'?'Σημειώσεις από την πράξη':'Notes from building things'}</div>
+</nav>

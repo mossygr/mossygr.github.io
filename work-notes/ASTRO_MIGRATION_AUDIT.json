@@ -1,0 +1,25 @@
+{
+  "checked_at": "2026-10-24T08:05:15.790241+00:00",
+  "status": "pass",
+  "build_revision": "final-v3-2026-10-24-07:12:33-local-log",
+  "build_log": "/tmp/m0ss1-build-final.log",
+  "read_only_actual_dist_audit": {
+    "status": "pass",
+    "builtDirectory": "/home/Codex-Robot/mossygr.github.io/dist",
+    "documents": 32,
+    "languagePairs": 16,
+    "htmlFiles": 114,
+    "checkedLocalLinks": 13090,
+    "preservedFiles": 36,
+    "errors": []
+  },
+  "previous_production_commit": "9cbb233d3e68aa716c2bd1af9827bdb89665ff6c",
+  "previous_deployed_file_urls": 186,
+  "missing_previous_file_urls": [],
+  "exact_snapshots": 36,
+  "changed_snapshots": [],
+  "canonical_source_code_blocks_compared": 90,
+  "dist_tree_sha256": "795bc0b5b45e22e137f2526047d6e4c38120e1ed5e7a2c781175cd3c6c35f027",
+  "dist_file_count": 335,
+  "scope_note": "Final static build/content/routes/assets/SEO audit only. Browser and screenshot review are handled independently and are not asserted by this report."
+}

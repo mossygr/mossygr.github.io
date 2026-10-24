@@ -1,0 +1,8 @@
+---
+import {formatDate,type Doc} from '../lib/content';
+import {type Language} from '../config/site';
+import Icon from './Icon.astro';
+interface Props { docs:Doc[]; lang:Language }
+const {docs,lang}=Astro.props;
+---
+<div class="doc-list">{docs.map(doc=><a class="doc-row" href={doc.data.permalink}><span class="doc-row-icon"><Icon name={doc.data.type==='article'?'book':'code'}/></span><div><div class="doc-row-meta"><span>{doc.data.categories[0]||'Notes'}</span><time datetime={doc.data.date.toISOString()}>{formatDate(doc.data.date,lang)}</time></div><h3>{doc.data.title}</h3>{doc.data.description&&<p>{doc.data.description}</p>}</div>{doc.data.image&&<img class="doc-thumbnail" src={doc.data.image.path} alt={doc.data.image.alt} width="96" height="72" loading="lazy"/>}<span class="row-arrow"><Icon name="arrow"/></span></a>)}</div>

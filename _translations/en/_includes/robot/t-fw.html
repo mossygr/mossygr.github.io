@@ -1,0 +1,57 @@
+<section class="tab" id="t-fw">
+<h2 id="guide-section-11">From the first upload to the first test</h2>
+<p>Firmware is the program that runs on the ESP32-CAM. We first upload it from the computer using the MB base; the same board then serves the control page over Wi-Fi. We will work through this in order, never connecting USB and battery power together.</p>
+<p>Download and extract the <a href="{{ '/assets/robot/robot_firmware.zip' | relative_url }}">firmware ZIP</a>. It contains the <code>robot_firmware</code> directory, with the main file and six headers. Before uploading, read the <a href="#guide-source-differences">clarification about your audio arrangement</a>.</p>
+<h3 id="guide-section-12">1. Prepare Arduino IDE</h3>
+<ol class="steps">
+<li>Arduino IDE 2.x → <i>File → Preferences → Additional boards manager URLs</i>:<br><code>https://espressif.github.io/arduino-esp32/package_esp32_index.json</code></li>
+<li><i>Tools → Board → Boards Manager</i> → Espressif “esp32”, version <b>3.x</b>; the original guide reports testing 3.3.6.</li>
+<li>Open the <code>robot_firmware</code> directory, containing <code>robot_firmware.ino</code> and its <code>.h</code> files.</li>
+<li>In <code>robot_config.h</code>, change at least <code>AP_PASSWORD</code>, using 8+ characters, and <code>OTA_PASSWORD</code>.</li>
+<li><i>Tools</i> settings:
+<ul><li>Board: <b>AI Thinker ESP32-CAM</b>. This board enables PSRAM automatically; if selecting “ESP32 Dev Module”, set PSRAM to Enabled.</li>
+<li>Partition Scheme: <b>Minimal SPIFFS (1.9MB APP with OTA/128KB SPIFFS)</b>. <b>Select this FROM THE FIRST upload for OTA to work</b>. The default “Huge APP” leaves no OTA space; the firmware then prints a Serial warning and does not enable OTA.</li>
+<li>Upload Speed: if uploading stops partway through, choose <b>115200</b>.</li>
+<li>Port: the MB base's CH340 port.</li></ul></li>
+</ol>
+<h3 id="guide-section-13">2. Make the first upload using the MB base</h3>
+<ol class="steps">
+<li><b>Switch off the robot.</b> Unplug the ESP32-CAM from the robot's Dupont leads and fit it onto the MB with the camera facing up, <b>matching the labels</b>: the ESP32-CAM's <b>5V/GND</b> must sit over the MB's <b>5V/GND</b>. On most MB boards, the microSD/5V end faces USB. Each row has eight pins, so it can also fit backwards: check twice.</li>
+<li>Connect USB to the computer. If no port appears, install the CH340 driver.</li>
+<li>Press <b>Upload</b>. If it stalls at “Connecting…”, hold <b>IO0</b> on the MB, press <b>RST</b> on the ESP32-CAM, then release IO0.</li>
+<li>Open Serial Monitor at <b>115200</b> and press RST. If nothing appears, press RST on the ESP32-CAM again. You should see “Access Point &quot;Robot-4WD&quot;” and <code>http://192.168.4.1</code>.</li>
+<li>Disconnect USB, remove the ESP32-CAM from the MB, and reconnect the robot wiring, with 5V/GND/IO in the correct positions shown in the table.</li>
+</ol>
+<div class="note-card"><b class="t">Never USB and battery together</b> The MB feeds 5V directly to the board. If the robot is on, the two supplies are connected against each other.</div>
+<h3 id="guide-section-15">3. Connect the phone and make a small test</h3>
+<p>By default, the robot creates its own <strong>Access Point (AP)</strong>. The phone joins it like an ordinary Wi-Fi network, but the robot does not provide Internet access. The camera and controls work locally.</p>
+<ol class="steps">
+<li>Raise the robot so that the wheels do not touch the ground. Turn on the switch.</li>
+<li>On the phone, open Settings → Wi-Fi → <b>Robot-4WD</b>, using the <code>AP_PASSWORD</code> password. If the phone reports “no Internet”, choose to remain connected.</li>
+<li>Open <code>http://192.168.4.1</code> in the browser. The camera is at the top, with joystick, light, and audio controls below. The dot beside the title turns green when connected.</li>
+<li>Push the joystick slightly forward: all four wheels should turn forwards. If a whole side runs backwards, change <code>INVERT_LEFT</code>/<code>INVERT_RIGHT</code>. If left and right are swapped, exchange the OUT1/2 ↔ OUT3/4 pairs.</li>
+<li>If no new movement command arrives for more than 500 ms, the code requests zero speed and the ramp reduces output toward zero. This is the communication failsafe, not a promise that the wheels physically stop at exactly half a second.</li>
+</ol>
+<p>Optionally, to join home Wi-Fi as a <strong>Station (STA)</strong>, enter <code>STA_SSID</code>/<code>STA_PASSWORD</code>; the IP appears in Serial Monitor. The supplied ZIP waits up to 20 s, controlled by <code>STA_TIMEOUT_MS 20000</code>. If it cannot connect, it runs network diagnostics and returns to Access Point mode. The original instructions said 10 s; the difference is recorded with the <a href="#guide-downloads">downloads</a>.</p>
+<h3 id="guide-section-16">4. Add the audio files</h3>
+<ol class="steps">
+<li>Connect the DFPlayer Pro to the computer with a <b>USB-C</b> cable. It can remain mounted, but the robot should preferably be switched off. It appears as a 128MB <b>USB drive</b>.</li>
+<li>Copy files to the drive's root as <code>01.mp3</code>, <code>02.mp3</code>, and so on, in that order, one at a time. Preferably use mono, 128 kbps files.</li>
+<li>“♪ 1” plays the first file, and so on. With <code>TRACK_BY_FILENAME 0</code>, the default, numbering follows <b>copy order</b>. To select by filename instead, set <code>TRACK_BY_FILENAME 1</code>. <code>TRACK_COUNT</code> determines how many buttons appear.</li>
+<li>Use “Safely remove” before unplugging USB-C.</li>
+</ol>
+<div class="note-card info"><b class="t">If it plays automatically at every startup (optional)</b>
+Some DFPlayer modules start playing when powered on. In that case: (1) create a ~1 s silent file named <code>silence.mp3</code>; (2) copy it to the drive's root <b>LAST</b>, after all songs, otherwise button numbers shift; (3) set <code>DFP_STOP_ON_BOOT 1</code> in <code>robot_config.h</code> and upload again. The robot plays the silent file at startup and the module stops.</div>
+<div class="note-card info"><b class="t">Volume</b> The DFPlayer sends no response because its TX is unconnected. The displayed volume is therefore the last value sent by the robot. It starts at <code>DFP_DEFAULT_VOLUME</code>, 20. On every power-on, the robot resends its settings: no spoken startup message and one track at a time.</div>
+<h3 id="guide-section-14">5. What changes for later upgrades</h3>
+<p>OTA means upgrading over the network: the next program arrives through Wi-Fi instead of USB. Suitable memory partitioning is needed from the first USB upload, which is why the earlier Partition Scheme choice matters from the start.</p>
+<p>With the phone or laptop connected to “Robot-4WD”, Arduino IDE shows a network port named <b>robot4wd</b>. Select it and press Upload; it asks for <code>OTA_PASSWORD</code>. The motors stop automatically during the upgrade.</p>
+<h3 id="guide-section-17">The main functions at a glance</h3>
+<p>If the first test behaved as expected, we now have a camera, movement control, light, and an audio path. The figures below are a useful reference; next we will look at the code behind each behaviour.</p>
+<ul>
+<li>MJPEG camera on port 81, <code>/stream</code>; control page on port 80; WebSocket control through <code>/ws</code> at ~20 messages per second, with HTTP <code>/control</code> as a fallback.</li>
+<li>1 kHz, 8-bit PWM on IN1–IN4, LEDC channels 2–5; 65% limit, 30% minimum, gradual acceleration, 500 ms failsafe.</li>
+<li>GPIO4 flash on LEDC channel 6, with adjustable brightness.</li>
+<li>DFPlayer Pro controlled through AT commands on GPIO2 at 115200 baud.</li>
+</ul>
+</section>

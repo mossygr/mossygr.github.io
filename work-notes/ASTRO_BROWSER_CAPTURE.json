@@ -1,0 +1,2911 @@
+{
+  "browser": "156.0.8078.4",
+  "base": "http://127.0.0.1:4321",
+  "checked": [
+    {
+      "width": 390,
+      "lang": "el",
+      "kind": "home",
+      "url": "/",
+      "status": 200,
+      "metrics": {
+        "title": "Η γνώση αποκτά αξίαόταν τη μοιράζεσαι.",
+        "overflow": 0,
+        "bodyHeight": 2596,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/trading/dogi_keri.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/tutorials/burpsuite-settings.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/thm-reverse-enginnering-intro.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 36
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "el",
+      "kind": "robot",
+      "url": "/robot/",
+      "status": 200,
+      "metrics": {
+        "title": "Ρομπότ 4WD: από την καλωδίωση στην πρώτη διαδρομή",
+        "overflow": 0,
+        "bodyHeight": 38692,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 36,
+        "cells": 216,
+        "labels": 359,
+        "code": 8,
+        "headings": [
+          {
+            "id": "guide-materials",
+            "text": "Τι χρειαζόμαστε και τι κάνει το καθένα"
+          },
+          {
+            "id": "guide-source-differences",
+            "text": "Μια διευκρίνιση πριν συνδέσουμε τον ήχο"
+          },
+          {
+            "id": "guide-assembly",
+            "text": "Πρώτα καταλαβαίνουμε την τροφοδοσία, μετά βάζουμε καλώδια"
+          },
+          {
+            "id": "guide-section-1",
+            "text": "Διάγραμμα καλωδίωσης"
+          },
+          {
+            "id": "guide-section-2",
+            "text": "Harness ακροδεκτών"
+          },
+          {
+            "id": "guide-section-11",
+            "text": "Από το πρώτο upload στην πρώτη δοκιμή"
+          },
+          {
+            "id": "guide-section-12",
+            "text": "1. Ετοιμάζουμε το Arduino IDE"
+          },
+          {
+            "id": "guide-section-13",
+            "text": "2. Κάνουμε το πρώτο ανέβασμα με τη βάση MB"
+          },
+          {
+            "id": "guide-section-15",
+            "text": "3. Συνδέουμε το κινητό και κάνουμε μια μικρή δοκιμή"
+          },
+          {
+            "id": "guide-section-16",
+            "text": "4. Προσθέτουμε τα αρχεία ήχου"
+          },
+          {
+            "id": "guide-section-14",
+            "text": "5. Τι αλλάζει στις επόμενες αναβαθμίσεις"
+          },
+          {
+            "id": "guide-section-17",
+            "text": "Οι βασικές λειτουργίες, με μια ματιά"
+          },
+          {
+            "id": "guide-code",
+            "text": "Καταλαβαίνουμε τον κώδικα, βήμα βήμα"
+          },
+          {
+            "id": "code-files",
+            "text": "Ένας χάρτης για τα επτά αρχεία"
+          },
+          {
+            "id": "code-startup",
+            "text": "Τι γίνεται μόλις ανοίξει το ρομπότ"
+          },
+          {
+            "id": "code-controls",
+            "text": "Από το δάχτυλο σε μια εντολή"
+          },
+          {
+            "id": "code-driving",
+            "text": "Πώς στρίβει χωρίς τιμόνι"
+          },
+          {
+            "id": "code-failsafe",
+            "text": "Τι γίνεται αν χαθεί η εντολή οδήγησης"
+          },
+          {
+            "id": "code-video",
+            "text": "Γιατί η κάμερα έχει δική της θύρα"
+          },
+          {
+            "id": "code-light-audio",
+            "text": "Φως και ήχος χωρίς να περιμένει το joystick"
+          },
+          {
+            "id": "code-wifi-ota",
+            "text": "Wi-Fi και αναβάθμιση χωρίς τη βάση MB"
+          },
+          {
+            "id": "code-where-to-change",
+            "text": "Πού κοιτάζω όταν θέλω να αλλάξω κάτι"
+          },
+          {
+            "id": "guide-troubleshooting",
+            "text": "Αν η πρώτη δοκιμή δεν πάει όπως περιμένουμε"
+          },
+          {
+            "id": "guide-section-4",
+            "text": "Αναλυτικές σημειώσεις για τις συνδέσεις"
+          },
+          {
+            "id": "guide-section-5",
+            "text": "Ασφάλεια μπαταρίας"
+          },
+          {
+            "id": "guide-section-6",
+            "text": "Τροφοδοσία και γειώσεις"
+          },
+          {
+            "id": "guide-section-7",
+            "text": "ESP32-CAM"
+          },
+          {
+            "id": "guide-section-8",
+            "text": "Συμπτώματα"
+          },
+          {
+            "id": "guide-section-9",
+            "text": "L298N και μοτέρ"
+          },
+          {
+            "id": "guide-section-10",
+            "text": "Ήχος"
+          },
+          {
+            "id": "guide-section-3",
+            "text": "Πίνακας 36 συνδέσεων"
+          },
+          {
+            "id": "guide-downloads",
+            "text": "Λήψεις και εικόνες αναφοράς"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/firmware_ui_phone.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 47
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 269
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "el",
+      "kind": "gpi",
+      "url": "/posts/gpi-case-2w-pi-zero-w-recalbox/",
+      "status": 200,
+      "metrics": {
+        "title": "GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2",
+        "overflow": 0,
+        "bodyHeight": 18687,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 4,
+        "headings": [
+          {
+            "id": "το-πρόβλημα-το-recalbox-βλέπει-τη-θήκη-ως-την-παλιά",
+            "text": "Το πρόβλημα: το Recalbox βλέπει τη θήκη ως την παλιά"
+          },
+          {
+            "id": "τα-συμπτώματα",
+            "text": "Τα συμπτώματα"
+          },
+          {
+            "id": "γιατί-δεν-αρκεί-το-patch-της-retroflag",
+            "text": "Γιατί δεν αρκεί το patch της Retroflag"
+          },
+          {
+            "id": "η-λύση-βήμα-βήμα",
+            "text": "Η λύση βήμα βήμα"
+          },
+          {
+            "id": "τι-χρειάζομαι",
+            "text": "Τι χρειάζομαι"
+          },
+          {
+            "id": "1-γράφω-το-σωστό-image",
+            "text": "1. Γράφω το σωστό image"
+          },
+          {
+            "id": "2-πρώτη-εκκίνηση-χωρίς-να-αγγίξω-τίποτα",
+            "text": "2. Πρώτη εκκίνηση χωρίς να αγγίξω τίποτα"
+          },
+          {
+            "id": "step-partition",
+            "text": "3. Βρίσκω το διαμέρισμα RECALBOX στα Windows"
+          },
+          {
+            "id": "final-config",
+            "text": "4. Αντικαθιστώ τις ρυθμίσεις της οθόνης"
+          },
+          {
+            "id": "5-διορθώνω-την-ανάλυση-των-emulators",
+            "text": "5. Διορθώνω την ανάλυση των emulators"
+          },
+          {
+            "id": "6-εκκίνηση",
+            "text": "6. Εκκίνηση"
+          },
+          {
+            "id": "μετά-την-εγκατάσταση-η-θήκη-σαν-παλιός-gpi",
+            "text": "Μετά την εγκατάσταση: η θήκη σαν «παλιός GPi»"
+          },
+          {
+            "id": "το-hotkey-είναι-το-select-όχι-το-home",
+            "text": "Το Hotkey είναι το SELECT, όχι το Home"
+          },
+          {
+            "id": "πώς-σώζω",
+            "text": "Πώς σώζω"
+          },
+          {
+            "id": "οι-ρυθμίσεις-μπορεί-να-ξαναγραφτούν",
+            "text": "Οι ρυθμίσεις μπορεί να ξαναγραφτούν"
+          },
+          {
+            "id": "παιχνίδια",
+            "text": "Παιχνίδια"
+          },
+          {
+            "id": "τι-αντέχει-το-zero-w",
+            "text": "Τι αντέχει το Zero W"
+          },
+          {
+            "id": "αν-κάτι-δεν-πάει-καλά",
+            "text": "Αν κάτι δεν πάει καλά"
+          },
+          {
+            "id": "συμπέρασμα",
+            "text": "Συμπέρασμα"
+          },
+          {
+            "id": "πηγές",
+            "text": "Πηγές"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/broken-screen-480.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/installing-gpi-case-480.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/game-error-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/working-screen-1200.webp",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 49
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 235
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "el",
+      "kind": "category",
+      "url": "/categories/arduino/",
+      "status": 200,
+      "metrics": {
+        "title": "Arduino",
+        "overflow": 0,
+        "bodyHeight": 578,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 7
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "el",
+      "kind": "lame",
+      "url": "/posts/Lame/",
+      "status": 200,
+      "metrics": {
+        "title": "Lame",
+        "overflow": 0,
+        "bodyHeight": 4210,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 6,
+        "headings": [
+          {
+            "id": "host-discovery",
+            "text": "Host discovery"
+          },
+          {
+            "id": "samba-exploit",
+            "text": "SAMBA Exploit"
+          },
+          {
+            "id": "exploit",
+            "text": "exploit"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/nmap_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/searchsploit_lame_samba.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/smb_client_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/root_login_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/flags_lame.png",
+            "loaded": true
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 4
+            }
+          ],
+          ".prose p": []
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "kind": "home",
+      "url": "/en/",
+      "status": 200,
+      "metrics": {
+        "title": "Good things happenwhen we share what we learn.",
+        "overflow": 0,
+        "bodyHeight": 2596,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/trading/dogi_keri.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/tutorials/burpsuite-settings.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/thm-reverse-enginnering-intro.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 44
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "kind": "robot",
+      "url": "/en/robot/",
+      "status": 200,
+      "metrics": {
+        "title": "4WD robot: from wiring to the first drive",
+        "overflow": 0,
+        "bodyHeight": 36191,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 36,
+        "cells": 216,
+        "labels": 359,
+        "code": 8,
+        "headings": [
+          {
+            "id": "guide-materials",
+            "text": "What we need and what each part does"
+          },
+          {
+            "id": "guide-source-differences",
+            "text": "A clarification before connecting the audio"
+          },
+          {
+            "id": "guide-assembly",
+            "text": "Understand the power supply before adding wires"
+          },
+          {
+            "id": "guide-section-1",
+            "text": "Wiring diagram"
+          },
+          {
+            "id": "guide-section-2",
+            "text": "Terminal harness"
+          },
+          {
+            "id": "guide-section-11",
+            "text": "From the first upload to the first test"
+          },
+          {
+            "id": "guide-section-12",
+            "text": "1. Prepare Arduino IDE"
+          },
+          {
+            "id": "guide-section-13",
+            "text": "2. Make the first upload using the MB base"
+          },
+          {
+            "id": "guide-section-15",
+            "text": "3. Connect the phone and make a small test"
+          },
+          {
+            "id": "guide-section-16",
+            "text": "4. Add the audio files"
+          },
+          {
+            "id": "guide-section-14",
+            "text": "5. What changes for later upgrades"
+          },
+          {
+            "id": "guide-section-17",
+            "text": "The main functions at a glance"
+          },
+          {
+            "id": "guide-code",
+            "text": "Understanding the code, step by step"
+          },
+          {
+            "id": "code-files",
+            "text": "A map of the seven files"
+          },
+          {
+            "id": "code-startup",
+            "text": "What happens when the robot powers on"
+          },
+          {
+            "id": "code-controls",
+            "text": "From a finger movement to a command"
+          },
+          {
+            "id": "code-driving",
+            "text": "How it turns without a steering wheel"
+          },
+          {
+            "id": "code-failsafe",
+            "text": "What happens when drive commands stop arriving"
+          },
+          {
+            "id": "code-video",
+            "text": "Why the camera uses its own port"
+          },
+          {
+            "id": "code-light-audio",
+            "text": "Light and sound without holding up the joystick"
+          },
+          {
+            "id": "code-wifi-ota",
+            "text": "Wi-Fi and upgrading without the MB base"
+          },
+          {
+            "id": "code-where-to-change",
+            "text": "Where to look when you want to change something"
+          },
+          {
+            "id": "guide-troubleshooting",
+            "text": "If the first test does not go as expected"
+          },
+          {
+            "id": "guide-section-4",
+            "text": "Detailed connection notes"
+          },
+          {
+            "id": "guide-section-5",
+            "text": "Battery safety"
+          },
+          {
+            "id": "guide-section-6",
+            "text": "Power and grounding"
+          },
+          {
+            "id": "guide-section-7",
+            "text": "ESP32-CAM"
+          },
+          {
+            "id": "guide-section-8",
+            "text": "Symptoms"
+          },
+          {
+            "id": "guide-section-9",
+            "text": "L298N and motors"
+          },
+          {
+            "id": "guide-section-10",
+            "text": "Audio"
+          },
+          {
+            "id": "guide-section-3",
+            "text": "All 36 wiring connections"
+          },
+          {
+            "id": "guide-downloads",
+            "text": "Downloads and reference images"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/firmware_ui_phone.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 40
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 259
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "kind": "gpi",
+      "url": "/en/posts/gpi-case-2w-pi-zero-w-recalbox/",
+      "status": 200,
+      "metrics": {
+        "title": "GPi Case 2W and Pi Zero W: setting up Recalbox 9.2",
+        "overflow": 0,
+        "bodyHeight": 17720,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 4,
+        "headings": [
+          {
+            "id": "the-problem-recalbox-mistakes-it-for-the-old-case",
+            "text": "The problem: Recalbox mistakes it for the old case"
+          },
+          {
+            "id": "the-symptoms",
+            "text": "The symptoms"
+          },
+          {
+            "id": "why-the-retroflag-patch-is-not-enough",
+            "text": "Why the Retroflag patch is not enough"
+          },
+          {
+            "id": "the-fix-step-by-step",
+            "text": "The fix, step by step"
+          },
+          {
+            "id": "what-i-need",
+            "text": "What I need"
+          },
+          {
+            "id": "1-write-the-correct-image",
+            "text": "1. Write the correct image"
+          },
+          {
+            "id": "2-let-the-first-boot-finish-without-touching-anything",
+            "text": "2. Let the first boot finish without touching anything"
+          },
+          {
+            "id": "step-partition",
+            "text": "3. Find the RECALBOX partition in Windows"
+          },
+          {
+            "id": "final-config",
+            "text": "4. Replace the display configuration"
+          },
+          {
+            "id": "5-correct-the-emulators-video-mode",
+            "text": "5. Correct the emulators’ video mode"
+          },
+          {
+            "id": "6-boot",
+            "text": "6. Boot"
+          },
+          {
+            "id": "after-installation-using-the-case-as-an-old-gpi",
+            "text": "After installation: using the case as an “old GPi”"
+          },
+          {
+            "id": "select-is-the-hotkey-not-home",
+            "text": "SELECT is the hotkey, not Home"
+          },
+          {
+            "id": "saving-progress",
+            "text": "Saving progress"
+          },
+          {
+            "id": "settings-may-be-overwritten",
+            "text": "Settings may be overwritten"
+          },
+          {
+            "id": "games",
+            "text": "Games"
+          },
+          {
+            "id": "what-the-zero-w-can-handle",
+            "text": "What the Zero W can handle"
+          },
+          {
+            "id": "troubleshooting",
+            "text": "Troubleshooting"
+          },
+          {
+            "id": "conclusion",
+            "text": "Conclusion"
+          },
+          {
+            "id": "sources",
+            "text": "Sources"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/broken-screen-480.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/installing-gpi-case-480.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/game-error-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/working-screen-1200.webp",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 237
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "kind": "category",
+      "url": "/en/categories/arduino/",
+      "status": 200,
+      "metrics": {
+        "title": "Arduino",
+        "overflow": 0,
+        "bodyHeight": 578,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 7
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 390,
+      "lang": "en",
+      "kind": "lame",
+      "url": "/en/posts/lame/",
+      "status": 200,
+      "metrics": {
+        "title": "Lame",
+        "overflow": 0,
+        "bodyHeight": 3987,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 6,
+        "headings": [
+          {
+            "id": "host-discovery",
+            "text": "Host discovery"
+          },
+          {
+            "id": "samba-exploit",
+            "text": "Samba exploit"
+          },
+          {
+            "id": "exploitation",
+            "text": "Exploitation"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/nmap_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/searchsploit_lame_samba.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/smb_client_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/root_login_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/flags_lame.png",
+            "loaded": true
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 4
+            }
+          ],
+          ".prose p": []
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "el",
+      "kind": "home",
+      "url": "/",
+      "status": 200,
+      "metrics": {
+        "title": "Η γνώση αποκτά αξίαόταν τη μοιράζεσαι.",
+        "overflow": 0,
+        "bodyHeight": 2716,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/trading/dogi_keri.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/tutorials/burpsuite-settings.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/thm-reverse-enginnering-intro.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 38
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "el",
+      "kind": "robot",
+      "url": "/robot/",
+      "status": 200,
+      "metrics": {
+        "title": "Ρομπότ 4WD: από την καλωδίωση στην πρώτη διαδρομή",
+        "overflow": 0,
+        "bodyHeight": 32344,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 36,
+        "cells": 216,
+        "labels": 359,
+        "code": 8,
+        "headings": [
+          {
+            "id": "guide-materials",
+            "text": "Τι χρειαζόμαστε και τι κάνει το καθένα"
+          },
+          {
+            "id": "guide-source-differences",
+            "text": "Μια διευκρίνιση πριν συνδέσουμε τον ήχο"
+          },
+          {
+            "id": "guide-assembly",
+            "text": "Πρώτα καταλαβαίνουμε την τροφοδοσία, μετά βάζουμε καλώδια"
+          },
+          {
+            "id": "guide-section-1",
+            "text": "Διάγραμμα καλωδίωσης"
+          },
+          {
+            "id": "guide-section-2",
+            "text": "Harness ακροδεκτών"
+          },
+          {
+            "id": "guide-section-11",
+            "text": "Από το πρώτο upload στην πρώτη δοκιμή"
+          },
+          {
+            "id": "guide-section-12",
+            "text": "1. Ετοιμάζουμε το Arduino IDE"
+          },
+          {
+            "id": "guide-section-13",
+            "text": "2. Κάνουμε το πρώτο ανέβασμα με τη βάση MB"
+          },
+          {
+            "id": "guide-section-15",
+            "text": "3. Συνδέουμε το κινητό και κάνουμε μια μικρή δοκιμή"
+          },
+          {
+            "id": "guide-section-16",
+            "text": "4. Προσθέτουμε τα αρχεία ήχου"
+          },
+          {
+            "id": "guide-section-14",
+            "text": "5. Τι αλλάζει στις επόμενες αναβαθμίσεις"
+          },
+          {
+            "id": "guide-section-17",
+            "text": "Οι βασικές λειτουργίες, με μια ματιά"
+          },
+          {
+            "id": "guide-code",
+            "text": "Καταλαβαίνουμε τον κώδικα, βήμα βήμα"
+          },
+          {
+            "id": "code-files",
+            "text": "Ένας χάρτης για τα επτά αρχεία"
+          },
+          {
+            "id": "code-startup",
+            "text": "Τι γίνεται μόλις ανοίξει το ρομπότ"
+          },
+          {
+            "id": "code-controls",
+            "text": "Από το δάχτυλο σε μια εντολή"
+          },
+          {
+            "id": "code-driving",
+            "text": "Πώς στρίβει χωρίς τιμόνι"
+          },
+          {
+            "id": "code-failsafe",
+            "text": "Τι γίνεται αν χαθεί η εντολή οδήγησης"
+          },
+          {
+            "id": "code-video",
+            "text": "Γιατί η κάμερα έχει δική της θύρα"
+          },
+          {
+            "id": "code-light-audio",
+            "text": "Φως και ήχος χωρίς να περιμένει το joystick"
+          },
+          {
+            "id": "code-wifi-ota",
+            "text": "Wi-Fi και αναβάθμιση χωρίς τη βάση MB"
+          },
+          {
+            "id": "code-where-to-change",
+            "text": "Πού κοιτάζω όταν θέλω να αλλάξω κάτι"
+          },
+          {
+            "id": "guide-troubleshooting",
+            "text": "Αν η πρώτη δοκιμή δεν πάει όπως περιμένουμε"
+          },
+          {
+            "id": "guide-section-4",
+            "text": "Αναλυτικές σημειώσεις για τις συνδέσεις"
+          },
+          {
+            "id": "guide-section-5",
+            "text": "Ασφάλεια μπαταρίας"
+          },
+          {
+            "id": "guide-section-6",
+            "text": "Τροφοδοσία και γειώσεις"
+          },
+          {
+            "id": "guide-section-7",
+            "text": "ESP32-CAM"
+          },
+          {
+            "id": "guide-section-8",
+            "text": "Συμπτώματα"
+          },
+          {
+            "id": "guide-section-9",
+            "text": "L298N και μοτέρ"
+          },
+          {
+            "id": "guide-section-10",
+            "text": "Ήχος"
+          },
+          {
+            "id": "guide-section-3",
+            "text": "Πίνακας 36 συνδέσεων"
+          },
+          {
+            "id": "guide-downloads",
+            "text": "Λήψεις και εικόνες αναφοράς"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/firmware_ui_phone.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 47
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 271
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "el",
+      "kind": "gpi",
+      "url": "/posts/gpi-case-2w-pi-zero-w-recalbox/",
+      "status": 200,
+      "metrics": {
+        "title": "GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2",
+        "overflow": 0,
+        "bodyHeight": 16582,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 4,
+        "headings": [
+          {
+            "id": "το-πρόβλημα-το-recalbox-βλέπει-τη-θήκη-ως-την-παλιά",
+            "text": "Το πρόβλημα: το Recalbox βλέπει τη θήκη ως την παλιά"
+          },
+          {
+            "id": "τα-συμπτώματα",
+            "text": "Τα συμπτώματα"
+          },
+          {
+            "id": "γιατί-δεν-αρκεί-το-patch-της-retroflag",
+            "text": "Γιατί δεν αρκεί το patch της Retroflag"
+          },
+          {
+            "id": "η-λύση-βήμα-βήμα",
+            "text": "Η λύση βήμα βήμα"
+          },
+          {
+            "id": "τι-χρειάζομαι",
+            "text": "Τι χρειάζομαι"
+          },
+          {
+            "id": "1-γράφω-το-σωστό-image",
+            "text": "1. Γράφω το σωστό image"
+          },
+          {
+            "id": "2-πρώτη-εκκίνηση-χωρίς-να-αγγίξω-τίποτα",
+            "text": "2. Πρώτη εκκίνηση χωρίς να αγγίξω τίποτα"
+          },
+          {
+            "id": "step-partition",
+            "text": "3. Βρίσκω το διαμέρισμα RECALBOX στα Windows"
+          },
+          {
+            "id": "final-config",
+            "text": "4. Αντικαθιστώ τις ρυθμίσεις της οθόνης"
+          },
+          {
+            "id": "5-διορθώνω-την-ανάλυση-των-emulators",
+            "text": "5. Διορθώνω την ανάλυση των emulators"
+          },
+          {
+            "id": "6-εκκίνηση",
+            "text": "6. Εκκίνηση"
+          },
+          {
+            "id": "μετά-την-εγκατάσταση-η-θήκη-σαν-παλιός-gpi",
+            "text": "Μετά την εγκατάσταση: η θήκη σαν «παλιός GPi»"
+          },
+          {
+            "id": "το-hotkey-είναι-το-select-όχι-το-home",
+            "text": "Το Hotkey είναι το SELECT, όχι το Home"
+          },
+          {
+            "id": "πώς-σώζω",
+            "text": "Πώς σώζω"
+          },
+          {
+            "id": "οι-ρυθμίσεις-μπορεί-να-ξαναγραφτούν",
+            "text": "Οι ρυθμίσεις μπορεί να ξαναγραφτούν"
+          },
+          {
+            "id": "παιχνίδια",
+            "text": "Παιχνίδια"
+          },
+          {
+            "id": "τι-αντέχει-το-zero-w",
+            "text": "Τι αντέχει το Zero W"
+          },
+          {
+            "id": "αν-κάτι-δεν-πάει-καλά",
+            "text": "Αν κάτι δεν πάει καλά"
+          },
+          {
+            "id": "συμπέρασμα",
+            "text": "Συμπέρασμα"
+          },
+          {
+            "id": "πηγές",
+            "text": "Πηγές"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/broken-screen-800.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/installing-gpi-case-800.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/game-error-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/working-screen-1200.webp",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 50
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 236
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "el",
+      "kind": "category",
+      "url": "/categories/arduino/",
+      "status": 200,
+      "metrics": {
+        "title": "Arduino",
+        "overflow": 0,
+        "bodyHeight": 1024,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 7
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "el",
+      "kind": "lame",
+      "url": "/posts/Lame/",
+      "status": 200,
+      "metrics": {
+        "title": "Lame",
+        "overflow": 0,
+        "bodyHeight": 4517,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 6,
+        "headings": [
+          {
+            "id": "host-discovery",
+            "text": "Host discovery"
+          },
+          {
+            "id": "samba-exploit",
+            "text": "SAMBA Exploit"
+          },
+          {
+            "id": "exploit",
+            "text": "exploit"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/nmap_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/searchsploit_lame_samba.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/smb_client_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/root_login_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/flags_lame.png",
+            "loaded": true
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 4
+            }
+          ],
+          ".prose p": []
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "kind": "home",
+      "url": "/en/",
+      "status": 200,
+      "metrics": {
+        "title": "Good things happenwhen we share what we learn.",
+        "overflow": 0,
+        "bodyHeight": 2667,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/trading/dogi_keri.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/tutorials/burpsuite-settings.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/thm-reverse-enginnering-intro.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 46
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "kind": "robot",
+      "url": "/en/robot/",
+      "status": 200,
+      "metrics": {
+        "title": "4WD robot: from wiring to the first drive",
+        "overflow": 0,
+        "bodyHeight": 30433,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 36,
+        "cells": 216,
+        "labels": 359,
+        "code": 8,
+        "headings": [
+          {
+            "id": "guide-materials",
+            "text": "What we need and what each part does"
+          },
+          {
+            "id": "guide-source-differences",
+            "text": "A clarification before connecting the audio"
+          },
+          {
+            "id": "guide-assembly",
+            "text": "Understand the power supply before adding wires"
+          },
+          {
+            "id": "guide-section-1",
+            "text": "Wiring diagram"
+          },
+          {
+            "id": "guide-section-2",
+            "text": "Terminal harness"
+          },
+          {
+            "id": "guide-section-11",
+            "text": "From the first upload to the first test"
+          },
+          {
+            "id": "guide-section-12",
+            "text": "1. Prepare Arduino IDE"
+          },
+          {
+            "id": "guide-section-13",
+            "text": "2. Make the first upload using the MB base"
+          },
+          {
+            "id": "guide-section-15",
+            "text": "3. Connect the phone and make a small test"
+          },
+          {
+            "id": "guide-section-16",
+            "text": "4. Add the audio files"
+          },
+          {
+            "id": "guide-section-14",
+            "text": "5. What changes for later upgrades"
+          },
+          {
+            "id": "guide-section-17",
+            "text": "The main functions at a glance"
+          },
+          {
+            "id": "guide-code",
+            "text": "Understanding the code, step by step"
+          },
+          {
+            "id": "code-files",
+            "text": "A map of the seven files"
+          },
+          {
+            "id": "code-startup",
+            "text": "What happens when the robot powers on"
+          },
+          {
+            "id": "code-controls",
+            "text": "From a finger movement to a command"
+          },
+          {
+            "id": "code-driving",
+            "text": "How it turns without a steering wheel"
+          },
+          {
+            "id": "code-failsafe",
+            "text": "What happens when drive commands stop arriving"
+          },
+          {
+            "id": "code-video",
+            "text": "Why the camera uses its own port"
+          },
+          {
+            "id": "code-light-audio",
+            "text": "Light and sound without holding up the joystick"
+          },
+          {
+            "id": "code-wifi-ota",
+            "text": "Wi-Fi and upgrading without the MB base"
+          },
+          {
+            "id": "code-where-to-change",
+            "text": "Where to look when you want to change something"
+          },
+          {
+            "id": "guide-troubleshooting",
+            "text": "If the first test does not go as expected"
+          },
+          {
+            "id": "guide-section-4",
+            "text": "Detailed connection notes"
+          },
+          {
+            "id": "guide-section-5",
+            "text": "Battery safety"
+          },
+          {
+            "id": "guide-section-6",
+            "text": "Power and grounding"
+          },
+          {
+            "id": "guide-section-7",
+            "text": "ESP32-CAM"
+          },
+          {
+            "id": "guide-section-8",
+            "text": "Symptoms"
+          },
+          {
+            "id": "guide-section-9",
+            "text": "L298N and motors"
+          },
+          {
+            "id": "guide-section-10",
+            "text": "Audio"
+          },
+          {
+            "id": "guide-section-3",
+            "text": "All 36 wiring connections"
+          },
+          {
+            "id": "guide-downloads",
+            "text": "Downloads and reference images"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/firmware_ui_phone.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 40
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 261
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "kind": "gpi",
+      "url": "/en/posts/gpi-case-2w-pi-zero-w-recalbox/",
+      "status": 200,
+      "metrics": {
+        "title": "GPi Case 2W and Pi Zero W: setting up Recalbox 9.2",
+        "overflow": 0,
+        "bodyHeight": 16012,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 4,
+        "headings": [
+          {
+            "id": "the-problem-recalbox-mistakes-it-for-the-old-case",
+            "text": "The problem: Recalbox mistakes it for the old case"
+          },
+          {
+            "id": "the-symptoms",
+            "text": "The symptoms"
+          },
+          {
+            "id": "why-the-retroflag-patch-is-not-enough",
+            "text": "Why the Retroflag patch is not enough"
+          },
+          {
+            "id": "the-fix-step-by-step",
+            "text": "The fix, step by step"
+          },
+          {
+            "id": "what-i-need",
+            "text": "What I need"
+          },
+          {
+            "id": "1-write-the-correct-image",
+            "text": "1. Write the correct image"
+          },
+          {
+            "id": "2-let-the-first-boot-finish-without-touching-anything",
+            "text": "2. Let the first boot finish without touching anything"
+          },
+          {
+            "id": "step-partition",
+            "text": "3. Find the RECALBOX partition in Windows"
+          },
+          {
+            "id": "final-config",
+            "text": "4. Replace the display configuration"
+          },
+          {
+            "id": "5-correct-the-emulators-video-mode",
+            "text": "5. Correct the emulators’ video mode"
+          },
+          {
+            "id": "6-boot",
+            "text": "6. Boot"
+          },
+          {
+            "id": "after-installation-using-the-case-as-an-old-gpi",
+            "text": "After installation: using the case as an “old GPi”"
+          },
+          {
+            "id": "select-is-the-hotkey-not-home",
+            "text": "SELECT is the hotkey, not Home"
+          },
+          {
+            "id": "saving-progress",
+            "text": "Saving progress"
+          },
+          {
+            "id": "settings-may-be-overwritten",
+            "text": "Settings may be overwritten"
+          },
+          {
+            "id": "games",
+            "text": "Games"
+          },
+          {
+            "id": "what-the-zero-w-can-handle",
+            "text": "What the Zero W can handle"
+          },
+          {
+            "id": "troubleshooting",
+            "text": "Troubleshooting"
+          },
+          {
+            "id": "conclusion",
+            "text": "Conclusion"
+          },
+          {
+            "id": "sources",
+            "text": "Sources"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/broken-screen-800.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/installing-gpi-case-800.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/game-error-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/working-screen-1200.webp",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 49
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 238
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "kind": "category",
+      "url": "/en/categories/arduino/",
+      "status": 200,
+      "metrics": {
+        "title": "Arduino",
+        "overflow": 0,
+        "bodyHeight": 1024,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 7
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 768,
+      "lang": "en",
+      "kind": "lame",
+      "url": "/en/posts/lame/",
+      "status": 200,
+      "metrics": {
+        "title": "Lame",
+        "overflow": 0,
+        "bodyHeight": 4354,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 6,
+        "headings": [
+          {
+            "id": "host-discovery",
+            "text": "Host discovery"
+          },
+          {
+            "id": "samba-exploit",
+            "text": "Samba exploit"
+          },
+          {
+            "id": "exploitation",
+            "text": "Exploitation"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/nmap_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/searchsploit_lame_samba.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/smb_client_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/root_login_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/flags_lame.png",
+            "loaded": true
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 4
+            }
+          ],
+          ".prose p": []
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "el",
+      "kind": "home",
+      "url": "/",
+      "status": 200,
+      "metrics": {
+        "title": "Η γνώση αποκτά αξίαόταν τη μοιράζεσαι.",
+        "overflow": 0,
+        "bodyHeight": 2349,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/trading/dogi_keri.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/tutorials/burpsuite-settings.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/thm-reverse-enginnering-intro.png",
+            "loaded": true
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 38
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "el",
+      "kind": "robot",
+      "url": "/robot/",
+      "status": 200,
+      "metrics": {
+        "title": "Ρομπότ 4WD: από την καλωδίωση στην πρώτη διαδρομή",
+        "overflow": 0,
+        "bodyHeight": 26786,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 36,
+        "cells": 216,
+        "labels": 359,
+        "code": 8,
+        "headings": [
+          {
+            "id": "guide-materials",
+            "text": "Τι χρειαζόμαστε και τι κάνει το καθένα"
+          },
+          {
+            "id": "guide-source-differences",
+            "text": "Μια διευκρίνιση πριν συνδέσουμε τον ήχο"
+          },
+          {
+            "id": "guide-assembly",
+            "text": "Πρώτα καταλαβαίνουμε την τροφοδοσία, μετά βάζουμε καλώδια"
+          },
+          {
+            "id": "guide-section-1",
+            "text": "Διάγραμμα καλωδίωσης"
+          },
+          {
+            "id": "guide-section-2",
+            "text": "Harness ακροδεκτών"
+          },
+          {
+            "id": "guide-section-11",
+            "text": "Από το πρώτο upload στην πρώτη δοκιμή"
+          },
+          {
+            "id": "guide-section-12",
+            "text": "1. Ετοιμάζουμε το Arduino IDE"
+          },
+          {
+            "id": "guide-section-13",
+            "text": "2. Κάνουμε το πρώτο ανέβασμα με τη βάση MB"
+          },
+          {
+            "id": "guide-section-15",
+            "text": "3. Συνδέουμε το κινητό και κάνουμε μια μικρή δοκιμή"
+          },
+          {
+            "id": "guide-section-16",
+            "text": "4. Προσθέτουμε τα αρχεία ήχου"
+          },
+          {
+            "id": "guide-section-14",
+            "text": "5. Τι αλλάζει στις επόμενες αναβαθμίσεις"
+          },
+          {
+            "id": "guide-section-17",
+            "text": "Οι βασικές λειτουργίες, με μια ματιά"
+          },
+          {
+            "id": "guide-code",
+            "text": "Καταλαβαίνουμε τον κώδικα, βήμα βήμα"
+          },
+          {
+            "id": "code-files",
+            "text": "Ένας χάρτης για τα επτά αρχεία"
+          },
+          {
+            "id": "code-startup",
+            "text": "Τι γίνεται μόλις ανοίξει το ρομπότ"
+          },
+          {
+            "id": "code-controls",
+            "text": "Από το δάχτυλο σε μια εντολή"
+          },
+          {
+            "id": "code-driving",
+            "text": "Πώς στρίβει χωρίς τιμόνι"
+          },
+          {
+            "id": "code-failsafe",
+            "text": "Τι γίνεται αν χαθεί η εντολή οδήγησης"
+          },
+          {
+            "id": "code-video",
+            "text": "Γιατί η κάμερα έχει δική της θύρα"
+          },
+          {
+            "id": "code-light-audio",
+            "text": "Φως και ήχος χωρίς να περιμένει το joystick"
+          },
+          {
+            "id": "code-wifi-ota",
+            "text": "Wi-Fi και αναβάθμιση χωρίς τη βάση MB"
+          },
+          {
+            "id": "code-where-to-change",
+            "text": "Πού κοιτάζω όταν θέλω να αλλάξω κάτι"
+          },
+          {
+            "id": "guide-troubleshooting",
+            "text": "Αν η πρώτη δοκιμή δεν πάει όπως περιμένουμε"
+          },
+          {
+            "id": "guide-section-4",
+            "text": "Αναλυτικές σημειώσεις για τις συνδέσεις"
+          },
+          {
+            "id": "guide-section-5",
+            "text": "Ασφάλεια μπαταρίας"
+          },
+          {
+            "id": "guide-section-6",
+            "text": "Τροφοδοσία και γειώσεις"
+          },
+          {
+            "id": "guide-section-7",
+            "text": "ESP32-CAM"
+          },
+          {
+            "id": "guide-section-8",
+            "text": "Συμπτώματα"
+          },
+          {
+            "id": "guide-section-9",
+            "text": "L298N και μοτέρ"
+          },
+          {
+            "id": "guide-section-10",
+            "text": "Ήχος"
+          },
+          {
+            "id": "guide-section-3",
+            "text": "Πίνακας 36 συνδέσεων"
+          },
+          {
+            "id": "guide-downloads",
+            "text": "Λήψεις και εικόνες αναφοράς"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/firmware_ui_phone.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 48
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 272
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "el",
+      "kind": "gpi",
+      "url": "/posts/gpi-case-2w-pi-zero-w-recalbox/",
+      "status": 200,
+      "metrics": {
+        "title": "GPi Case 2W και Pi Zero W: στήνουμε το Recalbox 9.2",
+        "overflow": 0,
+        "bodyHeight": 14142,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 4,
+        "headings": [
+          {
+            "id": "το-πρόβλημα-το-recalbox-βλέπει-τη-θήκη-ως-την-παλιά",
+            "text": "Το πρόβλημα: το Recalbox βλέπει τη θήκη ως την παλιά"
+          },
+          {
+            "id": "τα-συμπτώματα",
+            "text": "Τα συμπτώματα"
+          },
+          {
+            "id": "γιατί-δεν-αρκεί-το-patch-της-retroflag",
+            "text": "Γιατί δεν αρκεί το patch της Retroflag"
+          },
+          {
+            "id": "η-λύση-βήμα-βήμα",
+            "text": "Η λύση βήμα βήμα"
+          },
+          {
+            "id": "τι-χρειάζομαι",
+            "text": "Τι χρειάζομαι"
+          },
+          {
+            "id": "1-γράφω-το-σωστό-image",
+            "text": "1. Γράφω το σωστό image"
+          },
+          {
+            "id": "2-πρώτη-εκκίνηση-χωρίς-να-αγγίξω-τίποτα",
+            "text": "2. Πρώτη εκκίνηση χωρίς να αγγίξω τίποτα"
+          },
+          {
+            "id": "step-partition",
+            "text": "3. Βρίσκω το διαμέρισμα RECALBOX στα Windows"
+          },
+          {
+            "id": "final-config",
+            "text": "4. Αντικαθιστώ τις ρυθμίσεις της οθόνης"
+          },
+          {
+            "id": "5-διορθώνω-την-ανάλυση-των-emulators",
+            "text": "5. Διορθώνω την ανάλυση των emulators"
+          },
+          {
+            "id": "6-εκκίνηση",
+            "text": "6. Εκκίνηση"
+          },
+          {
+            "id": "μετά-την-εγκατάσταση-η-θήκη-σαν-παλιός-gpi",
+            "text": "Μετά την εγκατάσταση: η θήκη σαν «παλιός GPi»"
+          },
+          {
+            "id": "το-hotkey-είναι-το-select-όχι-το-home",
+            "text": "Το Hotkey είναι το SELECT, όχι το Home"
+          },
+          {
+            "id": "πώς-σώζω",
+            "text": "Πώς σώζω"
+          },
+          {
+            "id": "οι-ρυθμίσεις-μπορεί-να-ξαναγραφτούν",
+            "text": "Οι ρυθμίσεις μπορεί να ξαναγραφτούν"
+          },
+          {
+            "id": "παιχνίδια",
+            "text": "Παιχνίδια"
+          },
+          {
+            "id": "τι-αντέχει-το-zero-w",
+            "text": "Τι αντέχει το Zero W"
+          },
+          {
+            "id": "αν-κάτι-δεν-πάει-καλά",
+            "text": "Αν κάτι δεν πάει καλά"
+          },
+          {
+            "id": "συμπέρασμα",
+            "text": "Συμπέρασμα"
+          },
+          {
+            "id": "πηγές",
+            "text": "Πηγές"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/broken-screen-800.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/installing-gpi-case-800.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/game-error-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/working-screen-1200.webp",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 50
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 238
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "el",
+      "kind": "category",
+      "url": "/categories/arduino/",
+      "status": 200,
+      "metrics": {
+        "title": "Arduino",
+        "overflow": 0,
+        "bodyHeight": 900,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": true
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 7
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "el",
+      "kind": "lame",
+      "url": "/posts/Lame/",
+      "status": 200,
+      "metrics": {
+        "title": "Lame",
+        "overflow": 0,
+        "bodyHeight": 5038,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 6,
+        "headings": [
+          {
+            "id": "host-discovery",
+            "text": "Host discovery"
+          },
+          {
+            "id": "samba-exploit",
+            "text": "SAMBA Exploit"
+          },
+          {
+            "id": "exploit",
+            "text": "exploit"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/nmap_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/searchsploit_lame_samba.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/smb_client_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/root_login_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/flags_lame.png",
+            "loaded": true
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 4
+            }
+          ],
+          ".prose p": []
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "kind": "home",
+      "url": "/en/",
+      "status": 200,
+      "metrics": {
+        "title": "Good things happenwhen we share what we learn.",
+        "overflow": 0,
+        "bodyHeight": 2300,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/trading/dogi_keri.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/tutorials/burpsuite-settings.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/thm-reverse-enginnering-intro.png",
+            "loaded": true
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 46
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "kind": "robot",
+      "url": "/en/robot/",
+      "status": 200,
+      "metrics": {
+        "title": "4WD robot: from wiring to the first drive",
+        "overflow": 0,
+        "bodyHeight": 25603,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 36,
+        "cells": 216,
+        "labels": 359,
+        "code": 8,
+        "headings": [
+          {
+            "id": "guide-materials",
+            "text": "What we need and what each part does"
+          },
+          {
+            "id": "guide-source-differences",
+            "text": "A clarification before connecting the audio"
+          },
+          {
+            "id": "guide-assembly",
+            "text": "Understand the power supply before adding wires"
+          },
+          {
+            "id": "guide-section-1",
+            "text": "Wiring diagram"
+          },
+          {
+            "id": "guide-section-2",
+            "text": "Terminal harness"
+          },
+          {
+            "id": "guide-section-11",
+            "text": "From the first upload to the first test"
+          },
+          {
+            "id": "guide-section-12",
+            "text": "1. Prepare Arduino IDE"
+          },
+          {
+            "id": "guide-section-13",
+            "text": "2. Make the first upload using the MB base"
+          },
+          {
+            "id": "guide-section-15",
+            "text": "3. Connect the phone and make a small test"
+          },
+          {
+            "id": "guide-section-16",
+            "text": "4. Add the audio files"
+          },
+          {
+            "id": "guide-section-14",
+            "text": "5. What changes for later upgrades"
+          },
+          {
+            "id": "guide-section-17",
+            "text": "The main functions at a glance"
+          },
+          {
+            "id": "guide-code",
+            "text": "Understanding the code, step by step"
+          },
+          {
+            "id": "code-files",
+            "text": "A map of the seven files"
+          },
+          {
+            "id": "code-startup",
+            "text": "What happens when the robot powers on"
+          },
+          {
+            "id": "code-controls",
+            "text": "From a finger movement to a command"
+          },
+          {
+            "id": "code-driving",
+            "text": "How it turns without a steering wheel"
+          },
+          {
+            "id": "code-failsafe",
+            "text": "What happens when drive commands stop arriving"
+          },
+          {
+            "id": "code-video",
+            "text": "Why the camera uses its own port"
+          },
+          {
+            "id": "code-light-audio",
+            "text": "Light and sound without holding up the joystick"
+          },
+          {
+            "id": "code-wifi-ota",
+            "text": "Wi-Fi and upgrading without the MB base"
+          },
+          {
+            "id": "code-where-to-change",
+            "text": "Where to look when you want to change something"
+          },
+          {
+            "id": "guide-troubleshooting",
+            "text": "If the first test does not go as expected"
+          },
+          {
+            "id": "guide-section-4",
+            "text": "Detailed connection notes"
+          },
+          {
+            "id": "guide-section-5",
+            "text": "Battery safety"
+          },
+          {
+            "id": "guide-section-6",
+            "text": "Power and grounding"
+          },
+          {
+            "id": "guide-section-7",
+            "text": "ESP32-CAM"
+          },
+          {
+            "id": "guide-section-8",
+            "text": "Symptoms"
+          },
+          {
+            "id": "guide-section-9",
+            "text": "L298N and motors"
+          },
+          {
+            "id": "guide-section-10",
+            "text": "Audio"
+          },
+          {
+            "id": "guide-section-3",
+            "text": "All 36 wiring connections"
+          },
+          {
+            "id": "guide-downloads",
+            "text": "Downloads and reference images"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/firmware_ui_phone.png",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 41
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 263
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "kind": "gpi",
+      "url": "/en/posts/gpi-case-2w-pi-zero-w-recalbox/",
+      "status": 200,
+      "metrics": {
+        "title": "GPi Case 2W and Pi Zero W: setting up Recalbox 9.2",
+        "overflow": 0,
+        "bodyHeight": 14042,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 4,
+        "headings": [
+          {
+            "id": "the-problem-recalbox-mistakes-it-for-the-old-case",
+            "text": "The problem: Recalbox mistakes it for the old case"
+          },
+          {
+            "id": "the-symptoms",
+            "text": "The symptoms"
+          },
+          {
+            "id": "why-the-retroflag-patch-is-not-enough",
+            "text": "Why the Retroflag patch is not enough"
+          },
+          {
+            "id": "the-fix-step-by-step",
+            "text": "The fix, step by step"
+          },
+          {
+            "id": "what-i-need",
+            "text": "What I need"
+          },
+          {
+            "id": "1-write-the-correct-image",
+            "text": "1. Write the correct image"
+          },
+          {
+            "id": "2-let-the-first-boot-finish-without-touching-anything",
+            "text": "2. Let the first boot finish without touching anything"
+          },
+          {
+            "id": "step-partition",
+            "text": "3. Find the RECALBOX partition in Windows"
+          },
+          {
+            "id": "final-config",
+            "text": "4. Replace the display configuration"
+          },
+          {
+            "id": "5-correct-the-emulators-video-mode",
+            "text": "5. Correct the emulators’ video mode"
+          },
+          {
+            "id": "6-boot",
+            "text": "6. Boot"
+          },
+          {
+            "id": "after-installation-using-the-case-as-an-old-gpi",
+            "text": "After installation: using the case as an “old GPi”"
+          },
+          {
+            "id": "select-is-the-hotkey-not-home",
+            "text": "SELECT is the hotkey, not Home"
+          },
+          {
+            "id": "saving-progress",
+            "text": "Saving progress"
+          },
+          {
+            "id": "settings-may-be-overwritten",
+            "text": "Settings may be overwritten"
+          },
+          {
+            "id": "games",
+            "text": "Games"
+          },
+          {
+            "id": "what-the-zero-w-can-handle",
+            "text": "What the Zero W can handle"
+          },
+          {
+            "id": "troubleshooting",
+            "text": "Troubleshooting"
+          },
+          {
+            "id": "conclusion",
+            "text": "Conclusion"
+          },
+          {
+            "id": "sources",
+            "text": "Sources"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/cover-1200.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/broken-screen-800.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/installing-gpi-case-800.webp",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/game-error-1200.webp",
+            "loaded": false
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/gpicase2w/working-screen-1200.webp",
+            "loaded": false
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 49
+            }
+          ],
+          ".prose p": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 239
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "kind": "category",
+      "url": "/en/categories/arduino/",
+      "status": 200,
+      "metrics": {
+        "title": "Arduino",
+        "overflow": 0,
+        "bodyHeight": 900,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 0,
+        "headings": [],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/robot/desktop_diagram.png",
+            "loaded": true
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 7
+            }
+          ]
+        }
+      },
+      "errors": []
+    },
+    {
+      "width": 1440,
+      "lang": "en",
+      "kind": "lame",
+      "url": "/en/posts/lame/",
+      "status": 200,
+      "metrics": {
+        "title": "Lame",
+        "overflow": 0,
+        "bodyHeight": 4935,
+        "font": "\"Inter Variable\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+        "rows": 0,
+        "cells": 0,
+        "labels": 0,
+        "code": 6,
+        "headings": [
+          {
+            "id": "host-discovery",
+            "text": "Host discovery"
+          },
+          {
+            "id": "samba-exploit",
+            "text": "Samba exploit"
+          },
+          {
+            "id": "exploitation",
+            "text": "Exploitation"
+          }
+        ],
+        "images": [
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/nmap_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/searchsploit_lame_samba.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/smb_client_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/root_login_lame.png",
+            "loaded": true
+          },
+          {
+            "src": "http://127.0.0.1:4321/assets/img/sample/HTC/flags_lame.png",
+            "loaded": true
+          }
+        ],
+        "actualFonts": {
+          "#main h1": [
+            {
+              "familyName": "Inter",
+              "postScriptName": "Inter-Regular",
+              "isCustomFont": true,
+              "glyphCount": 4
+            }
+          ],
+          ".prose p": []
+        }
+      },
+      "errors": []
+    }
+  ],
+  "issues": [],
+  "buildHashes": {
+    "dist/index.html": "b9d4277a039e7e6775041bac0ad91d40b9f2055049b468f1be0ebc8c14f8d25f",
+    "dist/robot/index.html": "ac7bd777fc3f7c50934d76b9a21255a50483b9da349e56f483fca9a0bb188e00",
+    "dist/en/robot/index.html": "6c580f3986ddb48eebd46188d4d9506582ca6f3c2641305fc1b41e45747ac6a1",
+    "dist/posts/gpi-case-2w-pi-zero-w-recalbox/index.html": "415b27a5b8d3d269158986cadd139090c2ab7f35a589c3d2b2d8c5681772a8f9"
+  }
+}
