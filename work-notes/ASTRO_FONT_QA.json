@@ -1,0 +1,138 @@
+{
+  "browser": "156.0.8078.4",
+  "method": "Chrome DevTools Protocol CSS.getPlatformFontsForNode",
+  "samples": [
+    {
+      "lang": "el",
+      "width": 390,
+      "fonts": {
+        "#main h1": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        ".prose p": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 269
+          }
+        ]
+      }
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "fonts": {
+        "#main h1": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 40
+          }
+        ],
+        ".prose p": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 259
+          }
+        ]
+      }
+    },
+    {
+      "lang": "el",
+      "width": 768,
+      "fonts": {
+        "#main h1": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 47
+          }
+        ],
+        ".prose p": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 271
+          }
+        ]
+      }
+    },
+    {
+      "lang": "en",
+      "width": 768,
+      "fonts": {
+        "#main h1": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 40
+          }
+        ],
+        ".prose p": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 261
+          }
+        ]
+      }
+    },
+    {
+      "lang": "el",
+      "width": 1440,
+      "fonts": {
+        "#main h1": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 48
+          }
+        ],
+        ".prose p": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 272
+          }
+        ]
+      }
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "fonts": {
+        "#main h1": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 41
+          }
+        ],
+        ".prose p": [
+          {
+            "familyName": "Inter",
+            "postScriptName": "Inter-Regular",
+            "isCustomFont": true,
+            "glyphCount": 263
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,765 @@
+<svg id="harness" role="img" aria-label="Harness συνδέσεων"
+ viewBox="0.00 0.00 1585.80 1054.80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(14.4 1040.4)"><g class="hhits"><path class="whit" data-w="25" d="M1112,-205C1147.91,-205 1144.68,-235.91 1173,-258 1199.93,-279.01 1204.5,-288.81 1236,-302 1307.92,-332.12 1330.53,-334 1408.5,-334"/><path class="whit" data-w="26" d="M1112,-185C1117.7,-185 1299.82,-252.61 1305,-255 1353.06,-277.22 1355.55,-314 1408.5,-314"/><path class="whit" data-w="27" d="M1112,-205C1175.51,-205 1174.63,-259.67 1236,-276 1265.64,-283.88 1274.77,-281.17 1305,-276 1357.72,-266.98 1365.01,-236 1418.5,-236"/><path class="whit" data-w="28" d="M1112,-185C1248.92,-185 1281.58,-216 1418.5,-216"/><path class="whit" data-w="29" d="M1112,-165C1250.78,-165 1283.72,-132 1422.5,-132"/><path class="whit" data-w="30" d="M1112,-145C1179.58,-145 1171.61,-77.53 1236,-57 1265.22,-47.69 1275.07,-50.34 1305,-57 1361.28,-69.52 1364.84,-112 1422.5,-112"/><path class="whit" data-w="31" d="M1112,-165C1188.99,-165 1354.51,-31 1431.5,-31"/><path class="whit" data-w="32" d="M1112,-145C1151.94,-145 1143.58,-106.02 1173,-79 1199.13,-55.01 1203.04,-43.12 1236,-30 1317.1,2.3 1344.2,-11 1431.5,-11"/><path class="whit" data-w="17" d="M908,-699C994.02,-699 887.24,-374.88 948,-314 974.84,-287.11 995.01,-305 1033,-305"/><path class="whit" data-w="18" d="M908,-719C984.08,-719 916.55,-448.27 948,-379 959.64,-353.36 1004.84,-285 1033,-285"/><path class="whit" data-w="19" d="M908,-739C976.36,-739 925.37,-498.51 948,-434 954.53,-415.37 961.65,-413.39 971,-396 1001.49,-339.26 968.59,-265 1033,-265"/><path class="whit" data-w="20" d="M908,-759C966.78,-759 974.22,-245 1033,-245"/><path class="whit" data-w="21" d="M908,-679C1007.38,-679 871.7,-522.68 948,-459 955.85,-452.45 962.71,-453.02 971,-459 1038.57,-507.79 946.66,-637 1030,-637"/><path class="whit" data-w="33" d="M908,-799C940.79,-799 919.2,-845.31 948,-861 972.59,-874.4 983,-861 1011,-861"/><path class="whit" data-w="34" d="M908,-779C961.43,-779 957.57,-841 1011,-841"/><path class="whit" data-w="35" d="M908,-759C927.88,-759 928.66,-743.57 948,-739 957.95,-736.65 961.2,-736.09 971,-739 994.4,-745.95 992.59,-769 1017,-769"/><path class="whit" data-w="36" d="M908,-779C958.25,-779 966.75,-749 1017,-749"/><path class="whit" data-w="22" d="M1114,-577C1161.12,-577 1189.38,-983 1236.5,-983"/><path class="whit" data-w="23" d="M1305,-863C1374.11,-863 1391.39,-863 1460.5,-863"/><path class="whit" data-w="24" d="M1305,-843C1322.78,-843 1327.22,-842.22 1345,-842 1396.33,-841.36 1409.16,-843 1460.5,-843"/><path class="whit" data-w="1" d="M88,-716C135.09,-716 141.91,-748 189,-748"/><path class="whit" data-w="6" d="M88,-696C131.61,-696 142.43,-692.82 186,-691 281.08,-687.02 304.84,-684 400,-684"/><path class="whit" data-w="2" d="M300,-728C305.78,-728 303.45,-719.22 299.5,-715 282.18,-696.48 209.2,-713.26 186,-703 163.69,-693.13 154.99,-688.76 145,-666.5 130.32,-633.78 150.14,-597 186,-597"/><path class="whit" data-w="3" d="M302,-577C349.61,-577 361.39,-572 409,-572"/><path class="whit" data-w="4" d="M494,-552C548.16,-552 504.22,-478.8 542,-440 563.51,-417.92 576.16,-421.89 605,-411 655.78,-391.83 668.3,-383.86 722,-376 858.82,-355.97 894.72,-385 1033,-385"/><path class="whit" data-w="5" d="M411,-442C379.91,-442 395.63,-491 419,-511.5 443.93,-533.37 469.99,-497.12 493,-521 496.41,-524.53 498.91,-532 494,-532"/><path class="whit" data-w="7" d="M502,-644C573.64,-644 551.47,-567.62 605,-520 740.85,-399.14 773.67,-348.69 948,-297 957.8,-294.09 961.65,-292.87 971,-297 1008.41,-313.52 992.1,-365 1033,-365"/><path class="whit" data-w="8" d="M502,-664C570.76,-664 536.74,-779 605.5,-779"/><path class="whit" data-w="10" d="M491,-402C600.86,-402 497.64,-620 607.5,-620"/><path class="whit" data-w="9" d="M491,-422C569.6,-422 507.7,-701.28 542,-772 559.91,-808.91 564.47,-839 605.5,-839"/><path class="whit" data-w="11" d="M680.5,-540C733.97,-540 687.34,-736.29 722,-777 741.36,-799.74 755.63,-799 785.5,-799"/><path class="whit" data-w="13" d="M680.5,-560C744.17,-560 725.79,-485.42 785,-462 835.83,-441.89 860.76,-434.49 908,-462 955.47,-489.64 975.07,-677 1030,-677"/><path class="whit" data-w="15" d="M680.5,-600C729.16,-600 700.17,-771.51 722,-815 740.63,-852.11 747.82,-865.5 785,-884 965.32,-973.73 1035.09,-923 1236.5,-923"/><path class="whit" data-w="12" d="M682,-759C710.03,-759 717.9,-748.84 745,-756 765.01,-761.29 764.8,-779 785.5,-779"/><path class="whit" data-w="14" d="M682,-799C707.64,-799 760.06,-845.06 785,-851 838.18,-863.66 857.24,-871.3 908,-851 943.9,-836.64 948.78,-822.64 971,-791 1008.4,-737.75 964.93,-657 1030,-657"/><path class="whit" data-w="16" d="M682,-819C751.61,-819 722.48,-906.39 785,-937 965.52,-1025.39 1035.5,-963 1236.5,-963"/></g>
+
+
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1034,-395 1034,-427 1111,-427 1111,-395 1034,-395"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-395 1034,-427 1111,-427 1111,-395 1034,-395"/>
+<text text-anchor="start" x="1055.5" y="-413.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">L298N</text>
+<text text-anchor="start" x="1040" y="-403.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">διπλή γέφυρα H</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1034,-375 1034,-395 1111,-395 1111,-375 1034,-375"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-375 1034,-395 1111,-395 1111,-375 1034,-375"/>
+<text text-anchor="start" x="1062.5" y="-382.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">12V</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1034,-355 1034,-375 1111,-375 1111,-355 1034,-355"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-355 1034,-375 1111,-375 1111,-355 1034,-355"/>
+<text text-anchor="start" x="1060" y="-362.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">GND</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1034,-335 1034,-355 1111,-355 1111,-335 1034,-335"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-335 1034,-355 1111,-355 1111,-335 1034,-335"/>
+<text text-anchor="start" x="1065.5" y="-342.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">5V</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1034,-315 1034,-335 1111,-335 1111,-315 1034,-315"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-315 1034,-335 1111,-335 1111,-315 1034,-315"/>
+<text text-anchor="start" x="1060.5" y="-322.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">ENA</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1034,-295 1034,-315 1111,-315 1111,-295 1034,-295"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-295 1034,-315 1111,-315 1111,-295 1034,-295"/>
+<text text-anchor="start" x="1063.5" y="-302.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IN1</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1034,-275 1034,-295 1111,-295 1111,-275 1034,-275"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-275 1034,-295 1111,-295 1111,-275 1034,-275"/>
+<text text-anchor="start" x="1063.5" y="-282.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IN2</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1034,-255 1034,-275 1111,-275 1111,-255 1034,-255"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-255 1034,-275 1111,-275 1111,-255 1034,-255"/>
+<text text-anchor="start" x="1063.5" y="-262.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IN3</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1034,-235 1034,-255 1111,-255 1111,-235 1034,-235"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-235 1034,-255 1111,-255 1111,-235 1034,-235"/>
+<text text-anchor="start" x="1063.5" y="-242.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IN4</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1034,-215 1034,-235 1111,-235 1111,-215 1034,-215"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-215 1034,-235 1111,-235 1111,-215 1034,-215"/>
+<text text-anchor="start" x="1060.5" y="-222.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">ENB</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1034,-195 1034,-215 1111,-215 1111,-195 1034,-195"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-195 1034,-215 1111,-215 1111,-195 1034,-195"/>
+<text text-anchor="start" x="1057.5" y="-202.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">OUT1</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1034,-175 1034,-195 1111,-195 1111,-175 1034,-175"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-175 1034,-195 1111,-195 1111,-175 1034,-175"/>
+<text text-anchor="start" x="1057.5" y="-182.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">OUT2</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1034,-155 1034,-175 1111,-175 1111,-155 1034,-155"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-155 1034,-175 1111,-175 1111,-155 1034,-155"/>
+<text text-anchor="start" x="1057.5" y="-162.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">OUT3</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1034,-135 1034,-155 1111,-155 1111,-135 1034,-135"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1034,-135 1034,-155 1111,-155 1111,-135 1034,-135"/>
+<text text-anchor="start" x="1057.5" y="-142.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">OUT4</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="1032.5,-134 1032.5,-428 1111.5,-428 1111.5,-134 1032.5,-134"/>
+</g>
+
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1409.5,-344 1409.5,-368 1556.5,-368 1556.5,-344 1409.5,-344"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1409.5,-344 1409.5,-368 1556.5,-368 1556.5,-344 1409.5,-344"/>
+<text text-anchor="start" x="1415.5" y="-354.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">Μοτέρ αριστερό μπροστά</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1409.5,-324 1409.5,-344 1556.5,-344 1556.5,-324 1409.5,-324"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1409.5,-324 1409.5,-344 1556.5,-344 1556.5,-324 1409.5,-324"/>
+<text text-anchor="start" x="1479.5" y="-331.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">+</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1409.5,-304 1409.5,-324 1556.5,-324 1556.5,-304 1409.5,-304"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1409.5,-304 1409.5,-324 1556.5,-324 1556.5,-304 1409.5,-304"/>
+<text text-anchor="start" x="1479.5" y="-311.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">−</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="1408,-303 1408,-369 1557,-369 1557,-303 1408,-303"/>
+</g>
+
+<g id="hw25" class="wire hw" data-w="25">
+
+<g id="a_hw25">
+<path class="wcore" fill="none" stroke="#8a5a2b" stroke-width="2.76" d="M1112,-205C1147.91,-205 1144.68,-235.91 1173,-258 1199.93,-279.01 1204.5,-288.81 1236,-302 1307.92,-332.12 1330.53,-334 1408.5,-334"/>
+
+</g>
+<path fill="#8a5a2b" stroke="transparent" d="M1264.67,-326C1264.67,-326 1276.33,-326 1276.33,-326 1279.17,-326 1282,-328.83 1282,-331.67 1282,-331.67 1282,-337.33 1282,-337.33 1282,-340.17 1279.17,-343 1276.33,-343 1276.33,-343 1264.67,-343 1264.67,-343 1261.83,-343 1259,-340.17 1259,-337.33 1259,-337.33 1259,-331.67 1259,-331.67 1259,-328.83 1261.83,-326 1264.67,-326"/>
+<text text-anchor="start" x="1262.5" y="-332.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 25 </text>
+<path class="whit2" d="M1112,-205C1147.91,-205 1144.68,-235.91 1173,-258 1199.93,-279.01 1204.5,-288.81 1236,-302 1307.92,-332.12 1330.53,-334 1408.5,-334"/></g>
+<g id="hw26" class="wire hw" data-w="26">
+
+<g id="a_hw26">
+<path class="wcore" fill="none" stroke="#8a5a2b" stroke-width="2.76" d="M1112,-185C1117.7,-185 1299.82,-252.61 1305,-255 1353.06,-277.22 1355.55,-314 1408.5,-314"/>
+
+</g>
+<path fill="#8a5a2b" stroke="transparent" d="M1264.67,-255C1264.67,-255 1276.33,-255 1276.33,-255 1279.17,-255 1282,-257.83 1282,-260.67 1282,-260.67 1282,-266.33 1282,-266.33 1282,-269.17 1279.17,-272 1276.33,-272 1276.33,-272 1264.67,-272 1264.67,-272 1261.83,-272 1259,-269.17 1259,-266.33 1259,-266.33 1259,-260.67 1259,-260.67 1259,-257.83 1261.83,-255 1264.67,-255"/>
+<text text-anchor="start" x="1262.5" y="-261.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 26 </text>
+<path class="whit2" d="M1112,-185C1117.7,-185 1299.82,-252.61 1305,-255 1353.06,-277.22 1355.55,-314 1408.5,-314"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1419.5,-246 1419.5,-270 1546.5,-270 1546.5,-246 1419.5,-246"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1419.5,-246 1419.5,-270 1546.5,-270 1546.5,-246 1419.5,-246"/>
+<text text-anchor="start" x="1425.5" y="-256.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">Μοτέρ αριστερό πίσω</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1419.5,-226 1419.5,-246 1546.5,-246 1546.5,-226 1419.5,-226"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1419.5,-226 1419.5,-246 1546.5,-246 1546.5,-226 1419.5,-226"/>
+<text text-anchor="start" x="1479.5" y="-233.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">+</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1419.5,-206 1419.5,-226 1546.5,-226 1546.5,-206 1419.5,-206"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1419.5,-206 1419.5,-226 1546.5,-226 1546.5,-206 1419.5,-206"/>
+<text text-anchor="start" x="1479.5" y="-213.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">−</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="1418,-205 1418,-271 1547,-271 1547,-205 1418,-205"/>
+</g>
+
+<g id="hw27" class="wire hw" data-w="27">
+
+<g id="a_hw27">
+<path class="wcore" fill="none" stroke="#8a5a2b" stroke-width="2.76" d="M1112,-205C1175.51,-205 1174.63,-259.67 1236,-276 1265.64,-283.88 1274.77,-281.17 1305,-276 1357.72,-266.98 1365.01,-236 1418.5,-236"/>
+
+</g>
+<path fill="#8a5a2b" stroke="transparent" d="M1264.67,-281C1264.67,-281 1276.33,-281 1276.33,-281 1279.17,-281 1282,-283.83 1282,-286.67 1282,-286.67 1282,-292.33 1282,-292.33 1282,-295.17 1279.17,-298 1276.33,-298 1276.33,-298 1264.67,-298 1264.67,-298 1261.83,-298 1259,-295.17 1259,-292.33 1259,-292.33 1259,-286.67 1259,-286.67 1259,-283.83 1261.83,-281 1264.67,-281"/>
+<text text-anchor="start" x="1262.5" y="-287.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 27 </text>
+<path class="whit2" d="M1112,-205C1175.51,-205 1174.63,-259.67 1236,-276 1265.64,-283.88 1274.77,-281.17 1305,-276 1357.72,-266.98 1365.01,-236 1418.5,-236"/></g>
+<g id="hw28" class="wire hw" data-w="28">
+
+<g id="a_hw28">
+<path class="wcore" fill="none" stroke="#8a5a2b" stroke-width="2.76" d="M1112,-185C1248.92,-185 1281.58,-216 1418.5,-216"/>
+
+</g>
+<path fill="#8a5a2b" stroke="transparent" d="M1264.67,-208C1264.67,-208 1276.33,-208 1276.33,-208 1279.17,-208 1282,-210.83 1282,-213.67 1282,-213.67 1282,-219.33 1282,-219.33 1282,-222.17 1279.17,-225 1276.33,-225 1276.33,-225 1264.67,-225 1264.67,-225 1261.83,-225 1259,-222.17 1259,-219.33 1259,-219.33 1259,-213.67 1259,-213.67 1259,-210.83 1261.83,-208 1264.67,-208"/>
+<text text-anchor="start" x="1262.5" y="-214.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 28 </text>
+<path class="whit2" d="M1112,-185C1248.92,-185 1281.58,-216 1418.5,-216"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1423.5,-142 1423.5,-166 1542.5,-166 1542.5,-142 1423.5,-142"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1423.5,-142 1423.5,-166 1542.5,-166 1542.5,-142 1423.5,-142"/>
+<text text-anchor="start" x="1429.5" y="-152.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">Μοτέρ δεξί μπροστά</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1423.5,-122 1423.5,-142 1542.5,-142 1542.5,-122 1423.5,-122"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1423.5,-122 1423.5,-142 1542.5,-142 1542.5,-122 1423.5,-122"/>
+<text text-anchor="start" x="1479.5" y="-129.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">+</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1423.5,-102 1423.5,-122 1542.5,-122 1542.5,-102 1423.5,-102"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1423.5,-102 1423.5,-122 1542.5,-122 1542.5,-102 1423.5,-102"/>
+<text text-anchor="start" x="1479.5" y="-109.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">−</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="1422,-101 1422,-167 1543,-167 1543,-101 1422,-101"/>
+</g>
+
+<g id="hw29" class="wire hw" data-w="29">
+
+<g id="a_hw29">
+<path class="wcore" fill="none" stroke="#8a5a2b" stroke-width="2.76" d="M1112,-165C1250.78,-165 1283.72,-132 1422.5,-132"/>
+
+</g>
+<path fill="#8a5a2b" stroke="transparent" d="M1264.67,-154C1264.67,-154 1276.33,-154 1276.33,-154 1279.17,-154 1282,-156.83 1282,-159.67 1282,-159.67 1282,-165.33 1282,-165.33 1282,-168.17 1279.17,-171 1276.33,-171 1276.33,-171 1264.67,-171 1264.67,-171 1261.83,-171 1259,-168.17 1259,-165.33 1259,-165.33 1259,-159.67 1259,-159.67 1259,-156.83 1261.83,-154 1264.67,-154"/>
+<text text-anchor="start" x="1262.5" y="-160.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 29 </text>
+<path class="whit2" d="M1112,-165C1250.78,-165 1283.72,-132 1422.5,-132"/></g>
+<g id="hw30" class="wire hw" data-w="30">
+
+<g id="a_hw30">
+<path class="wcore" fill="none" stroke="#8a5a2b" stroke-width="2.76" d="M1112,-145C1179.58,-145 1171.61,-77.53 1236,-57 1265.22,-47.69 1275.07,-50.34 1305,-57 1361.28,-69.52 1364.84,-112 1422.5,-112"/>
+
+</g>
+<path fill="#8a5a2b" stroke="transparent" d="M1264.67,-57C1264.67,-57 1276.33,-57 1276.33,-57 1279.17,-57 1282,-59.83 1282,-62.67 1282,-62.67 1282,-68.33 1282,-68.33 1282,-71.17 1279.17,-74 1276.33,-74 1276.33,-74 1264.67,-74 1264.67,-74 1261.83,-74 1259,-71.17 1259,-68.33 1259,-68.33 1259,-62.67 1259,-62.67 1259,-59.83 1261.83,-57 1264.67,-57"/>
+<text text-anchor="start" x="1262.5" y="-63.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 30 </text>
+<path class="whit2" d="M1112,-145C1179.58,-145 1171.61,-77.53 1236,-57 1265.22,-47.69 1275.07,-50.34 1305,-57 1361.28,-69.52 1364.84,-112 1422.5,-112"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1432.5,-41 1432.5,-65 1532.5,-65 1532.5,-41 1432.5,-41"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1432.5,-41 1432.5,-65 1532.5,-65 1532.5,-41 1432.5,-41"/>
+<text text-anchor="start" x="1438.5" y="-51.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">Μοτέρ δεξί πίσω</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1432.5,-21 1432.5,-41 1532.5,-41 1532.5,-21 1432.5,-21"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1432.5,-21 1432.5,-41 1532.5,-41 1532.5,-21 1432.5,-21"/>
+<text text-anchor="start" x="1479" y="-28.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">+</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1432.5,-1 1432.5,-21 1532.5,-21 1532.5,-1 1432.5,-1"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1432.5,-1 1432.5,-21 1532.5,-21 1532.5,-1 1432.5,-1"/>
+<text text-anchor="start" x="1479" y="-8.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">−</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="1431.5,0 1431.5,-66 1533.5,-66 1533.5,0 1431.5,0"/>
+</g>
+
+<g id="hw31" class="wire hw" data-w="31">
+
+<g id="a_hw31">
+<path class="wcore" fill="none" stroke="#8a5a2b" stroke-width="2.76" d="M1112,-165C1188.99,-165 1354.51,-31 1431.5,-31"/>
+
+</g>
+<path fill="#8a5a2b" stroke="transparent" d="M1264.67,-116C1264.67,-116 1276.33,-116 1276.33,-116 1279.17,-116 1282,-118.83 1282,-121.67 1282,-121.67 1282,-127.33 1282,-127.33 1282,-130.17 1279.17,-133 1276.33,-133 1276.33,-133 1264.67,-133 1264.67,-133 1261.83,-133 1259,-130.17 1259,-127.33 1259,-127.33 1259,-121.67 1259,-121.67 1259,-118.83 1261.83,-116 1264.67,-116"/>
+<text text-anchor="start" x="1262.5" y="-122.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 31 </text>
+<path class="whit2" d="M1112,-165C1188.99,-165 1354.51,-31 1431.5,-31"/></g>
+<g id="hw32" class="wire hw" data-w="32">
+
+<g id="a_hw32">
+<path class="wcore" fill="none" stroke="#8a5a2b" stroke-width="2.76" d="M1112,-145C1151.94,-145 1143.58,-106.02 1173,-79 1199.13,-55.01 1203.04,-43.12 1236,-30 1317.1,2.3 1344.2,-11 1431.5,-11"/>
+
+</g>
+<path fill="#8a5a2b" stroke="transparent" d="M1264.67,-30C1264.67,-30 1276.33,-30 1276.33,-30 1279.17,-30 1282,-32.83 1282,-35.67 1282,-35.67 1282,-41.33 1282,-41.33 1282,-44.17 1279.17,-47 1276.33,-47 1276.33,-47 1264.67,-47 1264.67,-47 1261.83,-47 1259,-44.17 1259,-41.33 1259,-41.33 1259,-35.67 1259,-35.67 1259,-32.83 1261.83,-30 1264.67,-30"/>
+<text text-anchor="start" x="1262.5" y="-36.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 32 </text>
+<path class="whit2" d="M1112,-145C1151.94,-145 1143.58,-106.02 1173,-79 1199.13,-55.01 1203.04,-43.12 1236,-30 1317.1,2.3 1344.2,-11 1431.5,-11"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="786.5,-809 786.5,-841 907.5,-841 907.5,-809 786.5,-809"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-809 786.5,-841 907.5,-841 907.5,-809 786.5,-809"/>
+<text text-anchor="start" x="815" y="-827.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">ESP32&#45;CAM</text>
+<text text-anchor="start" x="792.5" y="-817.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">AI&#45;Thinker · όψη από ΠΙΣΩ</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="786.5,-789 786.5,-809 907.5,-809 907.5,-789 786.5,-789"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-789 786.5,-809 907.5,-809 907.5,-789 786.5,-789"/>
+<text text-anchor="start" x="840" y="-796.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">5V</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="786.5,-769 786.5,-789 907.5,-789 907.5,-769 786.5,-769"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-769 786.5,-789 907.5,-789 907.5,-769 786.5,-769"/>
+<text text-anchor="start" x="834.5" y="-776.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">GND</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="786.5,-749 786.5,-769 907.5,-769 907.5,-749 786.5,-749"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-749 786.5,-769 907.5,-769 907.5,-749 786.5,-749"/>
+<text text-anchor="start" x="835" y="-756.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IO12</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="786.5,-729 786.5,-749 907.5,-749 907.5,-729 786.5,-729"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-729 786.5,-749 907.5,-749 907.5,-729 786.5,-729"/>
+<text text-anchor="start" x="835" y="-736.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IO13</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="786.5,-709 786.5,-729 907.5,-729 907.5,-709 786.5,-709"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-709 786.5,-729 907.5,-729 907.5,-709 786.5,-709"/>
+<text text-anchor="start" x="835" y="-716.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IO15</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="786.5,-689 786.5,-709 907.5,-709 907.5,-689 786.5,-689"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-689 786.5,-709 907.5,-709 907.5,-689 786.5,-689"/>
+<text text-anchor="start" x="835" y="-696.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IO14</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="786.5,-669 786.5,-689 907.5,-689 907.5,-669 786.5,-669"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-669 786.5,-689 907.5,-689 907.5,-669 786.5,-669"/>
+<text text-anchor="start" x="838" y="-676.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IO2</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="786.5,-649 786.5,-669 907.5,-669 907.5,-649 786.5,-649"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-649 786.5,-669 907.5,-669 907.5,-649 786.5,-649"/>
+<text text-anchor="start" x="838" y="-656.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">IO4</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="786.5,-629 786.5,-649 907.5,-649 907.5,-629 786.5,-629"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-629 786.5,-649 907.5,-649 907.5,-629 786.5,-629"/>
+<text text-anchor="start" x="837" y="-636.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">3V3</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="786.5,-609 786.5,-629 907.5,-629 907.5,-609 786.5,-609"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-609 786.5,-629 907.5,-629 907.5,-609 786.5,-609"/>
+<text text-anchor="start" x="835" y="-616.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">IO16</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="786.5,-589 786.5,-609 907.5,-609 907.5,-589 786.5,-589"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-589 786.5,-609 907.5,-609 907.5,-589 786.5,-589"/>
+<text text-anchor="start" x="838" y="-596.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">IO0</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="786.5,-569 786.5,-589 907.5,-589 907.5,-569 786.5,-569"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-569 786.5,-589 907.5,-589 907.5,-569 786.5,-569"/>
+<text text-anchor="start" x="834.5" y="-576.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">GND</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="786.5,-549 786.5,-569 907.5,-569 907.5,-549 786.5,-549"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-549 786.5,-569 907.5,-569 907.5,-549 786.5,-549"/>
+<text text-anchor="start" x="834.5" y="-556.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">VCC</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="786.5,-529 786.5,-549 907.5,-549 907.5,-529 786.5,-529"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-529 786.5,-549 907.5,-549 907.5,-529 786.5,-529"/>
+<text text-anchor="start" x="835.5" y="-536.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">U0R</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="786.5,-509 786.5,-529 907.5,-529 907.5,-509 786.5,-509"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-509 786.5,-529 907.5,-529 907.5,-509 786.5,-509"/>
+<text text-anchor="start" x="836" y="-516.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">U0T</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="786.5,-489 786.5,-509 907.5,-509 907.5,-489 786.5,-489"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="786.5,-489 786.5,-509 907.5,-509 907.5,-489 786.5,-489"/>
+<text text-anchor="start" x="834.5" y="-496.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">GND</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="785,-488 785,-842 908,-842 908,-488 785,-488"/>
+</g>
+
+<g id="hw17" class="wire hw" data-w="17">
+
+<g id="a_hw17">
+<path class="wcore" fill="none" stroke="#2563eb" stroke-width="2.28" d="M908,-699C994.02,-699 887.24,-374.88 948,-314 974.84,-287.11 995.01,-305 1033,-305"/>
+
+</g>
+<path fill="#2563eb" stroke="transparent" d="M953.67,-314C953.67,-314 965.33,-314 965.33,-314 968.17,-314 971,-316.83 971,-319.67 971,-319.67 971,-325.33 971,-325.33 971,-328.17 968.17,-331 965.33,-331 965.33,-331 953.67,-331 953.67,-331 950.83,-331 948,-328.17 948,-325.33 948,-325.33 948,-319.67 948,-319.67 948,-316.83 950.83,-314 953.67,-314"/>
+<text text-anchor="start" x="951.5" y="-320.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 17 </text>
+<path class="whit2" d="M908,-699C994.02,-699 887.24,-374.88 948,-314 974.84,-287.11 995.01,-305 1033,-305"/></g>
+<g id="hw18" class="wire hw" data-w="18">
+
+<g id="a_hw18">
+<path class="wcore" fill="none" stroke="#14b8c4" stroke-width="2.28" d="M908,-719C984.08,-719 916.55,-448.27 948,-379 959.64,-353.36 1004.84,-285 1033,-285"/>
+
+</g>
+<path fill="#14b8c4" stroke="transparent" d="M953.67,-379C953.67,-379 965.33,-379 965.33,-379 968.17,-379 971,-381.83 971,-384.67 971,-384.67 971,-390.33 971,-390.33 971,-393.17 968.17,-396 965.33,-396 965.33,-396 953.67,-396 953.67,-396 950.83,-396 948,-393.17 948,-390.33 948,-390.33 948,-384.67 948,-384.67 948,-381.83 950.83,-379 953.67,-379"/>
+<text text-anchor="start" x="951.5" y="-385.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#111111"> 18 </text>
+<path class="whit2" d="M908,-719C984.08,-719 916.55,-448.27 948,-379 959.64,-353.36 1004.84,-285 1033,-285"/></g>
+<g id="hw19" class="wire hw" data-w="19">
+
+<g id="a_hw19">
+<path class="wcore" fill="none" stroke="#e8c400" stroke-width="2.28" d="M908,-739C976.36,-739 925.37,-498.51 948,-434 954.53,-415.37 961.65,-413.39 971,-396 1001.49,-339.26 968.59,-265 1033,-265"/>
+
+</g>
+<path fill="#e8c400" stroke="transparent" d="M953.67,-434C953.67,-434 965.33,-434 965.33,-434 968.17,-434 971,-436.83 971,-439.67 971,-439.67 971,-445.33 971,-445.33 971,-448.17 968.17,-451 965.33,-451 965.33,-451 953.67,-451 953.67,-451 950.83,-451 948,-448.17 948,-445.33 948,-445.33 948,-439.67 948,-439.67 948,-436.83 950.83,-434 953.67,-434"/>
+<text text-anchor="start" x="951.5" y="-440.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#111111"> 19 </text>
+<path class="whit2" d="M908,-739C976.36,-739 925.37,-498.51 948,-434 954.53,-415.37 961.65,-413.39 971,-396 1001.49,-339.26 968.59,-265 1033,-265"/></g>
+<g id="hw20" class="wire hw" data-w="20">
+
+<g id="a_hw20">
+<path class="wcore" fill="none" stroke="#f2f2f2" stroke-width="2.28" d="M908,-759C966.78,-759 974.22,-245 1033,-245"/>
+
+</g>
+<path fill="#f2f2f2" stroke="transparent" d="M953.67,-648C953.67,-648 965.33,-648 965.33,-648 968.17,-648 971,-650.83 971,-653.67 971,-653.67 971,-659.33 971,-659.33 971,-662.17 968.17,-665 965.33,-665 965.33,-665 953.67,-665 953.67,-665 950.83,-665 948,-662.17 948,-659.33 948,-659.33 948,-653.67 948,-653.67 948,-650.83 950.83,-648 953.67,-648"/>
+<text text-anchor="start" x="951.5" y="-654.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#111111"> 20 </text>
+<path class="whit2" d="M908,-759C966.78,-759 974.22,-245 1033,-245"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1031,-687 1031,-719 1113,-719 1113,-687 1031,-687"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-687 1031,-719 1113,-719 1113,-687 1031,-687"/>
+<text text-anchor="start" x="1037" y="-705.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">DFPlayer Pro</text>
+<text text-anchor="start" x="1052" y="-695.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">DFR0768</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1031,-667 1031,-687 1113,-687 1113,-667 1031,-667"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-667 1031,-687 1113,-687 1113,-667 1031,-667"/>
+<text text-anchor="start" x="1062.5" y="-674.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">VIN</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1031,-647 1031,-667 1113,-667 1113,-647 1031,-647"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-647 1031,-667 1113,-667 1113,-647 1031,-647"/>
+<text text-anchor="start" x="1059.5" y="-654.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">GND</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1031,-627 1031,-647 1113,-647 1113,-627 1031,-627"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-627 1031,-647 1113,-647 1113,-627 1031,-627"/>
+<text text-anchor="start" x="1064" y="-634.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">RX</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1031,-607 1031,-627 1113,-627 1113,-607 1031,-607"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-607 1031,-627 1113,-627 1113,-607 1031,-607"/>
+<text text-anchor="start" x="1064.5" y="-614.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">TX</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1031,-587 1031,-607 1113,-607 1113,-587 1031,-587"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-587 1031,-607 1113,-607 1113,-587 1031,-587"/>
+<text text-anchor="start" x="1055.5" y="-594.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">DACR</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1031,-567 1031,-587 1113,-587 1113,-567 1031,-567"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-567 1031,-587 1113,-587 1113,-567 1031,-567"/>
+<text text-anchor="start" x="1056.5" y="-574.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">DACL</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1031,-547 1031,-567 1113,-567 1113,-547 1031,-547"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-547 1031,-567 1113,-567 1113,-547 1031,-547"/>
+<text text-anchor="start" x="1065.5" y="-554.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">L+</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1031,-527 1031,-547 1113,-547 1113,-527 1031,-527"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-527 1031,-547 1113,-547 1113,-527 1031,-527"/>
+<text text-anchor="start" x="1065.5" y="-534.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">L−</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1031,-507 1031,-527 1113,-527 1113,-507 1031,-507"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-507 1031,-527 1113,-527 1113,-507 1031,-507"/>
+<text text-anchor="start" x="1064" y="-514.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">R+</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1031,-487 1031,-507 1113,-507 1113,-487 1031,-487"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-487 1031,-507 1113,-507 1113,-487 1031,-487"/>
+<text text-anchor="start" x="1064" y="-494.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">R−</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1031,-467 1031,-487 1113,-487 1113,-467 1031,-467"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-467 1031,-487 1113,-487 1113,-467 1031,-467"/>
+<text text-anchor="start" x="1058" y="-474.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">PLAY</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1031,-447 1031,-467 1113,-467 1113,-447 1031,-447"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1031,-447 1031,-467 1113,-467 1113,-447 1031,-447"/>
+<text text-anchor="start" x="1060.5" y="-454.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">KEY</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="1030,-446 1030,-720 1114,-720 1114,-446 1030,-446"/>
+</g>
+
+<g id="hw21" class="wire hw" data-w="21">
+
+<g id="a_hw21">
+<path class="wcore" fill="none" stroke="#16a34a" stroke-width="2.28" d="M908,-679C1007.38,-679 871.7,-522.68 948,-459 955.85,-452.45 962.71,-453.02 971,-459 1038.57,-507.79 946.66,-637 1030,-637"/>
+
+</g>
+<path fill="#16a34a" stroke="transparent" d="M953.67,-459C953.67,-459 965.33,-459 965.33,-459 968.17,-459 971,-461.83 971,-464.67 971,-464.67 971,-470.33 971,-470.33 971,-473.17 968.17,-476 965.33,-476 965.33,-476 953.67,-476 953.67,-476 950.83,-476 948,-473.17 948,-470.33 948,-470.33 948,-464.67 948,-464.67 948,-461.83 950.83,-459 953.67,-459"/>
+<text text-anchor="start" x="951.5" y="-465.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 21 </text>
+<path class="whit2" d="M908,-679C1007.38,-679 871.7,-522.68 948,-459 955.85,-452.45 962.71,-453.02 971,-459 1038.57,-507.79 946.66,-637 1030,-637"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1012,-871 1012,-895 1132,-895 1132,-871 1012,-871"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1012,-871 1012,-895 1132,-895 1132,-871 1012,-871"/>
+<text text-anchor="start" x="1018" y="-881.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">C1 · 470–1000µF/16V</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1012,-851 1012,-871 1132,-871 1132,-851 1012,-851"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1012,-851 1012,-871 1132,-871 1132,-851 1012,-851"/>
+<text text-anchor="start" x="1040" y="-858.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">+ μακρύ πόδι</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1012,-831 1012,-851 1132,-851 1132,-831 1012,-831"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1012,-831 1012,-851 1132,-851 1132,-831 1012,-831"/>
+<text text-anchor="start" x="1050" y="-838.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">− λωρίδα</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="1011,-830 1011,-896 1133,-896 1133,-830 1011,-830"/>
+</g>
+
+<g id="hw33" class="wire hw" data-w="33">
+
+<g id="a_hw33">
+<path class="wcore" fill="none" stroke="#9aa3ad" stroke-width="2" d="M908,-799C940.79,-799 919.2,-845.31 948,-861 972.59,-874.4 983,-861 1011,-861"/>
+
+</g>
+<path fill="#9aa3ad" stroke="transparent" d="M953.67,-866C953.67,-866 965.33,-866 965.33,-866 968.17,-866 971,-868.83 971,-871.67 971,-871.67 971,-877.33 971,-877.33 971,-880.17 968.17,-883 965.33,-883 965.33,-883 953.67,-883 953.67,-883 950.83,-883 948,-880.17 948,-877.33 948,-877.33 948,-871.67 948,-871.67 948,-868.83 950.83,-866 953.67,-866"/>
+<text text-anchor="start" x="951.5" y="-872.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#111111"> 33 </text>
+<path class="whit2" d="M908,-799C940.79,-799 919.2,-845.31 948,-861 972.59,-874.4 983,-861 1011,-861"/></g>
+<g id="hw34" class="wire hw" data-w="34">
+
+<g id="a_hw34">
+<path class="wcore" fill="none" stroke="#9aa3ad" stroke-width="2" d="M908,-779C961.43,-779 957.57,-841 1011,-841"/>
+
+</g>
+<path fill="#9aa3ad" stroke="transparent" d="M953.67,-822C953.67,-822 965.33,-822 965.33,-822 968.17,-822 971,-824.83 971,-827.67 971,-827.67 971,-833.33 971,-833.33 971,-836.17 968.17,-839 965.33,-839 965.33,-839 953.67,-839 953.67,-839 950.83,-839 948,-836.17 948,-833.33 948,-833.33 948,-827.67 948,-827.67 948,-824.83 950.83,-822 953.67,-822"/>
+<text text-anchor="start" x="951.5" y="-828.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#111111"> 34 </text>
+<path class="whit2" d="M908,-779C961.43,-779 957.57,-841 1011,-841"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1018,-779 1018,-811 1127,-811 1127,-779 1018,-779"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1018,-779 1018,-811 1127,-811 1127,-779 1018,-779"/>
+<text text-anchor="start" x="1046.5" y="-797.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">R1 · 10kΩ</text>
+<text text-anchor="start" x="1024" y="-787.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">προαιρετικό, συνιστάται</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1018,-759 1018,-779 1127,-779 1127,-759 1018,-759"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1018,-759 1018,-779 1127,-779 1127,-759 1018,-759"/>
+<text text-anchor="start" x="1057" y="-766.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">πόδι 1</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1018,-739 1018,-759 1127,-759 1127,-739 1018,-739"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1018,-739 1018,-759 1127,-759 1127,-739 1018,-739"/>
+<text text-anchor="start" x="1057" y="-746.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">πόδι 2</text>
+<polygon fill="none" style="stroke:var(--h-border)" stroke-dasharray="5,2" points="1016.5,-738 1016.5,-812 1127.5,-812 1127.5,-738 1016.5,-738"/>
+</g>
+
+<g id="hw35" class="wire hw" data-w="35">
+
+<g id="a_hw35">
+<path class="wcore" fill="none" stroke="#9aa3ad" stroke-width="2" stroke-dasharray="5,2" d="M908,-759C927.88,-759 928.66,-743.57 948,-739 957.95,-736.65 961.2,-736.09 971,-739 994.4,-745.95 992.59,-769 1017,-769"/>
+
+</g>
+<path fill="#9aa3ad" stroke="transparent" d="M953.67,-739C953.67,-739 965.33,-739 965.33,-739 968.17,-739 971,-741.83 971,-744.67 971,-744.67 971,-750.33 971,-750.33 971,-753.17 968.17,-756 965.33,-756 965.33,-756 953.67,-756 953.67,-756 950.83,-756 948,-753.17 948,-750.33 948,-750.33 948,-744.67 948,-744.67 948,-741.83 950.83,-739 953.67,-739"/>
+<text text-anchor="start" x="951.5" y="-745.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#111111"> 35 </text>
+<path class="whit2" d="M908,-759C927.88,-759 928.66,-743.57 948,-739 957.95,-736.65 961.2,-736.09 971,-739 994.4,-745.95 992.59,-769 1017,-769"/></g>
+<g id="hw36" class="wire hw" data-w="36">
+
+<g id="a_hw36">
+<path class="wcore" fill="none" stroke="#9aa3ad" stroke-width="2" stroke-dasharray="5,2" d="M908,-779C958.25,-779 966.75,-749 1017,-749"/>
+
+</g>
+<path fill="#9aa3ad" stroke="transparent" d="M953.67,-770C953.67,-770 965.33,-770 965.33,-770 968.17,-770 971,-772.83 971,-775.67 971,-775.67 971,-781.33 971,-781.33 971,-784.17 968.17,-787 965.33,-787 965.33,-787 953.67,-787 953.67,-787 950.83,-787 948,-784.17 948,-781.33 948,-781.33 948,-775.67 948,-775.67 948,-772.83 950.83,-770 953.67,-770"/>
+<text text-anchor="start" x="951.5" y="-776.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#111111"> 36 </text>
+<path class="whit2" d="M908,-779C958.25,-779 966.75,-749 1017,-749"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1237.5,-993 1237.5,-1025 1304.5,-1025 1304.5,-993 1237.5,-993"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-993 1237.5,-1025 1304.5,-1025 1304.5,-993 1237.5,-993"/>
+<text text-anchor="start" x="1243.5" y="-1011.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">Ενισχυτής</text>
+<text text-anchor="start" x="1251" y="-1001.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">DFR0119</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1237.5,-973 1237.5,-993 1304.5,-993 1304.5,-973 1237.5,-973"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-973 1237.5,-993 1304.5,-993 1304.5,-973 1237.5,-973"/>
+<text text-anchor="start" x="1262" y="-980.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">LIN</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1237.5,-953 1237.5,-973 1304.5,-973 1304.5,-953 1237.5,-953"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-953 1237.5,-973 1304.5,-973 1304.5,-953 1237.5,-953"/>
+<text text-anchor="start" x="1258.5" y="-960.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">GND</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1237.5,-933 1237.5,-953 1304.5,-953 1304.5,-933 1237.5,-933"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-933 1237.5,-953 1304.5,-953 1304.5,-933 1237.5,-933"/>
+<text text-anchor="start" x="1261" y="-940.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">RIN</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1237.5,-913 1237.5,-933 1304.5,-933 1304.5,-913 1237.5,-913"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-913 1237.5,-933 1304.5,-933 1304.5,-913 1237.5,-913"/>
+<text text-anchor="start" x="1258.5" y="-920.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">VCC</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1237.5,-893 1237.5,-913 1304.5,-913 1304.5,-893 1237.5,-893"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-893 1237.5,-913 1304.5,-913 1304.5,-893 1237.5,-893"/>
+<text text-anchor="start" x="1258.5" y="-900.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">GND</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1237.5,-873 1237.5,-893 1304.5,-893 1304.5,-873 1237.5,-873"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-873 1237.5,-893 1304.5,-893 1304.5,-873 1237.5,-873"/>
+<text text-anchor="start" x="1254.5" y="-880.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">SHDN</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1237.5,-853 1237.5,-873 1304.5,-873 1304.5,-853 1237.5,-853"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-853 1237.5,-873 1304.5,-873 1304.5,-853 1237.5,-853"/>
+<text text-anchor="start" x="1264.5" y="-860.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">L+</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1237.5,-833 1237.5,-853 1304.5,-853 1304.5,-833 1237.5,-833"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-833 1237.5,-853 1304.5,-853 1304.5,-833 1237.5,-833"/>
+<text text-anchor="start" x="1264.5" y="-840.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">L−</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1237.5,-813 1237.5,-833 1304.5,-833 1304.5,-813 1237.5,-813"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-813 1237.5,-833 1304.5,-833 1304.5,-813 1237.5,-813"/>
+<text text-anchor="start" x="1263" y="-820.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">R−</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="1237.5,-793 1237.5,-813 1304.5,-813 1304.5,-793 1237.5,-793"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1237.5,-793 1237.5,-813 1304.5,-813 1304.5,-793 1237.5,-793"/>
+<text text-anchor="start" x="1263" y="-800.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">R+</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="1236,-792 1236,-1026 1305,-1026 1305,-792 1236,-792"/>
+</g>
+
+<g id="hw22" class="wire hw" data-w="22">
+
+<g id="a_hw22">
+<path class="wcore" fill="none" stroke="#9b45d9" stroke-width="2.28" d="M1114,-577C1161.12,-577 1189.38,-983 1236.5,-983"/>
+
+</g>
+<path fill="#9b45d9" stroke="transparent" d="M1178.67,-884C1178.67,-884 1190.33,-884 1190.33,-884 1193.17,-884 1196,-886.83 1196,-889.67 1196,-889.67 1196,-895.33 1196,-895.33 1196,-898.17 1193.17,-901 1190.33,-901 1190.33,-901 1178.67,-901 1178.67,-901 1175.83,-901 1173,-898.17 1173,-895.33 1173,-895.33 1173,-889.67 1173,-889.67 1173,-886.83 1175.83,-884 1178.67,-884"/>
+<text text-anchor="start" x="1176.5" y="-890.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 22 </text>
+<path class="whit2" d="M1114,-577C1161.12,-577 1189.38,-983 1236.5,-983"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1461.5,-873 1461.5,-905 1503.5,-905 1503.5,-873 1461.5,-873"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1461.5,-873 1461.5,-905 1503.5,-905 1503.5,-873 1461.5,-873"/>
+<text text-anchor="start" x="1467.5" y="-891.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">Ηχείο</text>
+<text text-anchor="start" x="1468.5" y="-881.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">4Ω 5W</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1461.5,-853 1461.5,-873 1503.5,-873 1503.5,-853 1461.5,-853"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1461.5,-853 1461.5,-873 1503.5,-873 1503.5,-853 1461.5,-853"/>
+<text text-anchor="start" x="1479" y="-860.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">+</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1461.5,-833 1461.5,-853 1503.5,-853 1503.5,-833 1461.5,-833"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1461.5,-833 1461.5,-853 1503.5,-853 1503.5,-833 1461.5,-833"/>
+<text text-anchor="start" x="1479" y="-840.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">−</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="1460.5,-832 1460.5,-906 1504.5,-906 1504.5,-832 1460.5,-832"/>
+</g>
+
+<g id="hw23" class="wire hw" data-w="23">
+
+<g id="a_hw23">
+<path class="wcore" fill="none" stroke="#9b45d9" stroke-width="2.28" d="M1305,-863C1374.11,-863 1391.39,-863 1460.5,-863"/>
+
+</g>
+<path fill="#9b45d9" stroke="transparent" d="M1350.67,-863C1350.67,-863 1362.33,-863 1362.33,-863 1365.17,-863 1368,-865.83 1368,-868.67 1368,-868.67 1368,-874.33 1368,-874.33 1368,-877.17 1365.17,-880 1362.33,-880 1362.33,-880 1350.67,-880 1350.67,-880 1347.83,-880 1345,-877.17 1345,-874.33 1345,-874.33 1345,-868.67 1345,-868.67 1345,-865.83 1347.83,-863 1350.67,-863"/>
+<text text-anchor="start" x="1348.5" y="-869.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 23 </text>
+<path class="whit2" d="M1305,-863C1374.11,-863 1391.39,-863 1460.5,-863"/></g>
+<g id="hw24" class="wire hw" data-w="24">
+
+<g id="a_hw24">
+<path class="wcore" fill="none" stroke="#9b45d9" stroke-width="2.28" d="M1305,-843C1322.78,-843 1327.22,-842.22 1345,-842 1396.33,-841.36 1409.16,-843 1460.5,-843"/>
+
+</g>
+<path fill="#9b45d9" stroke="transparent" d="M1350.67,-842C1350.67,-842 1362.33,-842 1362.33,-842 1365.17,-842 1368,-844.83 1368,-847.67 1368,-847.67 1368,-853.33 1368,-853.33 1368,-856.17 1365.17,-859 1362.33,-859 1362.33,-859 1350.67,-859 1350.67,-859 1347.83,-859 1345,-856.17 1345,-853.33 1345,-853.33 1345,-847.67 1345,-847.67 1345,-844.83 1347.83,-842 1350.67,-842"/>
+<text text-anchor="start" x="1348.5" y="-848.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 24 </text>
+<path class="whit2" d="M1305,-843C1322.78,-843 1327.22,-842.22 1345,-842 1396.33,-841.36 1409.16,-843 1460.5,-843"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="1,-726 1,-758 87,-758 87,-726 1,-726"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1,-726 1,-758 87,-758 87,-726 1,-726"/>
+<text text-anchor="start" x="7" y="-744.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">Θήκη 3×18650</text>
+<text text-anchor="start" x="8" y="-734.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">3 σε σειρά · 11.1V</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1,-706 1,-726 87,-726 87,-706 1,-706"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1,-706 1,-726 87,-726 87,-706 1,-706"/>
+<text text-anchor="start" x="40.5" y="-713.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">+</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="1,-686 1,-706 87,-706 87,-686 1,-686"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="1,-686 1,-706 87,-706 87,-686 1,-686"/>
+<text text-anchor="start" x="40.5" y="-693.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">−</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="0,-685 0,-759 88,-759 88,-685 0,-685"/>
+</g>
+
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="190,-758 190,-790 299,-790 299,-758 190,-758"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="190,-758 190,-790 299,-790 299,-758 190,-758"/>
+<text text-anchor="start" x="210" y="-776.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">Ασφάλεια 5A</text>
+<text text-anchor="start" x="196" y="-766.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">προαιρετικό, συνιστάται</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="190,-738 190,-758 299,-758 299,-738 190,-738"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="190,-738 190,-758 299,-758 299,-738 190,-738"/>
+<text text-anchor="start" x="208" y="-745.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">προς μπαταρία</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="190,-718 190,-738 299,-738 299,-718 190,-718"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="190,-718 190,-738 299,-738 299,-718 190,-718"/>
+<text text-anchor="start" x="208.5" y="-725.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">προς διακόπτη</text>
+<polygon fill="none" style="stroke:var(--h-border)" stroke-dasharray="5,2" points="188.5,-717 188.5,-791 299.5,-791 299.5,-717 188.5,-717"/>
+</g>
+
+<g id="hw1" class="wire hw" data-w="1">
+
+<g id="a_hw1">
+<path class="wcore" fill="none" stroke="#d7263d" stroke-width="3.6" d="M88,-716C135.09,-716 141.91,-748 189,-748"/>
+
+</g>
+<path fill="#d7263d" stroke="transparent" d="M133.67,-735C133.67,-735 140.33,-735 140.33,-735 143.17,-735 146,-737.83 146,-740.67 146,-740.67 146,-746.33 146,-746.33 146,-749.17 143.17,-752 140.33,-752 140.33,-752 133.67,-752 133.67,-752 130.83,-752 128,-749.17 128,-746.33 128,-746.33 128,-740.67 128,-740.67 128,-737.83 130.83,-735 133.67,-735"/>
+<text text-anchor="start" x="131" y="-741.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 1 </text>
+<path class="whit2" d="M88,-716C135.09,-716 141.91,-748 189,-748"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-wago)" stroke="transparent" points="401,-694 401,-726 501,-726 501,-694 401,-694"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="401,-694 401,-726 501,-726 501,-694 401,-694"/>
+<text text-anchor="start" x="428" y="-712.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">WAGO B</text>
+<text text-anchor="start" x="407" y="-702.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">221&#45;413 · GND μπατ.</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="401,-674 401,-694 501,-694 501,-674 401,-674"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="401,-674 401,-694 501,-694 501,-674 401,-674"/>
+<text text-anchor="start" x="447.5" y="-681.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">1</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="401,-654 401,-674 501,-674 501,-654 401,-654"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="401,-654 401,-674 501,-674 501,-654 401,-654"/>
+<text text-anchor="start" x="447.5" y="-661.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">2</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="401,-634 401,-654 501,-654 501,-634 401,-634"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="401,-634 401,-654 501,-654 501,-634 401,-634"/>
+<text text-anchor="start" x="447.5" y="-641.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">3</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="400,-633 400,-727 502,-727 502,-633 400,-633"/>
+</g>
+
+<g id="hw6" class="wire hw" data-w="6">
+
+<g id="a_hw6">
+<path class="wcore" fill="none" stroke="#2b2b2b" stroke-width="3.6" d="M88,-696C131.61,-696 142.43,-692.82 186,-691 281.08,-687.02 304.84,-684 400,-684"/>
+
+</g>
+<path fill="#2b2b2b" stroke="transparent" d="M240.67,-691C240.67,-691 247.33,-691 247.33,-691 250.17,-691 253,-693.83 253,-696.67 253,-696.67 253,-702.33 253,-702.33 253,-705.17 250.17,-708 247.33,-708 247.33,-708 240.67,-708 240.67,-708 237.83,-708 235,-705.17 235,-702.33 235,-702.33 235,-696.67 235,-696.67 235,-693.83 237.83,-691 240.67,-691"/>
+<text text-anchor="start" x="238" y="-697.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 6 </text>
+<path class="whit2" d="M88,-696C131.61,-696 142.43,-692.82 186,-691 281.08,-687.02 304.84,-684 400,-684"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="187,-607 187,-631 301,-631 301,-607 187,-607"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="187,-607 187,-631 301,-631 301,-607 187,-607"/>
+<text text-anchor="start" x="193" y="-617.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">Διακόπτης ON/OFF</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="187,-587 187,-607 301,-607 301,-587 187,-587"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="187,-587 187,-607 301,-607 301,-587 187,-587"/>
+<text text-anchor="start" x="238" y="-594.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IN</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="187,-567 187,-587 301,-587 301,-567 187,-567"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="187,-567 187,-587 301,-587 301,-567 187,-567"/>
+<text text-anchor="start" x="232" y="-574.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">OUT</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="186,-566 186,-632 302,-632 302,-566 186,-566"/>
+</g>
+
+<g id="hw2" class="wire hw" data-w="2">
+
+<g id="a_hw2">
+<path class="wcore" fill="none" stroke="#d7263d" stroke-width="3.6" d="M300,-728C305.78,-728 303.45,-719.22 299.5,-715 282.18,-696.48 209.2,-713.26 186,-703 163.69,-693.13 154.99,-688.76 145,-666.5 130.32,-633.78 150.14,-597 186,-597"/>
+
+</g>
+<path fill="#d7263d" stroke="transparent" d="M133.67,-649.5C133.67,-649.5 140.33,-649.5 140.33,-649.5 143.17,-649.5 146,-652.33 146,-655.17 146,-655.17 146,-660.83 146,-660.83 146,-663.67 143.17,-666.5 140.33,-666.5 140.33,-666.5 133.67,-666.5 133.67,-666.5 130.83,-666.5 128,-663.67 128,-660.83 128,-660.83 128,-655.17 128,-655.17 128,-652.33 130.83,-649.5 133.67,-649.5"/>
+<text text-anchor="start" x="131" y="-656" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 2 </text>
+<path class="whit2" d="M300,-728C305.78,-728 303.45,-719.22 299.5,-715 282.18,-696.48 209.2,-713.26 186,-703 163.69,-693.13 154.99,-688.76 145,-666.5 130.32,-633.78 150.14,-597 186,-597"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-wago)" stroke="transparent" points="410,-582 410,-614 493,-614 493,-582 410,-582"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="410,-582 410,-614 493,-614 493,-582 410,-582"/>
+<text text-anchor="start" x="428.5" y="-600.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">WAGO A</text>
+<text text-anchor="start" x="416" y="-590.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">221&#45;413 · +11.1V</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="410,-562 410,-582 493,-582 493,-562 410,-562"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="410,-562 410,-582 493,-582 493,-562 410,-562"/>
+<text text-anchor="start" x="448" y="-569.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">1</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="410,-542 410,-562 493,-562 493,-542 410,-542"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="410,-542 410,-562 493,-562 493,-542 410,-542"/>
+<text text-anchor="start" x="448" y="-549.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">2</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="410,-522 410,-542 493,-542 493,-522 410,-522"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="410,-522 410,-542 493,-542 493,-522 410,-522"/>
+<text text-anchor="start" x="448" y="-529.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">3</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="408.5,-521 408.5,-615 493.5,-615 493.5,-521 408.5,-521"/>
+</g>
+
+<g id="hw3" class="wire hw" data-w="3">
+
+<g id="a_hw3">
+<path class="wcore" fill="none" stroke="#d7263d" stroke-width="3.6" d="M302,-577C349.61,-577 361.39,-572 409,-572"/>
+
+</g>
+<path fill="#d7263d" stroke="transparent" d="M347.67,-576C347.67,-576 354.33,-576 354.33,-576 357.17,-576 360,-578.83 360,-581.67 360,-581.67 360,-587.33 360,-587.33 360,-590.17 357.17,-593 354.33,-593 354.33,-593 347.67,-593 347.67,-593 344.83,-593 342,-590.17 342,-587.33 342,-587.33 342,-581.67 342,-581.67 342,-578.83 344.83,-576 347.67,-576"/>
+<text text-anchor="start" x="345" y="-582.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 3 </text>
+<path class="whit2" d="M302,-577C349.61,-577 361.39,-572 409,-572"/></g>
+<g id="hw4" class="wire hw" data-w="4">
+
+<g id="a_hw4">
+<path class="wcore" fill="none" stroke="#d7263d" stroke-width="3.6" d="M494,-552C548.16,-552 504.22,-478.8 542,-440 563.51,-417.92 576.16,-421.89 605,-411 655.78,-391.83 668.3,-383.86 722,-376 858.82,-355.97 894.72,-385 1033,-385"/>
+
+</g>
+<path fill="#d7263d" stroke="transparent" d="M730.17,-376C730.17,-376 736.83,-376 736.83,-376 739.67,-376 742.5,-378.83 742.5,-381.67 742.5,-381.67 742.5,-387.33 742.5,-387.33 742.5,-390.17 739.67,-393 736.83,-393 736.83,-393 730.17,-393 730.17,-393 727.33,-393 724.5,-390.17 724.5,-387.33 724.5,-387.33 724.5,-381.67 724.5,-381.67 724.5,-378.83 727.33,-376 730.17,-376"/>
+<text text-anchor="start" x="727.5" y="-382.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 4 </text>
+<path class="whit2" d="M494,-552C548.16,-552 504.22,-478.8 542,-440 563.51,-417.92 576.16,-421.89 605,-411 655.78,-391.83 668.3,-383.86 722,-376 858.82,-355.97 894.72,-385 1033,-385"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-head)" stroke="transparent" points="412,-452 412,-484 490,-484 490,-452 412,-452"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="412,-452 412,-484 490,-484 490,-452 412,-452"/>
+<text text-anchor="start" x="430.5" y="-470.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">HW&#45;468</text>
+<text text-anchor="start" x="418" y="-460.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">9–35V → 5V 5A</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="412,-432 412,-452 490,-452 490,-432 412,-432"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="412,-432 412,-452 490,-452 490,-432 412,-432"/>
+<text text-anchor="start" x="441.5" y="-439.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">IN+</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="412,-412 412,-432 490,-432 490,-412 412,-412"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="412,-412 412,-432 490,-432 490,-412 412,-412"/>
+<text text-anchor="start" x="438.5" y="-419.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">GND</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="412,-392 412,-412 490,-412 490,-392 412,-392"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="412,-392 412,-412 490,-412 490,-392 412,-392"/>
+<text text-anchor="start" x="435.5" y="-399.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">OUT+</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="411,-391 411,-485 491,-485 491,-391 411,-391"/>
+</g>
+
+<g id="hw5" class="wire hw" data-w="5">
+
+<g id="a_hw5">
+<path class="wcore" fill="none" stroke="#d7263d" stroke-width="3.6" d="M411,-442C379.91,-442 395.63,-491 419,-511.5 443.93,-533.37 469.99,-497.12 493,-521 496.41,-524.53 498.91,-532 494,-532"/>
+
+</g>
+<path fill="#d7263d" stroke="transparent" d="M424.67,-494.5C424.67,-494.5 431.33,-494.5 431.33,-494.5 434.17,-494.5 437,-497.33 437,-500.17 437,-500.17 437,-505.83 437,-505.83 437,-508.67 434.17,-511.5 431.33,-511.5 431.33,-511.5 424.67,-511.5 424.67,-511.5 421.83,-511.5 419,-508.67 419,-505.83 419,-505.83 419,-500.17 419,-500.17 419,-497.33 421.83,-494.5 424.67,-494.5"/>
+<text text-anchor="start" x="422" y="-501" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 5 </text>
+<path class="whit2" d="M411,-442C379.91,-442 395.63,-491 419,-511.5 443.93,-533.37 469.99,-497.12 493,-521 496.41,-524.53 498.91,-532 494,-532"/></g>
+<g id="hw7" class="wire hw" data-w="7">
+
+<g id="a_hw7">
+<path class="wcore" fill="none" stroke="#2b2b2b" stroke-width="3.6" d="M502,-644C573.64,-644 551.47,-567.62 605,-520 740.85,-399.14 773.67,-348.69 948,-297 957.8,-294.09 961.65,-292.87 971,-297 1008.41,-313.52 992.1,-365 1033,-365"/>
+
+</g>
+<path fill="#2b2b2b" stroke="transparent" d="M730.17,-414C730.17,-414 736.83,-414 736.83,-414 739.67,-414 742.5,-416.83 742.5,-419.67 742.5,-419.67 742.5,-425.33 742.5,-425.33 742.5,-428.17 739.67,-431 736.83,-431 736.83,-431 730.17,-431 730.17,-431 727.33,-431 724.5,-428.17 724.5,-425.33 724.5,-425.33 724.5,-419.67 724.5,-419.67 724.5,-416.83 727.33,-414 730.17,-414"/>
+<text text-anchor="start" x="727.5" y="-420.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 7 </text>
+<path class="whit2" d="M502,-644C573.64,-644 551.47,-567.62 605,-520 740.85,-399.14 773.67,-348.69 948,-297 957.8,-294.09 961.65,-292.87 971,-297 1008.41,-313.52 992.1,-365 1033,-365"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-wago)" stroke="transparent" points="606.5,-849 606.5,-881 681.5,-881 681.5,-849 606.5,-849"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="606.5,-849 606.5,-881 681.5,-881 681.5,-849 606.5,-849"/>
+<text text-anchor="start" x="612.5" y="-867.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">WAGO GND</text>
+<text text-anchor="start" x="612.5" y="-857.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">221&#45;415 · GND</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="606.5,-829 606.5,-849 681.5,-849 681.5,-829 606.5,-829"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="606.5,-829 606.5,-849 681.5,-849 681.5,-829 606.5,-829"/>
+<text text-anchor="start" x="640.5" y="-836.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">1</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="606.5,-809 606.5,-829 681.5,-829 681.5,-809 606.5,-809"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="606.5,-809 606.5,-829 681.5,-829 681.5,-809 606.5,-809"/>
+<text text-anchor="start" x="640.5" y="-816.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">2</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="606.5,-789 606.5,-809 681.5,-809 681.5,-789 606.5,-789"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="606.5,-789 606.5,-809 681.5,-809 681.5,-789 606.5,-789"/>
+<text text-anchor="start" x="640.5" y="-796.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">3</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="606.5,-769 606.5,-789 681.5,-789 681.5,-769 606.5,-769"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="606.5,-769 606.5,-789 681.5,-789 681.5,-769 606.5,-769"/>
+<text text-anchor="start" x="640.5" y="-776.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">4</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="606.5,-749 606.5,-769 681.5,-769 681.5,-749 606.5,-749"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="606.5,-749 606.5,-769 681.5,-769 681.5,-749 606.5,-749"/>
+<text text-anchor="start" x="640.5" y="-756.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">5</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="605,-748 605,-882 682,-882 682,-748 605,-748"/>
+</g>
+
+<g id="hw8" class="wire hw" data-w="8">
+
+<g id="a_hw8">
+<path class="wcore" fill="none" stroke="#2b2b2b" stroke-width="3.6" d="M502,-664C570.76,-664 536.74,-779 605.5,-779"/>
+
+</g>
+<path fill="#2b2b2b" stroke="transparent" d="M550.17,-751C550.17,-751 556.83,-751 556.83,-751 559.67,-751 562.5,-753.83 562.5,-756.67 562.5,-756.67 562.5,-762.33 562.5,-762.33 562.5,-765.17 559.67,-768 556.83,-768 556.83,-768 550.17,-768 550.17,-768 547.33,-768 544.5,-765.17 544.5,-762.33 544.5,-762.33 544.5,-756.67 544.5,-756.67 544.5,-753.83 547.33,-751 550.17,-751"/>
+<text text-anchor="start" x="547.5" y="-757.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 8 </text>
+<path class="whit2" d="M502,-664C570.76,-664 536.74,-779 605.5,-779"/></g>
+<g class="hconn">
+
+<polygon style="fill:var(--h-wago)" stroke="transparent" points="608.5,-630 608.5,-662 679.5,-662 679.5,-630 608.5,-630"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="608.5,-630 608.5,-662 679.5,-662 679.5,-630 608.5,-630"/>
+<text text-anchor="start" x="618" y="-648.2" font-family="Arial" font-weight="bold" font-size="11.00" style="fill:var(--fg)">WAGO 5V</text>
+<text text-anchor="start" x="614.5" y="-638.8" font-family="Arial" font-size="9.00" style="fill:var(--mut)">221&#45;415 · +5V</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="608.5,-610 608.5,-630 679.5,-630 679.5,-610 608.5,-610"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="608.5,-610 608.5,-630 679.5,-630 679.5,-610 608.5,-610"/>
+<text text-anchor="start" x="640.5" y="-617.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">1</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="608.5,-590 608.5,-610 679.5,-610 679.5,-590 608.5,-590"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="608.5,-590 608.5,-610 679.5,-610 679.5,-590 608.5,-590"/>
+<text text-anchor="start" x="640.5" y="-597.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">2</text>
+<polygon style="fill:var(--h-unused)" stroke="transparent" points="608.5,-570 608.5,-590 679.5,-590 679.5,-570 608.5,-570"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="608.5,-570 608.5,-590 679.5,-590 679.5,-570 608.5,-570"/>
+<text text-anchor="start" x="640.5" y="-577.2" font-family="Arial" font-size="11.00" style="fill:var(--mut)">3</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="608.5,-550 608.5,-570 679.5,-570 679.5,-550 608.5,-550"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="608.5,-550 608.5,-570 679.5,-570 679.5,-550 608.5,-550"/>
+<text text-anchor="start" x="640.5" y="-557.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">4</text>
+<polygon style="fill:var(--h-box)" stroke="transparent" points="608.5,-530 608.5,-550 679.5,-550 679.5,-530 608.5,-530"/>
+<polygon fill="none" style="stroke:var(--h-border)" points="608.5,-530 608.5,-550 679.5,-550 679.5,-530 608.5,-530"/>
+<text text-anchor="start" x="640.5" y="-537.2" font-family="Arial" font-size="11.00" style="fill:var(--fg)">5</text>
+<polygon fill="none" style="stroke:var(--h-border)" points="607,-529 607,-663 680,-663 680,-529 607,-529"/>
+</g>
+
+<g id="hw10" class="wire hw" data-w="10">
+
+<g id="a_hw10">
+<path class="wcore" fill="none" stroke="#f28c18" stroke-width="3.6" d="M491,-402C600.86,-402 497.64,-620 607.5,-620"/>
+
+</g>
+<path fill="#f28c18" stroke="transparent" d="M547.67,-598C547.67,-598 559.33,-598 559.33,-598 562.17,-598 565,-600.83 565,-603.67 565,-603.67 565,-609.33 565,-609.33 565,-612.17 562.17,-615 559.33,-615 559.33,-615 547.67,-615 547.67,-615 544.83,-615 542,-612.17 542,-609.33 542,-609.33 542,-603.67 542,-603.67 542,-600.83 544.83,-598 547.67,-598"/>
+<text text-anchor="start" x="545.5" y="-604.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 10 </text>
+<path class="whit2" d="M491,-402C600.86,-402 497.64,-620 607.5,-620"/></g>
+<g id="hw9" class="wire hw" data-w="9">
+
+<g id="a_hw9">
+<path class="wcore" fill="none" stroke="#2b2b2b" stroke-width="3.6" d="M491,-422C569.6,-422 507.7,-701.28 542,-772 559.91,-808.91 564.47,-839 605.5,-839"/>
+
+</g>
+<path fill="#2b2b2b" stroke="transparent" d="M550.17,-817C550.17,-817 556.83,-817 556.83,-817 559.67,-817 562.5,-819.83 562.5,-822.67 562.5,-822.67 562.5,-828.33 562.5,-828.33 562.5,-831.17 559.67,-834 556.83,-834 556.83,-834 550.17,-834 550.17,-834 547.33,-834 544.5,-831.17 544.5,-828.33 544.5,-828.33 544.5,-822.67 544.5,-822.67 544.5,-819.83 547.33,-817 550.17,-817"/>
+<text text-anchor="start" x="547.5" y="-823.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 9 </text>
+<path class="whit2" d="M491,-422C569.6,-422 507.7,-701.28 542,-772 559.91,-808.91 564.47,-839 605.5,-839"/></g>
+<g id="hw11" class="wire hw" data-w="11">
+
+<g id="a_hw11">
+<path class="wcore" fill="none" stroke="#f28c18" stroke-width="3" d="M680.5,-540C733.97,-540 687.34,-736.29 722,-777 741.36,-799.74 755.63,-799 785.5,-799"/>
+
+</g>
+<path fill="#f28c18" stroke="transparent" d="M727.67,-794C727.67,-794 739.33,-794 739.33,-794 742.17,-794 745,-796.83 745,-799.67 745,-799.67 745,-805.33 745,-805.33 745,-808.17 742.17,-811 739.33,-811 739.33,-811 727.67,-811 727.67,-811 724.83,-811 722,-808.17 722,-805.33 722,-805.33 722,-799.67 722,-799.67 722,-796.83 724.83,-794 727.67,-794"/>
+<text text-anchor="start" x="725.5" y="-800.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 11 </text>
+<path class="whit2" d="M680.5,-540C733.97,-540 687.34,-736.29 722,-777 741.36,-799.74 755.63,-799 785.5,-799"/></g>
+<g id="hw13" class="wire hw" data-w="13">
+
+<g id="a_hw13">
+<path class="wcore" fill="none" stroke="#f28c18" stroke-width="2.28" d="M680.5,-560C744.17,-560 725.79,-485.42 785,-462 835.83,-441.89 860.76,-434.49 908,-462 955.47,-489.64 975.07,-677 1030,-677"/>
+
+</g>
+<path fill="#f28c18" stroke="transparent" d="M840.67,-462C840.67,-462 852.33,-462 852.33,-462 855.17,-462 858,-464.83 858,-467.67 858,-467.67 858,-473.33 858,-473.33 858,-476.17 855.17,-479 852.33,-479 852.33,-479 840.67,-479 840.67,-479 837.83,-479 835,-476.17 835,-473.33 835,-473.33 835,-467.67 835,-467.67 835,-464.83 837.83,-462 840.67,-462"/>
+<text text-anchor="start" x="838.5" y="-468.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 13 </text>
+<path class="whit2" d="M680.5,-560C744.17,-560 725.79,-485.42 785,-462 835.83,-441.89 860.76,-434.49 908,-462 955.47,-489.64 975.07,-677 1030,-677"/></g>
+<g id="hw15" class="wire hw" data-w="15">
+
+<g id="a_hw15">
+<path class="wcore" fill="none" stroke="#f28c18" stroke-width="2.28" d="M680.5,-600C729.16,-600 700.17,-771.51 722,-815 740.63,-852.11 747.82,-865.5 785,-884 965.32,-973.73 1035.09,-923 1236.5,-923"/>
+
+</g>
+<path fill="#f28c18" stroke="transparent" d="M953.67,-936C953.67,-936 965.33,-936 965.33,-936 968.17,-936 971,-938.83 971,-941.67 971,-941.67 971,-947.33 971,-947.33 971,-950.17 968.17,-953 965.33,-953 965.33,-953 953.67,-953 953.67,-953 950.83,-953 948,-950.17 948,-947.33 948,-947.33 948,-941.67 948,-941.67 948,-938.83 950.83,-936 953.67,-936"/>
+<text text-anchor="start" x="951.5" y="-942.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 15 </text>
+<path class="whit2" d="M680.5,-600C729.16,-600 700.17,-771.51 722,-815 740.63,-852.11 747.82,-865.5 785,-884 965.32,-973.73 1035.09,-923 1236.5,-923"/></g>
+<g id="hw12" class="wire hw" data-w="12">
+
+<g id="a_hw12">
+<path class="wcore" fill="none" stroke="#2b2b2b" stroke-width="3" d="M682,-759C710.03,-759 717.9,-748.84 745,-756 765.01,-761.29 764.8,-779 785.5,-779"/>
+
+</g>
+<path fill="#2b2b2b" stroke="transparent" d="M727.67,-756C727.67,-756 739.33,-756 739.33,-756 742.17,-756 745,-758.83 745,-761.67 745,-761.67 745,-767.33 745,-767.33 745,-770.17 742.17,-773 739.33,-773 739.33,-773 727.67,-773 727.67,-773 724.83,-773 722,-770.17 722,-767.33 722,-767.33 722,-761.67 722,-761.67 722,-758.83 724.83,-756 727.67,-756"/>
+<text text-anchor="start" x="725.5" y="-762.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 12 </text>
+<path class="whit2" d="M682,-759C710.03,-759 717.9,-748.84 745,-756 765.01,-761.29 764.8,-779 785.5,-779"/></g>
+<g id="hw14" class="wire hw" data-w="14">
+
+<g id="a_hw14">
+<path class="wcore" fill="none" stroke="#2b2b2b" stroke-width="2.28" d="M682,-799C707.64,-799 760.06,-845.06 785,-851 838.18,-863.66 857.24,-871.3 908,-851 943.9,-836.64 948.78,-822.64 971,-791 1008.4,-737.75 964.93,-657 1030,-657"/>
+
+</g>
+<path fill="#2b2b2b" stroke="transparent" d="M840.67,-863C840.67,-863 852.33,-863 852.33,-863 855.17,-863 858,-865.83 858,-868.67 858,-868.67 858,-874.33 858,-874.33 858,-877.17 855.17,-880 852.33,-880 852.33,-880 840.67,-880 840.67,-880 837.83,-880 835,-877.17 835,-874.33 835,-874.33 835,-868.67 835,-868.67 835,-865.83 837.83,-863 840.67,-863"/>
+<text text-anchor="start" x="838.5" y="-869.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 14 </text>
+<path class="whit2" d="M682,-799C707.64,-799 760.06,-845.06 785,-851 838.18,-863.66 857.24,-871.3 908,-851 943.9,-836.64 948.78,-822.64 971,-791 1008.4,-737.75 964.93,-657 1030,-657"/></g>
+<g id="hw16" class="wire hw" data-w="16">
+
+<g id="a_hw16">
+<path class="wcore" fill="none" stroke="#2b2b2b" stroke-width="2.28" d="M682,-819C751.61,-819 722.48,-906.39 785,-937 965.52,-1025.39 1035.5,-963 1236.5,-963"/>
+
+</g>
+<path fill="#2b2b2b" stroke="transparent" d="M953.67,-984C953.67,-984 965.33,-984 965.33,-984 968.17,-984 971,-986.83 971,-989.67 971,-989.67 971,-995.33 971,-995.33 971,-998.17 968.17,-1001 965.33,-1001 965.33,-1001 953.67,-1001 953.67,-1001 950.83,-1001 948,-998.17 948,-995.33 948,-995.33 948,-989.67 948,-989.67 948,-986.83 950.83,-984 953.67,-984"/>
+<text text-anchor="start" x="951.5" y="-990.5" font-family="Arial" font-weight="bold" font-size="10.00" fill="#ffffff"> 16 </text>
+<path class="whit2" d="M682,-819C751.61,-819 722.48,-906.39 785,-937 965.52,-1025.39 1035.5,-963 1236.5,-963"/></g></g>
+</svg>

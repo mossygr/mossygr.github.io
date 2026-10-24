@@ -7,6 +7,7 @@ title: Emdee five for life
 date: 2020-09-22 10:00:00 +0300
 categories: [HackTheBox, Challenges]
 tags: [challenges,writeup]     # TAG names should always be lowercase
+translation_key: 2020-09-22-Emdee-five-for-life
 ---
 # Σε γενικές γραμμές.
 

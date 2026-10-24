@@ -1,0 +1,50 @@
+
+> m0ss1-documentation@1.0.0 test:browser
+> playwright test --reporter=list
+
+
+Running 37 tests using 2 workers
+
+(node:29) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:30) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓   2 tests/portal.spec.ts:50:3 › el home 390: content, navigation, SEO, themes and accessibility (10.9s)
+  ✓   3 tests/portal.spec.ts:50:3 › el category 390: content, navigation, SEO, themes and accessibility (5.7s)
+  ✓   4 tests/portal.spec.ts:50:3 › el lame 390: content, navigation, SEO, themes and accessibility (16.5s)
+  ✓   1 tests/portal.spec.ts:50:3 › el robot 390: content, navigation, SEO, themes and accessibility (54.0s)
+  ✓   5 tests/portal.spec.ts:50:3 › el gpi 390: content, navigation, SEO, themes and accessibility (22.9s)
+  ✓   6 tests/portal.spec.ts:50:3 › el home 768: content, navigation, SEO, themes and accessibility (7.8s)
+  ✓   8 tests/portal.spec.ts:50:3 › el category 768: content, navigation, SEO, themes and accessibility (6.5s)
+  ✓   9 tests/portal.spec.ts:50:3 › el lame 768: content, navigation, SEO, themes and accessibility (17.7s)
+  ✓   7 tests/portal.spec.ts:50:3 › el robot 768: content, navigation, SEO, themes and accessibility (50.5s)
+  ✓  10 tests/portal.spec.ts:50:3 › el gpi 768: content, navigation, SEO, themes and accessibility (23.5s)
+  ✓  11 tests/portal.spec.ts:50:3 › el home 1440: content, navigation, SEO, themes and accessibility (8.6s)
+  ✓  13 tests/portal.spec.ts:50:3 › el category 1440: content, navigation, SEO, themes and accessibility (6.9s)
+  ✓  14 tests/portal.spec.ts:50:3 › el lame 1440: content, navigation, SEO, themes and accessibility (15.3s)
+  ✓  12 tests/portal.spec.ts:50:3 › el robot 1440: content, navigation, SEO, themes and accessibility (54.7s)
+  ✓  15 tests/portal.spec.ts:50:3 › el gpi 1440: content, navigation, SEO, themes and accessibility (27.5s)
+  ✓  16 tests/portal.spec.ts:50:3 › en home 390: content, navigation, SEO, themes and accessibility (10.6s)
+  ✓  18 tests/portal.spec.ts:50:3 › en category 390: content, navigation, SEO, themes and accessibility (7.7s)
+  ✓  19 tests/portal.spec.ts:50:3 › en lame 390: content, navigation, SEO, themes and accessibility (10.8s)
+  ✓  17 tests/portal.spec.ts:50:3 › en robot 390: content, navigation, SEO, themes and accessibility (49.7s)
+  ✓  20 tests/portal.spec.ts:50:3 › en gpi 390: content, navigation, SEO, themes and accessibility (26.6s)
+  ✓  21 tests/portal.spec.ts:50:3 › en home 768: content, navigation, SEO, themes and accessibility (11.0s)
+  ✓  23 tests/portal.spec.ts:50:3 › en category 768: content, navigation, SEO, themes and accessibility (7.6s)
+  ✓  24 tests/portal.spec.ts:50:3 › en lame 768: content, navigation, SEO, themes and accessibility (12.0s)
+  ✓  22 tests/portal.spec.ts:50:3 › en robot 768: content, navigation, SEO, themes and accessibility (42.9s)
+  ✓  25 tests/portal.spec.ts:50:3 › en gpi 768: content, navigation, SEO, themes and accessibility (21.3s)
+  ✓  26 tests/portal.spec.ts:50:3 › en home 1440: content, navigation, SEO, themes and accessibility (12.6s)
+  ✓  28 tests/portal.spec.ts:50:3 › en category 1440: content, navigation, SEO, themes and accessibility (5.2s)
+  ✓  29 tests/portal.spec.ts:50:3 › en lame 1440: content, navigation, SEO, themes and accessibility (12.6s)
+  ✓  27 tests/portal.spec.ts:50:3 › en robot 1440: content, navigation, SEO, themes and accessibility (44.3s)
+  ✓  31 tests/portal.spec.ts:158:59 › el search keyboard and language routing 390 (4.5s)
+  ✓  30 tests/portal.spec.ts:50:3 › en gpi 1440: content, navigation, SEO, themes and accessibility (23.2s)
+  ✓  32 tests/portal.spec.ts:158:59 › el search keyboard and language routing 768 (6.0s)
+  ✓  33 tests/portal.spec.ts:158:59 › el search keyboard and language routing 1440 (5.7s)
+  ✓  34 tests/portal.spec.ts:158:59 › en search keyboard and language routing 390 (4.2s)
+  ✓  35 tests/portal.spec.ts:158:59 › en search keyboard and language routing 768 (4.1s)
+  ✓  37 tests/portal.spec.ts:183:1 › 200% equivalent reflow and system dark preference (6.1s)
+  ✓  36 tests/portal.spec.ts:158:59 › en search keyboard and language routing 1440 (7.3s)
+
+  37 passed (5.6m)

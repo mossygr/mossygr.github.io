@@ -1,0 +1,168 @@
+
+> m0ss1-documentation@1.0.0 build
+> npm run prepare:assets && astro check && astro build && node tools/build-search.mjs && node tools/audit-dist.mjs
+
+
+> m0ss1-documentation@1.0.0 prepare:assets
+> node tools/prepare-public.mjs
+
+{
+  "output": "/home/Codex-Robot/mossygr.github.io/public",
+  "preservedFiles": 36,
+  "sourceAssetsBaseline": 122,
+  "provenanceCommit": "9cbb233d3e68aa716c2bd1af9827bdb89665ff6c"
+}
+07:12:17 [content] Syncing content
+07:12:17 [content] Astro config changed
+07:12:17 [content] Clearing content store
+07:12:18 [content] Synced content
+07:12:18 [types] Generated 3.14s
+07:12:18 [check] Getting diagnostics for Astro files in /home/Codex-Robot/mossygr.github.io...
+Result (25 files):
+- 0 errors
+- 0 warnings
+- 0 hints
+
+07:12:29 [content] Syncing content
+07:12:30 [content] Synced content
+07:12:30 [types] Generated 2.09s
+07:12:30 [build] output: "static"
+07:12:30 [build] mode: "static"
+07:12:30 [build] directory: /home/Codex-Robot/mossygr.github.io/dist/
+07:12:30 [build] Collecting build info...
+07:12:30 [build] ✓ Completed in 2.19s.
+07:12:30 [build] Building static entrypoints...
+07:12:32 [vite] ✓ built in 2.58s
+07:12:32 [vite] ✓ built in 113ms
+07:12:32 [build] Rearranging server assets...
+
+ generating static routes
+07:12:33   ├─ /404.html (+25ms)
+07:12:33   ├─ /content-index.json (+5ms)
+07:12:33   ├─ /feed.xml (+4ms)
+07:12:33   ├─ /robots.txt (+2ms)
+07:12:33   ├─ /sitemap.xml (+7ms)
+07:12:33   ├─ /posts/Emdee-five-for-life/index.html (+10ms)
+07:12:33   ├─ /posts/Lame/index.html (+8ms)
+07:12:33   ├─ /posts/test/index.html (+7ms)
+07:12:33   ├─ /posts/FreeLancer/index.html (+8ms)
+07:12:33   ├─ /posts/Templed/index.html (+6ms)
+07:12:33   ├─ /posts/Burpsuite-on-firefox/index.html (+5ms)
+07:12:33   ├─ /posts/Jack/index.html (+5ms)
+07:12:33   ├─ /posts/Weak-RSA/index.html (+5ms)
+07:12:33   ├─ /posts/Jerry/index.html (+6ms)
+07:12:33   ├─ /posts/Brutforce-attack-technics/index.html (+7ms)
+07:12:33   ├─ /posts/Download-office2019-activate/index.html (+4ms)
+07:12:33   ├─ /posts/Find-The-Easy-Pass/index.html (+4ms)
+07:12:33   ├─ /posts/TryHackMe-Reverse-Engineering/index.html (+5ms)
+07:12:33   ├─ /posts/Doji-κερί.-Το-κερί-της-αλλαγής-τάσης.(REVERSAL)/index.html (+5ms)
+07:12:33   ├─ /robot/index.html (+44ms)
+07:12:33   ├─ /posts/gpi-case-2w-pi-zero-w-recalbox/index.html (+7ms)
+07:12:33   ├─ /en/posts/emdee-five-for-life/index.html (+12ms)
+07:12:33   ├─ /en/posts/lame/index.html (+5ms)
+07:12:33   ├─ /en/posts/test/index.html (+8ms)
+07:12:33   ├─ /en/posts/freelancer/index.html (+5ms)
+07:12:33   ├─ /en/posts/templed/index.html (+5ms)
+07:12:33   ├─ /en/posts/burpsuite-on-firefox/index.html (+6ms)
+07:12:33   ├─ /en/posts/jack/index.html (+5ms)
+07:12:33   ├─ /en/posts/weak-rsa/index.html (+5ms)
+07:12:33   ├─ /en/posts/jerry/index.html (+4ms)
+07:12:33   ├─ /en/posts/brutforce-attack-technics/index.html (+5ms)
+07:12:33   ├─ /en/posts/download-office2019-activate/index.html (+6ms)
+07:12:33   ├─ /en/posts/find-the-easy-pass/index.html (+6ms)
+07:12:33   ├─ /en/posts/tryhackme-reverse-engineering/index.html (+6ms)
+07:12:33   ├─ /en/posts/doji-candlestick/index.html (+10ms)
+07:12:33   ├─ /en/robot/index.html (+33ms)
+07:12:33   ├─ /en/posts/gpi-case-2w-pi-zero-w-recalbox/index.html (+7ms)
+07:12:33   ├─ /index.html (+7ms)
+07:12:33   ├─ /archives/index.html (+8ms)
+07:12:33   ├─ /page2/index.html (+8ms)
+07:12:33   ├─ /guides/index.html (+5ms)
+07:12:33   ├─ /projects/index.html (+5ms)
+07:12:33   ├─ /categories/index.html (+4ms)
+07:12:33   ├─ /tags/index.html (+5ms)
+07:12:33   ├─ /search/index.html (+7ms)
+07:12:33   ├─ /categories/hackthebox/index.html (+7ms)
+07:12:33   ├─ /categories/challenges/index.html (+7ms)
+07:12:33   ├─ /categories/ctf/index.html (+7ms)
+07:12:33   ├─ /categories/burpsuite/index.html (+6ms)
+07:12:33   ├─ /categories/tutorials/index.html (+5ms)
+07:12:33   ├─ /categories/tryhackme/index.html (+6ms)
+07:12:33   ├─ /categories/τεχνική-ανάλυση/index.html (+7ms)
+07:12:33   ├─ /categories/κεριά/index.html (+29ms)
+07:12:33   ├─ /categories/arduino/index.html (+6ms)
+07:12:33   ├─ /categories/ρομποτική/index.html (+6ms)
+07:12:33   ├─ /categories/raspberry-pi/index.html (+5ms)
+07:12:33   ├─ /categories/retro-gaming/index.html (+4ms)
+07:12:33   ├─ /tags/challenges/index.html (+5ms)
+07:12:33   ├─ /tags/writeup/index.html (+5ms)
+07:12:33   ├─ /tags/htb/index.html (+5ms)
+07:12:33   ├─ /tags/ctf/index.html (+5ms)
+07:12:33   ├─ /tags/begginer-track/index.html (+5ms)
+07:12:33   ├─ /tags/burpsuite/index.html (+3ms)
+07:12:33   ├─ /tags/thm/index.html (+4ms)
+07:12:33   ├─ /tags/crack/index.html (+4ms)
+07:12:33   ├─ /tags/beginner-track/index.html (+4ms)
+07:12:33   ├─ /tags/κεριά/index.html (+4ms)
+07:12:33   ├─ /tags/esp32-cam/index.html (+4ms)
+07:12:33   ├─ /tags/4wd/index.html (+5ms)
+07:12:33   ├─ /tags/firmware/index.html (+5ms)
+07:12:33   ├─ /tags/gpi-case-2w/index.html (+4ms)
+07:12:33   ├─ /tags/retroflag/index.html (+5ms)
+07:12:33   ├─ /tags/recalbox/index.html (+5ms)
+07:12:33   ├─ /tags/raspberry-pi-zero-w/index.html (+4ms)
+07:12:33   ├─ /tags/troubleshooting/index.html (+4ms)
+07:12:33   ├─ /en/index.html (+5ms)
+07:12:33   ├─ /en/archives/index.html (+7ms)
+07:12:33   ├─ /en/page2/index.html (+7ms)
+07:12:33   ├─ /en/guides/index.html (+7ms)
+07:12:33   ├─ /en/projects/index.html (+5ms)
+07:12:33   ├─ /en/categories/index.html (+4ms)
+07:12:33   ├─ /en/tags/index.html (+4ms)
+07:12:33   ├─ /en/search/index.html (+8ms)
+07:12:33   ├─ /en/categories/hackthebox/index.html (+6ms)
+07:12:33   ├─ /en/categories/challenges/index.html (+6ms)
+07:12:33   ├─ /en/categories/ctf/index.html (+6ms)
+07:12:33   ├─ /en/categories/burpsuite/index.html (+5ms)
+07:12:33   ├─ /en/categories/tutorials/index.html (+5ms)
+07:12:33   ├─ /en/categories/tryhackme/index.html (+6ms)
+07:12:33   ├─ /en/categories/technical-analysis/index.html (+5ms)
+07:12:33   ├─ /en/categories/candlesticks/index.html (+4ms)
+07:12:33   ├─ /en/categories/arduino/index.html (+4ms)
+07:12:33   ├─ /en/categories/robotics/index.html (+4ms)
+07:12:33   ├─ /en/categories/raspberry-pi/index.html (+5ms)
+07:12:33   ├─ /en/categories/retro-gaming/index.html (+4ms)
+07:12:33   ├─ /en/tags/challenges/index.html (+5ms)
+07:12:33   ├─ /en/tags/writeup/index.html (+6ms)
+07:12:33   ├─ /en/tags/htb/index.html (+6ms)
+07:12:33   ├─ /en/tags/ctf/index.html (+5ms)
+07:12:33   ├─ /en/tags/begginer-track/index.html (+5ms)
+07:12:33   ├─ /en/tags/burpsuite/index.html (+5ms)
+07:12:33   ├─ /en/tags/thm/index.html (+5ms)
+07:12:33   ├─ /en/tags/crack/index.html (+4ms)
+07:12:33   ├─ /en/tags/beginner-track/index.html (+4ms)
+07:12:33   ├─ /en/tags/candlesticks/index.html (+3ms)
+07:12:33   ├─ /en/tags/esp32-cam/index.html (+3ms)
+07:12:33   ├─ /en/tags/4wd/index.html (+4ms)
+07:12:33   ├─ /en/tags/firmware/index.html (+3ms)
+07:12:33   ├─ /en/tags/gpi-case-2w/index.html (+4ms)
+07:12:33   ├─ /en/tags/retroflag/index.html (+3ms)
+07:12:33   ├─ /en/tags/recalbox/index.html (+3ms)
+07:12:33   ├─ /en/tags/raspberry-pi-zero-w/index.html (+4ms)
+07:12:33   ├─ /en/tags/troubleshooting/index.html (+4ms)
+07:12:33 ✓ Completed in 780ms.
+
+07:12:33 [build] ✓ Completed in 3.57s.
+07:12:33 [build] 109 page(s) built in 5.81s
+07:12:33 [build] Complete!
+Pagefind: indexed 32 documentation pages from the allowlist.
+{
+  "status": "pass",
+  "builtDirectory": "/home/Codex-Robot/mossygr.github.io/dist",
+  "documents": 32,
+  "languagePairs": 16,
+  "htmlFiles": 114,
+  "checkedLocalLinks": 13090,
+  "preservedFiles": 36,
+  "errors": []
+}

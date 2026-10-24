@@ -1,0 +1,12 @@
+---
+import type {Doc} from '../lib/content';
+import {text} from '../config/site';
+interface Props {doc:Doc}
+const {doc}=Astro.props,d=doc.data,t=text[d.lang];
+---
+{d.materials?.length&&<section id="project-materials"><h2>{t.materials}</h2><div class="table-scroll"><table><thead><tr><th>{d.lang==='el'?'Εξάρτημα':'Component'}</th><th>{d.lang==='el'?'Ποσότητα':'Quantity'}</th><th>{d.lang==='el'?'Σημείωση':'Note'}</th></tr></thead><tbody>{d.materials.map(m=><tr><td>{m.name}</td><td>{m.quantity||'—'}</td><td>{m.note||''}</td></tr>)}</tbody></table></div></section>}
+{d.cost&&<p class="cost-note">{new Intl.NumberFormat(d.lang,{style:'currency',currency:d.cost.currency}).format(d.cost.amount)} · {d.cost.asOf} {d.cost.note}</p>}
+{d.wiring?.length&&<section id="project-wiring"><h2>{t.wiring}</h2><div class="table-scroll"><table><tbody>{d.wiring.map(w=><tr><td>{w.from}</td><td>→ {w.to}</td><td>{w.note}</td></tr>)}</tbody></table></div></section>}
+{d.steps?.length&&<section id="project-steps"><h2>{t.steps}</h2><ol>{d.steps.map(s=><li><strong>{s.title}</strong><p>{s.text}</p></li>)}</ol></section>}
+{d.downloads?.length&&<section id="project-downloads"><h2>{t.downloads}</h2><ul>{d.downloads.map(f=><li><a href={f.href}>{f.title}</a> {f.note}</li>)}</ul></section>}
+{d.troubleshooting?.length&&<section id="project-troubleshooting"><h2>{t.troubleshooting}</h2>{d.troubleshooting.map(item=><details><summary>{item.problem}</summary><p>{item.solution}</p></details>)}</section>}

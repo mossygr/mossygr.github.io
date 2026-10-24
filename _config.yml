@@ -153,6 +153,7 @@ exclude:
 - rollup.config.js
 - node_modules
 - LICENSE.chirpy-7.6
+- _translations
 jekyll-archives:
   enabled:
   - categories
@@ -163,3 +164,5 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+bilingual: true
+content_language: el

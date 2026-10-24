@@ -7,6 +7,7 @@ title: TryHackMe - Reverse Engineering
 date: 2020-12-18 10:00:00 +0300
 categories: [TryHackMe, CTF]
 tags: [ctf,writeup,thm]     # TAG names should always be lowercase
+translation_key: 2020-12-18-TryHackMe-Reverse-Engineering
 ---
 
 ![Desktop View](/assets/img/sample/thm-reverse-enginnering-intro.png)

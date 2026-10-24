@@ -7,6 +7,7 @@ title: FreeLancer
 date: 2020-09-22 10:00:00 +0300
 categories: [HackTheBox, Challenges]
 tags: [htb]     # TAG names should always be lowercase
+translation_key: 2020-09-24-FreeLancer
 ---
 
 ### dictionary attack

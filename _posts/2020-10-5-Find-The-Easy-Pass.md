@@ -7,6 +7,7 @@ title: Find The Easy Pass
 date: 2020-10-05 10:00:00 +0300
 categories: [HackTheBox, Challenges]
 tags: [challenges,writeup,beginner track]     # TAG names should always be lowercase
+translation_key: 2020-10-5-Find-The-Easy-Pass
 ---
 
 ### Prerequirement

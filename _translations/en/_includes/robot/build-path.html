@@ -1,0 +1,29 @@
+<section id="materials">
+<h2 id="guide-materials">What we need and what each part does</h2>
+<p>The robot has three straightforward parts: power, movement, and control. Separating them first makes the many pin names easier to follow.</p>
+<dl class="robot-materials">
+<dt>ESP32-CAM and ESP32-CAM-MB programming base</dt><dd>The ESP32-CAM combines the controller and camera. It runs the firmware, creates the Wi-Fi network, and serves the control page. The MB base is used at the desk for the first USB upload; it does not remain connected to the robot's power supply.</dd>
+<dt>Four TT motors, a chassis, and an L298N</dt><dd>The two left motors work together, as do the two right motors. The L298N supplies motor power and changes their direction according to the ESP32-CAM's signals. We do not power motors directly from a controller pin.</dd>
+<dt>3×18650 holder, switch, and 5A fuse</dt><dd>The three cells are connected in series: 11.1V nominal, ranging from 9.0V to 12.6V. The recommended fuse goes immediately after the battery positive terminal. The holder has no built-in protection; detailed precautions are in the <a href="#guide-section-5">battery notes</a>.</dd>
+<dt>HW-468 converter (5V 5A) and four WAGO connectors</dt><dd>The converter steps the voltage down for the electronics. The WAGO connectors distribute power: WAGO A carries battery positive, WAGO B is the motor return, and WAGO 5V and WAGO GND supply the electronics. All grounds remain connected together.</dd>
+<dt>DFPlayer Pro, DFR0119 amplifier, and 4Ω speaker</dt><dd>This is the audio path shown in the supplied diagrams. The ZIP describes a different arrangement, using the DFPlayer's built-in amplifier. Read the clarification below before wiring the audio.</dd>
+<dt>Wires and small components</dt><dd>You need 0.5mm² power wire, female Dupont terminals for signals, a C1 capacitor rated 470–1000µF/16V, and optionally a 10kΩ R1 resistor. The exact endpoints and wire sizes are preserved in the <a href="#t-table">connection table</a>. A multimeter is needed for the checks before connecting the ESP32-CAM.</dd>
+</dl>
+</section>
+<aside id="source-differences" class="note-card info">
+<h3 id="guide-source-differences">A clarification before connecting the audio</h3>
+<p>The diagrams connect the DFPlayer Pro's <code>DACL</code> to the external DFR0119 amplifier's <code>LIN</code>, with the speaker on the amplifier's <code>L+</code>/<code>L−</code>. In the ZIP, however, comments in <code>robot_config.h</code> describe a speaker connected directly to the DFPlayer, and <code>robot_audio.h</code> sends <code>AT+AMP=ON</code> to enable its built-in amplifier.</p>
+<p>These are two descriptions of different audio arrangements. Before combining the diagram with the ZIP, confirm with the author which variant is intended for your build. The difference is also recorded with the <a href="#guide-downloads">downloads</a>; neither the wiring nor the firmware is silently changed here.</p>
+</aside>
+<section id="assembly">
+<h2 id="guide-assembly">Understand the power supply before adding wires</h2>
+<p>Think of the supply as two paths starting at the same battery. The first goes to the L298N for the motors. The second passes through the HW-468 and ends at 5V for the ESP32-CAM and the other electronics. A common GND gives the signals the same reference; it does not mean motor current should pass through the thin logic wires.</p>
+<ol>
+<li><strong>Start with the battery disconnected.</strong> Arrange the holder, fuse, switch, and the two battery WAGO connectors. The positive path is battery → 5A fuse → switch → WAGO A.</li>
+<li><strong>Build the converter supply.</strong> The HW-468 has only IN+, GND, and OUT+. Input and output share GND. Check the printed labels, rather than relying on screw positions.</li>
+<li><strong>Check 5V before connecting the ESP32-CAM.</strong> With the board removed from the Dupont connectors, measure 5.0–5.2V on #11 relative to #12, then switch off again. Do not rely on wire colour alone.</li>
+<li><strong>Connect the controller, then the signals.</strong> #11 goes to the actual 5V pin and #12 to the adjacent GND, never to 3V3. Fit C1 beside those pins, with its negative stripe toward GND. Keep #11/#12 as short as possible, under 15 cm.</li>
+<li><strong>Move on to motors and audio.</strong> Both motors on each side connect in parallel to the same L298N channel. Choose the appropriate audio variant from the clarification above first. Keep the wheels off the ground for the first power-on.</li>
+</ol>
+<p>Before switching on, use a multimeter to check that WAGO A and WAGO B are not shorted together. Also read the <a href="#guide-section-5">battery precautions</a> and the <a href="#guide-section-7">ESP32-CAM orientation notes</a>. This explanation helps you read the diagram; the narrative does not replace the exact pin assignments.</p>
+</section>

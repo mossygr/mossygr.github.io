@@ -1,0 +1,36 @@
+<section class="tab on" id="t-diag">
+<h2 id="guide-section-1">Wiring diagram</h2>
+<div class="note-card" style="margin-top:0"><b class="t">⚠ The ESP32-CAM is shown FROM THE BACK</b>
+Hold the board so that you can <b>see the printed pin labels</b>, not the camera, with the antenna pointing up. The row containing <b>5V · GND · IO12…IO4</b> is then on the right, as drawn.
+The <b>5V</b> pin is at the end <b>away from the antenna</b>, beside the AMS1117 chip. Looking at the camera side puts this row on the <b>left</b>. Connecting a 5V wire to 3V3 destroys the board.</div>
+<div class="card"><div class="viewer" id="viewer-pict" tabindex="0" role="group" aria-label="Interactive diagram: arrow keys to pan, plus and minus to zoom, Home to reset">
+<div class="tools"><button data-z="in" aria-label="Zoom in">+</button><button data-z="out" aria-label="Zoom out">−</button><button data-z="fit" aria-label="Fit diagram" title="Show the whole diagram">⤢</button></div>
+<div class="winfo" id="info"></div>
+<div class="hint">Pinch / wheel: zoom · drag: pan · tap: highlight a wire · keyboard: arrows, + / −, Home</div>
+{% include robot/pict.svg %}
+</div>
+<div class="legend">
+<span style="color:#d7263d"><i></i>+11.1V battery (0.5mm²)</span>
+<span style="color:#6b7280"><i style="border-top-color:#2b2b2b;outline:1px solid #888"></i>GND</span>
+<span style="color:#f28c18"><i></i>+5V</span>
+<span style="color:#8a5a2b"><i></i>motors</span>
+<span style="color:#9b45d9"><i></i>audio</span>
+<span style="color:#2563eb"><i style="border-top-width:3px"></i>signals (Dupont)</span>
+<span style="color:#b26a00"><i style="border-top-style:dashed"></i>optional, recommended</span>
+</div>
+</div>
+<div class="grid2" style="margin-top:10px">
+<div class="note-card info"><b class="t">Wire lengths in the drawing are not to scale</b>
+Cut each wire as short as practical. In particular, <b>#11 / #12</b>, the ESP32-CAM's 5V/GND pair: use 0.5mm² wire with a female Dupont terminal, crimped or soldered, <b>under 15 cm</b>. Thin, long wires here cause resets.</div>
+<div class="note-card info"><b class="t">How to read the diagram</b>
+The ESP32-CAM is shown <b>from the back</b>, where the pin names are printed; its camera faces away from you.
+The L298N is oriented with its heatsink on the right. Each OUT1–OUT4 screw takes <b>two</b> wires, connecting two motors in parallel.</div>
+<div class="note-card"><b class="t">Before turning on the switch</b>
+<ol style="margin:4px 0 0;padding-left:1.2em">
+<li>Use a multimeter: <b>no short circuit</b> between WAGO A and WAGO B.</li>
+<li>Remove the ESP32-CAM from the Dupont connectors and switch on. Measure <b>5.0–5.2V</b> at wire #11's Dupont terminal relative to #12. Switch off.</li>
+<li>Reconnect the ESP32-CAM: #11 must go to the pin labelled <b>5V</b> and #12 to the <b>GND immediately beside it</b>. <b>NEVER to 3V3</b> on the opposite row.</li>
+<li>C1's negative stripe faces GND.</li>
+<li>First power-on: wheels off the ground.</li></ol></div>
+</div>
+</section>

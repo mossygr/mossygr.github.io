@@ -1,0 +1,11 @@
+---
+import raw from '../../data/robot/pict.svg?raw';
+import {translateRobot,wireData} from '../../lib/robot';
+import '../../styles/robot.css';
+interface Props {lang:'el'|'en'}
+const {lang}=Astro.props,en=lang==='en';
+---
+<div class="robot-guide diagram-card"><div class="viewer" id="viewer-pict" tabindex="0" role="group" aria-label={en?'Interactive wiring diagram: arrow keys to pan, plus and minus to zoom, Home to reset':'Διαδραστικό διάγραμμα: βέλη για μετακίνηση, συν και πλην για ζουμ, Home για επαναφορά'}>
+<div class="tools"><button data-z="in" aria-label={en?'Zoom in':'Μεγέθυνση'}>+</button><button data-z="out" aria-label={en?'Zoom out':'Σμίκρυνση'}>−</button><button data-z="fit" aria-label={en?'Fit diagram':'Προσαρμογή'}>⤢</button></div><div class="winfo" id="info" aria-live="polite"></div>
+<Fragment set:html={translateRobot(raw,lang)}/></div><p class="diagram-caption">{en?'Drag to pan · + / − to zoom · Select a wire to see its connections':'Σύρε για μετακίνηση · + / − για ζουμ · Επίλεξε ένα καλώδιο για τα άκρα του'}</p></div>
+<script id="robot-wire-data" type="application/json" set:html={JSON.stringify(wireData(lang)).replace(/</g,'\\u003c')}/>

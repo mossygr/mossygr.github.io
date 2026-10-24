@@ -6,6 +6,7 @@ image:
 title: Download and activate office
 date: 2020-10-20 10:00:00 +0300
 tags: [crack]     # TAG names should always be lowercase
+translation_key: 2020-10-20-Download-office2019-activate
 ---
 
 ## Κατεβαζουμε τα office απο τα παρακάτω links

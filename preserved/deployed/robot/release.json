@@ -1,0 +1,14 @@
+{
+  "source_commit": "c4cfde51ec1722a816bd092b246fe942e240e881",
+  "design": "official-chirpy-7.6.0",
+  "guide_revision": "readable-construction-and-firmware-walkthrough",
+  "theme_version": "7.6.0",
+  "qa_snapshot_sha256": "f22d9bf7658f079e62886da73f9ea5d1d4eceac3ddc262373fa43d34392b282c",
+  "published_at": "2026-10-22T12:33:45.422779+00:00",
+  "home_sha256": "82e5fc90e246fc209856929a7b45d70a341f2c024c314dc6fdb5b57d48362d9a",
+  "guide_sha256": "dfd53a763a9aa733779d14c9b57289b12b060e0dc0bcd2144627bc1e26545187",
+  "guide_css_sha256": "2b772e74ebed68497ccf9a676857994e32bece82657af344a9e1daadf72b18a4",
+  "theme_css_sha256": "4bc56832cc2a71481a79736b8f8a24f2b5257d207b98c4e09b50e2c838c8fbe6",
+  "theme_js_sha256": "7b56a772573d9cc85a995201e9b7e468805ce7f0ef0997e56e90de098e16bf2c",
+  "service_worker_sha256": "1c34de5278a720fa3eee81f1951131ff646f24f7d0ea483359d2771aab0e1a3e"
+}

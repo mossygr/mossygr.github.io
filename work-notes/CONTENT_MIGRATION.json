@@ -1,0 +1,325 @@
+{
+  "routes_source": "_site/i18n-map.json",
+  "documents": [
+    {
+      "key": "2020-09-22-Emdee-five-for-life",
+      "lang": "el",
+      "permalink": "/posts/Emdee-five-for-life/",
+      "source": "_posts/2020-09-22-Emdee-five-for-life.md",
+      "destination": "src/content/docs/el/2020-09-22-Emdee-five-for-life.md",
+      "source_sha256": "f9d79f5421f696a4e9636b966946bffbaadfab28f22267b566e70e314090cb1f",
+      "body_sha256": "90e2ae0b721c825d586298f27ec2f2256d39d3cc26fcb20398bb4b0532fe9030",
+      "type": "article"
+    },
+    {
+      "key": "2020-09-22-Lame",
+      "lang": "el",
+      "permalink": "/posts/Lame/",
+      "source": "_posts/2020-09-22-Lame.md",
+      "destination": "src/content/docs/el/2020-09-22-Lame.md",
+      "source_sha256": "1210f9ce9da52b69a7af66a953cfa7e412b75e5bca9131d98c7ae61c9d9df0d7",
+      "body_sha256": "74744e4c36b2083735e78559ac3ed648320c80f9561c1c17914ad9cd68e11596",
+      "type": "article"
+    },
+    {
+      "key": "2020-09-22-test",
+      "lang": "el",
+      "permalink": "/posts/test/",
+      "source": "_posts/2020-09-22-test.md",
+      "destination": "src/content/docs/el/2020-09-22-test.md",
+      "source_sha256": "1e70d91fb369fc65d995fa49054cf66a226ce9334a435aad06b49c55bdd833ae",
+      "body_sha256": "74744e4c36b2083735e78559ac3ed648320c80f9561c1c17914ad9cd68e11596",
+      "type": "article"
+    },
+    {
+      "key": "2020-09-24-FreeLancer",
+      "lang": "el",
+      "permalink": "/posts/FreeLancer/",
+      "source": "_posts/2020-09-24-FreeLancer.md",
+      "destination": "src/content/docs/el/2020-09-24-FreeLancer.md",
+      "source_sha256": "0cc2b3af9526132063a3ccd29b1dedfa1b5a6aa4f3e5ac27f8f624569c2221cd",
+      "body_sha256": "595ea6bfda43be605686dae9248d2ba2174fe0c3ca762447a48562e9ca54c79a",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-06-Templed",
+      "lang": "el",
+      "permalink": "/posts/Templed/",
+      "source": "_posts/2020-10-06-Templed.md",
+      "destination": "src/content/docs/el/2020-10-06-Templed.md",
+      "source_sha256": "8bd73e1859eecae50b76f264f06441fec45d9dd22c00a695623a21ba50c6a61d",
+      "body_sha256": "8733a827106834b8a177a01de382b4d43062261032c255b3bf3ddf06bc5d9be3",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-10-Burpsuite-on-firefox",
+      "lang": "el",
+      "permalink": "/posts/Burpsuite-on-firefox/",
+      "source": "_posts/2020-10-10-Burpsuite-on-firefox.md",
+      "destination": "src/content/docs/el/2020-10-10-Burpsuite-on-firefox.md",
+      "source_sha256": "c59c92012f4c83914933238904d49b81aa017a45ef67ae9553f83cd7f465d2d7",
+      "body_sha256": "4492cca8879245a8651e517b1805efc8e014b82d221409741a042533730a9c54",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-10-Jack",
+      "lang": "el",
+      "permalink": "/posts/Jack/",
+      "source": "_posts/2020-10-10-Jack.md",
+      "destination": "src/content/docs/el/2020-10-10-Jack.md",
+      "source_sha256": "8600f563d22a556a12758bfbaf366bda9b6be7a3c399351cb9a5ea0ae911e84f",
+      "body_sha256": "d723fa82c4742c87bf0967d33f39b2816344f376d673b9ea71226ec8364c9707",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-10-Weak-RSA",
+      "lang": "el",
+      "permalink": "/posts/Weak-RSA/",
+      "source": "_posts/2020-10-10-Weak-RSA.md",
+      "destination": "src/content/docs/el/2020-10-10-Weak-RSA.md",
+      "source_sha256": "c59c317391c10d44cc35fe24524ecb868689040f7bb4435466aada31b6427df8",
+      "body_sha256": "6d7dca89583b3227d0d2491ce6f2a66af86bdc83642ec224fe0a6af255847aaf",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-14-Jerry",
+      "lang": "el",
+      "permalink": "/posts/Jerry/",
+      "source": "_posts/2020-10-14-Jerry.md",
+      "destination": "src/content/docs/el/2020-10-14-Jerry.md",
+      "source_sha256": "156c05d990710998153f76ca6121cee626589515ac13979c069c431d25b9e261",
+      "body_sha256": "6f34d4bb0d77ee6c914e0aeeff17c3f5202b8816b9134220722a07050b02447f",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-18-Brutforce-attack-technics",
+      "lang": "el",
+      "permalink": "/posts/Brutforce-attack-technics/",
+      "source": "_posts/2020-10-18-Brutforce-attack-technics.md",
+      "destination": "src/content/docs/el/2020-10-18-Brutforce-attack-technics.md",
+      "source_sha256": "ffc32eaf561b1a21a9a46272add3470a77e0d37cfcb245bb1ac567d26a2b9629",
+      "body_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-20-Download-office2019-activate",
+      "lang": "el",
+      "permalink": "/posts/Download-office2019-activate/",
+      "source": "_posts/2020-10-20-Download-office2019-activate.md",
+      "destination": "src/content/docs/el/2020-10-20-Download-office2019-activate.md",
+      "source_sha256": "2ff0ba7219d3fa702b216e3695072cc49853f47f65f3393842cff3aed338effb",
+      "body_sha256": "39d44c9940ab3faae1b57141214a0377a0c331a67923cde638380088c66858ab",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-5-Find-The-Easy-Pass",
+      "lang": "el",
+      "permalink": "/posts/Find-The-Easy-Pass/",
+      "source": "_posts/2020-10-5-Find-The-Easy-Pass.md",
+      "destination": "src/content/docs/el/2020-10-5-Find-The-Easy-Pass.md",
+      "source_sha256": "adffbf93a2f57969afa1e3cecbb3df7750edbb438d447de06bc80d2c263110b2",
+      "body_sha256": "e00a985f6307cf27685bf38c1aca259697456e9c76817e2dfb1bd92a0c6555b6",
+      "type": "article"
+    },
+    {
+      "key": "2020-12-18-TryHackMe-Reverse-Engineering",
+      "lang": "el",
+      "permalink": "/posts/TryHackMe-Reverse-Engineering/",
+      "source": "_posts/2020-12-18-TryHackMe-Reverse-Engineering.md",
+      "destination": "src/content/docs/el/2020-12-18-TryHackMe-Reverse-Engineering.md",
+      "source_sha256": "3611ed589ebfed35fd56dd2ef6da9a83cc2af7802c467fb4c3641440c8a9a488",
+      "body_sha256": "e9dd7f35d59353de5686fb0a6c7ade1a051faf1a4780377222d4968b5c762778",
+      "type": "article"
+    },
+    {
+      "key": "2023-05-20-Doji κερί. Το κερί της αλλαγής τάσης.(REVERSAL)",
+      "lang": "el",
+      "permalink": "/posts/Doji-%CE%BA%CE%B5%CF%81%CE%AF.-%CE%A4%CE%BF-%CE%BA%CE%B5%CF%81%CE%AF-%CF%84%CE%B7%CF%82-%CE%B1%CE%BB%CE%BB%CE%B1%CE%B3%CE%AE%CF%82-%CF%84%CE%AC%CF%83%CE%B7%CF%82.(REVERSAL)/",
+      "source": "_posts/2023-05-20-Doji κερί. Το κερί της αλλαγής τάσης.(REVERSAL).md",
+      "destination": "src/content/docs/el/2023-05-20-Doji κερί. Το κερί της αλλαγής τάσης.(REVERSAL).md",
+      "source_sha256": "fa26874f9ecf1ab8e6d09f058005e4a1ca391d61d2025c20f7ac9f090cf167e6",
+      "body_sha256": "7d11e06e0b14cf352c84cbcdda1a77f30f6f22c7bc485a2f338e39057412a7b0",
+      "type": "article"
+    },
+    {
+      "key": "2026-10-21-robot-4wd",
+      "lang": "el",
+      "permalink": "/robot/",
+      "source": "_posts/2026-10-21-robot-4wd.html",
+      "destination": "src/content/docs/el/2026-10-21-robot-4wd.mdx",
+      "source_sha256": "ab2fb73df8aab972eaa0f59b5b6c29a5eb911eb7b15117c765920a7a4a4658d1",
+      "body_sha256": "c8e7f789a790d8f3122d1a3cccf70fb744518b21ebc073fdd833f616b22d51ed",
+      "type": "guide"
+    },
+    {
+      "key": "2026-10-22-gpi-case-2w-pi-zero-w-recalbox",
+      "lang": "el",
+      "permalink": "/posts/gpi-case-2w-pi-zero-w-recalbox/",
+      "source": "_posts/2026-10-22-gpi-case-2w-pi-zero-w-recalbox.md",
+      "destination": "src/content/docs/el/2026-10-22-gpi-case-2w-pi-zero-w-recalbox.md",
+      "source_sha256": "dcb53d7cf44491e85677b7e597b8ec294045b61d7ee9341e4ca8f21fee3af967",
+      "body_sha256": "4d044b6ab64f44a11eba0c8c4b258087e527e02011307c46d1fe2ddfa2578a64",
+      "type": "project"
+    },
+    {
+      "key": "2020-09-22-Emdee-five-for-life",
+      "lang": "en",
+      "permalink": "/en/posts/emdee-five-for-life/",
+      "source": "_translations/en/_posts/2020-09-22-Emdee-five-for-life.md",
+      "destination": "src/content/docs/en/2020-09-22-Emdee-five-for-life.md",
+      "source_sha256": "65f11552fb6dc8e37a0f03535271f8957b68d42bbcd14d8bb7dd073c8baca881",
+      "body_sha256": "72a15f3fcd5ecb7d49d62dcb17d45a8c3fa25ebdd8dc31613015e3767910b7c0",
+      "type": "article"
+    },
+    {
+      "key": "2020-09-22-Lame",
+      "lang": "en",
+      "permalink": "/en/posts/lame/",
+      "source": "_translations/en/_posts/2020-09-22-Lame.md",
+      "destination": "src/content/docs/en/2020-09-22-Lame.md",
+      "source_sha256": "e795dc9e87df19b9b9db9ea21cad0af843638217abe22a02e3a9e49685f3c7c6",
+      "body_sha256": "1c5222769335374a877c96a756a75f8f09811bbeb39a8765aa199f735d4dea76",
+      "type": "article"
+    },
+    {
+      "key": "2020-09-22-test",
+      "lang": "en",
+      "permalink": "/en/posts/test/",
+      "source": "_translations/en/_posts/2020-09-22-test.md",
+      "destination": "src/content/docs/en/2020-09-22-test.md",
+      "source_sha256": "06df491097543006a72472b370a85961f039441a4bf4c5446f95a16b1fccc898",
+      "body_sha256": "1c5222769335374a877c96a756a75f8f09811bbeb39a8765aa199f735d4dea76",
+      "type": "article"
+    },
+    {
+      "key": "2020-09-24-FreeLancer",
+      "lang": "en",
+      "permalink": "/en/posts/freelancer/",
+      "source": "_translations/en/_posts/2020-09-24-FreeLancer.md",
+      "destination": "src/content/docs/en/2020-09-24-FreeLancer.md",
+      "source_sha256": "b2131330da3ab74d94126e40df773b83c11d57d15fc174e7fb7d6bb34f92cd1b",
+      "body_sha256": "95eca2b891ea03ac45af2920aec7b59c1ecaa638e8a53659126103c8d4c82445",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-06-Templed",
+      "lang": "en",
+      "permalink": "/en/posts/templed/",
+      "source": "_translations/en/_posts/2020-10-06-Templed.md",
+      "destination": "src/content/docs/en/2020-10-06-Templed.md",
+      "source_sha256": "b1d064f49e612477783b53efde54e48c68b537fa4b8925d71fc25f1d183f87a8",
+      "body_sha256": "491abb590a86d2ba4e45e3677068f753eb7e2e65426c9817db77baaf7cec3227",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-10-Burpsuite-on-firefox",
+      "lang": "en",
+      "permalink": "/en/posts/burpsuite-on-firefox/",
+      "source": "_translations/en/_posts/2020-10-10-Burpsuite-on-firefox.md",
+      "destination": "src/content/docs/en/2020-10-10-Burpsuite-on-firefox.md",
+      "source_sha256": "a3651d27b7c840883b28f97dd4461a36dc9a30ecf66e68cb082d7e5cd89106f5",
+      "body_sha256": "b77d97386c978979f71af29d107972fb57405459d56d6348c4c93a49df4e9704",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-10-Jack",
+      "lang": "en",
+      "permalink": "/en/posts/jack/",
+      "source": "_translations/en/_posts/2020-10-10-Jack.md",
+      "destination": "src/content/docs/en/2020-10-10-Jack.md",
+      "source_sha256": "06df2342dc1f409959994f324c3a23f69c7e7e8667dcfe9b638fedb048397e23",
+      "body_sha256": "badac6ccfeaa6a6bbfa5954a708df2d72a84cbecb42221e5d759c21bae3126ba",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-10-Weak-RSA",
+      "lang": "en",
+      "permalink": "/en/posts/weak-rsa/",
+      "source": "_translations/en/_posts/2020-10-10-Weak-RSA.md",
+      "destination": "src/content/docs/en/2020-10-10-Weak-RSA.md",
+      "source_sha256": "5941e4450e2fd5b96f4b0106fa7d8538cf0b913ea054a2344edffb2fcdf7d0c8",
+      "body_sha256": "baf3a2b33f0ed6c4ea179f117b82f59a14360311e8acf1e57e7bd660a913bc47",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-14-Jerry",
+      "lang": "en",
+      "permalink": "/en/posts/jerry/",
+      "source": "_translations/en/_posts/2020-10-14-Jerry.md",
+      "destination": "src/content/docs/en/2020-10-14-Jerry.md",
+      "source_sha256": "cbbc97a922c1c6dda92f26898698d382bec176f5e6ab59c45b95e7accb897a64",
+      "body_sha256": "c7005bf78b6ee5075d7a2ff930e88de40411304fbb994940b962fc7b72353a9b",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-18-Brutforce-attack-technics",
+      "lang": "en",
+      "permalink": "/en/posts/brutforce-attack-technics/",
+      "source": "_translations/en/_posts/2020-10-18-Brutforce-attack-technics.md",
+      "destination": "src/content/docs/en/2020-10-18-Brutforce-attack-technics.md",
+      "source_sha256": "e15bf56f8091860809541902bf4c40029ab0c6caf797223d403689116023d073",
+      "body_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-20-Download-office2019-activate",
+      "lang": "en",
+      "permalink": "/en/posts/download-office2019-activate/",
+      "source": "_translations/en/_posts/2020-10-20-Download-office2019-activate.md",
+      "destination": "src/content/docs/en/2020-10-20-Download-office2019-activate.md",
+      "source_sha256": "5b950f353d5fd98f29ed218d8ab9ae17d3e69f014a3e124d594b318bb80fd9af",
+      "body_sha256": "b106d075e90a8d46885613636123756bdfb97eb57bbd36000b270592eb513b20",
+      "type": "article"
+    },
+    {
+      "key": "2020-10-5-Find-The-Easy-Pass",
+      "lang": "en",
+      "permalink": "/en/posts/find-the-easy-pass/",
+      "source": "_translations/en/_posts/2020-10-5-Find-The-Easy-Pass.md",
+      "destination": "src/content/docs/en/2020-10-5-Find-The-Easy-Pass.md",
+      "source_sha256": "ce37cbd4af151d08271ffb22f98bd5db0904f8a5e3d340bb53239e6b0870ca6b",
+      "body_sha256": "7697764f17155c700d4ca0fea308485c25b6b4def711881122100bdb77eddd4e",
+      "type": "article"
+    },
+    {
+      "key": "2020-12-18-TryHackMe-Reverse-Engineering",
+      "lang": "en",
+      "permalink": "/en/posts/tryhackme-reverse-engineering/",
+      "source": "_translations/en/_posts/2020-12-18-TryHackMe-Reverse-Engineering.md",
+      "destination": "src/content/docs/en/2020-12-18-TryHackMe-Reverse-Engineering.md",
+      "source_sha256": "81322b481b2b6a06f98c890839e94bd6e355f7ba2e3c7620085fad38ca922a65",
+      "body_sha256": "10dbf8b0572b9f916d5fab3fa745b09179964b07d269eb735e4cd6922de9c0f5",
+      "type": "article"
+    },
+    {
+      "key": "2023-05-20-Doji κερί. Το κερί της αλλαγής τάσης.(REVERSAL)",
+      "lang": "en",
+      "permalink": "/en/posts/doji-candlestick/",
+      "source": "_translations/en/_posts/2023-05-20-doji-candlestick.md",
+      "destination": "src/content/docs/en/2023-05-20-doji-candlestick.md",
+      "source_sha256": "cbd128aa15694456a315808bae10345c71e52a7c3d28222cf5b374e7071d92c0",
+      "body_sha256": "e7c38a3af2ca97e1523912fdda159f54a11d4b8a603aaa2afe758cd0b7160107",
+      "type": "article"
+    },
+    {
+      "key": "2026-10-21-robot-4wd",
+      "lang": "en",
+      "permalink": "/en/robot/",
+      "source": "_translations/en/_posts/2026-10-21-robot-4wd.html",
+      "destination": "src/content/docs/en/2026-10-21-robot-4wd.mdx",
+      "source_sha256": "cce0a756a2edd7a6df940f18959508de67208d21a5f2175a85c629ae7140aca8",
+      "body_sha256": "91a068f992f20ebb66849d346be8376175981bd6970fe442388ad2bfa6c0a444",
+      "type": "guide"
+    },
+    {
+      "key": "2026-10-22-gpi-case-2w-pi-zero-w-recalbox",
+      "lang": "en",
+      "permalink": "/en/posts/gpi-case-2w-pi-zero-w-recalbox/",
+      "source": "_translations/en/_posts/2026-10-22-gpi-case-2w-pi-zero-w-recalbox.md",
+      "destination": "src/content/docs/en/2026-10-22-gpi-case-2w-pi-zero-w-recalbox.md",
+      "source_sha256": "59f5079a3f1f762193798d67b23fee78ba87e8f9bdfd4ae78e5b25ebac983f47",
+      "body_sha256": "2882b258f54bf33de75d1d2f0d3e9989feb93b454beadbc1bc66f3911750fc9d",
+      "type": "project"
+    }
+  ]
+}

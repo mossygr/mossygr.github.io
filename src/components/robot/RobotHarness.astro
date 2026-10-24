@@ -1,0 +1,7 @@
+---
+import raw from '../../data/robot/harness.svg?raw';
+import {translateRobot} from '../../lib/robot';
+interface Props {lang:'el'|'en'}
+const {lang}=Astro.props,en=lang==='en';
+---
+<div class="robot-guide diagram-card"><div class="viewer" id="viewer-harness" tabindex="0" role="group" aria-label={en?'Interactive harness: arrow keys to pan, plus and minus to zoom, Home to reset':'Διαδραστικό διάγραμμα συνδέσεων: βέλη για μετακίνηση, συν και πλην για ζουμ, Home για επαναφορά'}><div class="tools"><button data-z="in" aria-label={en?'Zoom in':'Μεγέθυνση'}>+</button><button data-z="out" aria-label={en?'Zoom out':'Σμίκρυνση'}>−</button><button data-z="fit" aria-label={en?'Fit diagram':'Προσαρμογή'}>⤢</button></div><Fragment set:html={translateRobot(raw,lang)}/></div><p class="diagram-caption">{en?'The same 36 connections, arranged by terminal.':'Οι ίδιες 36 συνδέσεις, οργανωμένες ανά ακροδέκτη.'}</p></div>
