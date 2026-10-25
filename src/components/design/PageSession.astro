@@ -1,0 +1,5 @@
+---
+interface Props {path:string;article:boolean}
+const {path,article}=Astro.props;
+---
+<div class="page-session prompt" data-pagefind-ignore aria-hidden="true"><b>m0ss1@docs:~$</b><span>{article?'read':'ls'} <span class="prompt-path">{path}</span><span class="cursor"></span></span></div>

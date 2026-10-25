@@ -15,7 +15,7 @@ const hiddenRoutes = /\/(?:gym-app|position_size|trades|norobots)(?:\/|$)/;
 async function overflow(page: Page) {
   expect(await page.evaluate(() => document.documentElement.scrollWidth - innerWidth), 'document must fit; tables/code may scroll internally').toBeLessThanOrEqual(1);
 }
-async function capture(page: Page, info: TestInfo, name: string, fullPage = true) {
+async function capture(page: Page, info: TestInfo, name: string, fullPage = false) {
   const path = info.outputPath(`${name}.png`);
   await page.screenshot({ path, fullPage, animations: 'disabled' });
   await info.attach(name, { path, contentType: 'image/png' });
@@ -71,15 +71,16 @@ for (const lang of languages) for (const width of widths) for (const kind of Obj
     const navHrefs = await page.locator('nav a[href]').evaluateAll(nodes => nodes.map(node => (node as HTMLAnchorElement).pathname));
     expect(navHrefs.filter(href => hiddenRoutes.test(href))).toEqual([]);
 
-    if (width < 768) {
-      await page.locator('[data-open="navigation-dialog"]').click();
-      await expect(page.locator('#navigation-dialog')).toBeVisible();
-      await accessibility(page, info, 'mobile-menu');
-      await capture(page, info, 'mobile-menu');
-      await page.keyboard.press('Escape');
-      await expect(page.locator('#navigation-dialog')).not.toBeVisible();
-      await expect(page.locator('[data-open="navigation-dialog"]')).toBeFocused();
-    } else await expect(page.locator('.sidebar')).toBeVisible();
+    // The selected minimal theme uses the same accessible menu at every width.
+    const menuTrigger = page.locator('[data-open="navigation-dialog"]');
+    await expect(menuTrigger).toBeVisible();
+    await menuTrigger.click();
+    await expect(page.locator('#navigation-dialog')).toBeVisible();
+    await accessibility(page, info, 'navigation-menu');
+    await capture(page, info, 'navigation-menu');
+    await page.keyboard.press('Escape');
+    await expect(page.locator('#navigation-dialog')).not.toBeVisible();
+    await expect(menuTrigger).toBeFocused();
 
     if (kind === 'home') {
       await expect(page.locator('.home-intro a')).toHaveAttribute('href', routes[lang].robot);
@@ -180,12 +181,19 @@ for (const lang of languages) for (const width of widths) test(`${lang} search k
   await expect(page).toHaveURL(new RegExp(`${routes[lang === 'el' ? 'en' : 'el'].home}$`));
 });
 
-test('200% equivalent reflow and system dark preference', async ({ page }, info) => {
+test('200% equivalent reflow, default dark and explicit theme persistence', async ({ browser }, info) => {
+  // A fresh context has no saved choice. The terminal defaults dark even on a light OS.
   // 1440 physical pixels at 200% browser zoom provide 720 CSS pixels.
-  await page.setViewportSize({ width: 720, height: 480 });
-  await page.emulateMedia({ colorScheme: 'dark', reducedMotion: 'reduce' });
-  await page.goto(routes.el.robot);
+  const context = await browser.newContext({ viewport: { width: 720, height: 480 }, colorScheme: 'light', reducedMotion: 'reduce', storageState: { cookies: [], origins: [] } });
+  const page = await context.newPage();
+  await page.goto((process.env.PLAYWRIGHT_BASE_URL || 'http://127.0.0.1:4321') + routes.el.robot);
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   await overflow(page);
   await capture(page, info, 'reflow-200-equivalent');
+  await page.locator('#theme-toggle').click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await page.reload();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'light');
+  await context.close();
 });

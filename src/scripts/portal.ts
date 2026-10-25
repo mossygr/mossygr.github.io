@@ -6,9 +6,17 @@ function openDialog(id:string){const dialog=document.getElementById(id) as HTMLD
 function closeDialog(dialog:HTMLDialogElement){dialog.close();}
 document.querySelectorAll<HTMLElement>('[data-open]').forEach(button=>button.addEventListener('click',()=>openDialog(button.dataset.open!)));
 dialogs.forEach(dialog=>{dialog.querySelectorAll('[data-close]').forEach(button=>button.addEventListener('click',()=>closeDialog(dialog)));dialog.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)closeDialog(dialog);}});dialog.addEventListener('close',()=>{document.body.style.overflow='';returnFocus?.focus();});});
-document.addEventListener('keydown',event=>{if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'){event.preventDefault();openDialog('search-dialog');}});
+document.addEventListener('keydown',event=>{
+ if(event.key==='Escape'){
+  // A search input consumes Escape to clear its query unless we cancel that default.
+  const activeDialog=document.activeElement?.closest<HTMLDialogElement>('dialog[open]')||[...dialogs].reverse().find(dialog=>dialog.open);
+  if(activeDialog?.open){event.preventDefault();closeDialog(activeDialog);}
+  return;
+ }
+ if((event.metaKey||event.ctrlKey)&&event.key.toLowerCase()==='k'){event.preventDefault();openDialog('search-dialog');}
+});
 const themeButton=document.getElementById('theme-toggle');
-themeButton?.addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;themeButton.setAttribute('aria-pressed',String(theme==='dark'));try{localStorage.setItem('m0ss1-theme',theme)}catch{}});
+themeButton?.addEventListener('click',()=>{const theme=document.documentElement.dataset.theme==='dark'?'light':'dark';document.documentElement.dataset.theme=theme;themeButton.setAttribute('aria-pressed',String(theme==='dark'));try{localStorage.setItem('m0ss1-amber-theme',theme)}catch{}});
 themeButton?.setAttribute('aria-pressed',String(document.documentElement.dataset.theme==='dark'));
 // Copy uses textContent, preserving source whitespace and actual C++ string literals.
 document.querySelectorAll<HTMLPreElement>('.prose pre').forEach(pre=>{const block=document.createElement('div');block.className='code-block';const toolbar=document.createElement('div');toolbar.className='code-toolbar';const language=pre.querySelector('code')?.className.match(/language-([\w+-]+)/)?.[1]||pre.dataset.language||'code';const label=document.createElement('span');label.textContent=pre.dataset.title||language;const button=document.createElement('button');button.type='button';button.className='code-copy';button.textContent=t.copy;button.setAttribute('aria-label',`${t.copy}: ${label.textContent}`);button.addEventListener('click',async()=>{try{await navigator.clipboard.writeText(pre.querySelector('code')?.textContent||pre.textContent||'');button.textContent=t.copied;setTimeout(()=>button.textContent=t.copy,1800)}catch{const selection=window.getSelection();const range=document.createRange();range.selectNodeContents(pre);selection?.removeAllRanges();selection?.addRange(range);button.textContent=lang==='el'?'Ctrl/Cmd+C':'Press Ctrl/Cmd+C';}});toolbar.append(label,button);pre.before(block);block.append(toolbar,pre);});

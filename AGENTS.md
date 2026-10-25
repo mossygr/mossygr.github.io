@@ -1,8 +1,8 @@
 # Συντήρηση m0ss1
 
-Η ενεργή εργασία είναι η μετάβαση σε δικό μας Developer Documentation Portal με Astro, TypeScript, Markdown/MDX και SSG. Η εντολή του ιδιοκτήτη στις 23/10/2026 αντικαθιστά την προηγούμενη απαίτηση αντιγραφής Chirpy. Μη γυρίσεις σε magazine homepage ή Jekyll ως ενεργό build. Διάβασε `SITE_EDITING_GUIDE.md` και `work-notes/ASTRO_PORTAL_STATUS.md`.
+Η ενεργή υλοποίηση είναι Astro, TypeScript, Markdown/MDX και SSG με το επιλεγμένο Minimal Amber Terminal (A). Ο ιδιοκτήτης ενέκρινε ρητά τη δημοσίευση του A στο production στις 2026-10-25. Δεν υπάρχουν άλλες ενεργές συνθέσεις ή προηγούμενα theme layers. Διάβασε `SITE_EDITING_GUIDE.md` και `THEME_ARCHITECTURE.md`.
 
-Repository `mossygr/mossygr.github.io`. Feature branch `feat/astro-docs-portal`. Το production δεν αλλάζει πριν την τελική έγκριση του ιδιοκτήτη. Μην κάνεις merge, push στο gh-pages ή deployment χωρίς αυτή. Απαιτούνται πραγματικό Astro build, έλεγχος διαδρομών και ανεξάρτητος οπτικός έλεγχος. Μην παρουσιάζεις authored tests, source checks ή screenshots παλιάς έκδοσης ως επιτυχημένο έλεγχο νέου UI.
+Repository `mossygr/mossygr.github.io`. Feature branch `feat/retro-amber-a`. Το production δεν αλλάζει πριν την τελική έγκριση του ιδιοκτήτη. Μην κάνεις merge, push στο gh-pages ή deployment χωρίς αυτή. Απαιτούνται πραγματικό Astro build, έλεγχος διαδρομών και ανεξάρτητος οπτικός έλεγχος. Μην παρουσιάζεις authored tests, source checks ή screenshots παλιάς έκδοσης ως επιτυχημένο έλεγχο νέου UI.
 
 Χρησιμοποίησε τους δύο υπάρχοντες agents: pages-maintainer για υλοποίηση/μεταφορά και greek-visual-reviewer για ανεξάρτητο ελληνικό QA. Τα τοπικά skills παραμένουν χρήσιμα για διατήρηση περιεχομένου/QA· οι παλιές απαιτήσεις Jekyll/Chirpy υποχωρούν στις νεότερες ρητές οδηγίες. Μόνο ο συντονιστής κάνει remote mutations.
 
