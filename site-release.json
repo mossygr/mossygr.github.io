@@ -1,5 +1,7 @@
 {
   "technology": "Astro",
-  "source_commit": "e3867d80fe7940eb32a94cfdf6c21f16a427d7d0",
-  "published_date": "2026-10-24"
+  "theme": "Minimal Amber Terminal",
+  "source_commit": "47aa322ca1761f71b2b8ab7e2784431ef334b6b0",
+  "previous_deployment_commit": "93013c0e4174cab5d659eac3bc1da53ba4e724ac",
+  "published_date": "2026-10-25"
 }
