@@ -1,34 +1,27 @@
-name: Documentation preview checks
+name: Astro source checks
 on:
   pull_request:
   push:
-    branches: ['master', 'feat/astro-docs-portal']
+    branches: ['feat/retro-amber-a']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  preview:
+  check:
     runs-on: ubuntu-latest
     env:
-      ASTRO_TELEMETRY_DISABLED: "1"
+      ASTRO_TELEMETRY_DISABLED: '1'
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-      - name: Install dependencies
-        run: npm ci
+          cache: npm
+      - run: npm ci
       - run: npm test
       - run: npm run build
-      - run: npx playwright install --with-deps chromium
-      - run: npm run test:browser
-      - name: Upload static preview
-        if: always()
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
-          name: documentation-preview
-          path: |
-            dist/
-            test-results/
-            playwright-report/
-# Deliberately no deploy step: production requires the owner's final approval.
+          name: astro-minimal-amber-build
+          path: dist/
+# Preview publication is managed separately; this workflow never deploys Pages.

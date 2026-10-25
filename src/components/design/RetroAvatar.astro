@@ -1,0 +1,6 @@
+---
+import type {Language} from '../../config/site';
+interface Props {lang:Language}
+const {lang}=Astro.props;
+---
+<aside class="identity-panel" aria-label={lang==='el'?'Ταυτότητα συγγραφέα':'Author identity'}><div class="avatar-placeholder" aria-hidden="true">M0</div><div class="author-identity"><strong>m0ss1</strong><p>BUILD · DOCUMENT · SHARE</p></div><p class="avatar-note">{lang==='el'?'Θέση για το μελλοντικό pixel avatar.':'Reserved for a future pixel avatar.'}</p></aside>

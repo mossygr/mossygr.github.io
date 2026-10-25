@@ -1,5 +1,7 @@
 ---
 import '@fontsource-variable/inter';
+import '@fontsource-variable/handjet';
+import PageSession from '../components/design/PageSession.astro';
 import '../styles/portal.css';
 import Navigation from '../components/Navigation.astro';
 import Icon from '../components/Icon.astro';
@@ -13,7 +15,7 @@ const canonical=new URL(canonicalPath||path,site.url).href, alternateUrl=new URL
 const el=lang==='el'?canonical:alternateUrl, en=lang==='en'?canonical:alternateUrl;
 const toc=headings.filter(h=>h.depth===2||h.depth===3);
 ---
-<!doctype html><html lang={lang}>
+<!doctype html><html lang={lang} data-theme="dark" data-page={article?'article':(path==='/'||path==='/en/')?'home':'listing'}>
 <head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>{title} · {site.name}</title><meta name="description" content={description}/><meta name="color-scheme" content="light dark"/>
 <link rel="canonical" href={canonical}/>{!noindex&&<><link rel="alternate" hreflang="el" href={el}/><link rel="alternate" hreflang="en" href={en}/><link rel="alternate" hreflang="x-default" href={el}/></>}{noindex&&<meta name="robots" content="noindex"/>}
@@ -21,17 +23,23 @@ const toc=headings.filter(h=>h.depth===2||h.depth===3);
 {image&&<meta property="og:image" content={new URL(image,site.url).href}/>}
 <link rel="icon" href="/assets/img/favicons/m0ss1.svg" type="image/svg+xml"/>
 
-<script is:inline>try{const t=localStorage.getItem('m0ss1-theme');document.documentElement.dataset.theme=t==='light'||t==='dark'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}catch{}</script>
+
+<script is:inline>
+const root=document.documentElement;
+root.dataset.theme='dark';
+try{const t=localStorage.getItem('m0ss1-amber-theme');if(t==='light'||t==='dark')root.dataset.theme=t}catch{}
+</script>
 {article&&<script type="application/ld+json" set:html={JSON.stringify({'@context':'https://schema.org','@type':'TechArticle',headline:title,description,inLanguage:lang,url:canonical,datePublished:published?.toISOString(),author:{'@type':'Person',name:'m0ss1'},...(image?{image:new URL(image,site.url).href}:{})}).replace(/</g,'\\u003c')}/>}
 </head>
 <body data-lang={lang}>
 <a class="skip-link" href="#main">{t.skip}</a>
-<header class="topbar"><a class="brand" href={prefix(lang)} aria-label="m0ss1"><span class="brand-symbol">m<span>₀</span></span><strong>m0ss1<span class="brand-divider">/</span><span class="brand-docs">docs</span></strong></a>
+<header class="topbar"><a class="brand" href={prefix(lang)} aria-label="m0ss1"><span class="brand-symbol">m<span>₀</span></span><strong>m0ss1</strong></a>
 <div class="topbar-actions"><button class="search-trigger" data-open="search-dialog" aria-label={t.search}><Icon name="search"/><span>{t.search}</span><kbd>⌘ K</kbd></button>
 <a class="language-switch" href={alternate} lang={lang==='el'?'en':'el'} hreflang={lang==='el'?'en':'el'} aria-label={lang==='el'?'Read this page in English':'Διάβασε αυτή τη σελίδα στα Ελληνικά'}><span class:list={{selected:lang==='el'}}>EL</span><span class="language-divider">/</span><span class:list={{selected:lang==='en'}}>EN</span></a>
 <button class="icon-button" id="theme-toggle" aria-label={t.theme} title={t.theme}><Icon name="sun"/></button><button class="icon-button mobile-menu" data-open="navigation-dialog" aria-label={t.menu}><Icon name="menu"/></button></div></header>
-<div class="portal-grid"><aside class="sidebar"><Navigation lang={lang} docs={docs} path={path}/></aside>
-<main id="main" tabindex="-1" class:list={['main-content',{'reading':article}]}><slot/><footer class="site-footer"><span>© {new Date().getUTCFullYear()} m0ss1</span><a href={site.github}>GitHub <span aria-hidden="true">↗</span></a></footer></main>
+<noscript><nav class="noscript-navigation" aria-label={t.menu}><a href={prefix(lang)}>{t.home}</a><a href={prefix(lang)+'guides/'}>{t.guides}</a><a href={prefix(lang)+'categories/'}>{t.categories}</a><a href={prefix(lang)+'archives/'}>{t.archives}</a></nav></noscript>
+<div class="portal-grid">
+<main id="main" tabindex="-1" class:list={['main-content','page-enter',{'reading':article}]}><PageSession path={path} article={article}/><slot/><footer class="site-footer"><span>© {new Date().getUTCFullYear()} m0ss1</span><a href={site.github}>GitHub <span aria-hidden="true">↗</span></a></footer></main>
 <aside class="right-rail" aria-label={t.onPage}>{toc.length>0&&<nav class="toc"><p>{t.onPage}</p><ol>{toc.map(h=><li class:list={{nested:h.depth===3}}><a href={'#'+h.slug}>{h.text}</a></li>)}</ol></nav>}<div class="rail-note"><span class="status-dot"></span>{lang==='el'?'Κατασκευάζουμε. Καταγράφουμε. Μοιραζόμαστε.':'Build. Document. Share.'}</div></aside></div>
 {toc.length>0&&<details class="mobile-toc"><summary>{t.onPage}</summary><nav><ol>{toc.map(h=><li><a href={'#'+h.slug}>{h.text}</a></li>)}</ol></nav></details>}
 <dialog id="navigation-dialog" class="navigation-dialog" aria-label={t.menu}><div class="dialog-bar"><span>{t.menu}</span><button class="icon-button" data-close aria-label={t.close}><Icon name="close"/></button></div><Navigation lang={lang} docs={docs} path={path}/></dialog>

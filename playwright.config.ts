@@ -2,6 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 // Run against a fresh production build, or an explicitly supplied preview URL.
 const external = process.env.PLAYWRIGHT_BASE_URL;
+const baseURL = external || 'http://127.0.0.1:4321';
 export default defineConfig({
   testDir: './tests',
   testMatch: '**/portal.spec.ts',
@@ -14,7 +15,9 @@ export default defineConfig({
   reporter: [['list'], ['html', { open: 'never', outputFolder: 'playwright-report' }]],
   use: {
     browserName: 'chromium',
-    baseURL: external || 'http://127.0.0.1:4321',
+    baseURL,
+    // Initialize only the new context, so reloads still verify the actual saved choice.
+    storageState: { cookies: [], origins: [{ origin: new URL(baseURL).origin, localStorage: [{ name: 'm0ss1-amber-theme', value: 'light' }] }] },
     colorScheme: 'light',
     permissions: ['clipboard-read', 'clipboard-write'],
     screenshot: 'only-on-failure',

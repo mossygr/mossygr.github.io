@@ -1,0 +1,16 @@
+---
+import type {Language} from '../../config/site';
+import {text,prefix} from '../../config/site';
+import {categoryGroups,articleCount,type Doc} from '../../lib/content';
+import DocList from '../DocList.astro';
+import Icon from '../Icon.astro';
+import RetroAvatar from './RetroAvatar.astro';
+interface Props {lang:Language;local:Doc[];all:Doc[];projects:Doc[];robot:Doc}
+const {lang,local,all,projects,robot}=Astro.props,t=text[lang],base=prefix(lang),groups=categoryGroups(all,lang);
+---
+<div class="breadcrumbs"><span>~/ {lang==='el'?'Βιβλιοθήκη γνώσης':'Knowledge base'}</span></div>
+<div class="home-workbench"><section class="home-intro"><p class="eyebrow">FIELD NOTES / m0ss1</p><h1>{lang==='el'?<>Η γνώση αποκτά αξία<br/>όταν τη μοιράζεσαι<span>.</span></>:<>Good things happen<br/>when we share what we learn<span>.</span></>}</h1><p>{lang==='el'?'Ρομποτική, Raspberry Pi και ασφάλεια συστημάτων. Κατασκευές από το εργαστήριο, δοκιμές στην πράξη και τεχνικές σημειώσεις που αξίζει να μείνουν ανοιχτές.':'Robotics, Raspberry Pi, and system security. Workbench projects, hands-on experiments, and technical notes worth keeping open.'}</p><a class="button-primary" href={robot.data.permalink}><span aria-hidden="true">&gt;_</span>{lang==='el'?'Άνοιξε τον οδηγό 4WD Robot':'Open the 4WD Robot guide'}<Icon name="arrow" size={16}/></a></section><RetroAvatar lang={lang}/></div>
+<div class="home-stats" aria-label={lang==='el'?'Περιεχόμενα βιβλιοθήκης':'Library contents'}><div class="home-stat"><strong>{local.length.toString().padStart(2,'0')}</strong><span>{lang==='el'?'Τεχνικά άρθρα':'Technical articles'}</span></div><div class="home-stat"><strong>{projects.length.toString().padStart(2,'0')}</strong><span>{lang==='el'?'Κατασκευές & οδηγοί':'Projects & guides'}</span></div><div class="home-stat"><strong>{groups.length.toString().padStart(2,'0')}</strong><span>{lang==='el'?'Κατηγορίες γνώσης':'Knowledge categories'}</span></div></div>
+<section class="home-section" aria-labelledby="projects-title"><div class="section-title"><div><p class="eyebrow">BUILD LOG / 01</p><h2 id="projects-title">{lang==='el'?'Κατασκευές & οδηγοί':'Projects & guides'}</h2></div><a href={base+'projects/'}>{t.all} →</a></div><DocList docs={projects} lang={lang}/></section>
+<section class="home-section" aria-labelledby="categories-title"><div class="section-title"><div><p class="eyebrow">DIRECTORY / 02</p><h2 id="categories-title">{t.categories}</h2></div><a href={base+'categories/'}>{lang==='el'?'Όλες οι κατηγορίες':'All categories'} →</a></div><div class="category-grid">{groups.map(group=><a class="category-tile" href={group.href}><Icon name="layers" size={19}/><strong>{group.name}</strong><span>{articleCount(group.docs.length,lang)} <span aria-hidden="true">↗</span></span></a>)}</div></section>
+<section class="home-section" aria-labelledby="recent-title"><div class="section-title"><div><p class="eyebrow">RECENT NOTES / 03</p><h2 id="recent-title">{t.recent}</h2></div><a href={base+'archives/'}>{t.archives} →</a></div><DocList docs={local.slice(0,5)} lang={lang}/></section>
